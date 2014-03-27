@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus CWO All Styles</title>
+    <meta charset="utf-8"/>
+    <meta content="initial-scale=1" name="viewport"/>
+    <title>Enter Title Here</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="University of California, San Diego" name="ORGANIZATION"/>
+    <meta content="index,follow,noarchive" name="robots"/>
+    <meta content="Enter Title Here" name="PAGETITLE"/>
+    <meta content="Enter Summary Here" name="DESCRIPTION"/>
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/flexslider-1.8.css" rel="stylesheet" />
+    <link href="css/widgets.css" rel="stylesheet" />
+    <link href="css/site-specific.css" rel="stylesheet" />
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/flexslider-1.8.js"></script>
+    <script src="js/hover-intent.js"></script>
+    <script src="js/superfish-1.7.4.js"></script>
+    <script src="js/jquery-cycle-2.9.4.js"></script>
+    <script src="js/widgets.js"></script>
+    <script src="js/ios-orientation-zoom-fix.js"></script>
+    <script src="js/login-logout.js"></script>
+</head>
+<body>
+<!-- emergency banner will be enabled in the event of a campuswide emergency -->
+<div id="uc-emergency"></div>
+<!-- If you want a login strip to appear above the header if user is logged into SSO -->
+<div id="tdr_login"><!-- Start page controls -->
+    <span class="tdr_login_content"></span> <!-- End page controls -->
+</div>
+<div id="tdr_title">
+    <div id="tdr_title_content"><a href="http://www.ucsd.edu" id="tdr_title_ucsd_title">UC San Diego</a>
+        <div id="tdr_title_page_title"><a href="#">{Website Title or Department Name}</a>
+        </div>
+        <a class="search-button" id="tdr_title_search_link">Search</a> <a id="tdr_title_menu_link">Menu</a></div>
+</div>
+<div id="tdr_nav">
+    <div id="tdr_nav_content">
+        <ul id="tdr_nav_list">
+            <li class="active"><a href="#">Main Link 1</a></li>
+            <li><a href="#">Main Link 2</a></li>
+            <li><a href="#">Main Link 3</a>
+                <ul>
+                    <li><a href="#">Sub Link A</a></li>
+                    <li><a href="#">Sub Link B</a></li>
+                    <li><a href="#">Sub Link C</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Main Link 4</a>
+                <ul>
+                    <li><a href="#">Sub Link A</a></li>
+                    <li><a href="#">Sub Link B</a></li>
+                    <li><a href="#">Sub Link C</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Main Link 5</a></li>
+            <li><a href="#">Main Link 6</a></li>
+            <li><a href="#">Main Link 7</a></li>
+        </ul>
+    </div>
+</div>
+<div id="tdr_search">
+    <div id="tdr_search_content">
+        <form action="http://www-act.ucsd.edu/cwp/tools/search-redir" method="get">
+            <label for="search-scope">Search</label>
+            <select id="search-scope" name="search-scope">
+                <!-- Uncomment if you have a Site-specific search
+                                 <option selected="selected" value="INSERT VALUE HERE">This Site</option>
+                                 -->
+                <option value="default_collection">All UCSD Sites</option>
+                <option value="faculty-staff">Faculty/Staff</option>
+            </select>
+            <label id="search-term-label">Search Term</label>
+            <input id="search-term" name="search-term" size="20" type="search"/>
+            <input class="search-button" type="submit" value="Search"/>
+        </form></div>
+</div>
+<div id="tdr_crumbs">
+    <div id="tdr_crumbs_content"><ul id="tdr_crumbs_list"><li><a href="index.html">HOME</a>&#160;</li><li>Kitchen Sink</li></ul></div>
+</div>
+<div class="tdr_fonts" id="tdr_content">
+<div id="tdr_content_content">
+<!-- display the main content -->
+<div id="tdr_3_col_wrap">
+<div id="tdr_3_col_content">
+<h1>Heading 1&#160;<a href="http://uxt.ucsd.edu/_files/kitchensink2.html#">Link</a></h1>
+<h2>Heading 2&#160;<a href="http://uxt.ucsd.edu/_files/kitchensink2.html#">Link</a></h2>
+<h3>Heading 3&#160;<a href="http://uxt.ucsd.edu/_files/kitchensink2.html#">Link</a></h3>
+<h4>Heading 4&#160;<a href="http://uxt.ucsd.edu/_files/kitchensink2.html#">Link</a></h4>
+<h5>Heading 5&#160;<a href="http://uxt.ucsd.edu/_files/kitchensink2.html#">Link</a></h5>
+<h6>Heading 6&#160;<a href="http://uxt.ucsd.edu/_files/kitchensink2.html#">Link</a></h6>
+<hr/>
+<p>That was a horizonal rule.</p>
+<h2 class="header">Alternative Heading 2</h2>
+<h3 class="header">Alternative Heading 3</h3>
+<p>Alternative heading using&#160;<code>class="header"</code>&#160;.</p>
+<p>This is a paragraph.&#160;<a href="http://uxt.ucsd.edu/_files/kitchensink2.html#">Link</a>. Link to&#160;<a href="http://www.google.com/" target="_blank">Google</a>&#160;that opens a new window. Link to&#160;<a class="nonewwin" href="http://www.yahoo.com/" target="_blank">Yahoo</a>&#160;that opens a new window but no window icon. My, what a&#160;<strong>strong</strong>&#160;and&#160;<strong>bold</strong>&#160;young lad you are! I can't&#160;<em>emphasize</em>&#160;enough how much I dislike&#160;<em>italics</em>.</p>
+<p class="nonewwin">This paragraph has all&#160;<code>newwin</code>&#160;icon hidden using the&#160;<code>nonewwin</code>&#160;class. Link to&#160;<a href="http://www.google.com/" target="_blank">Google</a>&#160;that opens a new window. Link to&#160;<a class="nonewwin" href="http://www.yahoo.com/" target="_blank">Yahoo</a>&#160;that opens a new window but no window icon.</p>
+<blockquote>Blockquotes are one of my favorite elements, and yet they are so under appreciated. As soon as they can be incorporated into a website, they have already outlived their usefullness.</blockquote>
+<pre>
+&lt;blockquote&gt;Insert quote here&lt;/bloquote&gt;
+</pre>
+<h2>Subhead - Introductory Paragraph Immediately After a Heading</h2>
+<p class="subhead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<pre>&lt;p class="subhead"&gt;Insert quote here&lt;/p&gt;</pre>
+
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+<h2>A Note About Tables</h2>
+<p>In order to allow folks to continue using table-based layouts, the campus style will not mess with tables. Instead, if folks want a beautifully styled table for actual tabular data, they will add a class name "styled" to the table, like this:</p>
+<table class="styled">
+    <tbody>
+    <tr>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+    </tr>
+    <tr class="odd">
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+    </tr>
+    <tr class="even">
+        <td>Data 4</td>
+        <td>Data 5</td>
+        <td>Data 6</td>
+    </tr>
+    <tr class="odd">
+        <td>Data 7</td>
+        <td>Data 8</td>
+        <td>Data 9</td>
+    </tr>
+    </tbody>
+</table>
+<p>Note: the zebra striping is achieved using alternating "odd" and "even" class names on the<code>tr</code>&#160;elements.</p>
+<pre>
+&lt;table class="styled"&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Heading&lt;/th&gt;
+            &lt;th&gt;Heading&lt;/th&gt;
+            &lt;th&gt;Heading&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr class="odd"&gt;
+            &lt;td&gt;Data 1&lt;/td&gt;
+            &lt;td&gt;Data 2&lt;/td&gt;
+            &lt;td&gt;Data 3&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class="even"&gt;
+            &lt;td&gt;Data 4&lt;/td&gt;
+            &lt;td&gt;Data 5&lt;/td&gt;
+            &lt;td&gt;Data 6&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class="odd"&gt;
+            &lt;td&gt;Data 7&lt;/td&gt;
+            &lt;td&gt;Data 8&lt;/td&gt;
+            &lt;td&gt;Data 9&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+<h2>Other Elements</h2>
+<p>Math makes me feel&#160;<sup>high</sup>&#160;and&#160;<sub>low</sub>&#160;sometimes.</p>
+<p>The hard return (&#160;<code>br</code>&#160;element)&#160;<br/>
+    has a bottom margin of 0.5em. This helps distinguish it from a wrap or paragraph text. See how it helps group long links in the navigation to the left?</p>
+<p>The page title and UC San Diego title at the top of each page are made with&#160;<code>div</code>&#160;elements instead of header elements. This helps promote better header hierarchy within the actual page content.</p>
+<p><img src="img/mosquito.jpg" class="right" width="333" height="191" alt="mosquito">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+<p><img src="img/Susan.jpg" class="left" width="180" height="117" alt="Susan Smith">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+<p>Pre-formatted text:</p>
+<pre>
+public static void main(String[] args) {
+    System.out.println("Hello, world.");
+}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</pre>
+
+<ul>
+    <li>Main List A</li>
+    <li>Main List B
+        <ul>
+            <li>Sub List B.A</li>
+            <li>Sub List B.B</li>
+            <li>Sub List B.C
+                <ul>
+                    <li>Sub Sub List B.C.A
+                        <ul>
+                            <li>Sub Sub Sub List B.C.A.A</li>
+                            <li>Sub Sub Sub List B.C.A.B</li>
+                        </ul>
+                    </li>
+                    <li>Sub Sub List B.C.B</li>
+                    <li>Sub Sub List B.C.C</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Main List C</li>
+</ul>
+<ol>
+    <li>Main List A</li>
+    <li>Main List B
+        <ol>
+            <li>Sub List B.A</li>
+            <li>Sub List B.B</li>
+            <li>Sub List B.C
+                <ol>
+                    <li>Sub Sub List B.C.A
+                        <ol>
+                            <li>Sub Sub Sub List B.C.A.A</li>
+                            <li>Sub Sub Sub List B.C.A.B</li>
+                        </ol>
+                    </li>
+                    <li>Sub Sub List B.C.B</li>
+                    <li>Sub Sub List B.C.C</li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+    <li>Main List C</li>
+</ol>
+<h2>Responsive Image</h2>
+<p>The following image has hardcoded width 528 and height 340. Should be responsive once under 768px.</p>
+<img alt="web" height="340" src="http://cwo.ucsd.edu/_images/www.jpg" width="528"/>
+<h2>Messages</h2>
+
+<div class="msg info">
+    <h4>Note</h4>
+    This is a information message</div>
+<p>Use the following markup to enable this message:</p>
+<pre>&lt;div class="msg info"&gt;
+    &lt;h4&gt;Note&lt;/h4&gt;
+    This is a information message
+&lt;/div&gt;</pre>
+
+<div class="msg alert">
+    <h4>Alert</h4>
+    This is an alert message</div>
+
+<p>Use the following markup to enable this message:</p>
+<pre>&lt;div class="msg alert"&gt;
+    &lt;h4&gt;Alert&lt;/h4&gt;
+    This is an alert message
+&lt;/div&gt;</pre>
+
+<h2>Equal Column Layout</h2>
+<h3>2 Columns Layout</h3>
+<div class="cols_wrapper clearfix">
+    <div class="col_1_of_2 col">
+        <h3 class="header">Header 1 Column</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col_2_of_2 col">
+        <h3 class="header">Header 2 Column</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+
+<pre>
+&lt;div class="cols_wrapper clearfix"&gt;
+
+    &lt;div class="col_1_of_2 col"&gt;
+        &lt;h3 class="header"&lt;Header 1 Column&lt;/h3&gt;
+        &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col_2_of_2 col"&gt;
+        &lt;h3 class="header"&lt;Header 2 Column&lt;/h3&gt;
+        &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</pre>
+<h3>3 Columns Layout</h3>
+<div class="cols_wrapper">
+    <div class="col_1_of_3 col">
+        <h3 class="header">Header 1 Column</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col_2_of_3 col">
+        <h3 class="header">Header 2 Column</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col_3_of_3 col">
+        <h3 class="header">Header 3 Column</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+<pre>
+&lt;div class="cols_wrapper"&gt;
+
+    &lt;div class="col_1_of_3 col"&gt;
+        &lt;h3 class="header"&gt;Header 1 Column&lt;/h3&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+     &lt;/div&gt;
+
+    &lt;div class="col_2_of_3 col"&gt;
+        &lt;h3 class="header"&gt;Header 2 Column&lt;/h3&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col_3_of_3 col"&gt;
+        &lt;h3 class="header"&gt;Header 3 Column&lt;/h3&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</pre>
+<h2>Drawers</h2>
+
+<p>The Drawer Template lets you organize content into "drawers" or expandable / collapsible subsections in the center of the page. Each drawer consists of a Drawer Title, where you enter a given section's title text and a Drawer Body where you input its corresponding content. This template is ideal for lengthy content (such as FAQs).</p>
+<script type="text/javascript">
+    (function($) {
+        $(document).ready(function() {
+            /* drawer */
+            $("#drawer1").drawer();
+        })
+    })(jQuery);
+</script>
+<div id="drawer1">
+    <h2><a href="#">Drawer Heading 1</a></h2>
+    <div>
+        Nulla nec lectus at orci tempor blandit. Sed nisi ipsum, iaculis nec pharetra non, mollis sit amet arcu. Aliquam erat volutpat. Cras laoreet semper est vitae vestibulum. Aenean eleifend ipsum ut purus sodales pellentesque. Cras commodo, enim eu aliquam aliquam, diam urna tincidunt nibh, quis suscipit ante neque sit amet ligula. Curabitur aliquam, eros in egestas vehicula, ipsum neque hendrerit felis, dapibus vulputate sem nunc non nunc. Morbi sit amet neque eu libero tristique bibendum. Maecenas feugiat venenatis elit, sed luctus sapien molestie id. Duis at nulla odio. Quisque a urna sit amet tellus auctor dignissim nec id mauris. Proin semper enim in eros iaculis dictum.
+
+
+    </div>
+    <h2><a href="#">Drawer Heading 2</a></h2>
+    <div>
+        Suspendisse sit amet lectus est, sed ornare neque. Cras dignissim odio sit amet mi tempor vel consectetur dui elementum. Donec mi libero, luctus a ultricies at, ullamcorper quis lacus. Pellentesque ut purus ut erat semper pulvinar. In hac habitasse platea dictumst. Sed at vehicula sem. Donec eu elit erat, eleifend mollis mauris. Sed faucibus mollis bibendum. Suspendisse potenti. Donec sed lorem velit, consequat fermentum ligula. Duis commodo pellentesque vulputate.
+    </div>
+    <h2><a href="#">Drawer Heading 3</a></h2>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum vehicula tortor ac elementum. Phasellus non ligula sem, sed rhoncus ipsum. Suspendisse eget lacus eget nibh faucibus dictum in in elit. Quisque tellus dui, ultrices eget dictum nec, pulvinar eu quam. Nulla ut dolor dolor. Nam viverra lacinia neque, quis porttitor metus porttitor nec. Suspendisse tempor rhoncus magna, sed egestas lacus fringilla id. Nam posuere vestibulum scelerisque. Praesent semper, leo vitae aliquet viverra, leo ante egestas leo, eu auctor magna est ut dui. Praesent eget tristique lacus. Etiam mollis dolor iaculis elit sollicitudin feugiat in ut est. Morbi ultricies bibendum interdum.
+    </div>
+</div>
+<h2>Responsive Rotator</h2>
+<div class="flexslider">
+    <ul class="slides">
+        <li><img src="http://cwo.ucsd.edu/_images/rt_img/rt_1.jpg"/>
+            <p class="flex-caption">Sophia Suarez researches nanomedicine</p>
+        </li>
+        <li><img src="http://cwo.ucsd.edu/_images/rt_img/rt_2.jpg"/>
+            <p class="flex-caption">Students make some noise during Spirit Night.</p>
+        </li>
+        <li><img src="http://cwo.ucsd.edu/_images/rt_img/rt_3.jpg"/>
+            <p class="flex-caption"><a href="http://www.ucsd.edu">Students go surfing at La Jolla Shores</a></p>
+        </li>
+        <li><img src="http://cwo.ucsd.edu/_images/rt_img/rt_4.jpg"/></li>
+    </ul>
+    <div class="controls"></div>
+</div>
+</div>
+<div id="tdr_3_col_supplement">
+
+    <div class="styled">
+        <h2>Call Out Box</h2>
+        <p>Insert some text here that you want to include in this call out box!</p>
+        <h3>Make Me A List</h3>
+        <ul>
+            <li>Unordered</li>
+            <li>List</li>
+        </ul>
+        <ol>
+            <li>Ordered</li>
+            <li>List</li>
+        </ol>
+    </div>
+<pre>
+&lt;div class="styled"&gt;
+Your Content
+&lt;/div&gt;
+</pre>
+</div>
+</div>
+
+<div id="tdr_3_col_nav">
+    <span id="site-logo">
+        <!-- This is where a department logo or graphic would go, positioned above the left-navigation. -->
+    <logo/>
+    </span>
+
+    <div class="styled">
+        <h2>Navigation</h2>
+
+        <ul id="page_nav">
+            <li><a href="#">Nav Link 1</a></li>
+            <li><a href="#">Nav Link 2</a></li>
+            <li><a href="#">Nav Link 3</a></li>
+            <!-- The collapsed style can be used to eliminate the need to create separate navigation blocks -->
+            <li class="collapsed"><a href="#">Nav Link 4</a>
+                <ul>
+                    <li><a href="#">Sub 1</a></li>
+                    <li><a href="#">Sub 2</a></li>
+                    <li><a href="#">Sub 3</a></li>
+                    <li><a href="#">Sub 4</a></li>
+                    <li><a href="#">Sub 5</a></li>
+                    <li><a href="#">Sub 6</a></li>
+                    <li><a href="#">Sub 7</a></li>
+                </ul>
+            </li>
+            <!-- The expanded active style is used to designate the current page -->
+            <li class="expanded active">All Styles
+                <ul>
+                    <li><a href="#">Sub 1</a></li>
+                    <li><a href="#">Sub 2</a></li>
+                    <li><a href="#">Sub 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Nav Link</a></li>
+        </ul>
+    </div>
+</div></div>
+</div>
+<!-- footer -->
+<div id="tdr_footer">
+    <div id="tdr_footer_content">
+        <div id="tdr_address">
+            <span id="tdr_address_place">UC San Diego</span>
+            <span id="tdr_address_street">9500 Gilman Dr.</span>
+            <span id="tdr_address_city_state_zip">La Jolla, CA 92093</span>
+            <span id="tdr_address_phone">(858) 534-2230</span>
+        </div>
+        <div id="tdr_copyright">Copyright ©<span id="tdr_copyright_year">2012</span> Regents of the University of California. All rights reserved.</div>
+        <ul id="tdr_footer_links">
+            <li><a href="http://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
+            <li id="tdr_footer_feedback">
+                <a href="mailto:sample-email@ucsd.edu">Feedback</a>
+            </li>
+        </ul>
+        <!-- shib timeout -->
+        <img src="https://a4.ucsd.edu/tritON/imagebug" alt=" " style="display: none;" />
+
+        <!-- Insert Google Analytics code here if you have an account -->
+    </div>
+</div>
+</body>
+</html>
