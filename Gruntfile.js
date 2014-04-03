@@ -367,10 +367,10 @@ module.exports = function (grunt) {
         compress: {
             main: {
                 options: {
-                    archive: 'decorator.zip'
+                    archive: 'ucsd-decorator.zip'
                 },
                 files: [
-                    {cwd:'dist/', src: ['**'], expand: true, dest: 'decorator/'}
+                    {cwd:'dist/', src: ['**'], expand: true, dest: 'ucsd-decorator/'}
                 ]
             }
         }

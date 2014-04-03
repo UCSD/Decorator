@@ -115,7 +115,7 @@ html[xmlns] .slides {display: block;}
 
 /* default state */
 .drawer h2 a {
-	background: transparent url(../img/sprite_icon_widget.png) 0 4px no-repeat;
+	background: transparent url(img/sprite_icon_widget.png) 0 4px no-repeat;
 	display: block;
 	padding-left: 20px;
 	text-decoration: none;
@@ -170,7 +170,7 @@ html[xmlns] .slides {display: block;}
 }
 
 .drawer-toggle a {
-	background: transparent url(../img/sprite_icon_widget.png) 0 -217px
+	background: transparent url(img/sprite_icon_widget.png) 0 -217px
 		no-repeat;
 	padding-left: 16px;
 }
@@ -263,7 +263,7 @@ html[xmlns] .slides {display: block;}
 }
 
 .flexslider .flex-pauseplay a {
-    background: url("../img/sprite_icon_widget.png");
+    background: url(img/sprite_icon_widget.png);
     border: 0;
     display: block;
     height: 10px;
@@ -431,11 +431,11 @@ html[xmlns] .slides {display: block;}
 }
 
 .playing {
-	background: url(../img/sprite_icon_widget.png) 0 -249px no-repeat;
+	background: url(img/sprite_icon_widget.png) 0 -249px no-repeat;
 }
 
 .paused {
-	background: url(../img/sprite_icon_widget.png) 0 -233px no-repeat;
+	background: url(img/sprite_icon_widget.png) 0 -233px no-repeat;
 }
 
 /* ie7 hack */
@@ -463,12 +463,12 @@ html[xmlns] .slides {display: block;}
 
 .sf_all_collapsed,
 .sf_one_collapsed {
-	background: transparent url(../img/sprite_icon_widget.png) 0 -275px no-repeat;
+	background: transparent url(img/sprite_icon_widget.png) 0 -275px no-repeat;
 }
 
 .sf_all_expanded,
 .sf_one_expanded {
-	background: transparent url(../img/sprite_icon_widget.png) 0 -259px no-repeat;
+	background: transparent url(img/sprite_icon_widget.png) 0 -259px no-repeat;
 }
 
 dl.itag_simple_faq dt,

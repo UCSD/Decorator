@@ -154,7 +154,7 @@ a:hover, a:active,
 
 /* external links */
 a[target="_blank"] {
-  background: url(../img/sprite_icon.png) no-repeat scroll right -50px transparent;
+  background: url(img/sprite_icon.png) no-repeat scroll right -50px transparent;
   padding-right: 20px; }
 
 .nonewwin a[target="_blank"], a[target="_blank"].nonewwin {
@@ -284,7 +284,7 @@ html[xmlns] .clearfix {
   margin-bottom: 1em; }
 
 .msg h4 {
-  background: transparent url(../img/sprite_icon.png) 0 0 no-repeat;
+  background: transparent url(img/sprite_icon.png) 0 0 no-repeat;
   padding-left: 20px;
   text-shadow: none; }
 
@@ -397,7 +397,7 @@ a.button {
  * search button
  */
 .search-button {
-  background: transparent url(../img/sprite_base.png) -431px -7px no-repeat;
+  background: transparent url(img/sprite_base.png) -431px -7px no-repeat;
   cursor: pointer;
   width: 27px;
   height: 18px;
@@ -418,7 +418,7 @@ a.button {
 /* retina display */
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .search-button {
-    background-image: url(../img/sprite_base2x.png);
+    background-image: url(img/sprite_base2x.png);
     background-size: 500px 120px; } }
 /* --------------------------------------------------------------------
  * * - 480px
@@ -430,7 +430,7 @@ a.button {
 * Icon
 */
 .icon {
-  background: transparent url(../img/sprite_icon.png) 0 0 no-repeat;
+  background: transparent url(img/sprite_icon.png) 0 0 no-repeat;
   padding-left: 1.5em; }
 
 /* ie 7 only hack */
@@ -438,7 +438,7 @@ a.button {
   display: inline-block; }
 
 .icon.astrisk {
-  background: transparent url(../img/astrisk.png) 0 0 no-repeat; }
+  background: transparent url(img/astrisk.png) 0 0 no-repeat; }
 
 .icon.newwin {
   background-position: 0 -50px; }
@@ -700,7 +700,7 @@ html > body form .icon.invalid {
   margin-left: 11em; }
 
 .field .required {
-  background: url(../img/astrisk.png) right 0 no-repeat; }
+  background: url(img/astrisk.png) right 0 no-repeat; }
 
 /* top-aligned */
 .field_top .label {
@@ -710,7 +710,7 @@ html > body form .icon.invalid {
   margin-left: 1em; }
 
 .field_top .required {
-  background: url(../img/astrisk.png) left 0 no-repeat;
+  background: url(img/astrisk.png) left 0 no-repeat;
   padding-left: 1em; }
 
 /* left-aligned */
@@ -724,7 +724,7 @@ html > body form .icon.invalid {
   margin-left: 11.5em; }
 
 .field_left .required {
-  background: url(../img/astrisk.png) left 0 no-repeat;
+  background: url(img/astrisk.png) left 0 no-repeat;
   padding-left: 1em; }
 
 /* --------------------------------------------------------------------
@@ -1022,7 +1022,7 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
 * CSS Styling for the title header
 */
 #tdr_title {
-  background: url(../img/bg.jpg) repeat-x; }
+  background: url(img/bg.jpg) repeat-x; }
 
 #tdr_title_content {
   height: 78px; }
@@ -1033,7 +1033,7 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
   position: absolute;
   right: 0;
   top: 20px;
-  background: transparent url(../img/sprite_base.png) 0 -3px no-repeat; }
+  background: transparent url(img/sprite_base.png) 0 -3px no-repeat; }
 
 #tdr_title_content form {
   margin-bottom: 0; }
@@ -1125,7 +1125,7 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
     margin-right: 2px; }
 
   #tdr_title_menu_link {
-    background: url("../img/sprite_base.png") no-repeat scroll -461px -47px transparent;
+    background: url(img/sprite_base.png) no-repeat scroll -461px -47px transparent;
     right: 0; }
 
   /* when menu is hidden */
@@ -1156,7 +1156,7 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
   #tdr_title_ucsd_title,
   #tdr_title_search_link,
   #tdr_title_menu_link {
-    background-image: url(../img/sprite_base2x.png);
+    background-image: url(img/sprite_base2x.png);
     background-size: 500px 120px; } }
 /**********************************************************************
 * Navigation - top page navigation menu.  extends superfish css.
@@ -1248,7 +1248,7 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
 
 /* blink */
 #tdr_nav ul li.blink_nav_item a, #tdr_nav ul li.blink_nav_item span {
-  background: transparent url(../img/blink_nav.png) 0 2px no-repeat;
+  background: transparent url(img/blink_nav.png) 0 2px no-repeat;
   background-color: #E3EDF8;
   background-color: rgba(255, 255, 255, 0.4);
   text-indent: -9999px;
@@ -1407,7 +1407,7 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
   text-transform: capitalize; }
 
 #tdr_crumbs li a {
-  background: url(../img/sprite_icon.png) no-repeat scroll right 5px transparent;
+  background: url(img/sprite_icon.png) no-repeat scroll right 5px transparent;
   padding-right: .8em;
   text-decoration: none; }
 
@@ -1614,7 +1614,7 @@ div.styled h3 {
   text-decoration: underline; }
 
 #tdr_footer_content {
-  background: transparent url(../img/sprite_base.png) right -74px no-repeat;
+  background: transparent url(img/sprite_base.png) right -74px no-repeat;
   font-size: 90%;
   text-align: left;
   padding: 1em 0; }
@@ -1638,7 +1638,7 @@ div.styled h3 {
 /* retina display */
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   #tdr_footer_content {
-    background-image: url(../img/sprite_base2x.png);
+    background-image: url(img/sprite_base2x.png);
     background-size: 500px 120px; } }
 /* --------------------------------------------------------------------
  * * - 640px
@@ -1677,10 +1677,10 @@ div.loading {
   clear: both;
   height: 32px;
   text-indent: -9999px;
-  background: url(../img/icon_loading.gif) center no-repeat; }
+  background: url(img/icon_loading.gif) center no-repeat; }
 
 span.loading {
-  background: url(../img/icon_loading_inline.gif) right no-repeat;
+  background: url(img/icon_loading_inline.gif) right no-repeat;
   padding-right: 20px; }
 
 @media print {
@@ -2019,7 +2019,7 @@ html[xmlns] .slides {
 
 /* default state */
 .drawer h2 a {
-  background: transparent url(../img/sprite_icon_widget.png) 0 4px no-repeat;
+  background: transparent url(img/sprite_icon_widget.png) 0 4px no-repeat;
   display: block;
   padding-left: 20px;
   text-decoration: none; }
@@ -2063,7 +2063,7 @@ html[xmlns] .slides {
   color: #016691; }
 
 .drawer-toggle a {
-  background: transparent url(../img/sprite_icon_widget.png) 0 -217px no-repeat;
+  background: transparent url(img/sprite_icon_widget.png) 0 -217px no-repeat;
   padding-left: 16px; }
 
 .drawer-toggle a.expand {
@@ -2143,7 +2143,7 @@ html[xmlns] .slides {
   z-index: 10; }
 
 .flexslider .flex-pauseplay a {
-  background: url("../img/sprite_icon_widget.png");
+  background: url(img/sprite_icon_widget.png);
   border: 0;
   display: block;
   height: 10px;
@@ -2286,10 +2286,10 @@ html[xmlns] .slides {
   clear: both; }
 
 .playing {
-  background: url(../img/sprite_icon_widget.png) 0 -249px no-repeat; }
+  background: url(img/sprite_icon_widget.png) 0 -249px no-repeat; }
 
 .paused {
-  background: url(../img/sprite_icon_widget.png) 0 -233px no-repeat; }
+  background: url(img/sprite_icon_widget.png) 0 -233px no-repeat; }
 
 /* ie7 hack */
 *:first-child + html .playing,
@@ -2315,11 +2315,11 @@ html[xmlns] .slides {
 
 .sf_all_collapsed,
 .sf_one_collapsed {
-  background: transparent url(../img/sprite_icon_widget.png) 0 -275px no-repeat; }
+  background: transparent url(img/sprite_icon_widget.png) 0 -275px no-repeat; }
 
 .sf_all_expanded,
 .sf_one_expanded {
-  background: transparent url(../img/sprite_icon_widget.png) 0 -259px no-repeat; }
+  background: transparent url(img/sprite_icon_widget.png) 0 -259px no-repeat; }
 
 dl.itag_simple_faq dt,
 p.sf_all_expanded,
