@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ucsd-decorator.iml" filepath="$PROJECT_DIR$/.idea/ucsd-decorator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/decorator.iml" filepath="$PROJECT_DIR$/.idea/decorator.iml" />
     </modules>
   </component>
 </project>
