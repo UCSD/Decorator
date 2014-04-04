@@ -6,9 +6,12 @@
 
     <link rel="shortcut icon" href="/favicon.ico">
 
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link href="styles/docs.css" rel="stylesheet">
+    <!-- build:css(.tmp) styles/bootstrap.css -->
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <!-- endbuild -->
+
+    <!-- build:css(.tmp) styles/_docs.css -->
+    <link rel="stylesheet" href="styles/docs.css">
     <!-- endbuild -->
 
     <!-- build:css(.tmp) styles/ucsd.css -->
@@ -28,26 +31,33 @@
 <body>
 <a class="sr-only" href="#content">Skip to main content</a>
 
+<div id="tdr_title">
+    <div id="tdr_title_content">
+        <a href="http://www.ucsd.edu" id="tdr_title_ucsd_title">UC San Diego</a>
+        <div id="tdr_title_page_title">
 
-<!-- Docs page layout -->
-<div class="bs-docs-header" id="content">
-    <div class="container">
-        <h1>Components</h1>
-        <p>Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.</p>
-        <div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script>var z = document.createElement("script"); z.async = true; z.src = "http://engine.carbonads.com/z/32341/azcarbon_2_1_0_HORIZ"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
 
+
+            <a href="/">
+                Campus Web Office
+            </a>
+        </div>
+        <a class="search-button" id="tdr_title_search_link">Search</a><a id="tdr_title_menu_link">Menu</a>
     </div>
 </div>
+<!-- Docs page layout -->
 
 <div class="container bs-docs-container">
 
 <div class="row">
-<div class="col-md-9" role="main">
+<div class="main-content" role="main">
 <!-- Glyphicons
 ================================================== -->
 <div class="bs-docs-section">
-<h1 id="glyphicons" class="page-header">Glyphicons</h1>
 
+<h1 id="docs-header">Kitchen Sink</h1>
+
+<h1 id="glyphicons" class="page-header">Glyphicons</h1>
 <h2 id="glyphicons-glyphs">Available glyphs</h2>
 <p>Includes 200 glyphs in font format from the Glyphicon Halflings set. <a href="http://glyphicons.com/">Glyphicons</a> Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, we only ask that you include a link back to <a href="http://glyphicons.com/">Glyphicons</a> whenever possible.</p>
 <div class="bs-glyphicons">
@@ -3957,7 +3967,7 @@
 </div>
 
 </div>
-<div class="col-md-3">
+<div class="doc-nav">
     <div class="bs-docs-sidebar hidden-print" role="complementary">
         <ul class="nav bs-docs-sidenav">
 
