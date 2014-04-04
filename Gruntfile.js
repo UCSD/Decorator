@@ -59,9 +59,20 @@ module.exports = function (grunt) {
                 },
                 files: [
                     '<%= config.app %>/{,*/}*.html',
+                    '<%= config.app %>/{,*/}*.css',
                     '.tmp/styles/{,*/}*.css',
                     '<%= config.app %>/_images/{,*/}*'
                 ]
+            }
+        },
+        sass: {
+            dist: {
+                files: {
+                    '<%= config.app %>/styles/main.css': '<%= config.app %>/styles/main.scss'
+                },
+                options: {
+                    sourcemap: 'true'
+                }
             }
         },
 
@@ -288,7 +299,7 @@ module.exports = function (grunt) {
         // cssmin: {
         //     dist: {
         //         files: {
-        //             '<%= config.dist %>/styles/bootstrap.css': [
+        //             '<%= config.dist %>/styles/_bootstrap.css': [
         //                 '.tmp/styles/{,*/}*.css',
         //                 '<%= config.app %>/styles/{,*/}*.css'
         //             ]

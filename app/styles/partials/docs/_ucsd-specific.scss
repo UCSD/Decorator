@@ -1,11 +1,18 @@
 .main-content {
-  float: left;
-  width: 75%;
+
+
+  @media screen and (min-width: $break-desktop + px) {
+    float: left;
+    width: 75%;
+  }
 }
 
 .doc-nav {
-  width: 25%;
-  float: right;
+
+  @media screen and (min-width: $break-desktop + px) {
+      float: right;
+      width: 25%;
+  }
 }
 
 .bs-docs-container {
@@ -15,7 +22,12 @@
 
 #docs-header {
   font-size: 400%;
-  color: #2e2f2e;
+  color: #000;
+  padding-top: 0;
+}
+
+.page-header {
+  font-size: 40px;
 }
 
 .row {
@@ -29,5 +41,6 @@
   &:after {
     clear: both;
   }
+
 }
 

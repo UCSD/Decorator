@@ -22,8 +22,8 @@ body #tdr_login_content,body #tdr_title_content,body #tdr_nav_content,body #tdr_
   width: 98%;
   width: expression(document.body.clientWidth > 960 ? "960px" : "auto");
 
-  @media screen and (min-width: $break-full) {
-    max-width: 1200px;
+  @media screen and (min-width: $break-full + px) {
+    max-width: $break-full + px;
     width: expression(document.body.clientWidth > 1200 ? "1200px" : "auto");
   }
 }
