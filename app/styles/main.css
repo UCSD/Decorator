@@ -5574,14 +5574,9 @@ h1[id] {
     float: right;
     width: 25%; } }
 
-.bs-docs-container {
-  max-width: 1200px;
-  margin: 0 auto; }
-
 #docs-header {
-  font-size: 400%;
-  color: #000;
-  padding-top: 0; }
+  padding-top: 0;
+  font-size: 60px; }
 
 .page-header {
   font-size: 40px; }
@@ -7308,7 +7303,7 @@ table.styled tbody tr.even {
 /* --------------------------------------------------------------------
  * list
  */
-ul, ol, dl {
+ul, dl {
   margin-bottom: 1em;
   padding: 0; }
 
@@ -7316,7 +7311,7 @@ ul ul {
   margin-bottom: 0; }
 
 li, dd {
-  margin: .25em 0 .25em 2em; }
+  margin: .25em 0 .25em 0; }
 
 dt {
   font-weight: bold; }
