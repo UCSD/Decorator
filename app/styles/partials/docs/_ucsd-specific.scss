@@ -1,6 +1,5 @@
 .main-content {
 
-
   @media screen and (min-width: $break-desktop + px) {
     float: left;
     width: 75%;
@@ -15,15 +14,18 @@
   }
 }
 
-
 #docs-header {
   padding-top: 0;
-  font-size: 60px;
+}
+
+#headers {
+	margin-top: 20px;
 }
 
 .page-header {
-  font-size: 40px;
+	margin-bottom: 10px;
 }
+
 
 .row {
   zoom:1;
@@ -39,3 +41,14 @@
 
 }
 
+.container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#social-list ul {
+	list-style: none;
+	padding-left: 0;
+}

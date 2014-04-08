@@ -1,7 +1,9 @@
 @import "partials/_variables";
 
-@import "partials/_bootstrap";
+@import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+
+@import "partials/_ucsd";
 
 @import "partials/_docs";
 
-@import "partials/_ucsd";
+

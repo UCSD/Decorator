@@ -160,7 +160,6 @@ table.styled tbody tr.even {
  */
 ul,dl {
   margin-bottom: 1em;
-  padding: 0;
 }
 
 ul ul {
@@ -681,7 +680,8 @@ input[type="text"],textarea {
 
 fieldset {
   border: 1px solid #aaa;
-  padding: .5em 0;
+  padding: .5em;
+  border: 0;
 }
 
 legend {
