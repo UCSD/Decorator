@@ -1,3 +1,23 @@
+@charset "UTF-8";
+
+/* because legend doesn't inherit in IE */
+legend {
+	color: #000;
+}
+
+input,button,textarea,select,optgroup,option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+/* @purpose To enable resizing for IE 
+ * @branch For IE6-Win, IE7-Win */
+input,button,textarea,select {
+	*font-size: 100%;
+}
+
 @media print {
 	/**********************************************************************
 	 * Print Styles
@@ -10,7 +30,7 @@
 	}
 
 	#col_content,#col_supplemental,#col_nav,.col,#tdr_3_col_wrap,#tdr_3_col_content,#tdr_3_col_supplement,#tdr_3_col_nav
-	{
+		{
 		left: 0 !important;
 		margin: 0 !important;
 		padding: 0 !important;

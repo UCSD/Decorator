@@ -2787,10 +2787,10 @@ function initCopyright() {
 			/*
 			 * update settings if pause/play and paging control is disabled.
 			 */
-			if (slider.has(".controls").length > 0) {
+			if (slider.has(".flex-controls").length > 0) {
 				settings = $.extend(settings, {
 					controlNav: true,
-					controlsContainer: ".controls",
+					controlsContainer: ".flex-controls",
 					pausePlay: true
 				});
 			}

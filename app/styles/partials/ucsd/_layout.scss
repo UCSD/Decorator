@@ -499,6 +499,11 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
 }
 
 /*** ESSENTIAL STYLES ***/
+
+.navbar {
+	margin-bottom: 0;
+}
+
 #tdr_nav_list,#tdr_nav_list *,.sf-menu,.sf-menu * {
   margin: 0;
   padding: 0;
@@ -534,6 +539,11 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
 
 #tdr_nav_list span,.sf-menu span {
   cursor: default;
+}
+
+.navbar .container-fluid {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 /*** SKIN ***/

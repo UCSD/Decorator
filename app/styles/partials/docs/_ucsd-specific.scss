@@ -1,16 +1,16 @@
 .main-content {
 
   @media screen and (min-width: $break-desktop + px) {
-    float: left;
-    width: 75%;
+
   }
 }
 
 .doc-nav {
 
   @media screen and (min-width: $break-desktop + px) {
-      float: right;
-      width: 25%;
+	  .bs-docs-sidebar {
+		  padding-left: 0;
+	  }
   }
 }
 
@@ -26,29 +26,46 @@
 	margin-bottom: 10px;
 }
 
-
-.row {
-  zoom:1;
-  &:before, &:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  &:after {
-    clear: both;
-  }
-
-}
-
-.container-fluid {
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
+#type {
+	margin-top: 20px;
 }
 
 #social-list ul {
 	list-style: none;
 	padding-left: 0;
+}
+
+h2.header, h3.header {
+	display: inline;
+}
+
+/*
+ * Callouts
+ *
+ * Not quite alerts, but custom and helpful notes for folks reading the docs.
+ * Requires a base and modifier class.
+ */
+
+.bs-callout-danger {
+	background-color: #fdf7f7;
+	border-color: inherit;
+	h4 {
+		color: inherit;
+	}
+}
+
+.bs-callout-warning {
+	background-color: #fcf8f2;
+	border-color: inherit;
+	h4 {
+		color: inherit;
+	}
+}
+
+.bs-callout-info {
+	background-color: #f4f8fa;
+	border-color: inherit;
+	h4 {
+		color: inherit;
+	}
 }
