@@ -1,0 +1,159 @@
+.navbar {
+	margin-bottom: 0;
+	background-color: #F8F8F8;
+
+	li.active {
+		background-color: #dcdcdc;
+	}
+
+	.navbar-collapse {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+
+#tdr_nav_list,#tdr_nav_list *,.sf-menu,.sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#tdr_nav_list ul,.sf-menu ul {
+	position: absolute;
+	display: none;
+}
+
+#tdr_nav_list li:hover,.sf-menu li:hover {
+	visibility: inherit; /* fixes IE7 'sticky bug' */
+}
+
+#tdr_nav_list li,.sf-menu li {
+	float: left;
+}
+
+#tdr_nav_list a,#tdr_nav_list span,.sf-menu a,.sf-menu span {
+	display: block;
+	white-space: nowrap;
+}
+
+#tdr_nav_list li:hover ul,#tdr_nav_list li.sfHover ul,.sf-menu li:hover ul,.sf-menu li.sfHover ul {
+	z-index: 999;
+}
+
+#tdr_nav_list li li,.sf-menu li li {
+	float: none;
+	_margin-bottom: -17px; /* fixes IE6 */
+}
+
+#tdr_nav_list span,.sf-menu span {
+	cursor: default;
+}
+
+/*** SKIN ***/
+#tdr_nav_list a,#tdr_nav_list span,.sf-menu a,.sf-menu span {
+	background: #F0FAFF;
+	background: rgba(255, 255, 255, 0.4);
+	border-right: solid 1px #B3CBDC;
+	border-left: solid 1px rgba(255, 255, 255, 0.6);
+	border-bottom: solid 1px #95AFC9;
+	color: rgb(0, 75, 110);
+	padding: 8px 7px 7px;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+}
+
+#tdr_nav_list li.active>a,#tdr_nav_list li.active>span,.sf-menu li.active>a,.sf-menu li.active>span {
+	background: #F0FAFF;
+	background: rgba(255, 255, 255, 0.8);
+	border-bottom: #D56A03 solid 3px;
+	padding: 8px 7px 5px;
+}
+
+#tdr_nav_list li:hover,#tdr_nav_list li.sfHover,#tdr_nav_list a:focus,#tdr_nav_list a:hover,#tdr_nav_list a:active,#tdr_nav_list span:focus,#tdr_nav_list span:hover,#tdr_nav_list span:active,#tdr_nav_list li.active a:focus,#tdr_nav_list li.active a:hover,#tdr_nav_list li.active a:active,#tdr_nav_list li.active span:focus,#tdr_nav_list li.active span:hover,#tdr_nav_list li.active span:active,.sf-menu li:hover,.sf-menu li.sfHover,.sf-menu a:focus,.sf-menu a:hover,.sf-menu a:active,.sf-menu span:focus,.sf-menu span:hover,.sf-menu span:active,.sf-menu li.active a:focus,.sf-menu li.active a:hover,.sf-menu li.active a:active,.sf-menu li.active span:focus,.sf-menu li.active span:hover,.sf-menu li.active span:active
+{
+	background: #fff;
+}
+
+#tdr_nav_list li ul,.sf-menu li ul {
+	border-left: solid 1px #9FB3BF;
+	border-top: solid 1px #9FB3BF;
+}
+
+#tdr_nav_list li li a,#tdr_nav_list li.active li a,.sf-menu li li a,.sf-menu li.active li a {
+	background: #F0FAFF;
+	border-bottom: solid 1px #9FB3BF;
+}
+
+/* blink */
+#tdr_nav ul li.blink_nav_item a,#tdr_nav ul li.blink_nav_item span {
+	background: transparent url(img/blink_nav.png) 0 2px no-repeat;
+	background-color: #E3EDF8;
+	background-color: rgba(255, 255, 255, 0.4);
+	text-indent: -9999px;
+	width: 66px;
+}
+
+#tdr_nav ul li.blink_nav_item a:hover,#tdr_nav ul li.blink_nav_item span:hover {
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* menu link */
+#tdr_nav_list,#tdr_nav_list.show {
+	display: block;
+}
+
+#tdr_nav_menu_link {
+	display: none;
+}
+
+/**********************************************************************
+ * responsive design
+ */
+
+/* --------------------------------------------------------------------
+ * * - 768px
+ */
+@media only screen and (max-width: 768px) {
+	#tdr_nav_list li,.sf-menu li {
+		float: none;
+	}
+	#tdr_nav_list li {
+		*height: 33px; /* IE7 only hack */
+	}
+	#tdr_nav_list li li {
+		_margin: 0; /* IE6 only hack */
+	}
+	#tdr_nav_list li li a {
+		*height: 16px; /* IE7 only hack */
+		_height: 16px; /* IE6 only hack */
+	}
+	#tdr_nav li:hover ul,#tdr_nav li.sfHover ul,.sf-menu li:hover ul,.sf-menu li.sfHover ul {
+		position: relative;
+	}
+	.sf-vertical li:hover ul,.sf-vertical li.sfHover ul {
+		margin-top: 0;
+	}
+	#tdr_nav ul li.blink_nav_item a,#tdr_nav ul li.blink_nav_item span {
+		background-position: -3px 2px;
+		width: auto;
+	}
+
+	/* skin */
+	#tdr_nav_content {
+		border-top: solid 1px #B3CBDC;
+	}
+	#tdr_nav a,#tdr_nav span {
+		border-left: solid 1px #B3CBDC;
+		border-bottom: solid 1px #B3CBDC;
+	}
+	#tdr_nav li li a,.sf-menu li li a {
+		padding-left: 1.5em;
+	}
+
+	/* toggle the list */
+	#tdr_nav_list {
+		display: none;
+	}
+}

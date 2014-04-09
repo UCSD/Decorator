@@ -7,13 +7,19 @@
 // Core CSS
 @import "ucsd/_base";
 @import "ucsd/_cms";
+@import "ucsd/_fonts";
+
 @import "ucsd/_layout";
 @import "ucsd/_styling";
-@import "ucsd/_fonts";
+
+@import "ucsd/_navbar";
+@import "ucsd/_search";
+@import "ucsd/_breadcrumbs";
+
 @import "ucsd/_print";
 
 // Components
-@import "ucsd/_breadcrumbs";
+
 @import "ucsd/_overwrite";
 
 // Components w/ JavaScript
