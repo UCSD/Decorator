@@ -1,5 +1,16 @@
 @import "partials/variables";
 
-@import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+@import "partials/ucsd/base/base";
+@import "partials/ucsd/base/breadcrumbs";
+@import "partials/ucsd/base/fonts";
+@import "partials/ucsd/base/layout";
+@import "partials/ucsd/base/navbar";
+@import "partials/ucsd/base/print";
+@import "partials/ucsd/base/search";
+@import "partials/ucsd/base/styling";
 
-@import "partials/ucsd";
+@import "partials/vendor/flexslider";
+
+@import "partials/ucsd/cms/cms";
+@import "partials/ucsd/cms/overwrite";
+

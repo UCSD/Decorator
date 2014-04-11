@@ -2,6 +2,7 @@
 	margin-bottom: 0;
 	background-color: #FDFDFD;
 	min-height: 34px;
+	border: 0;
 	border-bottom: 1px solid #E6E6E6;
 
 	.active {
@@ -23,10 +24,27 @@
 	}
 }
 
-.navbar-nav > li > a {
 
-	@media (min-width: 768px) {
-		padding: 9px 15px;
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: #fff;
+	border-bottom: #FFFFFF solid 2px;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	background-color: #fff;
+	border-color: #d9d9d9;
+}
+
+.navbar-nav > li {
+	&:last-child a {
+		border-right: 1px solid #ECECEC;
+	}
+
+	& > a {
+		@media (min-width: 768px) {
+			border-left: 1px solid #ECECEC;
+			padding: 9px 15px;
+		}
 	}
 }
 

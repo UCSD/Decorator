@@ -329,7 +329,7 @@ module.exports = function (grunt) {
                     dest: '<%= config.dist %>',
                     src: [
                         '*.{ico,png,txt}',
-                        'styles/main.css', //delete upon re-enabling cssmin in grunt build
+                        'styles/*.css', //delete upon re-enabling cssmin in grunt build
                         '_images/{,*/}*.webp',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',

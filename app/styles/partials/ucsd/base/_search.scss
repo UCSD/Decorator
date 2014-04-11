@@ -1,13 +1,15 @@
 #tdr_search_bs {
 	max-width: 300px;
 	float: right;
-	padding-top: 4px;
+	padding-top: 5px;
 
 	.btn {
 		padding: 4px 12px;
+		border-radius: 0;
 	}
 }
 
 .form-control {
 	height: 29px;
+	border-radius: 0;
 }
