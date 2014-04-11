@@ -17,22 +17,35 @@
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 0;
+		height: 40px;
 	}
 
 	.caret {
 			margin-left: 7px;
 	}
+
+	.nav > li > a:hover, .nav > li > a:focus {
+		background-color: #fff;
+		border-bottom: #FFFFFF solid 2px;
+	}
+
+	.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+		background-color: #fff;
+		border-color: #d9d9d9;
+	}
+
+
 }
 
+.navbar-header {
 
-.nav > li > a:hover, .nav > li > a:focus {
-	background-color: #fff;
-	border-bottom: #FFFFFF solid 2px;
-}
+	.navbar-toggle {
+		background-color: #B1B1B1;
 
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-	background-color: #fff;
-	border-color: #d9d9d9;
+		.icon-bar {
+			background-color: #fff;
+		}
+	}
 }
 
 .navbar-nav > li {
@@ -47,12 +60,7 @@
 		}
 	}
 }
-
-
-.navbar-collapse {
-	height: 40px;
-}
-
+/*
 #tdr_nav_list,#tdr_nav_list *,.sf-menu,.sf-menu * {
 	margin: 0;
 	padding: 0;
@@ -65,7 +73,9 @@
 }
 
 #tdr_nav_list li:hover,.sf-menu li:hover {
-	visibility: inherit; /* fixes IE7 'sticky bug' */
+	visibility: inherit; */
+/* fixes IE7 'sticky bug' *//*
+
 }
 
 #tdr_nav_list li,.sf-menu li {
@@ -83,14 +93,18 @@
 
 #tdr_nav_list li li,.sf-menu li li {
 	float: none;
-	_margin-bottom: -17px; /* fixes IE6 */
+	_margin-bottom: -17px; */
+/* fixes IE6 *//*
+
 }
 
 #tdr_nav_list span,.sf-menu span {
 	cursor: default;
 }
 
-/*** SKIN ***/
+*/
+/*** SKIN ***//*
+
 #tdr_nav_list a,#tdr_nav_list span,.sf-menu a,.sf-menu span {
 	background: #F0FAFF;
 	background: rgba(255, 255, 255, 0.4);
@@ -125,7 +139,9 @@
 	border-bottom: solid 1px #9FB3BF;
 }
 
-/* blink */
+*/
+/* blink *//*
+
 #tdr_nav ul li.blink_nav_item a,#tdr_nav ul li.blink_nav_item span {
 	background: transparent url(img/blink_nav.png) 0 2px no-repeat;
 	background-color: #E3EDF8;
@@ -139,7 +155,9 @@
 	background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* menu link */
+*/
+/* menu link *//*
+
 #tdr_nav_list,#tdr_nav_list.show {
 	display: block;
 }
@@ -148,26 +166,38 @@
 	display: none;
 }
 
+*/
 /**********************************************************************
  * responsive design
- */
+ *//*
 
+
+*/
 /* --------------------------------------------------------------------
  * * - 768px
- */
+ *//*
+
 @media only screen and (max-width: 768px) {
 	#tdr_nav_list li,.sf-menu li {
 		float: none;
 	}
 	#tdr_nav_list li {
-		*height: 33px; /* IE7 only hack */
+		*height: 33px; */
+/* IE7 only hack *//*
+
 	}
 	#tdr_nav_list li li {
-		_margin: 0; /* IE6 only hack */
+		_margin: 0; */
+/* IE6 only hack *//*
+
 	}
 	#tdr_nav_list li li a {
-		*height: 16px; /* IE7 only hack */
-		_height: 16px; /* IE6 only hack */
+		*height: 16px; */
+/* IE7 only hack *//*
+
+		_height: 16px; */
+/* IE6 only hack *//*
+
 	}
 	#tdr_nav li:hover ul,#tdr_nav li.sfHover ul,.sf-menu li:hover ul,.sf-menu li.sfHover ul {
 		position: relative;
@@ -180,7 +210,9 @@
 		width: auto;
 	}
 
-	/* skin */
+	*/
+/* skin *//*
+
 	#tdr_nav_content {
 		border-top: solid 1px #B3CBDC;
 	}
@@ -192,8 +224,10 @@
 		padding-left: 1.5em;
 	}
 
-	/* toggle the list */
+	*/
+/* toggle the list *//*
+
 	#tdr_nav_list {
 		display: none;
 	}
-}
+}*/

@@ -1,16 +1,26 @@
+/********************* VARIABLES & MIXINS */
 @import "partials/variables";
 
-@import "partials/ucsd/base/base";
-@import "partials/ucsd/base/breadcrumbs";
-@import "partials/ucsd/base/fonts";
+
+/********************* BASE */
 @import "partials/ucsd/base/layout";
+
 @import "partials/ucsd/base/navbar";
-@import "partials/ucsd/base/print";
 @import "partials/ucsd/base/search";
+@import "partials/ucsd/base/breadcrumbs";
+@import "partials/ucsd/base/footer";
+
+@import "partials/ucsd/base/fonts";
 @import "partials/ucsd/base/styling";
 
+@import "partials/ucsd/base/print";
+
+
+/********************** VENDOR */
 @import "partials/vendor/flexslider";
 
+
+/********************** CMS */
 @import "partials/ucsd/cms/cms";
 @import "partials/ucsd/cms/overwrite";
 

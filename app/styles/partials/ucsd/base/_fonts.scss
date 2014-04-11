@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
 	background: #fff;
 	color: #333;
@@ -178,4 +180,23 @@ pre {
 .breadcrumb {
 	background-color: white;
 	border-radius: 0px;
+}
+
+
+/* because legend doesn't inherit in IE */
+legend {
+	color: #000;
+}
+
+input,button,textarea,select,optgroup,option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+/* @purpose To enable resizing for IE
+ * @branch For IE6-Win, IE7-Win */
+input,button,textarea,select {
+	*font-size: 100%;
 }

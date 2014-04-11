@@ -392,78 +392,80 @@ a.button {
 /* Social Media Icons */
 
 
-#social-list {
+.social-list {
   margin-left: 0;
   padding-left: 0;
   list-style: none;
 }
 
-#social-list li {
+.social-list li {
   background-repeat: no-repeat;
   height: 33px;
   margin: 0 0 10px 0;
   padding: 0 40px;
 }
 
-#social-list li.facebook {
+.social-list li.facebook {
   background-image: url(http://ucsd.edu/common/cwp/active-cherry/img/sprite_social.png);
   background-position: 0 0;
 }
 
-#social-list li.twitter {
+.social-list li.twitter {
   background-image: url(http://ucsd.edu/common/cwp/active-cherry/img/sprite_social.png);
   background-position: 0 -39px;
 }
 
-#social-list li.youtube {
+.social-list li.youtube {
   background-image: url(http://ucsd.edu/common/cwp/active-cherry/img/sprite_social.png);
   background-position: 0 -80px;
 }
 
-#social-list li.linkedin {
+.social-list li.linkedin {
   background-image: url(http://ucsd.edu/common/cwp/active-cherry/img/sprite_social.png);
   background-position: 0 -121px;
 }
 
-#social-list li.googleplus {
+.social-list li.googleplus {
   background-image: url(http://ucsd.edu/common/cwp/active-cherry/img/sprite_social.png);
   background-position: 0 -160px;
 }
 
-#social-list li.instagram {
+.social-list li.instagram {
   background-image: url(http://ucsd.edu/common/cwp/active-cherry/img/sprite_social.png);
   background-position: 0 -200px;
 }
 
-#social-list li.tumblr {
+.social-list li.tumblr {
   background-image: url(http://ucsd.edu/common/cwp/active-cherry/img/sprite_social.png);
   background-position: 0 -240px;
 }
 
-#social-list li.flickr {
+.social-list li.flickr {
   background-image: url(http://ucsd.edu/common/cwp/active-cherry/img/sprite_social.png);
   background-position: 0 -280px;
 }
 
-#social-list li.vine {
+.social-list li.vine {
   background-image: url(http://ucsd.edu/common/cwp/active-cherry/img/sprite_social.png);
   background-position: 0 -320px;
 }
 
-#social-list li.pinterest {
+.social-list li.pinterest {
   background-image: url(http://ucsd.edu/common/cwp/active-cherry/img/sprite_social.png);
   background-position: 0 -360px;
 }
 
-#social-list li.blogger {
+.social-list li.blogger {
   background-image: url(http://ucsd.edu/common/cwp/active-cherry/img/sprite_social.png);
   background-position: 0 -400px;
 }
 
-#social-list li.rss {
+.social-list li.rss {
   background-image: url(http://ucsd.edu/common/cwp/active-cherry/img/sprite_social.png);
   background-position: 0 -440px;
-}/**********************************************************************
+}
+
+/**********************************************************************
  * Form Elements
  */
 input[type="text"],select,textarea {

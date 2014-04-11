@@ -822,57 +822,8 @@ div.styled h3 {
     background-color: #fff;
     background-image: none;
   }
-}/**********************************************************************
- * footer style
- */
-#tdr_footer {
-  border-top: 1px solid #ccc;
-  color: #999;
-  padding-bottom: 1em;
-  line-height: 1.5;
 }
 
-#tdr_footer a {
-  text-decoration: none;
-}
-
-#tdr_footer a:hover,#tdr_footer a:focus {
-  text-decoration: underline;
-}
-
-#tdr_footer_content {
-  background: transparent url(img/sprite_base.png) right -74px no-repeat;
-  font-size: 90%;
-  text-align: left;
-  padding: 1em 0;
-}
-
-/* footer links */
-#tdr_footer_links {
-  list-style: none;
-  margin-top: .5em;
-  margin-bottom: 0;
-}
-
-#tdr_footer_links li {
-  border-right: 1px solid #ccc;
-  display: inline;
-  margin-left: 0;
-  margin-right: .5em;
-  padding-right: .75em;
-}
-
-#tdr_footer_links #tdr_footer_feedback {
-  border-right: none;
-}
-
-/* retina display */
-@media screen and (-webkit-min-device-pixel-ratio:2) {
-  #tdr_footer_content {
-    background-image: url(img/sprite_base2x.png);
-    background-size: 500px 120px;
-  }
-}
 
 /* --------------------------------------------------------------------
  * * - 640px
