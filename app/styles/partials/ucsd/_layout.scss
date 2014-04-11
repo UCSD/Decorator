@@ -322,7 +322,7 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
  * CSS Styling for the title header
  */
 #tdr_title {
-  background: url(img/bg.jpg) repeat-x;
+  background-color: #0082AC;
 }
 
 #tdr_title_content {
@@ -660,14 +660,10 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
  * CSS Styling for the page nav aside
  */
 
-/*---------------------------------------------------------------------
- * styled box
- */
 div.styled {
   background: #F0FAFF;
   border: 1px solid #D2D2D2;
   border-bottom: .25em solid #D2D2D2;
-  border-radius: .25em;
   margin-bottom: 1em;
   padding: 1em;
 }

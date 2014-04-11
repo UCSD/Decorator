@@ -18,6 +18,10 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
 
+        <!-- build:css(.tmp) styles/docs.css -->
+        <link rel="stylesheet" href="styles/docs.css">
+        <!-- endbuild -->
+
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
@@ -1714,35 +1718,6 @@
 <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">&quot;form-control input-sm&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/select&gt;</span>
 </code></pre></div>
 
-    <h3>Column sizing</h3>
-    <p>Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.</p>
-    <div class="bs-example">
-        <form role="form">
-            <div class="row">
-                <div class="col-xs-2">
-                    <input type="text" class="form-control" placeholder=".col-xs-2">
-                </div>
-                <div class="col-xs-3">
-                    <input type="text" class="form-control" placeholder=".col-xs-3">
-                </div>
-                <div class="col-xs-4">
-                    <input type="text" class="form-control" placeholder=".col-xs-4">
-                </div>
-            </div>
-        </form>
-    </div><!-- /.bs-example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-xs-2&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;.col-xs-2&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-xs-3&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;.col-xs-3&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-xs-4&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;.col-xs-4&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div>
 
     <h2 id="forms-help-text">Help text</h2>
     <p>Block level help text for form controls.</p>
@@ -1994,9 +1969,19 @@
         </div>
         <div class="highlight"><pre><code class="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;caret&quot;</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div>
 
+        <h3 id="helper-classes-image-floats">Image Floats</h3>
+        <p>Float an image to the left or right with a class.</p>
+        <div class="bs-example">
+            <p><img alt="rolling hills" class="right" height="219" src="_images/hills.png" width="306"/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <p><img alt="rolling hills" class="left" height="219" src="_images/hills.png" width="306"/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        </div>
+<div class="highlight"><pre><code class="html">&lt;img src=&quot;...&quot; class=&quot;right&quot;&gt;&lt;p&gt;...&lt;/p&gt;
+
+    &lt;img src=&quot;...&quot; class=&quot;left&quot;&gt;&lt;p&gt;...&lt;/p&gt;</code></pre></div>
+
 
         <h3 id="helper-classes-floats">Quick floats</h3>
-        <p>Float an element to the left or right with a class. <code>!important</code> is included to avoid specificity issues. Classes can also be used as mixins.</p>
+        <p>Float an element to the left or right with a class. <code>!important</code> is included to avoid specificity issues.</p>
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;pull-left&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
@@ -2006,16 +1991,7 @@
 <span class="p">}</span>
 <span class="nc">.pull-right</span> <span class="p">{</span>
   <span class="na">float</span><span class="o">:</span> <span class="no">right</span> <span class="nv">!important</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="c1">// Usage as mixins</span>
-<span class="nc">.element</span> <span class="p">{</span>
-  <span class="nc">.pull-left</span><span class="o">();</span>
-<span class="p">}</span>
-<span class="nc">.another-element</span> <span class="p">{</span>
-  <span class="nc">.pull-right</span><span class="o">();</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
         <div class="alert alert-warning">
             <h4>Not for use in navbars</h4>
@@ -2024,7 +2000,7 @@
 
 
         <h3 id="helper-classes-center">Center content blocks</h3>
-        <p>Set an element to <code>display: block</code> and center via <code>margin</code>. Available as a mixin and class.</p>
+        <p>Set an element to <code>display: block</code> and center via <code>margin</code>.</p>
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;center-block&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
 <div class="highlight"><pre><code class="scss"><span class="c1">// Classes</span>
@@ -2032,80 +2008,44 @@
   <span class="na">display</span><span class="o">:</span> <span class="no">block</span><span class="p">;</span>
   <span class="na">margin-left</span><span class="o">:</span> <span class="no">auto</span><span class="p">;</span>
   <span class="na">margin-right</span><span class="o">:</span> <span class="no">auto</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="c1">// Usage as mixins</span>
-<span class="nc">.element</span> <span class="p">{</span>
-  <span class="nc">.center-block</span><span class="o">();</span>
-<span class="p">}</span>
-</code></pre></div>
-
-
-        <h3 id="helper-classes-clearfix">Clearfix</h3>
-        <p>Clear the <code>float</code> on any element with the <code>.clearfix</code> class. Utilizes <a href="http://nicolasgallagher.com/micro-clearfix-hack/">the micro clearfix</a> as popularized by Nicolas Gallagher. Can also be used as a mixin.</p>
-        <div class="highlight"><pre><code class="html"><span class="c">&lt;!-- Usage as a class --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></div>
-        <div class="highlight"><pre><code class="scss"><span class="c1">// Mixin itself</span>
-            <span class="nc">.clearfix</span><span class="o">()</span> <span class="p">{</span>
-            <span class="k">&amp;</span><span class="nd">:before</span><span class="o">,</span>
-            <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
-            <span class="na">content</span><span class="o">:</span> <span class="s2">&quot; &quot;</span><span class="p">;</span>
-            <span class="na">display</span><span class="o">:</span> <span class="n">table</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
-            <span class="na">clear</span><span class="o">:</span> <span class="no">both</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="p">}</span>
-
-            <span class="c1">// Usage as a Mixin</span>
-            <span class="nc">.element</span> <span class="p">{</span>
-            <span class="nc">.clearfix</span><span class="o">();</span>
 <span class="p">}</span></code></pre></div>
 
 
+        <h3 id="helper-classes-clearfix">Clearfix</h3>
+        <p>Clear the <code>float</code> on any element with the <code>.clearfix</code> class. Utilizes <a href="http://nicolasgallagher.com/micro-clearfix-hack/">the micro clearfix</a> as popularized by Nicolas Gallagher.</p>
+        <div class="highlight"><pre><code class="html"><span class="c">&lt;!-- Usage as a class --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+
         <h3 id="helper-classes-show-hide">Showing and hiding content</h3>
-        <p>Force an element to be shown or hidden (<strong>including for screen readers</strong>) with the use of <code>.show</code> and <code>.hidden</code> classes. These classes use <code>!important</code> to avoid specificity conflicts, just like the <a href="#helper-classes-floats">quick floats</a>. They are only available for block level toggling. They can also be used as mixins.</p>
+        <p>Force an element to be shown or hidden (<strong>including for screen readers</strong>) with the use of <code>.show</code> and <code>.hidden</code> classes. These classes use <code>!important</code> to avoid specificity conflicts, just like the <a href="#helper-classes-floats">quick floats</a>. They are only available for block level toggling.</p>
         <p><code>.hide</code> is available, but it does not always affect screen readers and is <strong>deprecated</strong> as of v3.0.1. Use <code>.hidden</code> or <code>.sr-only</code> instead.</p>
         <p>Furthermore, <code>.invisible</code> can be used to toggle only the visibility of an element, meaning its <code>display</code> is not modified and the element can still affect the flow of the document.</p>
         <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;show&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;hidden&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></div>
-        <div class="highlight"><pre><code class="scss"><span class="c1">// Classes</span>
-            <span class="nc">.show</span> <span class="p">{</span>
-            <span class="na">display</span><span class="o">:</span> <span class="no">block</span> <span class="nv">!important</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="nc">.hidden</span> <span class="p">{</span>
-            <span class="na">display</span><span class="o">:</span> <span class="no">none</span> <span class="nv">!important</span><span class="p">;</span>
-            <span class="na">visibility</span><span class="o">:</span> <span class="no">hidden</span> <span class="nv">!important</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="nc">.invisible</span> <span class="p">{</span>
-            <span class="na">visibility</span><span class="o">:</span> <span class="no">hidden</span><span class="p">;</span>
-            <span class="p">}</span>
+<div class="highlight"><pre><code class="scss"><span class="c1">// Classes</span>
+    <span class="nc">.show</span> <span class="p">{</span>
+    <span class="na">display</span><span class="o">:</span> <span class="no">block</span> <span class="nv">!important</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nc">.hidden</span> <span class="p">{</span>
+    <span class="na">display</span><span class="o">:</span> <span class="no">none</span> <span class="nv">!important</span><span class="p">;</span>
+    <span class="na">visibility</span><span class="o">:</span> <span class="no">hidden</span> <span class="nv">!important</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nc">.invisible</span> <span class="p">{</span>
+    <span class="na">visibility</span><span class="o">:</span> <span class="no">hidden</span><span class="p">;</span>
+    <span class="p">}</span>
 
-            <span class="c1">// Usage as mixins</span>
-            <span class="nc">.element</span> <span class="p">{</span>
-            <span class="nc">.show</span><span class="o">();</span>
-            <span class="p">}</span>
-            <span class="nc">.another-element</span> <span class="p">{</span>
-            <span class="nc">.hidden</span><span class="o">();</span>
 <span class="p">}</span></code></pre></div>
 
 
         <h3 id="helper-classes-screen-readers">Screen reader content</h3>
-        <p>Hide an element to all devices <strong>except screen readers</strong> with <code>.sr-only</code>. Necessary for following <a href="../getting-started/#accessibility">accessibility best practices</a>. Can also be used as a mixin.</p>
+        <p>Hide an element to all devices <strong>except screen readers</strong> with <code>.sr-only</code>. Necessary for following <a href="../getting-started/#accessibility">accessibility best practices</a>.</p>
         <div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span> <span class="na">href=</span><span class="s">&quot;#content&quot;</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span></code></pre></div>
-        <div class="highlight"><pre><code class="scss"><span class="c1">// Usage as a Mixin</span>
-            <span class="nc">.skip-navigation</span> <span class="p">{</span>
-            <span class="nc">.sr-only</span><span class="o">();</span>
-<span class="p">}</span></code></pre></div>
 
 
         <h3 id="helper-classes-image-replacement">Image replacement</h3>
-        <p>Utilize the <code>.text-hide</code> class or mixin to help replace an element's text content with a background image.</p>
+        <p>Utilize the <code>.text-hide</code> class to help replace an element's text content with a background image.</p>
         <div class="highlight"><pre><code class="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;text-hide&quot;</span><span class="nt">&gt;</span>Custom heading<span class="nt">&lt;/h1&gt;</span></code></pre></div>
-        <div class="highlight"><pre><code class="scss"><span class="c1">// Usage as a Mixin</span>
-            <span class="nc">.heading</span> <span class="p">{</span>
-            <span class="nc">.text-hide</span><span class="o">();</span>
-<span class="p">}</span></code></pre></div>
     </div>
 
     <!-- Icons
@@ -4107,6 +4047,20 @@
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
 
+        <!-- Progress bars
+        ================================================== -->
+        <div class="bs-docs-section">
+            <h3 id="loading">Loading Icon</h3>
+        <p>For processes where progress cannot be measured, simply add <code>.loading</code> to a <code>div</code> or a <code>span</code> element.</p>
+        <div class="bs-example">
+            <div class="demo"><span class="loading">&#160;</span></div>
+        </div>
+
+<div class="highlight"><pre><code class="html">&lt;span class="loading"&gt;&lt;/span&gt;
+</code></pre></div>
+        </div>
+
+
     </div>
 
 
@@ -4499,26 +4453,26 @@
 
  &lt;ul class="slides"&gt;
 
-    <span style="color: #ccc;">&lt;!--Image and caption--&gt;</span>
+    <span class="c">&lt;!--Image and caption--&gt;</span>
     &lt;li&gt;
         &lt;img alt="Sophia Suarez researches nanomedicine" src="http://cwo.ucsd.edu/_images/rt_img/rt_2.jpg"/&gt;
         &lt;p class="flex-caption"&gt;Students make some noise during Spirit Night.&lt;/p&gt;
     &lt;/li&gt;
 
-    <span style="color: #ccc;">&lt;!--Image, caption and link--&gt;</span>
+    <span class="c">&lt;!--Image, caption and link--&gt;</span>
     &lt;li&gt;
         &lt;img alt="Students make some noise during Spirit Night." src="http://cwo.ucsd.edu/_images/rt_img/rt_3.jpg"/&gt;
         &lt;p class="flex-caption"&gt;&lt;a href="http://www.ucsd.edu"&gt;Students go surfing at La Jolla Shores&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
 
-    <span style="color: #ccc;">&lt;!--Image only--&gt;</span>
+    <span class="c">&lt;!--Image only--&gt;</span>
     &lt;li&gt;
         &lt;img alt="UC San Diego students on round up carnival ride" src="http://cwo.ucsd.edu/_images/rt_img/rt_4.jpg"/&gt;
     &lt;/li&gt;
 
     &lt;/ul&gt;
 
-    <span style="color: #ccc;">&lt;!--Remove this line to disable rotator controls--&gt;</span>
+    <span class="c">&lt;!--Remove this line to disable rotator controls--&gt;</span>
     &lt;div class="flex-controls"&gt;&lt;/div&gt;
 
 &lt;/div&gt;</code></pre></div>
@@ -4635,6 +4589,7 @@
                             <li><a href="#helper-classes-colors">Contextual colors</a></li>
                             <li><a href="#helper-classes-close">Close icon</a></li>
                             <li><a href="#helper-classes-carets">Carets</a></li>
+                            <li><a href="#helper-classes-image-floats">Image floats</a></li>
                             <li><a href="#helper-classes-floats">Quick floats</a></li>
                             <li><a href="#helper-classes-center">Center content blocks</a></li>
                             <li><a href="#helper-classes-clearfix">Clearfix</a></li>
@@ -4702,6 +4657,7 @@
                         <a href="#progress">Progress bars</a>
                         <ul class="nav">
                             <li><a href="#progress-animated">Animated</a></li>
+                            <li><a href="#progress-animated">Loading Icon</a></li>
                         </ul>
                     </li>
                     <li>
@@ -4716,7 +4672,7 @@
                         <a href="#javascript">Javascript Components</a>
                         <ul class="nav">
                             <li>
-                                <a href="#tooltips">Tooltip</a>
+                                <a href="#tooltips">Tooltips</a>
                                 <ul class="nav">
                                     <li><a href="#tooltips-examples">Examples</a></li>
                                     <li><a href="#tooltips-usage">Usage</a></li>
@@ -4738,6 +4694,7 @@
                 </a>
             </div>
         <custom/>
+    </div>
     </div>
     </div>
     </div>
@@ -4825,6 +4782,5 @@
     <script src="scripts/base.js"></script>
     <script src="scripts/cms.js"></script>
     <!-- endbuild -->
-
     </body>
 </html>

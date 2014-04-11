@@ -1,0 +1,82 @@
+/**********************************************************************
+ * CSS Styling for the slide show
+ */
+
+/* Slideshow */
+.tdr_slideshow {
+	z-index: 9;
+}
+
+.tdr_slide {
+	font-size: 90%;
+	line-height: 17px;
+}
+
+.tdr_slide a {
+	text-decoration: none;
+}
+
+.tdr_slide a:hover {
+	text-decoration: underline;
+}
+
+.tdr_slideshow_nav {
+	position: relative;
+	top: -17px;
+	right: 20px;
+	height: 10px;
+	text-align: right;
+	float: right;
+	z-index: 10;
+}
+
+.tdr_slideshow_nav a {
+	color: #333;
+	display: block;
+	height: 8px;
+	width: 20px;
+	float: left;
+	font-size: 0;
+	border: 1px solid #FFB900;
+	background: #333;
+	text-decoration: none;
+	margin-left: 5px;
+	text-indent: -9999px;
+}
+
+.tdr_slideshow_nav a:hover {
+	background: #967D18;
+	color: #967D18;
+}
+
+.tdr_slideshow_nav a.activeSlide {
+	background: #967D18;
+	color: #967D18;
+}
+
+.tdr_slideshow_control {
+	top: -26px;
+	right: 7px;
+	text-indent: -9999px;
+	height: 8px;
+	width: 8px;
+	cursor: pointer;
+	float: right;
+	position: relative;
+	z-index: 11;
+	clear: both;
+}
+
+.playing {
+	background: url(img/sprite_icon_widget.png) 0 -249px no-repeat;
+}
+
+.paused {
+	background: url(img/sprite_icon_widget.png) 0 -233px no-repeat;
+}
+
+/* ie7 hack */
+*:first-child+html .playing,
+*:first-child+html .paused {
+	display: inline-block;
+}

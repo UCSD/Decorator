@@ -1,0 +1,179 @@
+
+/* general */
+.flexslider {
+	border: 0;
+    border-radius: 0;
+    margin-bottom: 1em;
+	width: 100%;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+.flexslider a {
+    color: #fff;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.flexslider .slides li {
+    margin: 0;
+}
+
+/* control container */
+.controls {
+	height: 37px;
+	z-index: 99;
+}
+
+.flexslider .flex-control-nav {
+	float: right;
+	right: 32px;
+    bottom: 10px;
+    height: 12px;
+    right: 32px;
+    width: auto;
+    z-index: 5;
+}
+
+.flexslider .flex-control-nav li {
+    vertical-align: top;
+    margin: 0 0 0 5px;
+}
+
+/* shared paging, pause and play control styles */
+.flexslider .flex-control-nav li a {
+    border: 1px solid #016691;
+    cursor: pointer;
+    height: 10px;
+    margin-left: 8px;
+    text-indent: -9999px;
+    width: 20px;
+}
+
+/* paging control */
+.flexslider .flex-control-nav li a {
+    background: #bed4e7;
+    -webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+.flexslider .flex-control-nav li a.flex-active {
+    background: #eb8626;
+    border: 1px solid #c15f01;
+    cursor: default;
+}
+
+/* pause and play control */
+.flexslider .controls .flex-pauseplay {
+	bottom: 10px;
+	right: 5px;
+	position: absolute;
+	z-index: 10;
+}
+
+.flexslider .flex-pauseplay a {
+    background: url("img/sprite_icon_widget.png");
+    border: 0;
+    display: block;
+    height: 10px;
+    width: 20px;
+    position: static;
+	text-indent: -9999px;
+}
+
+.flexslider .flex-pauseplay a.flex-pause {
+    background-position: 6px -248px;
+}
+
+.flexslider .flex-pauseplay a.flex-play {
+    background-position: 8px -232px;
+}
+
+/* direction control */
+.flexslider .flex-direction-nav li a {
+	background: #000;
+	background: rgba(0, 0, 0, 0.3);
+	_background: 0;
+    *background: 0;
+    background: 0\0/;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c000000,endColorstr=#4c000000);
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+    text-indent: 0;
+    text-align: center;
+    margin: 0;
+    top: 30%;
+    height: 24px;
+    width: 24px;
+    opacity: .8
+}
+
+.flexslider .flex-direction-nav li a:hover {
+	text-decoration: none;
+}
+
+.flexslider .flex-direction-nav li a.flex-prev {
+    left: 10px;
+}
+
+.flexslider .flex-direction-nav li a.flex-next {
+    right: 10px;
+}
+
+.flex-direction-nav a:before {
+	content: '';
+}
+
+.flex-direction-nav a.flex-next:before {
+	content: '';
+}
+
+/* Caption style */
+/* IE rgba() hack */
+
+.flex-caption {
+    background: none;
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+    zoom: 1;
+}
+
+.flex-caption {
+    width: 96%;
+    padding: 2%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.flex-caption a {
+	-webkit-tap-highlight-color: rgba(88, 166, 203, 0.6);
+}
+
+
+/* alternative theme */
+.flexslider.alt .flex-direction-nav li a,
+.flexslider.alt .flex-caption {
+	background: #0B638B;
+    background: rgba(11, 99, 139, 0.8);
+    _background: 0;
+    *background: 0;
+    background: 0\0/;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#AA1986b4,endColorstr=#AA1986b4);
+    zoom: 1;
+}
+

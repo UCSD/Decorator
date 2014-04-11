@@ -1,3 +1,4 @@
 app/scripts/base.js
 app/scripts/cms.js
 app/scripts/main.js
+app/scripts/SVN/*.js

@@ -1,26 +1,25 @@
 // Core variables and mixins
-@import "_variables";
 
 // Vendor CSS
-@import "vendor/_flexslider";
+@import "vendor/flexslider";
 
 // Core CSS
-@import "ucsd/_base";
-@import "ucsd/_cms";
-@import "ucsd/_fonts";
+@import "ucsd/base";
+@import "ucsd/cms";
+@import "ucsd/fonts";
 
-@import "ucsd/_layout";
-@import "ucsd/_styling";
+@import "ucsd/layout";
+@import "ucsd/styling";
 
-@import "ucsd/_navbar";
-@import "ucsd/_search";
-@import "ucsd/_breadcrumbs";
+@import "ucsd/navbar";
+@import "ucsd/search";
+@import "ucsd/breadcrumbs";
 
-@import "ucsd/_print";
+@import "ucsd/print";
 
 // Components
 
-@import "ucsd/_overwrite";
+@import "ucsd/overwrite";
 
 // Components w/ JavaScript
 

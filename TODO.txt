@@ -1,0 +1,20 @@
+Add glyph icons to alerts
+Find glyph or icon for PDF, Word, Excel, etc.
+
+Andrew find photo caption container that holds image and a coption below
+
+datatable plugin
+
+Drawers (bring over Blink's version)
+- expand all
+- no round corners
+- link to a specific drawer
+- responsive
+
+research hover drop down vs. click
+research CSS spinner
+
+Ike and Jeremy table solution (events): carry over and document?
+standard button size
+Jeremy decide on helper text color
+Jeremy to pick button size standard

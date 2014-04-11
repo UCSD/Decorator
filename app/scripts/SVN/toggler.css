@@ -1,0 +1,34 @@
+/**********************************************************************
+ * CSS Styling for the toggler
+ */
+.sf_all_expanded,
+.sf_all_collapsed,
+.sf_one_expanded,
+.sf_one_collapsed {
+	padding-left: 15px;
+	margin-top: 5px;
+}
+
+/* ie7 hack */
+*:first-child+html .sf_all_expanded,
+*:first-child+html .sf_all_collapsed,
+*:first-child+html .sf_one_expanded,
+*:first-child+html .sf_one_collapsed {
+	display: inline-block;
+}
+
+.sf_all_collapsed,
+.sf_one_collapsed {
+	background: transparent url(img/sprite_icon_widget.png) 0 -275px no-repeat;
+}
+
+.sf_all_expanded,
+.sf_one_expanded {
+	background: transparent url(img/sprite_icon_widget.png) 0 -259px no-repeat;
+}
+
+dl.itag_simple_faq dt,
+p.sf_all_expanded,
+p.sf_all_collapsed {
+	cursor: pointer;
+}
