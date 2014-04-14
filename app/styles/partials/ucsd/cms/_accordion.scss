@@ -1,0 +1,235 @@
+.tdr_fonts .accordion  {
+	clear: both;
+	border-bottom: 1px solid #ccc;
+}
+
+.tdr_fonts .accordion_head  {
+	border-top: 1px solid #ccc;
+	font-weight: normal;
+	padding: .25em 0;
+	margin: 0;
+	font-size: 120%;
+}
+
+.tdr_fonts .accordion_head a  {
+	text-decoration: none;
+	background: transparent url(../images/sprite_icon_widget.png) 0 4px no-repeat;
+	padding-left: 20px;
+	display: block;
+}
+
+.tdr_fonts .accordion_head a:hover  {
+	text-decoration: underline;
+}
+
+.tdr_fonts .accordion_head:hover  {
+	background-color: #f0faff;
+}
+
+.tdr_fonts .head_expanded  {
+	background: #0b4a67;
+}
+
+.tdr_fonts .head_expanded a  {
+	background-position: 0 -96px;
+	color: #fff;
+}
+
+.tdr_fonts .head_expanded:hover  {
+	background-color: #0b4a67;
+	cursor: pointer;
+}
+
+.tdr_fonts .head_expanded a:hover  {
+
+}
+
+
+.tdr_fonts .accordion_body  {
+	padding: 10px 10px 10px 35px;
+	border-bottom: 1px solid #ccc;
+}
+
+
+.tdr_fonts .expand_accordion_container  {
+	text-align: right;
+	clear: both;
+}
+
+.tdr_fonts .expand_accordion  {
+	text-decoration: none;
+	color: #666;
+	padding-left: 10px;
+	background: #fff url(../images/blink_sprite.gif) 0 0px no-repeat;
+}
+
+.tdr_fonts .accordion_expanded  {
+	background: #fff url(../images/blink_sprite.gif) 0 -25px no-repeat;
+}
+
+.tdr_fonts .expand_accordion:hover  {
+	text-decoration: underline;
+}
+
+/* Accordion
+----------------------------------*/
+.ui-accordion .ui-accordion-header  {
+	cursor:  pointer;
+	position:  relative;
+	zoom:  1;
+}
+
+.ui-accordion .ui-accordion-header-active  {
+	border-bottom:  0 !important;
+}
+
+.ui-accordion .ui-accordion-header a  {
+	display:  block;
+	font-size:  1.1em;
+	padding:  .5em .5em .5em 2.2em;
+}
+
+.ui-accordion .ui-accordion-header .ui-icon  {
+	position:  absolute;
+	left:  .5em;
+	top:  50%;
+	margin-top:  -8px;
+}
+
+.ui-accordion .ui-accordion-content  {
+	padding:  1em 2.2em;
+	border-top:  0;
+	border-right:  0;
+	border-left:  0;
+	margin-top:  -2px;
+	position:  relative;
+	top:  1px;
+	margin-bottom:  2px;
+	overflow:  auto;
+	display:  none;
+}
+
+.ui-accordion .ui-accordion-content-active  {
+	display:  block;
+}
+
+
+.tdr_fonts .accordion_container  {
+	margin-bottom: 1em;
+	border-left: 1px solid #78ABD6;
+	border-right: 1px solid #78ABD6;
+	border-bottom: 1px solid #78ABD6;
+}
+
+.accordion h3  {
+	font-size: 125%;
+	line-height: 20px;
+	color: #333;
+}
+
+.accordion h3.ui-state-active  {
+	font-weight: bold;
+}
+
+.ui-accordion .ui-accordion-content  {
+	padding: 7px;
+}
+
+.accordion table.styled  {
+	border-collapse: collapse;
+	font-size: 100%;
+}
+
+.accordion table.styled th  {
+	font-weight: bold;
+	padding: 3px 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.accordion table.styled td  {
+	padding: 3px 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.accordion table.styled a  {
+	color: #3c6e91;
+	text-decoration: none;
+}
+
+.accordion table.styled a:hover  {
+	text-decoration: underline;
+}
+
+
+.accordion ul.styled  {
+	list-style: none;
+	margin: 0 !important;
+	padding: 0 !important;
+	font-size: 100% !important;
+}
+
+.accordion ul.styled li a  {
+	color: #3c6e91;
+	text-decoration: none;
+	padding-left: none !important;
+}
+
+
+.accordion ul.styled a:hover  {
+	text-decoration: underline;
+}
+
+.accordion ul.styled li  {
+	margin: 0 !important;
+	margin-bottom: 4px !important;
+	padding: 0 !important;
+	list-style: none none outside !important;
+}
+
+.accordion ul.styled ul  {
+	list-style: none;
+	margin: 0 0 0 15px;
+	padding: 0;
+}
+
+.accordion ul.styled ul a  {
+}
+
+.accordion ul.styled ul a:hover  {
+	text-decoration: underline;
+}
+
+
+.accordion ol.styled  {
+	margin: 0 0 0 25px !important;
+	padding: 0 !important;
+	font-size: 100% !important;
+	list-style:  decimal outside !important;
+}
+
+.accordion ol.styled li a  {
+	color: #3c6e91;
+	text-decoration: none;
+	padding-left: none !important;
+}
+
+.accordion ol.styled a:hover  {
+	text-decoration: underline;
+}
+
+.accordion ol.styled li  {
+	margin: 0 0 4px 0px !important;
+	padding: 0 !important;
+	list-style:  decimal outside !important;
+}
+
+
+.accordion p.more a  {
+	text-decoration: none;
+	font-style: italic;
+	color: #85B5D9;
+}
+.accordion p.more a:hover  {
+	text-decoration: underline;
+}
+

@@ -1080,6 +1080,54 @@
   <span class="nt">&lt;/table&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
+
+    <h3 id="tables-data">Data tables</h3>
+    <p>A data table with client-side sorting, pagination and filter. We use a jQuery plug-in from datatables.net. It requires jQuery and jQuery UI.</p>
+    <div class="bs-example">
+        <table class="datatable">
+            <thead>
+            <tr>
+                <th>Country</th>
+                <th>Total area</th>
+                <th>Land area</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Denmark</td>
+                <td>43,070</td>
+                <td>42,370</td>
+            </tr>
+            <tr>
+                <td>Finland</td>
+                <td>337,030</td>
+                <td>305,470</td>
+            </tr>
+            <tr>
+                <td>Iceland</td>
+                <td>103,000</td>
+                <td>100,250</td>
+            </tr>
+            <tr>
+                <td>Norway</td>
+                <td>324,220</td>
+                <td>307,860</td>
+            </tr>
+            <tr>
+                <td>Sweden</td>
+                <td>449,964</td>
+                <td>410,928</td>
+            </tr>
+            </tbody>
+        </table>
+    </div><!-- /.table-data -->
+
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;datatable&quot;</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div>
+
 </div>
 
     <!-- Equal Column Layout
@@ -4009,16 +4057,171 @@
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
 
-        <!-- Progress bars
+        <!-- Loading Icons
         ================================================== -->
         <div class="bs-docs-section">
             <h3 id="loading">Loading Icon</h3>
         <p>For processes where progress cannot be measured, simply add <code>.loading</code> to a <code>div</code> or a <code>span</code> element.</p>
         <div class="bs-example">
+
+            <style>
+                .bubblingG {
+                    text-align: center;
+                    width:80px;
+                    height:50px;
+                }
+
+                .bubblingG span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 10px;
+                    height: 10px;
+                    margin: 25px auto;
+                    background: #0088FF;
+                    -moz-border-radius: 50px;
+                    -moz-animation: bubblingG 0.6s infinite alternate;
+                    -webkit-border-radius: 50px;
+                    -webkit-animation: bubblingG 0.6s infinite alternate;
+                    -ms-border-radius: 50px;
+                    -ms-animation: bubblingG 0.6s infinite alternate;
+                    -o-border-radius: 50px;
+                    -o-animation: bubblingG 0.6s infinite alternate;
+                    border-radius: 50px;
+                    animation: bubblingG 0.6s infinite alternate;
+                }
+
+                #bubblingG_1 {
+                    -moz-animation-delay: 0s;
+                    -webkit-animation-delay: 0s;
+                    -ms-animation-delay: 0s;
+                    -o-animation-delay: 0s;
+                    animation-delay: 0s;
+                }
+
+                #bubblingG_2 {
+                    -moz-animation-delay: 0.18s;
+                    -webkit-animation-delay: 0.18s;
+                    -ms-animation-delay: 0.18s;
+                    -o-animation-delay: 0.18s;
+                    animation-delay: 0.18s;
+                }
+
+                #bubblingG_3 {
+                    -moz-animation-delay: 0.36s;
+                    -webkit-animation-delay: 0.36s;
+                    -ms-animation-delay: 0.36s;
+                    -o-animation-delay: 0.36s;
+                    animation-delay: 0.36s;
+                }
+
+                @-moz-keyframes bubblingG {
+                    0% {
+                        width: 10px;
+                        height: 10px;
+                        background-color:#0088FF;
+                        -moz-transform: translateY(0);
+                    }
+
+                    100% {
+                        width: 24px;
+                        height: 24px;
+                        background-color:#D1D1D1;
+                        -moz-transform: translateY(-21px);
+                    }
+
+                }
+
+                @-webkit-keyframes bubblingG {
+                    0% {
+                        width: 10px;
+                        height: 10px;
+                        background-color:#0088FF;
+                        -webkit-transform: translateY(0);
+                    }
+
+                    100% {
+                        width: 24px;
+                        height: 24px;
+                        background-color:#D1D1D1;
+                        -webkit-transform: translateY(-21px);
+                    }
+
+                }
+
+                @-ms-keyframes bubblingG {
+                    0% {
+                        width: 10px;
+                        height: 10px;
+                        background-color:#0088FF;
+                        -ms-transform: translateY(0);
+                    }
+
+                    100% {
+                        width: 24px;
+                        height: 24px;
+                        background-color:#D1D1D1;
+                        -ms-transform: translateY(-21px);
+                    }
+
+                }
+
+                @-o-keyframes bubblingG {
+                    0% {
+                        width: 10px;
+                        height: 10px;
+                        background-color:#0088FF;
+                        -o-transform: translateY(0);
+                    }
+
+                    100% {
+                        width: 24px;
+                        height: 24px;
+                        background-color:#D1D1D1;
+                        -o-transform: translateY(-21px);
+                    }
+
+                }
+
+                @keyframes bubblingG {
+                    0% {
+                        width: 10px;
+                        height: 10px;
+                        background-color:#0088FF;
+                        transform: translateY(0);
+                    }
+
+                    100% {
+                        width: 24px;
+                        height: 24px;
+                        background-color:#D1D1D1;
+                        transform: translateY(-21px);
+                    }
+
+                }
+
+            </style>
+
             <div class="demo"><span class="loading">&#160;</span></div>
+
+            <div class="bubblingG">
+                <span id="bubblingG_1">
+                </span>
+                <span id="bubblingG_2">
+                </span>
+                <span id="bubblingG_3">
+                </span>
+            </div>
         </div>
 
 <div class="highlight"><pre><code class="html">&lt;span class="loading"&gt;&lt;/span&gt;
+
+&lt;div class=&quot;bubblingG&quot;&gt;
+
+  &lt;span id=&quot;bubblingG_1&quot;&gt;&lt;/span&gt;
+  &lt;span id=&quot;bubblingG_2&quot;&gt;&lt;/span&gt;
+  &lt;span id=&quot;bubblingG_3&quot;&gt;&lt;/span&gt;
+
+&lt;/div&gt;
 </code></pre></div>
         </div>
 
@@ -4504,6 +4707,7 @@
                             <li><a href="#tables-condensed">Condensed table</a></li>
                             <li><a href="#tables-contextual-classes">Contextual classes</a></li>
                             <li><a href="#tables-responsive">Responsive tables</a></li>
+                            <li><a href="#tables-data">Data tables</a></li>
                         </ul>
                     </li>
                     <li>

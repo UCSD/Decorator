@@ -18,3 +18,11 @@ Ike and Jeremy table solution (events): carry over and document?
 standard button size
 Jeremy decide on helper text color
 Jeremy to pick button size standard
+
+
+
+
+
+
+google prettify
+http://alexgorbatchev.com/SyntaxHighlighter/manual/brushes/xml.html
