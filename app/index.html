@@ -25,10 +25,6 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
 
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
         <!-- Site-specific CSS files -->
@@ -4397,16 +4393,6 @@
 
 &lt;/div&gt;</code></pre></div>
 
-    <p>Necessary Javscript Call: (Don't worry about editing this copy... I'm working on initializing drawers automatically so this section will soon be deleted.)</p>
-
-<div class="highlight"><pre><code class="js">(function($) {
-    $(document).ready(function() {
-        /* drawer */
-        $("#drawer1").drawer();
-    })
-})
-</code></pre></div>
-
 
     <!-- Flexslider
 ================================================== -->
@@ -4742,6 +4728,7 @@
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
     <!-- bower:js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="bower_components/superfish/dist/js/superfish.js"></script>
     <script src="bower_components/superfish/dist/js/hoverIntent.js"></script>
     <script src="bower_components/flexslider/jquery.flexslider.js"></script>
@@ -4753,11 +4740,12 @@
     <!-- endbuild -->
 
     <!-- build:js({app,.tmp}) scripts/base.js -->
-    <script src="scripts/base.js"></script>
-    <!-- endbuild -->
-
-    <!-- build:js({app,.tmp}) scripts/cms.js -->
-    <script src="scripts/cms.js"></script>
+    <script src="scripts/ucsd/nav-search.js"></script>
+    <script src="scripts/ucsd/copyright.js"></script>
+    <script src="scripts/ucsd/footer.js"></script>
+    <script src="scripts/ucsd/logout.js"></script>
+    <script src="scripts/ucsd/flexslider-init.js"></script>
+    <script src="scripts/ucsd/drawer.js"></script>
     <!-- endbuild -->
 
     </body>

@@ -1,4 +1,2 @@
-app/scripts/base.js
-app/scripts/cms.js
 app/scripts/docs.js
-app/scripts/cms/*.js
+app/scripts/ucsd/*.js

@@ -1,15 +1,9 @@
 /**
- * Widget Js. Contains drawer, image rotator, and toggler.
- * 
- * drawer - with expand all/collapse all. requires jquery image rotator - with
- * play/pause. requires jquery and jquery cycle toggler - with expand
- * all/collapse all. requires jquery
+ * drawer
  */
 
 (function($) {
-
 	$.fn.drawer = function() {
-
 		this
 				.each(function() {
 					drawer = $(this);
@@ -83,4 +77,10 @@
 		}
 	};
 
+})(jQuery);
+
+(function($) {
+    $(document).ready(function() {
+        $(".drawer").drawer();
+    })
 })(jQuery);
