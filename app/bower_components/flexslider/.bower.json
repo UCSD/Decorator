@@ -1,0 +1,15 @@
+{
+  "name": "flexslider",
+  "homepage": "https://github.com/woothemes/FlexSlider",
+  "_release": "f0e9b4cf3f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f0e9b4cf3f89ab2a0cd8fb0b7593f81defc02eda"
+  },
+  "_source": "git://github.com/woothemes/FlexSlider.git",
+  "_target": "*",
+  "_originalSource": "flexslider",
+  "_direct": true,
+  "main": "jquery.flexslider.js"
+}
