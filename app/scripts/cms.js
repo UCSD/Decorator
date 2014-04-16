@@ -2677,7 +2677,9 @@ function initCopyright() {
 	copyrightYear = today.getFullYear();
 	$("#tdr_copyright_year").empty();
 	$("#tdr_copyright_year").append(copyrightYear);
-};/**
+};
+
+/**
  * Widget Js. Contains drawer, image rotator, and toggler.
  * 
  * drawer - with expand all/collapse all. requires jquery image rotator - with
@@ -2693,7 +2695,7 @@ function initCopyright() {
 					drawer = $(this);
 
 					/* add drawer class */
-					drawer.addClass("drawer");
+					drawer.addClass("drawer-container");
 
 					/* create wrapper class */
 					drawer.wrap('<div class="drawer-wrapper"/>');
@@ -2761,7 +2763,9 @@ function initCopyright() {
 		}
 	};
 
-})(jQuery);(function($) {
+})(jQuery);
+
+(function($) {
 	$(document).ready(function() {
 		/*
 		 * Note, there is currently a bug in flexslider when there are multiple
@@ -2864,7 +2868,9 @@ function initLogout(logoutUrl) {
 			$("div#tdr_login").append(url);
 		}
 	});
-};/**
+};
+
+/**
  * rotator Js.
  * 
  * image rotator - with play/pause. requires jquery and jquery cycle
@@ -2910,7 +2916,9 @@ function initLogout(logoutUrl) {
 				});
 	};
 
-})(jQuery);/**
+})(jQuery);
+
+/**
  * toggler.
  * 
  * toggler - with expand all/collapse all. requires jquery.
@@ -3018,4 +3026,13 @@ function initLogout(logoutUrl) {
 		}
 	};
 
+})(jQuery);
+
+
+
+(function($) {
+    $(document).ready(function() {
+        /* drawer */
+        $(".drawer").drawer();
+    })
 })(jQuery);

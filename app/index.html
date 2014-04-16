@@ -1,5 +1,6 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
     <head>
         <meta charset="utf-8">
         <meta content="initial-scale=1.0" name="viewport"/>
@@ -28,12 +29,12 @@
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
         <!-- Site-specific CSS files -->
 
         <!-- Site-specific javascript files -->
 
-
-        <script type="text/javascript" src="//www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
     </head>
     <body>
 
@@ -141,10 +142,6 @@
     <div class="main-content" role="main">
 
     <h1 id="docs-header">CMS Kitchen Sink</h1>
-    <!-- UCSD CMS Sink
-================================================== -->
-    <div class="bs-docs-section">
-
 
 
     <!-- Typography
@@ -170,7 +167,7 @@
             </tr>
             <tr>
                 <td><h4>h4. Bootstrap heading</h4></td>
-                <td class="type-info">Semibold 18px</td>
+                      <td class="type-info">Semibold 18px</td>
             </tr>
             <tr>
                 <td><h5>h5. Bootstrap heading</h5></td>
@@ -1081,53 +1078,6 @@
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
 
-    <h3 id="tables-data">Data tables</h3>
-    <p>A data table with client-side sorting, pagination and filter. We use a jQuery plug-in from datatables.net. It requires jQuery and jQuery UI.</p>
-    <div class="bs-example">
-        <table class="datatable">
-            <thead>
-            <tr>
-                <th>Country</th>
-                <th>Total area</th>
-                <th>Land area</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Denmark</td>
-                <td>43,070</td>
-                <td>42,370</td>
-            </tr>
-            <tr>
-                <td>Finland</td>
-                <td>337,030</td>
-                <td>305,470</td>
-            </tr>
-            <tr>
-                <td>Iceland</td>
-                <td>103,000</td>
-                <td>100,250</td>
-            </tr>
-            <tr>
-                <td>Norway</td>
-                <td>324,220</td>
-                <td>307,860</td>
-            </tr>
-            <tr>
-                <td>Sweden</td>
-                <td>449,964</td>
-                <td>410,928</td>
-            </tr>
-            </tbody>
-        </table>
-    </div><!-- /.table-data -->
-
-
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;datatable&quot;</span><span class="nt">&gt;</span>
-    ...
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div>
-
 </div>
 
     <!-- Equal Column Layout
@@ -1964,6 +1914,17 @@
         <p>Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely to the parent element.</p>
         <div class="highlight"><pre><code class="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;...&quot;</span> <span class="na">class=</span><span class="s">&quot;img-responsive&quot;</span> <span class="na">alt=</span><span class="s">&quot;Responsive image&quot;</span><span class="nt">&gt;</span></code></pre></div>
 
+        <h3 id="images-floats">Image Floats</h3>
+        <p>Float an image to the left or right with a class.</p>
+        <div class="bs-example">
+            <p><img alt="rolling hills" class="right" height="219" src="_images/hills.png" width="306"/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <p><img alt="rolling hills" class="left" height="219" src="_images/hills.png" width="306"/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+<div class="highlight"><pre><code class="html">&lt;img src=&quot;...&quot; class=&quot;right&quot;&gt;&lt;p&gt;...&lt;/p&gt;
+
+&lt;img src=&quot;...&quot; class=&quot;left&quot;&gt;&lt;p&gt;...&lt;/p&gt;</code></pre></div>
+        </div>
+
         <h3 id="images-shapes">Image shapes</h3>
         <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
         <div class="alert alert-danger">
@@ -1978,7 +1939,34 @@
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;...&quot;</span> <span class="na">alt=</span><span class="s">&quot;...&quot;</span> <span class="na">class=</span><span class="s">&quot;img-rounded&quot;</span><span class="nt">&gt;</span>
 <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;...&quot;</span> <span class="na">alt=</span><span class="s">&quot;...&quot;</span> <span class="na">class=</span><span class="s">&quot;img-circle&quot;</span><span class="nt">&gt;</span>
 <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;...&quot;</span> <span class="na">alt=</span><span class="s">&quot;...&quot;</span> <span class="na">class=</span><span class="s">&quot;img-thumbnail&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+
+        <h3 id="images-captions">Image captions</h3>
+        <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
+
+        <div class="bs-example bs-example-images">
+
+            <figure>
+                <img src="_images/hills.png">
+                <figcaption>
+                    <p>Idyllic glade with snow-capped mountains.</p>
+                </figcaption>
+            </figure>
+
+        </div>
+<div class="highlight"><pre><code class="html">&lt;figure&gt;
+
+  &lt;img src=&quot;...&quot; alt=&quot;...&quot;&gt;
+
+  &lt;figcaption&gt;
+    &lt;p&gt;
+      ...
+    &lt;/p&gt;
+  &lt;/figcaption&gt;
+
+&lt;/figure&gt;</code></pre></div>
     </div>
+
 
 
     <!-- Helpers
@@ -2021,16 +2009,6 @@
             <span class="caret"></span>
         </div>
         <div class="highlight"><pre><code class="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;caret&quot;</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div>
-
-        <h3 id="helper-classes-image-floats">Image Floats</h3>
-        <p>Float an image to the left or right with a class.</p>
-        <div class="bs-example">
-            <p><img alt="rolling hills" class="right" height="219" src="_images/hills.png" width="306"/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-            <p><img alt="rolling hills" class="left" height="219" src="_images/hills.png" width="306"/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-        </div>
-<div class="highlight"><pre><code class="html">&lt;img src=&quot;...&quot; class=&quot;right&quot;&gt;&lt;p&gt;...&lt;/p&gt;
-
-    &lt;img src=&quot;...&quot; class=&quot;left&quot;&gt;&lt;p&gt;...&lt;/p&gt;</code></pre></div>
 
 
         <h3 id="helper-classes-floats">Quick floats</h3>
@@ -3215,7 +3193,6 @@
 
  &lt;/div&gt;
 </pre>
-    </div>
 
 
 
@@ -4057,176 +4034,20 @@
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
 
-        <!-- Loading Icons
-        ================================================== -->
-        <div class="bs-docs-section">
-            <h3 id="loading">Loading Icon</h3>
-        <p>For processes where progress cannot be measured, simply add <code>.loading</code> to a <code>div</code> or a <code>span</code> element.</p>
-        <div class="bs-example">
-
-            <style>
-                .bubblingG {
-                    text-align: center;
-                    width:80px;
-                    height:50px;
-                }
-
-                .bubblingG span {
-                    display: inline-block;
-                    vertical-align: middle;
-                    width: 10px;
-                    height: 10px;
-                    margin: 25px auto;
-                    background: #0088FF;
-                    -moz-border-radius: 50px;
-                    -moz-animation: bubblingG 0.6s infinite alternate;
-                    -webkit-border-radius: 50px;
-                    -webkit-animation: bubblingG 0.6s infinite alternate;
-                    -ms-border-radius: 50px;
-                    -ms-animation: bubblingG 0.6s infinite alternate;
-                    -o-border-radius: 50px;
-                    -o-animation: bubblingG 0.6s infinite alternate;
-                    border-radius: 50px;
-                    animation: bubblingG 0.6s infinite alternate;
-                }
-
-                #bubblingG_1 {
-                    -moz-animation-delay: 0s;
-                    -webkit-animation-delay: 0s;
-                    -ms-animation-delay: 0s;
-                    -o-animation-delay: 0s;
-                    animation-delay: 0s;
-                }
-
-                #bubblingG_2 {
-                    -moz-animation-delay: 0.18s;
-                    -webkit-animation-delay: 0.18s;
-                    -ms-animation-delay: 0.18s;
-                    -o-animation-delay: 0.18s;
-                    animation-delay: 0.18s;
-                }
-
-                #bubblingG_3 {
-                    -moz-animation-delay: 0.36s;
-                    -webkit-animation-delay: 0.36s;
-                    -ms-animation-delay: 0.36s;
-                    -o-animation-delay: 0.36s;
-                    animation-delay: 0.36s;
-                }
-
-                @-moz-keyframes bubblingG {
-                    0% {
-                        width: 10px;
-                        height: 10px;
-                        background-color:#0088FF;
-                        -moz-transform: translateY(0);
-                    }
-
-                    100% {
-                        width: 24px;
-                        height: 24px;
-                        background-color:#D1D1D1;
-                        -moz-transform: translateY(-21px);
-                    }
-
-                }
-
-                @-webkit-keyframes bubblingG {
-                    0% {
-                        width: 10px;
-                        height: 10px;
-                        background-color:#0088FF;
-                        -webkit-transform: translateY(0);
-                    }
-
-                    100% {
-                        width: 24px;
-                        height: 24px;
-                        background-color:#D1D1D1;
-                        -webkit-transform: translateY(-21px);
-                    }
-
-                }
-
-                @-ms-keyframes bubblingG {
-                    0% {
-                        width: 10px;
-                        height: 10px;
-                        background-color:#0088FF;
-                        -ms-transform: translateY(0);
-                    }
-
-                    100% {
-                        width: 24px;
-                        height: 24px;
-                        background-color:#D1D1D1;
-                        -ms-transform: translateY(-21px);
-                    }
-
-                }
-
-                @-o-keyframes bubblingG {
-                    0% {
-                        width: 10px;
-                        height: 10px;
-                        background-color:#0088FF;
-                        -o-transform: translateY(0);
-                    }
-
-                    100% {
-                        width: 24px;
-                        height: 24px;
-                        background-color:#D1D1D1;
-                        -o-transform: translateY(-21px);
-                    }
-
-                }
-
-                @keyframes bubblingG {
-                    0% {
-                        width: 10px;
-                        height: 10px;
-                        background-color:#0088FF;
-                        transform: translateY(0);
-                    }
-
-                    100% {
-                        width: 24px;
-                        height: 24px;
-                        background-color:#D1D1D1;
-                        transform: translateY(-21px);
-                    }
-
-                }
-
-            </style>
-
-            <div class="demo"><span class="loading">&#160;</span></div>
-
-            <div class="bubblingG">
-                <span id="bubblingG_1">
-                </span>
-                <span id="bubblingG_2">
-                </span>
-                <span id="bubblingG_3">
-                </span>
-            </div>
-        </div>
-
-<div class="highlight"><pre><code class="html">&lt;span class="loading"&gt;&lt;/span&gt;
-
-&lt;div class=&quot;bubblingG&quot;&gt;
-
-  &lt;span id=&quot;bubblingG_1&quot;&gt;&lt;/span&gt;
-  &lt;span id=&quot;bubblingG_2&quot;&gt;&lt;/span&gt;
-  &lt;span id=&quot;bubblingG_3&quot;&gt;&lt;/span&gt;
-
-&lt;/div&gt;
-</code></pre></div>
-        </div>
-
-
+    <!-- Loading Icons
+    ================================================== -->
+    <div class="bs-docs-section">
+        <h3 id="loading">Loading Icon</h3>
+    <p>For processes where progress cannot be measured, simply add <code>.loading</code> to a <code>div</code> or a <code>span</code> element.</p>
+    <div class="bs-example">
+        <div class="demo"><span class="loading">&#160;</span></div>
     </div>
+
+<div class="highlight"><pre><code class="html">&lt;span class="loading"&gt;&lt;/span&gt;</code></pre></div>
+    </div>
+
+
+</div>
 
 
     <!-- Panels
@@ -4550,18 +4371,8 @@
     <h2 id="drawers" class="page-header">Drawers</h2>
     <p>The Drawer Template lets you organize content into "drawers" or expandable / collapsible subsections in the center of the page. Each drawer consists of a Drawer Title, where you enter a given section's title text and a Drawer Body where you input its corresponding content. This template is ideal for lengthy content (such as FAQs).</p>
     <div class="bs-example">
-        <script type="text/javascript">
-            // <![CDATA[
-            (function($) {
-                $(document).ready(function() {
-                    /* drawer */
-                    $("#drawer1").drawer();
-                })
-            })(jQuery);
-            // ]]>
-        </script>
-        <h2>IGNORE ME I'M BROKEN FOR NOW</h2>
-        <div id="drawer-init">
+
+        <div class="drawer">
             <h2><a href="#">Drawer Heading 1</a></h2>
             <div>Nulla nec lectus at orci tempor blandit. Sed nisi ipsum, iaculis nec pharetra non, mollis sit amet arcu. Aliquam erat volutpat. Cras laoreet semper est vitae vestibulum. Aenean eleifend ipsum ut purus sodales pellentesque. Cras commodo, enim eu aliquam aliquam, diam urna tincidunt nibh, quis suscipit ante neque sit amet ligula. Curabitur aliquam, eros in egestas vehicula, ipsum neque hendrerit felis, dapibus vulputate sem nunc non nunc. Morbi sit amet neque eu libero tristique bibendum. Maecenas feugiat venenatis elit, sed luctus sapien molestie id. Duis at nulla odio. Quisque a urna sit amet tellus auctor dignissim nec id mauris. Proin semper enim in eros iaculis dictum.</div>
             <h2><a href="#">Drawer Heading 2</a></h2>
@@ -4570,7 +4381,7 @@
             <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum vehicula tortor ac elementum. Phasellus non ligula sem, sed rhoncus ipsum. Suspendisse eget lacus eget nibh faucibus dictum in in elit. Quisque tellus dui, ultrices eget dictum nec, pulvinar eu quam. Nulla ut dolor dolor. Nam viverra lacinia neque, quis porttitor metus porttitor nec. Suspendisse tempor rhoncus magna, sed egestas lacus fringilla id. Nam posuere vestibulum scelerisque. Praesent semper, leo vitae aliquet viverra, leo ante egestas leo, eu auctor magna est ut dui. Praesent eget tristique lacus. Etiam mollis dolor iaculis elit sollicitudin feugiat in ut est. Morbi ultricies bibendum interdum.</div>
         </div>
     </div>
-<div class="highlight"><pre><code class="html">&lt;div class=&quot;drawer-init&quot;&gt;
+<div class="highlight"><pre><code class="html">&lt;div class=&quot;drawer&quot;&gt;
 
     &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Drawer Heading 1&lt;/a&gt;&lt;/h2&gt;
 
@@ -4707,7 +4518,6 @@
                             <li><a href="#tables-condensed">Condensed table</a></li>
                             <li><a href="#tables-contextual-classes">Contextual classes</a></li>
                             <li><a href="#tables-responsive">Responsive tables</a></li>
-                            <li><a href="#tables-data">Data tables</a></li>
                         </ul>
                     </li>
                     <li>
@@ -4746,7 +4556,9 @@
                         <a href="#images">Images</a>
                         <ul class="nav">
                             <li><a href="#images-responsive">Responsive images</a></li>
+                            <li><a href="#images-floats">Image floats</a></li>
                             <li><a href="#images-shapes">Image shapes</a></li>
+                            <li><a href="#images-captions">Image Captions</a></li>
                         </ul>
                     </li>
                     <li>
@@ -4755,7 +4567,6 @@
                             <li><a href="#helper-classes-colors">Contextual colors</a></li>
                             <li><a href="#helper-classes-close">Close icon</a></li>
                             <li><a href="#helper-classes-carets">Carets</a></li>
-                            <li><a href="#helper-classes-image-floats">Image floats</a></li>
                             <li><a href="#helper-classes-floats">Quick floats</a></li>
                             <li><a href="#helper-classes-center">Center content blocks</a></li>
                             <li><a href="#helper-classes-clearfix">Clearfix</a></li>
@@ -4822,7 +4633,6 @@
                         <a href="#progress">Progress bars</a>
                         <ul class="nav">
                             <li><a href="#progress-animated">Animated</a></li>
-                            <li><a href="#progress-animated">Loading Icon</a></li>
                         </ul>
                     </li>
                     <li>
@@ -4919,12 +4729,6 @@
     </div>
 
     <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:js scripts/plugins.js -->
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
@@ -4937,15 +4741,24 @@
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- bower:js -->
+    <script src="bower_components/superfish/dist/js/superfish.js"></script>
+    <script src="bower_components/superfish/dist/js/hoverIntent.js"></script>
+    <script src="bower_components/flexslider/jquery.flexslider.js"></script>
+    <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- build:js({app,.tmp}) scripts/main.js -->
-    <script src="scripts/main.js"></script>
+    <!-- build:js({app,.tmp}) scripts/docs.js -->
+    <script src="scripts/docs.js"></script>
     <!-- endbuild -->
 
-    <!-- build:js({app,.tmp}) scripts/ucsd.js -->
+    <!-- build:js({app,.tmp}) scripts/base.js -->
     <script src="scripts/base.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/cms.js -->
     <script src="scripts/cms.js"></script>
     <!-- endbuild -->
+
     </body>
 </html>
