@@ -6,7 +6,6 @@
 
 (function($) {
     $(document).ready(function() {
-
         /* do we have a nav menu? */
         var hasNav = false
         if ($("#tdr_nav_list > li").length > 0)
@@ -24,7 +23,9 @@
         }
     });
 
-})(jQuery);(function($) {
+})(jQuery);
+
+(function($) {
     $(document).ready(function() {
         /* menu link */
         $("#tdr_title_menu_link").click(function(event) {
@@ -49,5 +50,29 @@
                 }
             }
         });
+
+        $(function() {
+            $(".navbar-toggle").on("click", function() {
+                // apply/remove the active class to the row-offcanvas element
+                $("body").toggleClass("active");
+            });
+        });
     });
 })(jQuery);
+
+$(document).ready(function() {
+
+    function navMover() {
+
+            if ($(window).width() <= 767) {
+                $("#tdr_nav").insertBefore("#tdr_fonts");
+            }
+
+            else {
+                $("#tdr_nav").insertAfter("#tdr_title");
+            }
+    }
+
+    $(window).on('ready orientationchange resize', navMover);
+});
+

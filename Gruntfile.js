@@ -182,7 +182,7 @@ module.exports = function (grunt) {
         // Add vendor prefixed styles
         autoprefixer: {
             options: {
-                browsers: ['last 2 versions']
+                browsers: ['last 6 versions']
             },
             dist: {
                 files: [{
@@ -439,7 +439,6 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', [
         'newer:jshint',
-        'test',
         'build'
     ]);
 };

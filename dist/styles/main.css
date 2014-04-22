@@ -6,12 +6,13 @@
 /**********************************************************************
  * body - defaults
  */
+@import url(../bower_components/flexslider/flexslider.css);
+@import url(../bower_components/superfish/dist/css/superfish.css);
 #tdr_login, #tdr_title, #tdr_search, #tdr_crumbs, #tdr_content, #tdr_footer {
   overflow: hidden;
   width: 100%; }
 
 #tdr_nav {
-  overflow: auto;
   width: 100%; }
 
 /* default layout */
@@ -254,8 +255,8 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
     left: 0;
     width: 100%; } }
 /**********************************************************************
-* CSS Styling for the login header
-*/
+ * CSS Styling for the login header
+ */
 #tdr_login {
   background: #0B4A67; }
 
@@ -270,279 +271,10 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
   font-weight: bold;
   text-transform: uppercase; }
 
-/**********************************************************************
-* CSS Styling for the title header
-*/
-#tdr_title {
-  background-color: #0082AC; }
-
-#tdr_title_content {
-  height: 78px; }
-
-#tdr_title_ucsd_title {
-  width: 229px;
-  height: 45px;
-  position: absolute;
-  right: 0;
-  top: 20px;
-  background: transparent url(img/sprite_base.png) 0 -3px no-repeat; }
-
-#tdr_title_content form {
-  margin-bottom: 0; }
-
-/*---------------------------------------------------------------------
- * dimension and position
- */
-#tdr_title_content {
-  position: relative; }
-
-/*---------------------------------------------------------------------
- * page title (left hand side)
- */
-#tdr_title_page_title {
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 24px;
-  position: absolute;
-  left: 0;
-  text-transform: uppercase;
-  top: 30px;
-  white-space: nowrap; }
-
-#tdr_title_page_title, #tdr_title_page_title a {
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 1px; }
-
-#tdr_title_page_title a:hover, #tdr_title_page_title a:focus {
-  text-decoration: underline; }
-
-/*---------------------------------------------------------------------
- * ucsd title (right hand side)
- */
-#tdr_title_ucsd_title {
-  display: block;
-  overflow: hidden;
-  text-indent: -999em; }
-
-/*---------------------------------------------------------------------
- * menu link (right hand side)
- */
-#tdr_title_menu_link {
-  display: none;
-  text-indent: -999em;
-  white-space: nowrap;
-  outline: none;
-  overflow: hidden;
-  font-size: 0;
-  /* ie7 hack */
-  color: transparent; }
-
-#tdr_title_menu_link:hover,
-#tdr_title_menu_link:active {
-  color: transparent; }
-
-/*---------------------------------------------------------------------
- * search link (right hand side)
- */
-#tdr_title_search_link {
-  display: none; }
-
-/**********************************************************************
- * responsive design
- */
-/* --------------------------------------------------------------------
- * * - 768px
- */
-@media only screen and (max-width: 768px) {
-  #tdr_title_content {
-    height: 98px; }
-
-  #tdr_title_ucsd_title {
-    left: 0;
-    top: 10px; }
-
-  #tdr_title_page_title {
-    top: 60px; }
-
-  #tdr_title_search_link, #tdr_title_menu_link {
-    display: block;
-    height: 36px;
-    width: 40px;
-    position: absolute;
-    right: 50px;
-    top: 19px;
-    cursor: pointer; }
-
-  #tdr_title_search_link {
-    background-position: -461px -7px;
-    margin-right: 2px; }
-
-  #tdr_title_menu_link {
-    background: url(img/sprite_base.png) no-repeat scroll -461px -47px transparent;
-    right: 0; }
-
-  /* when menu is hidden */
-  .noMenu #tdr_title_search_link {
-    right: 0; } }
-/* --------------------------------------------------------------------
- * * - 360px
- */
-@media only screen and (max-width: 360px) {
-  #tdr_title_content {
-    height: 78px; }
-
-  #tdr_title_ucsd_title {
-    background-position: -239px -14px;
-    height: 32px;
-    width: 166px; }
-
-  #tdr_title_page_title {
-    top: 50px;
-    font-size: 140%; }
-
-  #tdr_title_search_link, #tdr_title_menu_link {
-    top: 10px; } }
-/*---------------------------------------------------------------------
- * retina display
- */
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-  #tdr_title_ucsd_title,
-  #tdr_title_search_link,
-  #tdr_title_menu_link {
-    background-image: url(img/sprite_base2x.png);
-    background-size: 500px 120px; } }
-/**********************************************************************
-* Navigation - top page navigation menu.  extends superfish css.
-*/
-/**********************************************************************
- * Navigation - top page navigation menu.  extends superfish css.
- */
-#tdr_nav {
-  background: #E1ECFF;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #f0faff 0%, #e1ecff 3%, #bcd6e6 97%, #95afc9 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0faff), color-stop(3%, #e1ecff), color-stop(97%, #bcd6e6), color-stop(100%, #95afc9));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f0faff 0%, #e1ecff 3%, #bcd6e6 97%, #95afc9 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #f0faff 0%, #e1ecff 3%, #bcd6e6 97%, #95afc9 100%);
-  /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #f0faff 0%, #e1ecff 3%, #bcd6e6 97%, #95afc9 100%);
-  /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E1ECFF',endColorstr='#BCD6E6');
-  /* IE6 & IE7 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E1ECFF', endColorstr='#BCD6E6');
-  /* IE8+ */
-  background: linear-gradient(top, #f0faff 0%, #e1ecff 3%, #bcd6e6 97%, #95afc9 100%);
-  /* W3C */
-  height: auto; }
-
 /*** ESSENTIAL STYLES ***/
 /**********************************************************************
- * CSS Styling for the search
+ * CSS Styling for the content
  */
-#tdr_search {
-  background-color: #efefef;
-  height: 26px; }
-
-#tdr_search_content {
-  text-align: right; }
-
-/*---------------------------------------------------------------------
- * search form
- */
-#tdr_search form {
-  margin: 0;
-  padding-top: 3px; }
-
-#tdr_search form > * {
-  font-size: 11px;
-  margin-left: 6px; }
-
-#tdr_search label {
-  color: #777;
-  font-weight: bold;
-  vertical-align: baseline; }
-
-#search-term-label {
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  position: absolute;
-  text-indent: -9999px; }
-
-#search-term {
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  padding: 1px .25em;
-  outline: medium none;
-  -webkit-appearance: none; }
-
-#tdr_search .search-button {
-  text-indent: -9999px;
-  text-transform: capitalize;
-  /* weird ie7 hack to enable indent */ }
-
-/* --------------------------------------------------------------------
- * * - 768px
- */
-@media only screen and (max-width: 768px) {
-  /* toggle search input */
-  #tdr_search {
-    display: none; }
-
-  #tdr_search.show {
-    display: block; } }
-/* --------------------------------------------------------------------
- * * - 480px
- */
-@media only screen and (max-width: 480px) {
-  #tdr_search label {
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    position: absolute;
-    text-indent: -9999px; }
-
-  /* hide the search button */
-  #tdr_search .search-button {
-    display: none; }
-
-  /* make search input wider */
-  #search-term {
-    width: 40%; } }
-/**********************************************************************
-* CSS Styling for the bread crumbs
-*/
-#tdr_crumbs {
-  background: #fff; }
-
-#tdr_crumbs ul {
-  list-style: none;
-  margin-bottom: 0;
-  padding-top: 1em; }
-
-#tdr_crumbs li {
-  color: #666;
-  display: inline;
-  font-size: 80%;
-  line-height: 1;
-  list-style: none;
-  margin-left: 0;
-  text-transform: capitalize; }
-
-#tdr_crumbs li a {
-  background: url(img/sprite_icon.png) no-repeat scroll right 5px transparent;
-  padding-right: .8em;
-  text-decoration: none; }
-
-#tdr_crumbs li a:hover {
-  text-decoration: underline; }
-
-/**********************************************************************
-* CSS Styling for the content
-*/
 #tdr_content {
   background: #fff;
   padding: 1em 0; }
@@ -576,26 +308,6 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
     cursor: default;
     color: #333;
     text-decoration: none; } }
-/**********************************************************************
-* CSS Styling for the page nav aside
-*/
-div.styled {
-  background: #F0FAFF;
-  border: 1px solid #D2D2D2;
-  border-bottom: .25em solid #D2D2D2;
-  margin-bottom: 1em;
-  padding: 1em; }
-
-div.styled h2, div.styled h3, div.styled h4, div.styled h5, div.styled h6 {
-  color: #738AA3;
-  text-shadow: 0 1px 1px #FFFFFF; }
-
-div.styled h2 {
-  font-size: 140%; }
-
-div.styled h3 {
-  font-size: 115%; }
-
 /*---------------------------------------------------------------------
  * page navigation
  */
@@ -751,42 +463,252 @@ div.styled h3 {
   padding: .5em 0;
   text-align: center; }
 
-.navbar {
-  margin-bottom: 0;
-  background-color: #FDFDFD;
-  min-height: 34px;
-  border: 0;
-  border-bottom: 1px solid #E6E6E6; }
-  .navbar .active {
+/**********************************************************************
+ * CSS Styling for the title header
+ */
+#tdr_title {
+  background-color: #0082AC; }
+
+#tdr_title_content {
+  height: 78px; }
+
+#tdr_title_ucsd_title {
+  width: 229px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background: transparent url(img/sprite_base.png) 0 -3px no-repeat; }
+
+#tdr_title_content form {
+  margin-bottom: 0; }
+
+/*---------------------------------------------------------------------
+ * dimension and position
+ */
+#tdr_title_content {
+  position: relative; }
+
+/*---------------------------------------------------------------------
+ * page title (left hand side)
+ */
+#tdr_title_page_title {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  text-transform: uppercase;
+  top: 30px;
+  white-space: nowrap; }
+
+#tdr_title_page_title, #tdr_title_page_title a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px; }
+
+#tdr_title_page_title a:hover, #tdr_title_page_title a:focus {
+  text-decoration: underline; }
+
+/*---------------------------------------------------------------------
+ * ucsd title (right hand side)
+ */
+#tdr_title_ucsd_title {
+  display: block;
+  overflow: hidden;
+  text-indent: -999em; }
+
+/*---------------------------------------------------------------------
+ * menu link (right hand side)
+ */
+#tdr_title_menu_link {
+  display: none;
+  text-indent: -999em;
+  white-space: nowrap;
+  outline: none;
+  overflow: hidden;
+  font-size: 0;
+  /* ie7 hack */
+  color: transparent; }
+
+#tdr_title_menu_link:hover,
+#tdr_title_menu_link:active {
+  color: transparent; }
+
+/*---------------------------------------------------------------------
+ * search link (right hand side)
+ */
+#tdr_title_search_link {
+  display: none; }
+
+/**********************************************************************
+ * responsive design
+ */
+/* --------------------------------------------------------------------
+ * * - 768px
+ */
+@media only screen and (max-width: 768px) {
+  #tdr_title_content {
+    height: 98px; }
+
+  #tdr_title_ucsd_title {
+    left: 0;
+    top: 10px; }
+
+  #tdr_title_page_title {
+    top: 60px; }
+
+  #tdr_title_search_link, #tdr_title_menu_link {
+    display: block;
+    height: 36px;
+    width: 40px;
+    position: absolute;
+    right: 50px;
+    top: 19px;
+    cursor: pointer; }
+
+  #tdr_title_search_link {
+    background-position: -461px -7px;
+    margin-right: 2px; }
+
+  #tdr_title_menu_link {
+    background: url(img/sprite_base.png) no-repeat scroll -461px -47px transparent;
+    right: 0; }
+
+  /* when menu is hidden */
+  .noMenu #tdr_title_search_link {
+    right: 0; } }
+/* --------------------------------------------------------------------
+ * * - 360px
+ */
+@media only screen and (max-width: 360px) {
+  #tdr_title_content {
+    height: 78px; }
+
+  #tdr_title_ucsd_title {
+    background-position: -239px -14px;
+    height: 32px;
+    width: 166px; }
+
+  #tdr_title_page_title {
+    top: 50px;
+    font-size: 140%; }
+
+  #tdr_title_search_link, #tdr_title_menu_link {
+    top: 10px; } }
+/*---------------------------------------------------------------------
+ * retina display
+ */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #tdr_title_ucsd_title,
+  #tdr_title_search_link,
+  #tdr_title_menu_link {
+    background-image: url(img/sprite_base2x.png);
+    background-size: 500px 120px; } }
+html {
+  height: 100%; }
+
+body {
+  position: relative;
+  height: 100%;
+  left: 0;
+  -webkit-transition: left .3s ease-in;
+  -most-transition: left .3s ease-in;
+  transition: left .3s ease-in; }
+  body.active {
+    left: 80%; }
+
+#tdr_nav {
+  margin: 0 auto;
+  padding: 0; }
+  @media screen and (max-width: 767px) {
+    #tdr_nav {
+      left: -80%;
+      width: 80%;
+      position: absolute;
+      top: 0;
+      background-color: #F7F7F7;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden; } }
+  @media screen and (min-width: 767px) {
+    #tdr_nav {
+      margin-bottom: 0;
+      background-color: #FDFDFD;
+      border: 0;
+      min-height: 34px;
+      border-bottom: 1px solid #E6E6E6; } }
+  #tdr_nav .nav-wrapper {
+    margin: 0 auto; }
+    @media screen and (min-width: 960px) {
+      #tdr_nav .nav-wrapper {
+        max-width: 960px; } }
+    @media screen and (min-width: 1200px) {
+      #tdr_nav .nav-wrapper {
+        max-width: 1200px; } }
+  #tdr_nav .active {
     background-color: #FFFFFF; }
-    .navbar .active a {
+    #tdr_nav .active a {
       border-bottom: #d56a03 solid 2px; }
-  .navbar .navbar-collapse {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-    height: 40px; }
-  .navbar .caret {
+  #tdr_nav .caret {
     margin-left: 7px; }
-  .navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
+  #tdr_nav .nav > li > a:hover, #tdr_nav .nav > li > a:focus {
     background-color: #fff;
     border-bottom: #d9d9d9 solid 2px; }
-  .navbar .nav .open > a, .navbar .nav .open > a:hover, .navbar .nav .open > a:focus {
+  #tdr_nav .nav .open > a, #tdr_nav .nav .open > a:hover, #tdr_nav .nav .open > a:focus {
     background-color: #fff;
     border-color: #d9d9d9; }
+  #tdr_nav .navbar-nav > li:last-child a {
+    border-right: 1px solid #ECECEC; }
+  @media (min-width: 768px) {
+    #tdr_nav .navbar-nav > li > a {
+      border-left: 1px solid #ECECEC;
+      padding: 9px 15px; } }
 
-.navbar-header .navbar-toggle {
-  background-color: #B1B1B1; }
-  .navbar-header .navbar-toggle .icon-bar {
-    background-color: #fff; }
+.navbar-header {
+  border-bottom: 1px solid #F1F1F1;
+  background-color: #FAFAFA; }
+  .navbar-header .navbar-toggle {
+    background-color: #0082AC;
+    float: left;
+    padding: 5px 6px;
+    margin-left: 5px; }
+    .navbar-header .navbar-toggle .icon-bar {
+      background-color: #fff; }
 
-.navbar-nav > li:last-child a {
-  border-right: 1px solid #ECECEC; }
-@media (min-width: 768px) {
-  .navbar-nav > li > a {
-    border-left: 1px solid #ECECEC;
-    padding: 9px 15px; } }
-
+/**********************************************************************
+ * Navigation - top page navigation menu.  extends superfish css.
+ */
+   /*
+#tdr_nav {
+	background: #E1ECFF; */
+/* Old browsers */
+                                         /*
+background: -moz-linear-gradient(top, #F0FAFF 0%, #E1ECFF 3%, #BCD6E6 97%, #95AFC9 100%); */
+/* FF3.6+ */
+                                                                                                        /*
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F0FAFF), color-stop(3%, #E1ECFF), color-stop(97%, #BCD6E6), color-stop(100%, #95AFC9) ); */
+/* Chrome,Safari4+ */
+                                                                                                                                                                                            /*
+background: -webkit-linear-gradient(top, #F0FAFF 0%, #E1ECFF 3%, #BCD6E6 97%, #95AFC9 100%); */
+/* Chrome10+,Safari5.1+ */
+                                                                                                                         /*
+background: -o-linear-gradient(top, #F0FAFF 0%, #E1ECFF 3%, #BCD6E6 97%, #95AFC9 100%); */
+/* Opera11.10+ */
+                                                                                                           /*
+background: -ms-linear-gradient(top, #F0FAFF 0%, #E1ECFF 3%, #BCD6E6 97%, #95AFC9 100%); */
+/* IE10+ */
+                                                                                                      /*
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E1ECFF',endColorstr='#BCD6E6'); */
+/* IE6 & IE7 */
+                                                                                                                   /*
+-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E1ECFF', endColorstr='#BCD6E6'); */
+/* IE8+ */
+                                                                                                                   /*
+background: linear-gradient(top, #F0FAFF 0%, #E1ECFF 3%, #BCD6E6 97%, #95AFC9 100%); */
+/* W3C */
+	                                                                                                /*
+	height: auto;
+}*/
 /*
 #tdr_nav_list,#tdr_nav_list *,.sf-menu,.sf-menu * {
 	margin: 0;
@@ -975,16 +897,123 @@ div.styled h3 {
   max-width: 380px;
   float: right;
   padding-top: 5px; }
-  #tdr_search_bs .btn {
-    padding: 4px 12px;
-    border-radius: 0; }
+  #tdr_search_bs .dropdown-menu {
+    padding: 10px 15px;
+    width: 380px; }
+  #tdr_search_bs .input-group-btn {
+    float: left;
+    width: 100px; }
   #tdr_search_bs .form-control {
     height: 29px;
     border-radius: 0;
     width: 240px; }
+  #tdr_search_bs .btn {
+    padding: 4px 12px;
+    border-radius: 0; }
 
+/**********************************************************************
+ * CSS Styling for the search
+ */
+#tdr_search {
+  background-color: #efefef;
+  height: 26px; }
+
+#tdr_search_content {
+  text-align: right; }
+
+/*---------------------------------------------------------------------
+ * search form
+ */
+#tdr_search form {
+  margin: 0;
+  padding-top: 3px; }
+
+#tdr_search form > * {
+  font-size: 11px;
+  margin-left: 6px; }
+
+#tdr_search label {
+  color: #777;
+  font-weight: bold;
+  vertical-align: baseline; }
+
+#search-term-label {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -9999px; }
+
+#search-term {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1px .25em;
+  outline: medium none;
+  -webkit-appearance: none; }
+
+#tdr_search .search-button {
+  text-indent: -9999px;
+  text-transform: capitalize;
+  /* weird ie7 hack to enable indent */ }
+
+/* --------------------------------------------------------------------
+ * * - 768px
+ */
+@media only screen and (max-width: 768px) {
+  /* toggle search input */
+  #tdr_search {
+    display: none; }
+
+  #tdr_search.show {
+    display: block; } }
+/* --------------------------------------------------------------------
+ * * - 480px
+ */
+@media only screen and (max-width: 480px) {
+  #tdr_search label {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px; }
+
+  /* hide the search button */
+  #tdr_search .search-button {
+    display: none; }
+
+  /* make search input wider */
+  #search-term {
+    width: 40%; } }
 .breadcrumb {
   font-size: 11px; }
+
+/**********************************************************************
+ * CSS Styling for the bread crumbs
+ */
+#tdr_crumbs {
+  background: #fff; }
+
+#tdr_crumbs ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-top: 1em; }
+
+#tdr_crumbs li {
+  color: #666;
+  display: inline;
+  font-size: 80%;
+  line-height: 1;
+  list-style: none;
+  margin-left: 0;
+  text-transform: capitalize; }
+
+#tdr_crumbs li a {
+  background: url(img/sprite_icon.png) no-repeat scroll right 5px transparent;
+  padding-right: .8em;
+  text-decoration: none; }
+
+#tdr_crumbs li a:hover {
+  text-decoration: underline; }
 
 /**********************************************************************
  * footer style
@@ -1219,6 +1248,26 @@ table.styled th, table.styled td {
 
 table.styled tbody tr.even {
   background-color: #eff; }
+
+/**********************************************************************
+ * CSS Styling for the page nav aside
+ */
+div.styled {
+  background: #F0FAFF;
+  border: 1px solid #D2D2D2;
+  border-bottom: .25em solid #D2D2D2;
+  margin-bottom: 1em;
+  padding: 1em; }
+
+div.styled h2, div.styled h3, div.styled h4, div.styled h5, div.styled h6 {
+  color: #738AA3;
+  text-shadow: 0 1px 1px #FFFFFF; }
+
+div.styled h2 {
+  font-size: 140%; }
+
+div.styled h3 {
+  font-size: 115%; }
 
 /* --------------------------------------------------------------------
  * _images
@@ -1579,6 +1628,9 @@ a.button {
 input[type="text"], select, textarea {
   border: 1px solid #aaa; }
 
+.form-control {
+  border-radius: 0; }
+
 input[type="text"], textarea {
   padding: .25em; }
 
@@ -1793,265 +1845,6 @@ span.loading {
   #tdr_footer_links {
     display: none; } }
 /********************** VENDOR */
-/*
- * jQuery FlexSlider v2.2.0
- * http://www.woothemes.com/flexslider/
- *
- * Copyright 2012 WooThemes
- * Free to use under the GPLv2 license.
- * http://www.gnu.org/licenses/gpl-2.0.html
- *
- * Contributing author: Tyler Smith (@mbmufffin)
- */
-/* Browser Resets
-*********************************/
-.flex-container a:active,
-.flexslider a:active,
-.flex-container a:focus,
-.flexslider a:focus {
-  outline: none; }
-
-.slides,
-.flex-control-nav,
-.flex-direction-nav {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-/* Icon Fonts
-*********************************/
-/* Font-face Icons */
-/* @font-face { */
-/* 	font-family: 'flexslider-icon'; */
-/* 	src:url('fonts/flexslider-icon.eot'); */
-/* 	src:url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), */
-/* 		url('fonts/flexslider-icon.woff') format('woff'), */
-/* 		url('fonts/flexslider-icon.ttf') format('truetype'), */
-/* 		url('fonts/flexslider-icon.svg#flexslider-icon') format('svg'); */
-/* 	font-weight: normal; */
-/* 	font-style: normal; */
-/* } */
-/* FlexSlider Necessary Styles
-*********************************/
-.flexslider {
-  margin: 0;
-  padding: 0; }
-
-.flexslider .slides > li {
-  display: none;
-  -webkit-backface-visibility: hidden; }
-
-/* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img {
-  width: 100%;
-  display: block; }
-
-.flex-pauseplay span {
-  text-transform: capitalize; }
-
-/* Clearfix for the .slides element */
-.slides:after {
-  content: "\0020";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0; }
-
-html[xmlns] .slides {
-  display: block; }
-
-* html .slides {
-  height: 1%; }
-
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
-.no-js .slides > li:first-child {
-  display: block; }
-
-/* FlexSlider Default Theme
-*********************************/
-.flexslider {
-  margin: 0 0 60px;
-  background: #fff;
-  border: 4px solid #fff;
-  position: relative;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  zoom: 1; }
-
-.flex-viewport {
-  max-height: 2000px;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease; }
-
-.loading .flex-viewport {
-  max-height: 300px; }
-
-.flexslider .slides {
-  zoom: 1; }
-
-.carousel li {
-  margin-right: 5px; }
-
-/* Direction Nav */
-.flex-direction-nav {
-  *height: 0; }
-
-.flex-direction-nav a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  margin: -20px 0 0;
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  overflow: hidden;
-  opacity: 0;
-  cursor: pointer;
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  transition: all .3s ease; }
-
-.flex-direction-nav .flex-prev {
-  left: -50px; }
-
-.flex-direction-nav .flex-next {
-  right: -50px;
-  text-align: right; }
-
-.flexslider:hover .flex-prev {
-  opacity: 0.7;
-  left: 10px; }
-
-.flexslider:hover .flex-next {
-  opacity: 0.7;
-  right: 10px; }
-
-.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
-  opacity: 1; }
-
-.flex-direction-nav .flex-disabled {
-  opacity: 0 !important;
-  filter: alpha(opacity=0);
-  cursor: default; }
-
-.flex-direction-nav a:before {
-  font-family: "flexslider-icon";
-  font-size: 40px;
-  display: inline-block;
-  content: '\f001'; }
-
-.flex-direction-nav a.flex-next:before {
-  content: '\f002'; }
-
-/* Pause/Play */
-.flex-pauseplay a {
-  display: block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  bottom: 5px;
-  left: 10px;
-  opacity: 0.8;
-  z-index: 10;
-  overflow: hidden;
-  cursor: pointer;
-  color: #000; }
-
-.flex-pauseplay a:before {
-  font-family: "flexslider-icon";
-  font-size: 20px;
-  display: inline-block;
-  content: '\f004'; }
-
-.flex-pauseplay a:hover {
-  opacity: 1; }
-
-.flex-pauseplay a.flex-play:before {
-  content: '\f003'; }
-
-/* Control Nav */
-.flex-control-nav {
-  width: 100%;
-  position: absolute;
-  bottom: -40px;
-  text-align: center; }
-
-.flex-control-nav li {
-  margin: 0 6px;
-  display: inline-block;
-  zoom: 1;
-  *display: inline; }
-
-.flex-control-paging li a {
-  width: 11px;
-  height: 11px;
-  display: block;
-  background: #666;
-  background: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  text-indent: -9999px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3); }
-
-.flex-control-paging li a:hover {
-  background: #333;
-  background: rgba(0, 0, 0, 0.7); }
-
-.flex-control-paging li a.flex-active {
-  background: #000;
-  background: rgba(0, 0, 0, 0.9);
-  cursor: default; }
-
-.flex-control-thumbs {
-  margin: 5px 0 0;
-  position: static;
-  overflow: hidden; }
-
-.flex-control-thumbs li {
-  width: 25%;
-  float: left;
-  margin: 0; }
-
-.flex-control-thumbs img {
-  width: 100%;
-  display: block;
-  opacity: .7;
-  cursor: pointer; }
-
-.flex-control-thumbs img:hover {
-  opacity: 1; }
-
-.flex-control-thumbs .flex-active {
-  opacity: 1;
-  cursor: default; }
-
-@media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev {
-    opacity: 1;
-    left: 10px; }
-
-  .flex-direction-nav .flex-next {
-    opacity: 1;
-    right: 10px; } }
 /********************** CMS */
 /**********************************************************************
  * CSS Styling for the toggler

@@ -20,23 +20,34 @@
 	#type {
 		margin-top: 20px;
 	}
-
-  @media screen and (min-width: $break-desktop + px) {
-
-  }
 }
 
-#tdr_2_col_nav .doc-nav {
-	.nav > li > a {
-		padding-top: 5px;
+.bs-example {
+	@media screen and (max-width: $break-desktop + px) {
+		margin: 0 0 15px;
 	}
-
-  @media screen and (min-width: $break-desktop + px) {
-	  .bs-docs-sidebar {
-		  padding-left: 0;
-	  }
-  }
 }
 
+.bs-example + .highlight {
+	@media screen and (max-width: $break-desktop + px) {
+		margin: -15px 0 15px;
+	}
+}
+#tdr_2_col_nav {
+	overflow: visible;
+
+	.doc-nav {
+
+		.nav > li > a {
+			padding-top: 5px;
+		}
+
+		@media screen and (min-width: $break-desktop + px) {
+			.bs-docs-sidebar {
+			  padding-left: 0;
+			}
+		}
+	}
+}
 
 

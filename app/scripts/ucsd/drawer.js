@@ -1,55 +1,64 @@
 /**
  * drawer
  */
+$(document).ready(function() {
+	$('.drawer').each(function() {
+            var drawer = $(this);
 
-(function($) {
-	$.fn.drawer = function() {
-		this
-				.each(function() {
-					drawer = $(this);
+            /* create wrapper class */
+            drawer.wrap('<div class="drawer-wrapper"/>');
+            var drawerWrapper = drawer.parent();
 
-					/* add drawer class */
-					drawer.addClass("drawer");
+            /* insert links */
+            var link = '<div class="drawer-toggle"><a href="#" class="expand">Expand All</a></div>';
+            drawerWrapper.prepend(link);
+            drawerWrapper.append(link);
 
-					/* create wrapper class */
-					drawer.wrap('<div class="drawer-wrapper"/>');
-					var drawerWrapper = drawer.parent();
+            /* build drawer */
+            drawer.children("div").toggle();
 
-					/* insert links */
-					var link = '<div class="drawer-toggle"><a href="#" class="expand">Expand All</a></div>';
-					drawerWrapper.prepend(link);
-					drawerWrapper.append(link);
+            drawer.children("h2").click(function() {
+                $(this).toggleClass("expand");
+                $(this).next().toggle();
+                if ($(this).hasClass("expand")) {
+                    window.location.hash = $(this).find('a').text().replace(/\s/g,'-').substring(0,31);
+                }
+                return false;
+            });
 
-					/* build drawer */
-					drawer.children("div").toggle();
+            drawerWrapper.find(".drawer-toggle a").click(function() {
+                /* open or close drawers */
+                if ($(this).hasClass("expand")) {
+                    expandAll(drawerWrapper);
+                }
 
-					drawer.children("h2").click(function() {
-						$(this).toggleClass("expand");
-						$(this).next().toggle();
-						return false;
-					});
+                else {
+                    collapseAll(drawerWrapper);
+                }
 
-					drawerWrapper.find(".drawer-toggle a").click(function() {
-						/* open or close drawers */
-						if ($(this).hasClass("expand"))
-							expandAll(drawerWrapper);
-						else
-							collapseAll(drawerWrapper);
+                /* reset all toggle links */
+                resetLink(drawerWrapper);
+                if ( window.history && window.history.pushState ) {
+                    window.history.pushState('', '', window.location.pathname)
+                } else {
+                    window.location.href = window.location.href.replace(/#.*$/, '#');
+                }
+                return false;
+            });
 
-						/* reset all toggle links */
-						resetLink(drawerWrapper);
-
-						return false;
-					});
-					
-					/* open the drawer if the url points to this drawer */
-					drawer.children("h2").each(function() {
-						if(window.location.hash == '#'+$(this).text().replace(/\s/g,'-').substring(0,31) ){
-							$(this).toggleClass('expand').next().toggle();
-						};	
-					});
-					 
-				});
+            /* open the drawer if the url points to this drawer */
+        $(window).load(function () {
+            drawer.children("h2").each(function() {
+                if (window.location.hash == '#'+$(this).text().replace(/\s/g,'-').substring(0,31)){
+                    var newPosition = $(this).offset();
+                    $(this).toggleClass('expand').next().toggle();
+                    setTimeout(function() {
+                        window.scrollTo(0, newPosition.top);
+                    }, 50);
+                };
+            });
+        });
+    });
 
 		/* expand all drawers */
 		function expandAll(drawerWrapper) {
@@ -59,10 +68,9 @@
 
 		/* close all drawers */
 		function collapseAll(drawerWrapper) {
-			drawerWrapper.children(".drawer").children("h2").removeClass(
-					"expand");
+			drawerWrapper.children(".drawer").children("h2").removeClass("expand");
 			drawerWrapper.children(".drawer").children("div").hide();
-		}
+        }
 
 		/* reset drawer toggle link */
 		function resetLink(drawerWrapper) {
@@ -75,12 +83,4 @@
 				element.toggleClass("expand");
 			});
 		}
-	};
-
-})(jQuery);
-
-(function($) {
-    $(document).ready(function() {
-        $(".drawer").drawer();
-    })
-})(jQuery);
+});

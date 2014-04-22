@@ -3,14 +3,113 @@
 	float: right;
 	padding-top: 5px;
 
-	.btn {
-		padding: 4px 12px;
-		border-radius: 0;
+	.dropdown-menu {
+		padding: 10px 15px;
+		width: 380px;
+	}
+
+	.input-group-btn {
+		float: left;
+		width: 100px;
 	}
 
 	.form-control {
 		height: 29px;
 		border-radius: 0;
 		width: 240px;
+	}
+
+	.btn {
+		padding: 4px 12px;
+		border-radius: 0;
+	}
+}
+
+/**********************************************************************
+ * CSS Styling for the search
+ */
+#tdr_search {
+	background-color: #efefef;
+	height: 26px;
+}
+
+#tdr_search_content {
+	text-align: right;
+}
+
+/*---------------------------------------------------------------------
+ * search form
+ */
+#tdr_search form {
+	margin: 0;
+	padding-top: 3px;
+}
+
+#tdr_search form > * {
+	font-size: 11px;
+	margin-left: 6px;
+}
+
+#tdr_search label {
+	color: #777;
+	font-weight: bold;
+	vertical-align: baseline;
+}
+
+#search-term-label {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999px;
+}
+
+#search-term {
+	border: 1px solid #ccc;
+	border-radius: 12px;
+	padding: 1px .25em;
+	outline: medium none;
+	-webkit-appearance: none;
+}
+
+#tdr_search .search-button {
+	text-indent: -9999px;
+	text-transform: capitalize; /* weird ie7 hack to enable indent */
+}
+
+/* --------------------------------------------------------------------
+ * * - 768px
+ */
+@media only screen and (max-width: 768px) {
+	/* toggle search input */
+	#tdr_search {
+		display: none;
+	}
+
+	#tdr_search.show {
+		display: block;
+	}
+}
+
+/* --------------------------------------------------------------------
+ * * - 480px
+ */
+@media only screen and (max-width: 480px) {
+	#tdr_search label {
+		width: 0;
+		height: 0;
+		overflow: hidden;
+		position: absolute;
+		text-indent: -9999px;
+	}
+
+	/* hide the search button */
+	#tdr_search .search-button {
+		display: none;
+	}
+
+	/* make search input wider */
+	#search-term {
+		width: 40%;
 	}
 }

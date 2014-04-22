@@ -4,20 +4,19 @@
 
 /********************* BASE */
 @import "partials/ucsd/base/layout";
-
+@import "partials/ucsd/base/title";
 @import "partials/ucsd/base/navbar";
 @import "partials/ucsd/base/search";
 @import "partials/ucsd/base/breadcrumbs";
 @import "partials/ucsd/base/footer";
-
 @import "partials/ucsd/base/fonts";
 @import "partials/ucsd/base/styling";
-
 @import "partials/ucsd/base/print";
 
 
 /********************** VENDOR */
-@import "partials/vendor/flexslider";
+@import "../bower_components/flexslider/flexslider.css";
+@import "../bower_components/superfish/dist/css/superfish.css";
 
 
 /********************** CMS */

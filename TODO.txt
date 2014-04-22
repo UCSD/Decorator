@@ -1,14 +1,8 @@
-fix data table section? do we bring in jquery UI or force people who want to use it to call the js file themselves?
-
-
-Drawers (bring over Blink's version)
-- expand all
-- no round corners
-- link to a specific drawer
-- responsive
 
 
 research hover drop down vs. click
+
+search bar
 
 
 

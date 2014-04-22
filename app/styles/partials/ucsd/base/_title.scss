@@ -1,0 +1,163 @@
+/**********************************************************************
+ * CSS Styling for the title header
+ */
+#tdr_title {
+	background-color: #0082AC;
+}
+
+#tdr_title_content {
+	height: 78px;
+}
+
+#tdr_title_ucsd_title {
+	width: 229px;
+	height: 45px;
+	position: absolute;
+	right: 0;
+	top: 20px;
+	background: transparent url(img/sprite_base.png) 0 -3px no-repeat;
+}
+
+#tdr_title_content form {
+	margin-bottom: 0;
+}
+
+/*---------------------------------------------------------------------
+ * dimension and position
+ */
+#tdr_title_content {
+	position: relative;
+}
+
+/*---------------------------------------------------------------------
+ * page title (left hand side)
+ */
+
+#tdr_title_page_title {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 24px;
+	position: absolute;
+	left: 0;
+	text-transform: uppercase;
+	top: 30px;
+	white-space: nowrap;
+}
+
+#tdr_title_page_title,#tdr_title_page_title a {
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+#tdr_title_page_title a:hover,#tdr_title_page_title a:focus {
+	text-decoration: underline;
+}
+
+/*---------------------------------------------------------------------
+ * ucsd title (right hand side)
+ */
+#tdr_title_ucsd_title {
+	display: block;
+	overflow: hidden;
+	text-indent: -999em;
+}
+
+/*---------------------------------------------------------------------
+ * menu link (right hand side)
+ */
+#tdr_title_menu_link {
+	display: none;
+	text-indent: -999em;
+	white-space: nowrap;
+	outline: none;
+	overflow: hidden;
+	font-size: 0; /* ie7 hack */
+	color: transparent;
+}
+
+#tdr_title_menu_link:hover,
+#tdr_title_menu_link:active {
+	color: transparent;
+}
+
+/*---------------------------------------------------------------------
+ * search link (right hand side)
+ */
+#tdr_title_search_link {
+	display: none;
+}
+
+/**********************************************************************
+ * responsive design
+ */
+
+/* --------------------------------------------------------------------
+ * * - 768px
+ */
+@media only screen and (max-width: 768px) {
+	#tdr_title_content {
+		height: 98px;
+	}
+	#tdr_title_ucsd_title {
+		left: 0;
+		top: 10px;
+	}
+	#tdr_title_page_title {
+		top: 60px;
+	}
+	#tdr_title_search_link,#tdr_title_menu_link {
+		display: block;
+		height: 36px;
+		width: 40px;
+		position: absolute;
+		right: 50px;
+		top: 19px;
+		cursor: pointer;
+	}
+	#tdr_title_search_link {
+		background-position: -461px -7px;
+		margin-right: 2px;
+	}
+	#tdr_title_menu_link {
+		background: url(img/sprite_base.png) no-repeat scroll -461px -47px transparent;
+		right: 0;
+	}
+
+	/* when menu is hidden */
+	.noMenu #tdr_title_search_link {
+		right: 0;
+	}
+}
+
+/* --------------------------------------------------------------------
+ * * - 360px
+ */
+@media only screen and (max-width: 360px) {
+	#tdr_title_content {
+		height: 78px;
+	}
+	#tdr_title_ucsd_title {
+		background-position: -239px -14px;
+		height: 32px;
+		width: 166px;
+	}
+	#tdr_title_page_title {
+		top: 50px;
+		font-size: 140%;
+	}
+	#tdr_title_search_link,#tdr_title_menu_link {
+		top: 10px;
+	}
+}
+
+/*---------------------------------------------------------------------
+ * retina display
+ */
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+	#tdr_title_ucsd_title,
+	#tdr_title_search_link,
+	#tdr_title_menu_link {
+		background-image: url(img/sprite_base2x.png);
+		background-size: 500px 120px;
+	}
+}

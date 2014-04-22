@@ -1272,10 +1272,20 @@ h1[id] {
 .main-content #type {
   margin-top: 20px; }
 
-#tdr_2_col_nav .doc-nav .nav > li > a {
-  padding-top: 5px; }
-@media screen and (min-width: 768px) {
-  #tdr_2_col_nav .doc-nav .bs-docs-sidebar {
-    padding-left: 0; } }
+@media screen and (max-width: 768px) {
+  .bs-example {
+    margin: 0 0 15px; } }
+
+@media screen and (max-width: 768px) {
+  .bs-example + .highlight {
+    margin: -15px 0 15px; } }
+
+#tdr_2_col_nav {
+  overflow: visible; }
+  #tdr_2_col_nav .doc-nav .nav > li > a {
+    padding-top: 5px; }
+  @media screen and (min-width: 768px) {
+    #tdr_2_col_nav .doc-nav .bs-docs-sidebar {
+      padding-left: 0; } }
 
 /*# sourceMappingURL=docs.css.map */
