@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title>UCSD Decorator 4.0 Readme</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #FAFAFA;
+            color: #111111;
+        }
+
+        h1, h2, h3, h4 {
+            color: #272928;
+            margin: 0 0 .5em;
+        }
+
+        h1 {
+            font-size: 300%;
+        }
+
+        h2 {
+            font-size: 200%;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 125%;
+        }
+
+        p {
+            margin: 0 0 1em;
+        }
+
+        li {
+            margin: .5em 0;
+        }
+
+        pre, code {
+            margin: 0 0 1em;
+            border: 1px solid #ddd;
+            padding: 1px 3px;
+            background-color: #fff;
+        }
+
+        code {
+            margin: 0 3px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="tdr_content_content">
+<h1>
+    UCSD Decorator 4.0.1</h1>
+<p>By <a href="mailto:me@andrewoh.co">Andrew Oh</a><br />
+    May 9th, 2014</p>
+<h2>
+    Getting Started</h2>
+<h3>Prerequisites</h3>
+<p> Be sure to install these <strong>in this order</strong>.</p>
+<ul>
+    <li>
+        <a href="http://nodejs.org/download/">Node.js</a></li>
+    <li>
+        <a href="http://gruntjs.com/">Grunt</a>
+        <ul>
+            <li>
+                Open up the command prompt and type <code>npm install -g grunt-cli</code></li>
+            <li>
+                The &quot;-g&quot; flag means it will be installed globally.</li>
+            <li>On OSX, you may need to instead type <code>sudo npm install -g grunt-cli</code> to override any permission errors.</li>
+        </ul>
+    </li>
+    <li>
+        <a href="http://bower.io/">Bower</a>
+        <ul>
+            <li>
+                Open up the command prompt and type <code>npm install -g bower</code></li>
+            <li>On OSX, you may need to instead type <code>sudo npm install -g bower</code> to override any permission errors.</li>
+        </ul>
+    </li>
+    <li>
+        <a href="https://www.ruby-lang.org/en/installation/">Ruby</a>
+        <ul>
+            <li>This is only necessary if you are on Windows. Ruby already comes with Apple OSX.</li>
+            <li>However, even if you already have it installed, please ensure that you have a modern version installed (greater than v.</li>
+        </ul>
+    </li>
+    <li>
+        <a href="http://compass-style.org/install/">Compass</a>
+        <ul>
+            <li>Windows: <code>gem update --system</code> and then <code>gem install compass</code></li>
+            <li>Max: <code>sudo gem update --system</code> and then <code>sudo gem install compass</code></li>
+        </ul>
+    </li>
+    <li>
+        <a href="http://sass-lang.com/install">SASS</a>
+        <ul>
+            <li>
+                To install SASS, simply open up the command prompt and type &quot;gem sass&quot;</li>
+            <li>
+                Make sure you&#39;re installing version <strong>3.2</strong> or higher to support <a href="https://medium.com/what-i-learned-building/b4daab987fb0">source maps.</a></li>
+        </ul>
+    </li>
+</ul>
+<h3>Getting Started</h3>
+<ol>
+    <li>Clone the repository (<a href="https://github.com/misteroh/ucsd-decorator">https://github.com/misteroh/ucsd-decorator [TODO: CHANGE TO SVN WHENEVER IT IS FIXED]</a>) to a location on your computer</li>
+    <li>Open up the terminal (Mac/Linux) or command prompt (Windows)</li>
+    <li>Change the directory to the root folder of the decorator (For example: <code>C:\My Documents\ucsd-decorator</code>)
+        <ul>
+            <li>This can be done with <code>cd &lt;directory name&gt;</code></li>
+            <li>For example, <code>cd C:\My Documents\ucsd-decorator</code></li>
+        </ul>
+    </li>
+    <li>Run the command <code>npm install</code> and wait until it is finished
+        <ul>
+            <li>If you get an error that says it can't find <code>package.json</code>, please ensure that you are in the root directory of the decorator. Not <code>app</code> or <code>dist</code>.</li>
+        </ul>
+    </li>
+    <li>The decorator is now ready for editing</li>
+</ol>
+<h4><em>The following IDE is recommended, but is not necessary:</em></h4>
+<p><a href="http://www.jetbrains.com/webstorm/">Webstorm IDE</a></p>
+<p>I&#39;ve obtained a free license for all UCSD employees.</p>
+
+<p><strong>User Name</strong><br>
+    <code>University of California San Diego</code></p>
+
+<b>License</b>
+        <pre>55991-19032014
+00002pwnno&quot;e25KK7fzoL7BeW62cs0
+w84KKRWoV1CBkJENSXMfq9pc3k5g6e
+XRgQ8F0z4XwshZho8uMuZOSem1RuSt</pre>
+
+<p><b>License Renewal</b><br />
+    This license expires every year, so please be sure to renew the license every year (for free!) by contacting them &quot;closer to (the) license expiration date at <a href="mailto:classroom@jetbrains.com">classroom@jetbrains.com</a> and let us know a little about how your university used WebStorm in trainings, and we&rsquo;ll happily issue a renewal.&quot;</p>
+<h2>
+    Editing</h2>
+<h3>
+    HTML</h3>
+<p>
+    The markup has a few important changes from Active Cherry.</p>
+<ul>
+    <li>
+        I&#39;ve wrapped everything inside <code>&lt;body&gt;</code> inside another <code>&lt;div&gt;</code> called <code>#tdr_wrapper</code></li>
+    <li>
+        I&#39;ve also wrapped everything from the top down to the footer inside a <code>&lt;div&gt;</code> called <code>#tdr_slide_wrapper</code></li>
+    <li>
+        I&#39;ve duplicated the navigation and added immediately after the footer markup into a <code>&lt;nav&gt;</code> called <code>#tdr_side_nav</code></li>
+    <li>
+        All the navigation related <code>&lt;div&gt;</code>&#39;s have been changed into <code>&lt;nav&gt;</code>&#39;s</li>
+    <li>
+        Both <code>&lt;div id="tdr_search"&gt;</code> have been changed to <code>&lt;div class="tdr_search"&gt;</code></li>
+    <li>
+        All JavaScript files (except for Modernizr) have been moved to the bottom of the page</li>
+    <li>Added a "skip to content" link at the top of page for accessibility purposes.</li>
+</ul>
+<h3>
+    CSS</h3>
+<ul>
+    <li>The source files use SASS. More specifically, the SCSS version of SASS.</li>
+    <li>The CSS files are compiled from the SCSS source files inside <code>app/styles</code> and also <code>app/vendor</code></li>
+    <li>The CSS files are then referenced inside the HTML file between <code>&lt;!-- build:css(.tmp) styles/***.css--&gt;</code> and <code>&lt;!-- endbuild --&gt;</code> comment lines.
+        <ul>
+            <li>
+                For example: <pre>
+&lt;!-- build:css(.tmp) styles/cms-min.css --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/cms.css&quot;&gt;
+&lt;!-- endbuild --&gt;</pre>
+            <p>In the above block, <code>styles/cms-min.css</code> refers to the destination file that will be created after running <code>grunt</code>. (See "Building" below)</p>
+            </li>
+            <li>The <code>grunt</code> process will automatically update the CSS file reference in the <code>dist</code> version of the HTML file.
+                <ul>
+                    <li>
+                        <p>For example, if the following block is inside <code>app/index.html</code>:</p>
+                    <pre>
+&lt;!-- build:css(.tmp) styles/cms-min.css --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/cms.css&quot;&gt;
+&lt;!-- endbuild --&gt;</pre>
+                        <p>Then after running <code>grunt</code>, the final <code>dist/index.html</code> will instead contain the following block:</p>
+                    <pre>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;styles/cms-min.css&quot;&gt;</pre>
+                    </li>
+                </ul></li>
+        </ul>
+    </li>
+    <li>Any changes to the .SCSS files will require you to recompile everything into normal .CSS files again. This can either be done by running the command <code>scss --watch --sourcemap</code> <b>before</b> editing the .SCSS files or manually compiling the files by simply running <code>scss</code> in the command prompt.
+        <ul>
+            <li><em>This process can be automated. See "WebStorm Integration" below.</em></li>
+        </ul>
+    </li>
+</ul>
+
+<h3>JavaScript</h3>
+<ul>
+    <li>Any JavaScript files inside <code>app/scripts&quot;</code> along with any vendor .js files under <code>app/vendor</code> are minified and concatenated together <strong>IF AND ONLY IF</strong> they are first called within <code>app/index.html</code> between the <code>build:js</code> comment blocks.</li>
+    <li>All JavaScript files called in between a <code>build:js</code> comment and <code>&lt;!-- endbuild --&gt;</code> block will become concatenated into a single .JS file named in the first comment line.
+        <ul>
+            <li>
+                For example: <pre>&lt;!-- build:js({app,.tmp}) scripts/cms-min.js --&gt;
+    &lt;script src=&quot;scripts/ucsd/copyright.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;scripts/ucsd/footer.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;scripts/ucsd/logout.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;scripts/ucsd/flexslider-init.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;scripts/ucsd/drawer.js&quot;&gt;&lt;/script&gt;
+&lt;!-- endbuild --&gt;</pre>
+
+            <p>In the above block, <code>scripts/cms-min.js</code> refers to the destination file that will be created after running <code>grunt</code>. (See "Building" below)</p></li>
+            <li>The <code>grunt</code> process will automatically update the .JS file reference in the <code>dist</code> version of the HTML file.
+                <ul>
+                    <li>
+                        <p>For example, if the following block is inside <code>app/index.html</code>:</p>
+    <pre>&lt;!-- build:js({app,.tmp}) scripts/cms-min.js --&gt;
+        &lt;script src=&quot;scripts/ucsd/copyright.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;scripts/ucsd/footer.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;scripts/ucsd/logout.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;scripts/ucsd/flexslider-init.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;scripts/ucsd/drawer.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- endbuild --&gt;</pre>
+                        <p>Then after running <code>grunt</code>, the final <code>dist/index.html</code> will instead contain the following block:</p>
+                        <pre>
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/cms-min.js&quot;&gt;</pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<h2>
+    Building</h2>
+<ol>
+    <li>
+        Open up the command line</li>
+    <li>
+        Make sure you are in the root directory of the decorator files (NOT <code>app</code> or <code>dist</code>)</li>
+    <li>
+        Type in <code>grunt</code> and press enter</li>
+    <li>
+        After the process is finished, you should end up with all the files needed in the <code>dist</code> folder.&nbsp;</li>
+</ol>
+<p><em>This process can be automated. See "WebStorm Integration" below.</em></p>
+<h3>The Grunt build process does the following tasks:</h3>
+<ol>
+    <li>Deletes everything in the <code>dist</code> folder if it already exists</li>
+    <li>Checks the .JS files for errors via JSHint</li>
+    <li>Adds or removes browser-specific prefixes to the .CSS files</li>
+    <li>Concatenates all .JS and .CSS files together.</li>
+    <li>Minifies all .JS, .CSS, and .html files</li>
+    <li>Creates a custom build of modernizr.JS</li>
+    <li>Creates a .ZIP file in the root directory with everything from the <code>dist</code> folder</li>
+</ol>
+
+<p>The build process is very easily customizable by editing the <code>Gruntfile.js</code> file in the root directory.</p>
+
+<h2>Maintenance</h2>
+
+<h3>Third party plug-ins</h3>
+
+<p>All third party plug-ins should be managed by <a href="http://bower.io/">Bower</a> and their source files live inside <code>app/vendor</code>. If adding or removing third party plug-ins, be sure to update the .JS calls in the HTML markup as well as the import calls inside <code>app/styles/main.scss</code></p>
+
+<h2>WebStorm Integration</h2>
+<p>Using an IDE like JetBrains' WebStorm IDE allows you to simplify the build process greatly. Again, downloading and using it is not necessary, but it will make your life much easier.</p>
+<h3>Auto-compiling SASS into CSS files</h3>
+<ol>
+    <li>In WebStorm, open the <code>File</code> menu and click on <code>Settings</code></li>
+    <li>On the left menu under <code>Project Settings</code>, click on <code>File Watchers</code></li>
+    <li>Click the green plus sign on the right side</li>
+    <li>Click on <code>SCSS</code></li>
+    <li>Check that <code>Immediate file synchronization</code> is checked</li>
+    <li>Under <code>Watcher Settings</code>, make sure the fields are filled out as following:
+        <ul>
+            <li>File type: <code>SCSS files</code></li>
+            <li>Scope: <code>Project Files</code></li>
+            <li>Program: The location of the SCSS compiler. This will depend on the version you've downloaded and your OS, but it should be the following file (or at least something named similarly):
+                <ul>
+                    <li>Windows: <code>C:\Ruby200-x64\bin\scss.bat</code></li>
+                    <li>Mac: <code>/usr/bin/scss</code></li>
+                </ul>
+            </li>
+            <li>Arguments: <code>--no-cache --sourcemap --update $FileName$:$FileNameWithoutExtension$.css</code></li>
+            <li>Working directory: <code>$FileDir$</code></li>
+            <li>Output paths to refresh: <code>$FileNameWithoutExtension$.css</code></li>
+        </ul>
+    </li>
+    <li>That's it! Editing one of the .SCSS files and pressing <code>save</code> should automatically compile into .CSS files under <code>app/styles</code> now!</li>
+</ol>
+<h3>Building</h3>
+<ol>
+    <li>In WebStorm, open the <code>File</code> menu and click on <code>Settings</code></li>
+    <li>On the left menu under <code>IDE Settings</code>, click on <code>Plugins</code></li>
+    <li>Check if the <code>NodeJS</code> plugin has been installed already by searching for <code>NodeJs</code> and seeing if it shows up in the results with a checkmark next to. If so, skip to step 7. If not, continue on to step 4.</li>
+    <li>Click on <code>Install Jetbrains plugin...</code></li>
+    <li>Search for <code>NodeJS</code> and install it by clicking the <code>Install plugin</code> on the right</li>
+    <li>Press <code>OK</code> until you are back to the main WebStorm window</li>
+    <li>Click on the <code>Run</code> menu in the WebStorm main menu</li>
+    <li>Click on <code>Edit Configurations</code></li>
+    <li>Click on the green plus sign at the top left and then <code>Node.js</code></li>
+    <li>Make sure the fields are filled out as following:
+        <ul>
+            <li>Name: <code>Grunt</code></li>
+            <li>Node interpreter: The location of the node program. This should already be filled in. If it isn't, this will depend on the version you've downloaded and your OS, but it should be the following file (or at least something named similarly):
+                <ul>
+                    <li>Windows: <code>C:\Program Files\nodejs\node.exe</code></li>
+                    <li>Mac: <code>/usr/local/bin/node</code></li>
+                </ul>
+            </li>
+            <li>Node parameters: You can leave this blank
+            </li>
+            <li>Working directory: The root directory of the decorator (NOT <code>app</code> or <code>dist</code>) </li>
+            <li>JavaScript file: This will depend on the version you've downloaded and your OS, but it should be the following file (or at least something named similarly):
+                <ul>
+                    <li>Windows: <code>C:\Users\&lt;USERNAME&gt;\AppData\Roaming\npm\node_modules\grunt-cli\bin\grunt</code></li>
+                    <li>Mac: <code>/usr/local/bin/grunt</code></li>
+                </ul>
+            </li>
+            <li>You can leave the rest of the fields unchanged</li>
+        </ul>
+    </li>
+    <li>That's it! Anytime you wish to build a <code>dist</code> version of the decorator, just run the task we just created by clicking on the <code>Run</code> menu and then <code>Run 'Grunt'</code> or just pressing <code>Shift + F10</code>.
+    </li>
+
+</ol>
+
+<h2>Troubleshooting</h2>
+
+<h3>"Warning: You need to have Ruby and Sass installed and in your PATH for this task to work."</h3>
+<p>Consult <a href="https://groups.google.com/d/msg/beginning-rails/HGhmUBOmAIE/QSZB8I6zEhgJ">this answer</a>.</p>
+
+<p>
+    If there are any more errors, feel free to shoot me an e-mail at <a href="mailto:me@andrewoh.co">me@andrewoh.co</a></p>
+
+</div>
+</body>
+</html>

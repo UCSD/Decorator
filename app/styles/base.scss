@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/********************* VARIABLES & MIXINS */
+@import "partials/variables";
+
+/********************** VENDOR */
+@import "../vendor/superfish/dist/css/superfish";
+
+/********************* BASE */
+@import "partials/ucsd/base/reference";
+@import "partials/ucsd/base/layout";
+@import "partials/ucsd/base/title";
+@import "partials/ucsd/base/nav";
+@import "partials/ucsd/base/search";
+@import "partials/ucsd/base/breadcrumbs";
+@import "partials/ucsd/base/footer";
+@import "partials/ucsd/base/fonts";
+@import "partials/ucsd/base/styling";
+@import "partials/ucsd/base/print";
+
+/********************** Include from CMS.scss */
+@import "../vendor/flexslider/flexslider";
+@import "partials/ucsd/cms/toggler";
+@import "partials/ucsd/cms/drawer";
+@import "partials/ucsd/cms/overwrite";

@@ -1,0 +1,76 @@
+.main-content {
+
+	.page-header {
+		margin-bottom: 10px;
+	}
+
+	.social-list {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	#docs-header {
+		padding-top: 0;
+	}
+
+	#headers {
+		margin-top: 20px;
+	}
+}
+
+.bs-example {
+	@media screen and (max-width: $desktop) {
+		margin: 0 0 15px;
+	}
+}
+
+.bs-example + .highlight {
+	@media screen and (max-width: $desktop) {
+		margin: -15px 0 15px;
+	}
+}
+#tdr_2_col_nav {
+	overflow: visible;
+
+	.doc-nav {
+		.nav > li > a {
+			padding-top: 5px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			.bs-docs-sidebar {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+.bs-docs-sidebar {
+	display: none;
+	padding-left: 0;
+
+	.lt-ie8 & {
+		padding-left: 0 !important; //IE7 workaround
+	}
+
+	@media screen and (min-width: $desktop) {
+		display: block;
+	}
+
+	.bs-docs-sidenav {
+		margin-left: 0;
+	}
+
+	.nav {
+		.nav {
+			margin-left: 0;
+		}
+	}
+}
+
+
+.bs-docs-sidebar.affix {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
