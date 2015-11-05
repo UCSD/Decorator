@@ -243,6 +243,17 @@ module.exports = function(grunt) {
       css: ['<%= config.dist %>/styles/{,*/}*.css']
     },
 
+    replace: {
+      decoratorVersion: {
+        src: ['dist/*.html','dist/docs/*.html'],
+        overwrite: true,                 // overwrite matched source files
+        replacements: [{
+          from: /%param-decorator-version%/,
+          to: '<%= config.version %>'
+        }]
+      }
+    },
+
     // The following *-min tasks produce minified files in the dist folder
     imagemin: {
       dist: {
@@ -456,12 +467,18 @@ module.exports = function(grunt) {
     'copy:dist',
     'modernizr',
     'usemin',
+    'replace',
     /*'htmlmin',*/ //uncomment this to re-enable html minification
     'compress'
   ]);
+
+  grunt.loadNpmTasks('grunt-text-replace');
+
 
   grunt.registerTask('default', [
     'newer:jshint',
     'build'
   ]);
+
+
 };
