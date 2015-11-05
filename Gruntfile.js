@@ -74,10 +74,10 @@ module.exports = function(grunt) {
           src: ['*.scss'],
           dest: '<%= config.app %>/styles/',
           ext: '.css'
-        }],
-        options: {
-          sourcemap: 'auto'
-        }
+        }]
+      },
+      options: {
+        sourcemap: 'auto'
       }
     },
 
@@ -249,7 +249,7 @@ module.exports = function(grunt) {
     replace: {
       decoratorVersion: {
         src: ['dist/**/*.html', 'dist/*.html'],
-        overwrite: true,                 // overwrite matched source files
+        overwrite: true, // overwrite matched source files
         replacements: [{
           from: /%param-decorator-version%/g,
           to: '<%= config.version %>'
