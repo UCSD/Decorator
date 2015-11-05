@@ -68,12 +68,15 @@ module.exports = function(grunt) {
     },
     sass: {
       dist: {
-        files: {
-          '<%= config.app %>/styles/base.css': '<%= config.app %>/styles/base.scss',
-          '<%= config.app %>/styles/homepage-wide.css': '<%= config.app %>/styles/homepage-wide.scss'
-        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>/styles/',
+          src: ['*.scss'],
+          dest: '<%= config.app %>/styles/',
+          ext: '.css'
+        }],
         options: {
-          sourcemap: 'true'
+          sourcemap: 'auto'
         }
       }
     },
