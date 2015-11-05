@@ -9,3 +9,4 @@ ucsd-decorator.zip
 
 *.map
 *.txt
+app/styles/*.css
