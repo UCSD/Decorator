@@ -245,10 +245,10 @@ module.exports = function(grunt) {
 
     replace: {
       decoratorVersion: {
-        src: ['dist/*.html','dist/docs/*.html'],
+        src: ['dist/**/*.html', 'dist/*.html'],
         overwrite: true,                 // overwrite matched source files
         replacements: [{
-          from: /%param-decorator-version%/,
+          from: /%param-decorator-version%/g,
           to: '<%= config.version %>'
         }]
       }
