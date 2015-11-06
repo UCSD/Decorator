@@ -187,24 +187,20 @@
                 </div>
             </div><!-- /example -->
             <div class="highlight">
-                <pre><code class="html">
-                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span>
-                            <span class="na">data-placement=</span><span class="s">&quot;left&quot;</span> <span class="na">title=</span><span class="s">&quot;Tooltip on left&quot;</span><span class="nt">&gt;</span>
-                        Tooltip on left
-                    <span class="nt">&lt;/button&gt;</span>
-                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span>
-                            <span class="na">data-placement=</span><span class="s">&quot;top&quot;</span> <span class="na">title=</span><span class="s">&quot;Tooltip on top&quot;</span><span class="nt">&gt;</span>
-                        Tooltip on top
-                    <span class="nt">&lt;/button&gt;</span>
-                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span>
-                            <span class="na">data-placement=</span><span class="s">&quot;bottom&quot;</span> <span class="na">title=</span><span class="s">&quot;Tooltip on bottom&quot;</span><span class="nt">&gt;</span>
-                        Tooltip on bottom
-                    <span class="nt">&lt;/button&gt;</span>
-                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span>
-                            <span class="na">data-placement=</span><span class="s">&quot;right&quot;</span> <span class="na">title=</span><span class="s">&quot;Tooltip on right&quot;</span><span class="nt">&gt;</span>
-                        Tooltip on right
-                    <span class="nt">&lt;/button&gt;</span>
-                </code></pre>
+<pre><code class="html">
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">data-placement=</span><span class="s">&quot;left&quot;</span> <span class="na">title=</span><span class="s">&quot;Tooltip on left&quot;</span><span class="nt">&gt;</span>
+  Tooltip on left
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">data-placement=</span><span class="s">&quot;top&quot;</span> <span class="na">title=</span><span class="s">&quot;Tooltip on top&quot;</span><span class="nt">&gt;</span>
+  Tooltip on top
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">data-placement=</span><span class="s">&quot;bottom&quot;</span> <span class="na">title=</span><span class="s">&quot;Tooltip on bottom&quot;</span><span class="nt">&gt;</span>
+  Tooltip on bottom
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">data-placement=</span><span class="s">&quot;right&quot;</span> <span class="na">title=</span><span class="s">&quot;Tooltip on right&quot;</span><span class="nt">&gt;</span>
+  Tooltip on right
+<span class="nt">&lt;/button&gt;</span>
+</code></pre>
             </div>
 
             <div class="alert alert-danger">
@@ -223,7 +219,11 @@
             <h2 id="tooltips-usage">Usage</h2>
             <p>The tooltip plugin generates content and markup on demand, and by default places tooltips after their trigger element.</p>
             <p>Trigger the tooltip via JavaScript:</p>
-            <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#example&#39;</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span></code></pre></div>
+            <div class="highlight">
+<pre><code class="js">
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#example&#39;</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span>
+</code></pre>
+            </div>
 
             <h3>Markup</h3>
             <p>The required markup for a tooltip is only a <code>data</code> attribute and <code>title</code> on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to <code>top</code> by the plugin).</p>
@@ -232,18 +232,18 @@
                 <p>Sometimes you want to add a tooltip to a hyperlink that wraps multiple lines. The default behavior of the tooltip plugin is to center it horizontally and vertically. Add <code>white-space: nowrap;</code> to your anchors to avoid this.</p>
             </div>
             <div class="highlight">
-                <pre><code class="html">
-                    <span class="lineno"> 1</span> <span class="c">&lt;!-- HTML to write --&gt;</span>
-                    <span class="lineno"> 2</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Some tooltip text!&quot;</span><span class="nt">&gt;</span>Hover over me<span class="nt">&lt;/a&gt;</span>
-                    <span class="lineno"> 3</span>
-                    <span class="lineno"> 4</span> <span class="c">&lt;!-- Generated markup by the plugin --&gt;</span>
-                    <span class="lineno"> 5</span> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tooltip top&quot;</span><span class="nt">&gt;</span>
-                    <span class="lineno"> 6</span>   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tooltip-inner&quot;</span><span class="nt">&gt;</span>
-                    <span class="lineno"> 7</span>     Some tooltip text!
-                    <span class="lineno"> 8</span>   <span class="nt">&lt;/div&gt;</span>
-                    <span class="lineno"> 9</span>   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tooltip-arrow&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-                    <span class="lineno">10</span> <span class="nt">&lt;/div&gt;</span>
-                </code></pre>
+<pre><code class="html">
+  <span class="lineno"> 1</span> <span class="c">&lt;!-- HTML to write --&gt;</span>
+  <span class="lineno"> 2</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">title=</span><span class="s">&quot;Some tooltip text!&quot;</span><span class="nt">&gt;</span>Hover over me<span class="nt">&lt;/a&gt;</span>
+  <span class="lineno"> 3</span>
+  <span class="lineno"> 4</span> <span class="c">&lt;!-- Generated markup by the plugin --&gt;</span>
+  <span class="lineno"> 5</span> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tooltip top&quot;</span><span class="nt">&gt;</span>
+  <span class="lineno"> 6</span>   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tooltip-inner&quot;</span><span class="nt">&gt;</span>
+  <span class="lineno"> 7</span>     Some tooltip text!
+  <span class="lineno"> 8</span>   <span class="nt">&lt;/div&gt;</span>
+  <span class="lineno"> 9</span>   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tooltip-arrow&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="lineno">10</span> <span class="nt">&lt;/div&gt;</span>
+</code></pre>
             </div>
 
             <h3>Options</h3>
@@ -328,19 +328,34 @@
 
             <h4>.tooltip('show')</h4>
             <p>Reveals an element's tooltip.</p>
-            <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#element&#39;</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span></code></pre></div>
+            <div class="highlight">
+<pre><code class="js">
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#element&#39;</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span>
+</code></pre>
+            </div>
 
             <h4>.tooltip('hide')</h4>
             <p>Hides an element's tooltip.</p>
-            <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#element&#39;</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">&#39;hide&#39;</span><span class="p">)</span></code></pre></div>
+            <div class="highlight">
+<pre><code class="js">
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#element&#39;</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">&#39;hide&#39;</span><span class="p">)</span>
+</code></pre></div>
 
             <h4>.tooltip('toggle')</h4>
             <p>Toggles an element's tooltip.</p>
-            <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#element&#39;</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">&#39;toggle&#39;</span><span class="p">)</span></code></pre></div>
+            <div class="highlight">
+<pre><code class="js">
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#element&#39;</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">&#39;toggle&#39;</span><span class="p">)</span>
+</code></pre>
+            </div>
 
             <h4>.tooltip('destroy')</h4>
             <p>Hides and destroys an element's tooltip.</p>
-            <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#element&#39;</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">&#39;destroy&#39;</span><span class="p">)</span></code></pre></div>
+            <div class="highlight">
+<pre><code class="js">
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#element&#39;</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">&#39;destroy&#39;</span><span class="p">)</span>
+</code></pre>
+            </div>
 
             <h3>Events</h3>
             <div class="table-responsive">
@@ -372,11 +387,11 @@
                 </table>
             </div><!-- /.table-responsive -->
             <div class="highlight">
-                <pre><code class="js">
-                    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTooltip&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;hidden.bs.tooltip&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-                        <span class="c1">// do something¦</span>
-                    <span class="p">})</span>
-                </code></pre>
+<pre><code class="js">
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTooltip&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;hidden.bs.tooltip&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// do something¦</span>
+<span class="p">})</span>
+</code></pre>
             </div>
         </div>
     </div>
@@ -480,29 +495,29 @@
         <h3>Via data attributes</h3>
         <p>Add <code>data-toggle="dropdown"</code> to a link or button to toggle a dropdown.</p>
         <div class="highlight">
-            <pre><code class="html">
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;dropdown&quot;</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">&quot;dropdown&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Dropdown trigger<span class="nt">&lt;/a&gt;</span>
-                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;dropdown-menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span> <span class="na">aria-labelledby=</span><span class="s">&quot;dLabel&quot;</span><span class="nt">&gt;</span>
-                        ...
-                    <span class="nt">&lt;/ul&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-            </code></pre>
+<pre><code class="html">
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;dropdown&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">&quot;dropdown&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Dropdown trigger<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;dropdown-menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span> <span class="na">aria-labelledby=</span><span class="s">&quot;dLabel&quot;</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
         </div>
         <p>To keep URLs intact, use the <code>data-target</code> attribute instead of <code>href="#"</code>.</p>
         <div class="highlight">
-            <pre><code class="html">
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;dropdown&quot;</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">&quot;dLabel&quot;</span> <span class="na">role=</span><span class="s">&quot;button&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;dropdown&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#&quot;</span> <span class="na">href=</span><span class="s">&quot;/page.html&quot;</span><span class="nt">&gt;</span>
-                        Dropdown
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;caret&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
-                    <span class="nt">&lt;/a&gt;</span>
+<pre><code class="html">
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;dropdown&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">&quot;dLabel&quot;</span> <span class="na">role=</span><span class="s">&quot;button&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;dropdown&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#&quot;</span> <span class="na">href=</span><span class="s">&quot;/page.html&quot;</span><span class="nt">&gt;</span>
+    Dropdown
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;caret&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
 
-                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;dropdown-menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span> <span class="na">aria-labelledby=</span><span class="s">&quot;dLabel&quot;</span><span class="nt">&gt;</span>
-                        ...
-                    <span class="nt">&lt;/ul&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-            </code></pre>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;dropdown-menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span> <span class="na">aria-labelledby=</span><span class="s">&quot;dLabel&quot;</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
         </div>
 
         <h3>Via JavaScript</h3>
@@ -551,11 +566,11 @@
             </table>
         </div><!-- ./bs-table-responsive -->
         <div class="highlight">
-            <pre><code class="js">
-                <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myDropdown&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;show.bs.dropdown&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-                    <span class="c1">// do something¦</span>
-                <span class="p">})</span>
-            </code></pre>
+<pre><code class="js">
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myDropdown&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;show.bs.dropdown&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// do something¦</span>
+<span class="p">})</span>
+</code></pre>
         </div>
     </div>
 
@@ -575,24 +590,24 @@
         </div>
     </div>
     <div class="highlight">
-        <pre><code class="html">
-            <span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"drawer"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;h2&gt;&lt;a</span><span class="na"> href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Drawer Heading 1<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
-                <span class="nt">&lt;div&gt;</span>
-                    Nulla nec lectus at orci tempor blandit. Sed nisi ipsum, iaculis nec pharetra non, mollis sit amet
-                <span class="nt">&lt;/div&gt;</span>
+<pre><code class="html">
+<span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"drawer"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2&gt;&lt;a</span><span class="na"> href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Drawer Heading 1<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    Nulla nec lectus at orci tempor blandit. Sed nisi ipsum, iaculis nec pharetra non, mollis sit amet
+  <span class="nt">&lt;/div&gt;</span>
 
-                <span class="nt">&lt;h2&gt;&lt;a</span><span class="na"> href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Drawer Heading 2<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
-                <span class="nt">&lt;div&gt;</span>
-                    Suspendisse sit amet lectus est, sed ornare neque. Cras dignissim odio sit amet mi tempor vel
-                <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;h2&gt;&lt;a</span><span class="na"> href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Drawer Heading 2<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    Suspendisse sit amet lectus est, sed ornare neque. Cras dignissim odio sit amet mi tempor vel
+  <span class="nt">&lt;/div&gt;</span>
 
-                <span class="nt">&lt;h2&gt;&lt;a</span><span class="na"> href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Drawer Heading 3<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
-                <span class="nt">&lt;div&gt;</span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum vehicula tortor ac
-                <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        </code></pre>
+  <span class="nt">&lt;h2&gt;&lt;a</span><span class="na"> href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Drawer Heading 3<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum vehicula tortor ac
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
     </div>
 
 
@@ -614,34 +629,34 @@
         </div>
     </div>
     <div class="highlight">
-        <pre><code class="html">
-            <span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"flexslider"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;ul</span><span class="na"> class=</span><span class="s">"slides"</span><span class="nt">&gt;</span>
-                    <span class="c">&lt;!--Image and caption--&gt;</span>
-                    <span class="nt">&lt;li&gt;</span>
-                        <span class="nt">&lt;img</span><span class="na"> alt=</span><span class="s">"Sophia Suarez researches nanomedicine"</span><span class="na"> src=</span><span class="s">"_images/rt_img/rt_2.jpg"</span><span class="nt">/&gt;</span>
-                        <span class="nt">&lt;p</span><span class="na"> class=</span><span class="s">"flex-caption"</span><span class="nt">&gt;</span>Students make some noise during Spirit Night.<span class="nt">&lt;/p&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
+<pre><code class="html">
+<span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"flexslider"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span><span class="na"> class=</span><span class="s">"slides"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!--Image and caption--&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;img</span><span class="na"> alt=</span><span class="s">"Sophia Suarez researches nanomedicine"</span><span class="na"> src=</span><span class="s">"_images/rt_img/rt_2.jpg"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;p</span><span class="na"> class=</span><span class="s">"flex-caption"</span><span class="nt">&gt;</span>Students make some noise during Spirit Night.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
 
-                    <span class="c">&lt;!--Image, caption and link--&gt;</span>
-                    <span class="nt">&lt;li&gt;</span>
-                        <span class="nt">&lt;img</span><span class="na"> alt=</span><span class="s">"Students make some noise during Spirit Night"</span><span class="na"> src=</span><span class="s">"_images/rt_img/rt_3.jpg"</span><span class="nt">/&gt;</span>
-                        <span class="nt">&lt;p</span><span class="na"> class=</span><span class="s">"flex-caption"</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;a</span><span class="na"> href=</span><span class="s">"http://www.ucsd.edu"</span><span class="nt">&gt;</span>Students go surfing at La Jolla Shores<span class="nt">&lt;/a&gt;</span>
-                        <span class="nt">&lt;/p&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
+    <span class="c">&lt;!--Image, caption and link--&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;img</span><span class="na"> alt=</span><span class="s">"Students make some noise during Spirit Night"</span><span class="na"> src=</span><span class="s">"_images/rt_img/rt_3.jpg"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;p</span><span class="na"> class=</span><span class="s">"flex-caption"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span><span class="na"> href=</span><span class="s">"http://www.ucsd.edu"</span><span class="nt">&gt;</span>Students go surfing at La Jolla Shores<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
 
-                    <span class="c">&lt;!--Image only--&gt;</span>
-                    <span class="nt">&lt;li&gt;</span>
-                        <span class="nt">&lt;img</span><span class="na"> alt=</span><span class="s">"UC San Diego students on round up carnival ride"</span><span class="na"> src=</span><span class="s">"_images/rt_img/rt_4.jpg"</span><span class="nt">/&gt;</span>
-                    <span class="nt">&lt;/li&gt;</span>
-                <span class="nt">&lt;/ul&gt;</span>
+    <span class="c">&lt;!--Image only--&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;img</span><span class="na"> alt=</span><span class="s">"UC San Diego students on round up carnival ride"</span><span class="na"> src=</span><span class="s">"_images/rt_img/rt_4.jpg"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
 
-                <span class="c">&lt;!--Remove this line to disable rotator controls--&gt;</span>
-                <span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"flex-controls"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="c">&lt;!--Remove this line to disable rotator controls--&gt;</span>
+  <span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"flex-controls"</span><span class="nt">&gt;&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/div&gt;</span>
-        </code></pre>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
     </div>
     </div>
 

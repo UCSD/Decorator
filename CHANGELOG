@@ -10,6 +10,7 @@ Detailed messages about the changes can be reviewed in the Git comments.
 ### Updated
 - Updated bootstrap to version 3.3.5
 - Modernizer updated to version 2.6.3
+- Updated <code> tag formatting
 - Use multitask syntax for modernizr in Grunt
 - Jshint indent size set to 2
 - Updated sass task in Grunt to compile all scss files
