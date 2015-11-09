@@ -353,6 +353,17 @@ module.exports = function(grunt) {
           ]
         } ]
       },
+      changelog: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= config.app %>/..',
+          dest: '<%= config.dist %>',
+          src: [
+            'CHANGELOG.txt'
+          ]
+        } ]
+      },
       styles: {
         expand: true,
         dot: true,
@@ -460,6 +471,7 @@ module.exports = function(grunt) {
     'cssmin',
     'uglify',
     'copy:dist',
+    'copy:changelog',
     'modernizr',
     'usemin',
     'replace',
