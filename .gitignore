@@ -8,5 +8,4 @@ node_modules/
 *.zip
 
 *.map
-*.txt
 app/styles/*.css
