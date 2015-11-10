@@ -67,6 +67,7 @@ module.exports = function(grunt) {
       }
     },
     sass: {
+
       dist: {
         files: [{
           expand: true,
@@ -75,9 +76,6 @@ module.exports = function(grunt) {
           dest: '<%= config.app %>/styles/',
           ext: '.css'
         }]
-      },
-      options: {
-        sourcemap: 'auto'
       }
     },
 
@@ -479,6 +477,7 @@ module.exports = function(grunt) {
     'compress'
   ]);
 
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-text-replace');
 
 
