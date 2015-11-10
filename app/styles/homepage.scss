@@ -1,0 +1,97 @@
+h2, h3 {
+  color: #0b638b;
+}
+
+.main-section-module {
+  h2 {
+    font-weight: normal;
+    border-bottom: 1px solid #0b638b;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+  }
+
+  > .content-module {
+    margin-bottom: 1em;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*Give Button*/
+#give-button {
+  margin: 10px 0;
+  width: 115px;
+}
+
+a.give-button {
+  -moz-transition: background 0.1s ease-in 0s, -moz-box-shadow 0.1s ease-in 0s;
+  background-color: #DB7B0F;
+  background-image: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.4));
+  border-bottom: 1px solid #D9740B;
+  border-radius: 3px 3px 3px 3px;
+  border-top: 1px solid #FFDCB4;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 -1px 2px rgba(0, 0, 0, 0.5);
+  display: block;
+  height: 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 115px;
+  z-index: 1000;
+}
+
+a.give-button:hover {
+  background-color: #C7700E;
+  border-bottom: 1px solid #C86408;
+  text-decoration: none;
+}
+
+a.give-button span {
+  color: #FFFFFF;
+  font-family: Georgia,Times,serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 15px;
+  position: relative;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5), 0 1px 1px rgba(255, 255, 255, 0.5);
+  top: 5px;
+}
+
+/* flexslider homepage specific styles */
+.flexslider {
+  margin-bottom: 0;
+}
+
+.slides li {
+  margin-top: 0;
+}
+
+.slides img {
+  width: 100% !important;
+  max-height: 305px !important;
+}
+
+.controls {
+  margin: -7px;
+  position: relative;
+}
+
+.spot-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#AA1986b4,endColorstr=#AA1986b4); zoom: 1;}
+.spot-caption { padding: 2%; position: absolute; left: 0; bottom: 0; background: rgba(11, 99, 139, 0.8); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 14px; line-height: 18px;}
+
+.alt p {
+  margin-bottom: 0;
+}
+
+/* module styling */
+.news-item {
+  img {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}

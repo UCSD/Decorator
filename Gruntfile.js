@@ -26,11 +26,45 @@ module.exports = function(grunt) {
       version: '4.5.2'
     },
 
+    // postcss plugin for autoprefixer
+    postcss: {
+      options: {
+        map: true,
+        processors: [
+          require('autoprefixer')({
+            browsers: ['not ie <= 6', 'last 6 versions']
+          })
+        ]
+      },
+      dist: {
+        src: 'dist/styles/*.css'
+      }
+    },
+
+    browserSync: {
+      bsFiles: {
+        src: [
+          'app/styles/**/*.scss',
+          '*.html'
+        ]
+      },
+      options: {
+        watchTask: true,
+        server: {
+          baseDir: "app/"
+        }
+      }
+    },
+
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
         files: ['bower.json'],
         tasks: ['bowerInstall']
+      },
+      sass: {
+        files: 'app/styles/**/*.scss',
+        tasks: ['sass']
       },
       js: {
         files: ['<%= config.app %>/scripts/{,*/}*.js'],
@@ -39,32 +73,22 @@ module.exports = function(grunt) {
           livereload: true
         }
       },
-      jstest: {
-        files: ['test/spec/{,*/}*.js'],
-        tasks: ['test:watch']
-      },
+      // jstest: {
+      //   files: ['test/spec/{,*/}*.js'],
+      //   tasks: ['test:watch']
+      // },
       gruntfile: {
         files: ['Gruntfile.js']
-      },
-      compass: {
-        files: ['<%= config.app %>/styles/**/*.{scss,sass}'],
-        tasks: ['compass:server', 'autoprefixer']
-      },
-      styles: {
-        files: ['<%= config.app %>/styles/{,*/}*.css'],
-        tasks: ['newer:copy:styles', 'autoprefixer']
-      },
-      livereload: {
-        options: {
-          livereload: '<%= connect.options.livereload %>'
-        },
-        files: [
-          '<%= config.app %>/{,*/}*.html',
-          '<%= config.app %>/{,*/}*.css',
-          '.tmp/styles/{,*/}*.css',
-          '<%= config.app %>/img/{,*/}*'
-        ]
       }
+      // compass: {
+      //   files: ['<%= config.app %>/styles/**/*.{scss,sass}'],
+      //   tasks: ['compass:server', 'autoprefixer']
+      // },
+      // styles: {
+      //   files: ['<%= config.app %>/styles/{,*/}*.css'],
+      //   tasks: ['newer:copy:styles', 'autoprefixer']
+      // },
+
     },
     sass: {
 
@@ -76,42 +100,6 @@ module.exports = function(grunt) {
           dest: '<%= config.app %>/styles/',
           ext: '.css'
         }]
-      }
-    },
-
-    // The actual grunt server settings
-    connect: {
-      options: {
-        port: 9000,
-        livereload: 35729,
-        // Change this to '0.0.0.0' to access the server from outside
-        hostname: 'localhost'
-      },
-      livereload: {
-        options: {
-          open: true,
-          base: [
-            '.tmp',
-            '<%= config.app %>'
-          ]
-        }
-      },
-      test: {
-        options: {
-          port: 9001,
-          base: [
-            '.tmp',
-            'test',
-            '<%= config.app %>'
-          ]
-        }
-      },
-      dist: {
-        options: {
-          open: true,
-          base: '<%= config.dist %>',
-          livereload: false
-        }
       }
     },
 
@@ -144,16 +132,6 @@ module.exports = function(grunt) {
       ]
     },
 
-    // Mocha testing framework configuration options
-    mocha: {
-      all: {
-        options: {
-          run: true,
-          urls: ['http://<%= connect.test.options.hostname %>:<%= connect.test.options.port %>/index.html']
-        }
-      }
-    },
-
     // Compiles Sass to CSS and generates necessary files if requested
     compass: {
       options: {
@@ -182,34 +160,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // Add vendor prefixed styles
-    autoprefixer: {
-      options: {
-        browsers: ['last 6 versions']
-      },
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '.tmp/styles/',
-          src: '{,*/}*.css',
-          dest: '.tmp/styles/'
-        }]
-      }
-    },
-
-    // Automatically inject Bower components into the HTML file
-    bowerInstall: {
-      app: {
-        src: ['<%= config.app %>/index.html'],
-        ignorePath: '<%= config.app %>/',
-        exclude: ['bootstrap.js', 'jquery.js']
-      },
-      sass: {
-        src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
-        ignorePath: '<%= config.app %>/vendor/'
-      }
-    },
-
     // Renames files for browser caching purposes
     rev: {
       dist: {
@@ -232,7 +182,7 @@ module.exports = function(grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: ['<%= config.app %>/homepage-wide.html', '<%= config.app %>/widgets.html']
+      html: ['<%= config.app %>/homepage-wide.html', '<%= config.app %>/homepage.html', '<%= config.app %>/widgets.html']
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
@@ -242,17 +192,6 @@ module.exports = function(grunt) {
       },
       html: ['<%= config.dist %>/{,*/}*.html'],
       css: ['<%= config.dist %>/styles/{,*/}*.css']
-    },
-
-    replace: {
-      decoratorVersion: {
-        src: ['dist/**/*.html', 'dist/*.html'],
-        overwrite: true, // overwrite matched source files
-        replacements: [{
-          from: /%param-decorator-version%/g,
-          to: '<%= config.version %>'
-        }]
-      }
     },
 
     // The following *-min tasks produce minified files in the dist folder
@@ -275,16 +214,16 @@ module.exports = function(grunt) {
       }
     },
 
-    //svgmin: {
-    //    dist: {
-    //        files: [{
-    //            expand: true,
-    //            cwd: '<%= config.app %>/img',
-    //            src: '{,*/}*.svg',
-    //            dest: '<%= config.dist %>/img'
-    //        }]
-    //    }
-    //},
+    svgmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>/img',
+          src: '{,*/}*.svg',
+          dest: '<%= config.dist %>/img'
+        }]
+      }
+    },
 
     htmlmin: {
       dist: {
@@ -306,6 +245,7 @@ module.exports = function(grunt) {
         }]
       }
     },
+
 
     // By default, your `index.html`'s <!-- Usemin block --> will take care of
     // minification. These next options are pre-configured if you do not wish
@@ -349,7 +289,7 @@ module.exports = function(grunt) {
             'docs/{,*/}*.css', //for the kitchen sink...
             'docs/{,*/}*.js' //for the kitchen sink...
           ]
-        } ]
+        }]
       },
       changelog: {
         files: [{
@@ -360,7 +300,7 @@ module.exports = function(grunt) {
           src: [
             'CHANGELOG.txt'
           ]
-        } ]
+        }]
       },
       styles: {
         expand: true,
@@ -394,6 +334,8 @@ module.exports = function(grunt) {
       }
     },
 
+
+
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
@@ -423,7 +365,35 @@ module.exports = function(grunt) {
           dest: '/'
         }]
       }
-    }
+    },
+
+
+
+
+
+
+
+
+
+    replace: {
+      decoratorVersion: {
+        src: ['dist/**/*.html', 'dist/*.html'],
+        overwrite: true, // overwrite matched source files
+        replacements: [{
+          from: /%param-decorator-version%/g,
+          to: '<%= config.version %>'
+        }]
+      }
+    },
+
+
+
+
+
+
+
+
+
   });
 
   grunt.registerTask('serve', function(target) {
@@ -440,10 +410,7 @@ module.exports = function(grunt) {
     ]);
   });
 
-  grunt.registerTask('server', function(target) {
-    grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-    grunt.task.run([target ? ('serve:' + target) : 'serve']);
-  });
+
 
   grunt.registerTask('test', function(target) {
     if (target !== 'watch') {
@@ -460,31 +427,31 @@ module.exports = function(grunt) {
     ]);
   });
 
-  grunt.registerTask('build', [
+  grunt.registerTask('default', [
     'clean:dist',
     'useminPrepare',
     'concurrent:dist',
-    'autoprefixer',
     'concat',
     'cssmin',
     'uglify',
     'copy:dist',
+    'postcss:dist',
     'copy:changelog',
     'modernizr',
     'usemin',
     'replace',
-    /*'htmlmin',*/ //uncomment this to re-enable html minification
     'compress'
   ]);
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-text-replace');
+  grunt.loadNpmTasks('grunt-postcss');
 
-
-  grunt.registerTask('default', [
-    'newer:jshint',
-    'build'
-  ]);
+  // grunt.registerTask('default', [
+  //   'browserSync',
+  //   'watch',
+  //   'postcss'
+  // ]);
 
 
 };

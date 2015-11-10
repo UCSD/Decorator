@@ -1,0 +1,21 @@
+@media print {
+  html, main, footer *,
+  .layout-title * {
+    background-color: transparent !important;
+    background-image: none !important;
+    overflow: visible !important; }
+
+  .title-header {
+    color: #000; }
+
+  /* hide login/ emergency/ nav/ search styles */
+  #uc-emergency, .layout-login, nav, .search {
+    display: none; }
+
+  main {
+    width: 99.99% !important; }
+
+  @page {
+    margin: 0.5cm; } }
+
+/*# sourceMappingURL=print.css.map */

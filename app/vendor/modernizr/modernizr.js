@@ -545,7 +545,7 @@ window.Modernizr = (function( window, document, undefined ) {
     };
 
     tests['multiplebgs'] = function() {
-        // Setting multiple _images AND a color on the background shorthand property
+        // Setting multiple images AND a color on the background shorthand property
         //  and then querying the style.background property value for the number of
         //  occurrences of "url(" is a reliable method for detecting ACTUAL support for this!
 
@@ -622,7 +622,7 @@ window.Modernizr = (function( window, document, undefined ) {
          * webkit.org/blog/175/introducing-css-gradients/
          * developer.mozilla.org/en/CSS/-moz-linear-gradient
          * developer.mozilla.org/en/CSS/-moz-radial-gradient
-         * dev.w3.org/csswg/css3-_images/#gradients-
+         * dev.w3.org/csswg/css3-images/#gradients-
          */
 
         var str1 = 'background-image:',
@@ -722,7 +722,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
     // Note: in some older browsers, "no" was a return value instead of empty string.
     //   It was live in FF3.5.0 and 3.5.1, but fixed in 3.5.2
-    //   It was also live in Safari 4.0.0 - 4.0.5, but fixed in 4.0.5
+    //   It was also live in Safari 4.0.0 - 4.0.4, but fixed in 4.0.5
 
     tests['video'] = function() {
         var elem = document.createElement('video'),

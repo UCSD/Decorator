@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700|Bree+Serif);
+
+h1 {
+  color: #b87111;
+  font-family: 'Laro', serif;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #707071;
+  font-family: 'Laro', serif;
+}
+
+div.styled {
+  background: #eeeeee;
+}
+
+div.styled h2 {
+  color: #b87111;
+}
+
+a:link, a:visited, .widget_content a:link, .widget_content a:visited {
+  color: #1893b8;
+}
+
+.flexslider a {
+  color: #FFF;
+}
+
+.layout-title {
+  background: #07425a;
+}
+
+.layout-title a.title-header {
+  font-family: 'Lora', serif;
+  color: #fff;
+
+  transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+}
+
+.layout-navbar {
+  border-top: 1px solid #C8CFD3;
+  border-bottom: 1px solid #C8CFD3;
+}
+
+.layout-navbar ul.navbar-list > li > a {
+  padding: 9px 15px 8px;
+  color: #004b6e;
+}
+
+.layout-navbar ul.navbar-list > li.active > a {
+  border-bottom: #07425a solid 3px;;
+}
+/* depth of selectors to override layout.scss */
+.navdrawer-container ul.navbar-list ul.navbar-sublist {
+  border-left: 1px solid #e1ecff;
+  border-bottom: 1px solid #bcd6e6;
+}
+
+.navdrawer-container ul.navbar-list ul.navbar-sublist a {
+  background: rgb(240, 250, 255);
+}
+
+.main-content-nav {
+  background-color: rgb(238, 238, 238);
+  font-family: 'Lora', serif;
+}
+
+.main-content-nav > h2 {
+  color: #b87111;
+}
+
+/* search modifications */
+.search-toggle,
+.search-toggle:hover,
+.search-toggle:focus {
+  background: 0 0;
+  color: #07425a;
+  border: 1px solid transparent
+}
+.btn-default, .btn-default:focus, .btn-default:hover {
+  color:#07425a;
+}
+.search-toggle.search-is-open {
+  background-color: #DFE2E4;
+  color: #95afc9;
+}
