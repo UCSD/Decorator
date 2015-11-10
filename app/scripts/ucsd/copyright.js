@@ -1,7 +1,7 @@
 /* initialize copyright year */
 function initCopyright() {
 	var today = new Date();
-	copyrightYear = today.getFullYear();
-	$("#tdr_copyright_year").empty();
-	$("#tdr_copyright_year").append(copyrightYear);
+	var footerCopyrightYear = '.footer-copyright-year';
+	$(footerCopyrightYear).empty();
+	$(footerCopyrightYear).append(today.getFullYear());
 };
