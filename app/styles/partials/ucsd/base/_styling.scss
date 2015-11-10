@@ -365,45 +365,59 @@ a.button {
 	padding: 0 40px;
   	cursor: pointer;
 }
+
 .social-list li.facebook {
 	background-position: 0 0;
 }
+
 .social-list li.twitter {
 	background-position: 0 -39px;
 }
+
 .social-list li.youtube {
 	background-position: 0 -80px;
 }
+
 .social-list li.linkedin {
 	background-position: 0 -121px;
 }
+
 .social-list li.googleplus {
 	background-position: 0 -160px;
 }
+
 .social-list li.instagram {
 	background-position: 0 -200px;
 }
+
 .social-list li.tumblr {
 	background-position: 0 -240px;
 }
+
 .social-list li.flickr {
 	background-position: 0 -280px;
 }
+
 .social-list li.vine {
 	background-position: 0 -320px;
 }
+
 .social-list li.pinterest {
 	background-position: 0 -360px;
 }
+
 .social-list li.blogger {
 	background-position: 0 -400px;
 }
+
 .social-list li.rss {
 	background-position: 0 -440px;
 }
+
 .social-list li.vimeo {
   background-position: 0 -480px;
 }
+
 .social-list li.wordpress {
   background-position: 0 -520px;
 }
@@ -550,6 +564,12 @@ html>body form .icon.invalid {
 	background-position: right 0;
 }
 
+.field_top .required,
+.field_left .required {
+    background-position: left 0;
+    padding-left: 1em;
+}
+
 /* top-aligned */
 .field_top .label {
 	padding-left: 1em;
@@ -558,11 +578,6 @@ html>body form .icon.invalid {
 .field_top .input,.field_top .output,.field_top select.input,.field_top textarea.input
 {
 	margin-left: 1em;
-}
-
-.field_top .required {
-	background-position: left 0;
-	padding-left: 1em;
 }
 
 /* left-aligned */
@@ -576,11 +591,6 @@ html>body form .icon.invalid {
 .field_left .input,.field_left .output,.field_left select.input,.field_left textarea.input
 {
 	margin-left: 11.5em;
-}
-
-.field_left .required {
-	background-position: left 0;
-	padding-left: 1em;
 }
 
 /* --------------------------------------------------------------------
@@ -626,4 +636,77 @@ div.loading {
 span.loading {
 	background-position: right;
 	padding-right: 20px;
+}
+
+/**********************************************************************
+ * CSS Styling for the page nav aside
+ */
+div.styled {
+  background: #F2F5F7;
+  border: 1px solid #C8CFD3;
+  margin-bottom: 1em;
+  padding: 1em;
+
+  h2, h3, h4, h5, h6 {
+	color: #738AA3;
+	text-shadow: 0 1px 1px #FFFFFF;
+  }
+
+  h2 {
+	font-size: 140%;
+  }
+
+  h3 {
+	font-size: 115%;
+  }
+}
+
+#page_nav {
+  margin: 0 -1em -1em;
+  padding: 0;
+
+  li {
+	border-top: 1px solid #DBD7D7;
+	color: #06c;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	&.active, a {
+	  color: #016691;
+	  display: block;
+	  padding: 1em 0 1em 1em;
+	}
+
+	&.active {
+	  background-color: #fff;
+	  color: #D56A03;
+	}
+
+	&.collapsed ul {
+	  display: none;
+	}
+
+	a:hover {
+	  background-color: #fff;
+	  text-decoration: none;
+	}
+
+	li {
+	  font-size: 85%;
+
+	  a:hover {
+		text-decoration: underline;
+	  }
+	}
+  }
+
+  ul {
+	margin: .4em 0 -.4em 1em;
+	padding: 0;
+  }
+}
+
+#page_nav_title {
+  margin-bottom: 0.7em;
 }

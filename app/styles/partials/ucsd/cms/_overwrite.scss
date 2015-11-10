@@ -64,7 +64,7 @@ FLEXSLIDER
 	}
 
 	/* pause and play control */
-    // ToDo: test if no-repeat and transparent attributes break the flex-pauseplay
+
 	.flex-pauseplay a {
 		border: 0;
 		display: block;
@@ -131,6 +131,12 @@ FLEXSLIDER
 		}
 	}
 }
+
+/* navigation dropdown z-index issue fix */
+#main-content .flexslider .flex-controls {
+  z-index: 2;
+}
+
 /* Caption style */
 /* IE rgba() hack */
 

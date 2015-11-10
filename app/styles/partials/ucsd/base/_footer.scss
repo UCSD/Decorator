@@ -21,13 +21,15 @@ footer a:hover, footer a:focus, #tdr_footer a:hover,#tdr_footer a:focus {
 	font-size: 90%;
 	text-align: left;
 	padding: 1em 0;
-
-	@media only screen and (max-width: $tablet - 1 ) {
-	  	background: none;
-	}
+	background: 0;
 
 	@media only screen and (min-width: $tablet) {
-		background-position: right -74px;
+		background: transparent url(img/sprite_base.png) right -74px no-repeat;
+
+		@media screen and (-webkit-min-device-pixel-ratio:2) {
+			background-image: url(img/sprite_base2x.png);
+			background-size: 500px 120px;
+		}
 	}
 
 

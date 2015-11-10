@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       // Configurable paths
       app: 'app',
       dist: 'dist',
-      version: '4.0.6'
+      version: '4.5.2'
     },
 
     // Watches files for changes and runs tasks based on the changed files

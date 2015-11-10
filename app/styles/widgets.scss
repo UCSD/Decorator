@@ -1,3 +1,13 @@
-@import "../widgets/datatable/styles/datatables";
+/********************* WIDGETS */
+
+@import "../widgets/datatable/styles/datatable";
 @import "../widgets/fullcalendar/styles/fullcalendar";
 @import "../widgets/wizard/styles/wizard";
+
+/* zebra table
+ * Adding class 'stripe' to the table will create zebra tables
+ * <table class="stripe"> ... </table>
+ */
+.stripe tbody tr:nth-child(odd) {
+  background-color: #ccc;
+}

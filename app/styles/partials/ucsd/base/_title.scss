@@ -36,6 +36,7 @@ body {
 	display: block;
 	overflow: hidden;
 	text-indent: -999em;
+	background: transparent url(img/sprite_base.png) no-repeat;
 	left: 0;
 	top: 10px;
 	background-position: -239px -14px;
@@ -53,6 +54,12 @@ body {
 		left: auto;
 		right: 0;
 	}
+
+	@media screen and (-webkit-min-device-pixel-ratio:2) {
+		background-image: url(img/sprite_base2x.png);
+		background-size: 500px 120px;
+	}
+
 }
 
 #tdr_title_page_title {
@@ -124,7 +131,7 @@ body {
 	}
 
 	#tdr_title_menu_link {
-		background-position:-461px -47px;
+		background: url(img/sprite_base.png) no-repeat scroll -461px -47px transparent;
 		right: 0;
 	}
 

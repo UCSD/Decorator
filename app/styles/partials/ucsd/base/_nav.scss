@@ -91,7 +91,6 @@ html {
   }
 }
 
-// navbar overflow - hamburger menu fix
 body {
   &.collapse-nav {
     @media screen and (min-width: $desktop-small) {
@@ -125,7 +124,6 @@ body {
 
 #tdr_nav_list,.tdr_nav_list {
   margin: 0;
-  font-size: 14px;
 }
 
 #tdr_nav {
@@ -442,8 +440,6 @@ div.styled {
     font-size: 115%;
   }
 }
-
-div.styled
 
 /*---------------------------------------------------------------------
  * page navigation
