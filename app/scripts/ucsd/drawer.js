@@ -15,7 +15,7 @@ $(document).ready(function() {
         drawerWrapper.append(link);
 
         /* build drawer */
-        drawer.children("article").toggle();
+        drawer.children("div").toggle();
 
         drawer.children("h2").click(function() {
             $(this).toggleClass("expand");
@@ -63,13 +63,13 @@ $(document).ready(function() {
 	/* expand all drawers */
 	function expandAll(drawerWrapper) {
 		drawerWrapper.children(".drawer").children("h2").addClass("expand");
-        drawerWrapper.children(".drawer").children("article").show();
+        drawerWrapper.children(".drawer").children("div").show();
     }
 
 	/* close all drawers */
 	function collapseAll(drawerWrapper) {
 		drawerWrapper.children(".drawer").children("h2").removeClass("expand");
-		drawerWrapper.children(".drawer").children("article").hide();
+		drawerWrapper.children(".drawer").children("div").hide();
     }
 
 	/* reset drawer toggle link */

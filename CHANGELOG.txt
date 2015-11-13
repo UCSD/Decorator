@@ -2,6 +2,22 @@
 All notable changes to this project will be documented in this file.
 Detailed messages about the changes can be reviewed in the Git comments.
 
+## [4.5.2] 2015-11-12
+### Fixed
+- Initialize tooltip example for correct tip placement
+
+### Updated
+- Use of HTML5 tags, e.g. <main>, <header>, <nav>, <section>
+- Rely more on bootstrap's grid system
+- Renamed "astrisk" to "asterisk"
+- Menu in mobile view allows tap to expand for each section
+- Support a short title value in mobile view
+
+### Removed
+- Removed use of #tdr_wrapper and #tdr_slide_wrapper
+- Removed all.html page
+
+
 ## [4.0.6] 2015-11-06
 ### Fixed
 - /img and /styles/img folders added to the zipped distribution file
