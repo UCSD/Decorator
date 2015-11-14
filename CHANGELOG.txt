@@ -12,9 +12,10 @@ Detailed messages about the changes can be reviewed in the Git comments.
 - Renamed "astrisk" to "asterisk"
 - Menu in mobile view allows tap to expand for each section
 - Support a short title value in mobile view
+- Separate out Bootstrap JavaScript components into their own file
 
 ### Removed
-- Removed use of #tdr_wrapper and #tdr_slide_wrapper
+- Removed use of #tdr_wrapper and #tdr_slide_wrapper, and other tdr_ elements
 - Removed all.html page
 
 
