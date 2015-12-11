@@ -430,6 +430,8 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'clean:dist',
     'useminPrepare',
+    'sass:dist',
+    'sass:dist2',
     'concurrent:dist',
     'concat',
     'cssmin',
