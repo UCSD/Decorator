@@ -3,11 +3,12 @@
 	/**********************************************************************
 	 * Print Styles
  	 */
-	/* reset background and float elements */	
+	/* reset background and float elements */
 	html, footer, footer *, #tdr_title *,#tdr_footer, #tdr_footer * {
 		background-color: transparent !important;
 		background-image: none !important;
 		overflow: visible !important;
+		color: #000;
 	}
 
 	#col_content,#col_supplemental,
@@ -35,7 +36,7 @@
 	#tdr_title_page_title a,h1,h2,h3,h4,h5,h6,p {
 		color: #000;
 	}
-	
+
 	#tdr_content_content {
 	   width: 99.99% !important;
 	}
