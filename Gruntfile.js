@@ -446,6 +446,10 @@ module.exports = function(grunt) {
     'clean:dist',
     'useminPrepare',
     'sass:dist',
+<<<<<<< HEAD
+=======
+    'sass:dist2',
+>>>>>>> UCSD/master
     'concurrent:dist',
     'concat',
     'autoprefixer',
