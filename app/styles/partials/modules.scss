@@ -112,7 +112,9 @@
 
   color: #fff;
   font-size: 24px;
+
   letter-spacing: 1px;
+
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
@@ -181,6 +183,9 @@
   > ul {
     /* for borders to line up properly */
     margin: 0 -1em -1em;
+    /* override navbar-list 14px for main navbar*/
+    font-size: 1em;
+
     > li.active {
       color: #d56a03;
     }
@@ -254,4 +259,8 @@ input {
 
 select {
 
+}
+
+.subhead {
+  font-size: 120%
 }

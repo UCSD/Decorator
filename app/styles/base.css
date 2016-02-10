@@ -37,11 +37,11 @@ div.loading {
 span.loading {
   background: url(img/icon_loading_inline.gif) no-repeat transparent; }
 
-.icon.astrisk,
+.icon.asterisk,
 .field .required,
 .field_top .required,
 .field_left .required {
-  background: url(img/astrisk.png) no-repeat transparent; }
+  background: url(img/asterisk.png) no-repeat transparent; }
 
 /* ***********************************************
  * Layout
@@ -75,6 +75,9 @@ html, body {
   @media only screen and (max-width: 1200px) {
     .layout-container {
       max-width: 960px; } }
+
+.layout-navbar .layout-container {
+  overflow: visible; }
 
 .layout-header {
   /* to incorporate new navbar button*/
@@ -218,6 +221,17 @@ a {
 
 .main-section-content {
   position: relative; }
+
+.main-section-supplement {
+  background-color: #F2F5F7;
+  border: solid 1px #C8CFD3;
+  padding: 1em;
+  margin-bottom: 1em; }
+
+.main-section-supplement h3 {
+  font-size: 115%;
+  color: #738AA3;
+  text-shadow: 0 1px 1px #FFF; }
 
 /* ***********************************************
  * FOOTER
@@ -610,7 +624,7 @@ button:active {
   -webkit-transition: -webkit-transform .3s ease-in-out;
   transition: transform .3s ease-in-out; }
 
-.navdrawer-container.navbar-is-opened {
+nav.navdrawer-container.navbar-is-opened {
   position: fixed;
   top: 0;
   height: 100%;
@@ -666,6 +680,29 @@ button:active {
     border-bottom: 1px solid #ccc;
     -webkit-box-shadow: none;
     box-shadow: none; } }
+.collapse-navbar .navdrawer-container {
+  position: fixed;
+  width: 42%;
+  z-index: -1;
+  opacity: 0; }
+  .collapse-navbar .navdrawer-container .subnav-hover ul.navbar-sublist {
+    display: block;
+    position: relative;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .collapse-navbar .navdrawer-container .subnav-hover ul.navbar-sublist a {
+      border: 0;
+      padding-left: 3em; }
+
+.collapse-navbar .btn-nav {
+  display: block; }
+
+.collapse-navbar .search-content {
+  position: relative;
+  width: 100%; }
+
 /**********************************************************************
  * Basic CSS styling
  */
@@ -1077,7 +1114,7 @@ form .help {
   font-size: 85%; }
 
 /* required field */
-form .help.icon.astrisk {
+form .help.icon.asterisk {
   padding-bottom: 1em; }
 
 /* multi field */
@@ -1322,10 +1359,6 @@ FLEXSLIDER
       right: 5px;
       position: absolute;
       z-index: 10; }
-
-/* navigation dropdown z-index issue fix */
-#main-content .flexslider .flex-controls {
-  z-index: 2; }
 
 /* Caption style */
 /* IE rgba() hack */
@@ -1793,6 +1826,9 @@ html[xmlns] .flexslider .slides {
     background-color: #ccc !important; }
 
   .main-content-nav {
-    background: none; } }
+    background: none; }
+
+  a[href]:after {
+    content: none !important; } }
 
 /*# sourceMappingURL=base.css.map */

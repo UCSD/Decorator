@@ -38,4 +38,9 @@
   .main-content-nav {
     background: none;
   }
+
+  a[href]:after {
+      content: none !important;
+    }
+
 }
