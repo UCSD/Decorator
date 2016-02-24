@@ -126,6 +126,11 @@ button:active {
   border: none;
   border-bottom: 1px solid #ccc;
   padding: 10px 10px 10px 20px;
+  @media only screen and (max-width: $desktop) {
+    border: 0;
+    font-weight: bold;
+    background: #ECECEC;
+  }
 }
 
 /* Search bar integration */
@@ -182,6 +187,15 @@ button:active {
   .navdrawer-container ul.navbar-sublist {
     display: none;
     position: absolute;
+
+    @media only screen and (max-width: $desktop) {
+      display: block;
+      position: relative;
+      border-left: 0;
+      border-top: 0;
+      border-bottom: 1px solid #E2E2E2;
+      box-shadow: none;
+    }
 
     padding: 0;
 
@@ -291,15 +305,15 @@ nav.navdrawer-container.navbar-is-opened {
   .layout-header .btn-nav {
     margin-top: 1.7em;
   }
-
-
+}
+@media only screen and (max-width: $desktop) {
   .navdrawer-container .navbar-sublist a {
     border: none;
     margin: 0;
-    padding-left: 2.5em;
+    padding-left: 2.5em !important;
   }
-
 }
+
 
 @media only screen and (min-width: $desktop) {
   .navdrawer-container {

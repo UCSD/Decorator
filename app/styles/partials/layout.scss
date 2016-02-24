@@ -242,6 +242,13 @@ main
   .main-section-content {
     position: relative;
   }
+  .main-section-content img {
+
+    @media only screen and (max-width: 975px) {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
 
   .main-section-supplement {
     background-color: #F2F5F7;
