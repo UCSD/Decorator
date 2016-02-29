@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         map: true,
         processors: [
           require('autoprefixer')({
-            browsers: ['not ie <= 6', 'last 6 versions']
+            browsers: ['last 10 versions']
           })
         ]
       },
@@ -79,15 +79,15 @@ module.exports = function(grunt) {
       // },
       gruntfile: {
         files: ['Gruntfile.js']
-      }
+      },
       // compass: {
       //   files: ['<%= config.app %>/styles/**/*.{scss,sass}'],
       //   tasks: ['compass:server', 'autoprefixer']
       // },
-      // styles: {
-      //   files: ['<%= config.app %>/styles/{,*/}*.css'],
-      //   tasks: ['newer:copy:styles', 'autoprefixer']
-      // },
+      styles: {
+         files: ['<%= config.app %>/styles/{,*/}*.css'],
+         tasks: ['newer:copy:styles', 'autoprefixer']
+      }
 
     },
     sass: {
@@ -159,6 +159,21 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    // Add vendor prefixed styles
+        autoprefixer: {
+            options: {
+                browsers: ['last 6 versions']
+            },
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '.tmp/styles/',
+                    src: '{,*/}*.css',
+                    dest: '.tmp/styles/'
+                }]
+            }
+        },
 
     // Renames files for browser caching purposes
     rev: {
@@ -339,14 +354,14 @@ module.exports = function(grunt) {
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
-        'compass:server',
+        //'compass:server',
         'copy:styles'
       ],
       test: [
         'copy:styles'
       ],
       dist: [
-        'compass',
+        //'compass',
         'copy:styles',
         'imagemin',
         //'svgmin'
@@ -431,9 +446,9 @@ module.exports = function(grunt) {
     'clean:dist',
     'useminPrepare',
     'sass:dist',
-    'sass:dist2',
     'concurrent:dist',
     'concat',
+    //'autoprefixer',
     'cssmin',
     'uglify',
     'copy:dist',
@@ -446,6 +461,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.loadNpmTasks('grunt-contrib-sass');
+  //grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-postcss');
 

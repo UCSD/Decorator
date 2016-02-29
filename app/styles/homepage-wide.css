@@ -4,7 +4,7 @@
 /* LAYOUT VALUES */
 /* FONTS */
 /* MIXINS */
-@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 .layout-container {
   overflow: visible; }
 
@@ -76,6 +76,10 @@
     overflow: auto;
     padding: 20px 0 0;
     margin: 5px 0 10px; }
+
+.side-header h2 {
+  margin-bottom: 25px;
+  clear: both; }
 
 .flexslider {
   margin: 0 -40px;

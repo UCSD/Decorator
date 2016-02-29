@@ -18,6 +18,8 @@ html, body
 {
   background: #fff;
   overflow-x: hidden;
+  color: #333;
+  font: normal normal normal 16px/1.2 proxima-nova,Helvetica,Arial,sans-serif
 }
   /* container will have media queries for sizing*/
 
@@ -107,6 +109,11 @@ html, body
     border: 0;
     border-bottom: 1px solid #C8CFD3;
     margin-bottom: 0;
+    z-index: 100;
+
+    .layout-container {
+      overflow: visible;
+    }
   }
 
   .layout-main {
@@ -145,6 +152,11 @@ html, body
     letter-spacing: .5px;
   }
 
+  .h2, h2 {
+    font-size: 28px;
+  }
+
+
   hr {
     background-color: #ccc;
     color: #ccc;
@@ -174,7 +186,7 @@ nav
 
 .navbar-list {
   list-style: none;
-
+  font-size: 14px;
   padding: 0;
   margin: 0;
 }
@@ -223,11 +235,19 @@ main
     margin-bottom: 1em;
     @media only screen and (max-width: $tablet) {
       width:100%;
+      padding: 0 0 1em;
     }
   }
 
   .main-section-content {
     position: relative;
+  }
+  .main-section-content img {
+
+    @media only screen and (max-width: 975px) {
+      width: 100% !important;
+      height: auto !important;
+    }
   }
 
   .main-section-supplement {
@@ -268,5 +288,3 @@ footer
       border-right: 1px solid #ccc;
     }
   }
-
-

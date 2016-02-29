@@ -1078,11 +1078,4 @@ a.fc-more:hover {
 .wizard.x-wide li {
   width: 300px; }
 
-/* zebra table
- * Adding class 'stripe' to the table will create zebra tables
- * <table class="stripe"> ... </table>
- */
-.stripe tbody tr:nth-child(odd) {
-  background-color: #ccc; }
-
 /*# sourceMappingURL=widgets.css.map */

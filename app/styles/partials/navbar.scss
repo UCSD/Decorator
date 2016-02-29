@@ -28,6 +28,7 @@
   margin-right: 10px;
 
   @media only screen and (max-width: $mobile-small) {
+    font-size: 20px;
     top: 5px;
   }
 
@@ -125,6 +126,11 @@ button:active {
   border: none;
   border-bottom: 1px solid #ccc;
   padding: 10px 10px 10px 20px;
+  @media only screen and (max-width: $desktop) {
+    border: 0;
+    font-weight: bold;
+    background: #ECECEC;
+  }
 }
 
 /* Search bar integration */
@@ -175,12 +181,21 @@ button:active {
     border-bottom: solid 3px #9FB3BF;
   }
     .navbar-subnav .navbar-sublist li:hover > a {
-      background-color: #fbfbfb;
+      background-color: #EAEAEA;
     }
 
   .navdrawer-container ul.navbar-sublist {
     display: none;
     position: absolute;
+
+    @media only screen and (max-width: $desktop) {
+      display: block;
+      position: relative;
+      border-left: 0;
+      border-top: 0;
+      border-bottom: 1px solid #E2E2E2;
+      box-shadow: none;
+    }
 
     padding: 0;
 
@@ -221,8 +236,8 @@ button:active {
     .navdrawer-container .navbar-sublist a {
       display: block;
 
-      width: 100%;
-      height: 100%;
+      //width: 100%;
+      //height: 100%;
 
       background: #FFF;
       border-bottom: solid 1px #C8CFD3;
@@ -240,7 +255,7 @@ button:active {
   transition: transform .3s ease-in-out;
 }
 
-.navdrawer-container.navbar-is-opened {
+nav.navdrawer-container.navbar-is-opened {
   position: fixed;
 
   top: 0;
@@ -290,21 +305,20 @@ button:active {
   .layout-header .btn-nav {
     margin-top: 1.7em;
   }
-
-
+}
+@media only screen and (max-width: $desktop) {
   .navdrawer-container .navbar-sublist a {
     border: none;
     margin: 0;
-    padding-left: 2.5em;
+    padding-left: 2.5em !important;
   }
-
 }
+
 
 @media only screen and (min-width: $desktop) {
   .navdrawer-container {
     display: block;
     width: 100%;
-    z-index: 1;
     opacity: 1;
   }
 
@@ -331,4 +345,34 @@ button:active {
       -webkit-box-shadow: none;
       box-shadow: none;
     }
+}
+
+.collapse-navbar .navdrawer-container {
+  position: fixed;
+  width: 42%;
+  z-index: -1;
+  opacity: 0;
+
+  .subnav-hover ul.navbar-sublist {
+    display: block;
+    position: relative;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    a {
+      border: 0;
+      padding-left: 3em;
+    }
+  }
+}
+
+.collapse-navbar .btn-nav {
+  display: block;
+}
+
+.collapse-navbar .search-content {
+  position: relative;
+  width: 100%;
 }

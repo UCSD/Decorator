@@ -1,165 +1,65 @@
-/* ***********************************************
- * Layout
- *
- * Components:
- *  - base layout
- *  - header
- *  - footer
- *  - nav
- *  - more(?)
- *
- * ***************/
-/* ***********************************************
- * BASE
- * ***************/
-html, body {
-  background: #fff; }
+/*
+Error: Undefined variable: "$full".
+        on line 25 of app/styles/partials/layout.scss
 
-/* container will have media queries for sizing*/
-.layout-container {
-  max-width: 960px;
-  width: 98%;
-  margin: auto;
-  overflow: hidden; }
-  @media only screen and (max-width: 768px) {
-    .layout-container {
-      width: 94%; } }
-  @media only screen and (min-width: 1200px) {
-    .layout-container {
-      max-width: 1200px; } }
+20:   overflow-x: hidden;
+21: }
+22:   /* container will have media queries for sizing*\/
+23: 
+24:   .layout-container {
+25:     max-width: $full;
+26:     width: 98%;
+27:     margin: auto;
+28:     overflow: hidden;
+29: 
+30:     @media only screen and (max-width: $desktop-small) {
 
-.layout-header {
-  /* to incorporate new navbar button*/
-  background-color: #2b92b9;
-  width: 100%; }
-  @media only screen and (min-width: 320px) and (max-width: 768px){
-    .layout-header {
-      height: 105px; } }
-  @media only screen and (min-width: 769px) {
-    .layout-header {
-      height: 78px; } }
-
-.layout-login {
-  background: #0B4A67; }
-
-.layout-title {
-  font-family: "Trebuchet MS", sans-serif;
-  height: 78px;
-  width: 100%;
-  background: #2b92b9;
-  padding: 1.5em 0; }
-  @media only screen and (max-width: 768px) {
-    .layout-title {
-      padding: 1em 0; } }
-
-.layout-navbar {
-  min-height: 34px;
-  width: 100%;
-  background-color: #F2F5F7;
-  border: 0;
-  border-bottom: 1px solid #C8CFD3;
-  margin-bottom: 0; }
-
-.layout-main {
-  padding: 1em 0;
-  width: 100%; }
-
-.layout-footer {
-  width: 100%;
-  color: #999;
-  font-size: 90%;
-  border-top: 1px solid #ccc;
-  padding: 1em 0;
-  line-height: 1.5; }
-  .layout-footer > .layout-container {
-    background: transparent url(../img/sprite_base.png) right -74px no-repeat; }
-    @media only screen and (max-width: 640px) {
-      .layout-footer > .layout-container {
-        background: none; } }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #333;
-  font-weight: 400;
-  line-height: 1.1;
-  margin: 0 0 .25em; }
-
-h1 {
-  color: #d56a03;
-  letter-spacing: .5px; }
-
-hr {
-  background-color: #ccc;
-  color: #ccc;
-  height: 1px; }
-
-a {
-  color: #016691; }
-
-/* ***********************************************
- * HEADER
- * **************/
-/* ***********************************************
-* NAV
-* **************/
-.navbar-list {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-
-.navbar .caret {
-  margin-left: 7px; }
-
-.layout-navbar .navbar-list > li {
-  float: left; }
-  .layout-navbar .navbar-list > li > a {
-    display: block;
-    color: #004b6e;
-    background-color: #FDFDFD;
-    border-bottom: solid 3px rgba(255, 255, 255, 0.4);
-    border-right: solid 1px #C8CFD3;
-    border-left: solid 1px rgba(255, 255, 255, 0.6);
-    padding: 9px 15px 8px;
-    text-decoration: none; }
-  .layout-navbar .navbar-list > li.active > a {
-    border-bottom: #D56A03 solid 3px; }
-
-.layout-navbar .navbar-list > li:first-child {
-  border-left: solid 1px #C8CFD3; }
-
-/* ***********************************************
-* MAIN
-* **************/
-.main-section {
-  line-height: 1.5;
-  padding: 0; }
-
-.main-section-content {
-  padding-left: 1.5em; }
-
-.main-section-supplement {
-  background-color: #F2F5F7;
-  border: solid 1px #C8CFD3;
-  padding: 1em;
-  margin-bottom: 1em; }
-
-.main-section-supplement h3 {
-  font-size: 115%;
-  color: #738AA3;
-  text-shadow: 0 1px 1px #FFF; }
-
-/* ***********************************************
- * FOOTER
- * **************/
-.footer-links {
-  list-style: none;
-  margin: .5em 0 0;
-  padding: 0; }
-  .footer-links > li {
-    display: inline;
-    margin-left: 0;
-    margin-right: .5em;
-    padding-right: .75em; }
-  .footer-links > li:first-child {
-    border-right: 1px solid #ccc; }
-
-/*# sourceMappingURL=layout.css.map */
+Backtrace:
+app/styles/partials/layout.scss:25
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:412:in `run'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$full\".\A         on line 25 of app/styles/partials/layout.scss\A \A 20:   overflow-x: hidden;\A 21: }\A 22:   /* container will have media queries for sizing*/\A 23: \A 24:   .layout-container {\A 25:     max-width: $full;\A 26:     width: 98%;\A 27:     margin: auto;\A 28:     overflow: hidden;\A 29: \A 30:     @media only screen and (max-width: $desktop-small) {"; }
