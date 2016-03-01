@@ -468,8 +468,8 @@ module.exports = function(grunt) {
     'copy:changelog',
     'modernizr',
     'usemin',
-    'replace'
-    /*'compress'*/
+    'replace',
+    'compress'
   ]);
 
   grunt.loadNpmTasks('grunt-contrib-sass');
