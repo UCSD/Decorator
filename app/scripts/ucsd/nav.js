@@ -111,7 +111,7 @@
                     }
 
                     subNav.addEventListener('DOMContentLoaded', function (e) {
-                        if (!isMobileView()) {
+                        if (isMobileView()) {
                             $(".form-control").removeAttr("autofocus")
                         }
                     });
