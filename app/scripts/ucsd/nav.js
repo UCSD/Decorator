@@ -205,10 +205,11 @@
           menuWrappedWindowWidth = 0;
           $('.layout-header button.btn-nav').css('display', 'none');
           $('.navdrawer-container').css('width', '100%').css('z-index', '100').css('opacity', '1').css('overflow-y', '');
+          $('.navdrawer-container ul.navbar-sublist').css('display', '').css('position', '').css('border-left', '').css('border-top', '');
         }
 
-        var t1 = $('.navbar-list .navbar-subnav').first().position().top;
-        var t2 = $('.navbar-list .navbar-subnav').last().position().top;
+        var t1 = $('.navbar-list>li').first().offset().top;
+        var t2 = $('.navbar-list>li').last().offset().top;
 
         if (t1 != t2) {
           if (!isMenuWrapped) {
