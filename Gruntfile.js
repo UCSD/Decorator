@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       // Configurable paths
       app: 'app',
       dist: 'dist',
-      version: '4.5.2'
+      version: '4.5.3'
     },
 
     // postcss plugin for autoprefixer
@@ -197,7 +197,7 @@ module.exports = function(grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: ['<%= config.app %>/homepage-wide.html', '<%= config.app %>/homepage.html', '<%= config.app %>/widgets.html']
+      html: ['<%= config.app %>/homepage-wide.html', '<%= config.app %>/homepage.html', '<%= config.app %>/widgets.html', '<%= config.app %>/decorator-js-client.html']
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
@@ -303,6 +303,17 @@ module.exports = function(grunt) {
             'fonts/{,*/}*.*',
             'docs/{,*/}*.css', //for the kitchen sink...
             'docs/{,*/}*.js' //for the kitchen sink...
+          ]
+        }]
+      },
+      jsonp: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= config.app %>/scripts/ucsd',
+          dest: '<%= config.dist %>/scripts',
+          src: [
+            'decorator-jsonp.js'
           ]
         }]
       },
@@ -452,12 +463,13 @@ module.exports = function(grunt) {
     'cssmin',
     'uglify',
     'copy:dist',
+    'copy:jsonp',
     'postcss:dist',
     'copy:changelog',
     'modernizr',
     'usemin',
-    'replace',
-    'compress'
+    'replace'
+    /*'compress'*/
   ]);
 
   grunt.loadNpmTasks('grunt-contrib-sass');
