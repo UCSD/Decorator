@@ -17,6 +17,9 @@
                 addClass(layoutMain, menuOpen);
                 addClass(layoutFooter, menuOpen);
                 navListIsOpened = true;
+
+                $('.navdrawer-container').css('z-index', '100').css('opacity', '1');
+
             } else {
                 removeClass(navList, navIsOpenedClass);
 
@@ -24,6 +27,9 @@
                 removeClass(layoutMain, menuOpen);
                 removeClass(layoutFooter, menuOpen);
                 navListIsOpened = false;
+
+                $('.navdrawer-container').css('z-index', '').css('opacity', '0');
+
             }
         };
 
@@ -88,9 +94,11 @@
                         toggleSubNav();
                     });
 
-                    subList.addEventListener('click', function (e) {
-                        e.stopPropagation();
-                    });
+                    if (subList != undefined) {
+                      subList.addEventListener('click', function (e) {
+                          e.stopPropagation();
+                      });
+                    }
 
                     subNav.addEventListener('mouseover', function (e) {
                         e.preventDefault();
@@ -178,7 +186,39 @@
         element.className = element.className.replace(className, '');
     };
 
+    var isMenuWrapped = false;
+    var menuWrappedWindowWidth = 0;
+
+    var checkMenuHeight = function() {
+        if (menuWrappedWindowWidth != 0 && $(window).width() > menuWrappedWindowWidth) {
+          isMenuWrapped = false;
+          menuWrappedWindowWidth = 0;
+          $('.layout-header button.btn-nav').css('display', 'none');
+          $('.navdrawer-container').css('width', '100%').css('z-index', '100').css('opacity', '1');
+        }
+
+        var t1 = $('.navbar-list .navbar-subnav').first().position().top;
+        var t2 = $('.navbar-list .navbar-subnav').last().position().top;
+
+        if (t1 != t2) {
+          if (!isMenuWrapped) {
+            isMenuWrapped = true;
+            menuWrappedWindowWidth = $(window).width();
+
+            $('.layout-header button.btn-nav').css('display', 'block');
+            $('.navdrawer-container').css('position', 'fixed').css('width', '42%').css('z-index', '-1').css('opacity', '0');
+          }
+        }
+    }
+
     mainNav();
     mainSubNav();
     mainSearch();
+
+    $(window).resize(function() {
+
+        checkMenuHeight();
+      
+    });
+
 })(document);

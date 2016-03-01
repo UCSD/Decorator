@@ -41,7 +41,7 @@
                 var s = document.createElement('script');
                 s.type = 'text/javascript';
                 s.async = true;
-                s.src = 'https://cdn.ucsd.edu/developer/decorator/4.5.2/scripts/base-min.js';
+                s.src = 'scripts/base-min.js';
                 var x = document.getElementsByTagName('script')[0];
                 x.parentNode.insertBefore(s, x);
             }
