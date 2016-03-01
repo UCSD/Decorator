@@ -110,6 +110,12 @@
                       });
                     }
 
+                    subNav.addEventListener('DOMContentLoaded', function (e) {
+                        if (!isMobileView()) {
+                            $(".form-control").removeAttr("autofocus")
+                        }
+                    });
+
                     subNav.addEventListener('mouseover', function (e) {
                         e.preventDefault();
 
