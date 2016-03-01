@@ -19,6 +19,16 @@
                 navListIsOpened = true;
 
                 $('.navdrawer-container').css('z-index', '100').css('opacity', '1');
+                $('.search-content').css('position', 'relative').css('width', '100%');
+
+                $('.layout-navbar .navbar-list>li:first-child').css('border-left', 'solid 1px #C8CFD3');
+                $('.navdrawer-container.navbar-is-opened .navbar-list>li>a').css('border', '0').css('font-weight', '700').css('background', '#ECECEC').css('padding', '10px 10px 10px 20px').css('border-bottom', '1px solid #ccc');
+                $('.navdrawer-container ul.navbar-sublist').css('display', 'block').css('position', 'relative').css('border-left', '0').css('border-top', '0');
+                $('.navdrawer-container .navbar-sublist a').css('border', '0').css('margin','0').css('display', 'block').css('background', '#FFF').css('color', '#004b6e').css('padding', '9px 2.5em 8px');
+
+                if (!isMobileView()) {
+                  $('.navdrawer-container').css('width', '42%');
+                }
 
             } else {
                 removeClass(navList, navIsOpenedClass);
@@ -28,8 +38,8 @@
                 removeClass(layoutFooter, menuOpen);
                 navListIsOpened = false;
 
-                $('.navdrawer-container').css('z-index', '').css('opacity', '0');
-
+                $('.navdrawer-container').css('z-index', '').css('opacity', '0').css('width','');
+                $('.search-content').css('position', 'absolute').css('width', '');
             }
         };
 
@@ -194,7 +204,7 @@
           isMenuWrapped = false;
           menuWrappedWindowWidth = 0;
           $('.layout-header button.btn-nav').css('display', 'none');
-          $('.navdrawer-container').css('width', '100%').css('z-index', '100').css('opacity', '1');
+          $('.navdrawer-container').css('width', '100%').css('z-index', '100').css('opacity', '1').css('overflow-y', '');
         }
 
         var t1 = $('.navbar-list .navbar-subnav').first().position().top;
@@ -206,7 +216,7 @@
             menuWrappedWindowWidth = $(window).width();
 
             $('.layout-header button.btn-nav').css('display', 'block');
-            $('.navdrawer-container').css('position', 'fixed').css('width', '42%').css('z-index', '-1').css('opacity', '0');
+            $('.navdrawer-container').css('position', 'fixed').css('z-index', '-1').css('opacity', '0').css('overflow-y', 'scroll');
           }
         }
     }
@@ -216,9 +226,8 @@
     mainSearch();
 
     $(window).resize(function() {
-
         checkMenuHeight();
-      
     });
 
+    checkMenuHeight();
 })(document);
