@@ -547,7 +547,8 @@ button:active {
     .navdrawer-container.navbar-is-opened .navbar-list > li > a {
       border: 0;
       font-weight: bold;
-      background: #ECECEC; } }
+      background: #ECECEC;
+      border-bottom: 1px solid #ccc; } }
 
 /* Search bar integration */
 .navdrawer-container.navbar-is-opened button.search-toggle {
