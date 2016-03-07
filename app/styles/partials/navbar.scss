@@ -284,6 +284,10 @@ nav.navdrawer-container.navbar-is-opened {
   display: block;
 }
 
+.navbar-is-opened a:hover {
+  text-decoration: underline !important;
+}
+
 
   .navdrawer-container.navbar-is-opened {
     @media only screen and (max-width: $tablet) {

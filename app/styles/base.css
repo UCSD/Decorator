@@ -660,6 +660,9 @@ nav.navdrawer-container.navbar-is-opened {
 .navbar-is-opened {
   display: block; }
 
+.navbar-is-opened a:hover {
+  text-decoration: underline !important; }
+
 @media only screen and (max-width: 640px) {
   .navdrawer-container.navbar-is-opened {
     width: 83%; }
