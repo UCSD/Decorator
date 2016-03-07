@@ -22,7 +22,7 @@
                 $('.search-content').css('position', 'relative').css('width', '100%');
 
                 $('.layout-navbar .navbar-list>li:first-child').css('border-left', 'solid 1px #C8CFD3');
-                $('.navdrawer-container.navbar-is-opened .navbar-list>li>a').css('border', '0').css('font-weight', '700').css('background', '#ECECEC').css('padding', '10px 10px 10px 20px').css('border-bottom', '1px solid #ccc');
+                $('.navdrawer-container.navbar-is-opened .navbar-list>li>a').css('border', '0').css('font-weight', '700').css('background', '#ECECEC').css('padding', '10px 10px 10px 20px').css('border-bottom', '1px solid #ccc').css('text-decoration', 'underline');
                 $('.navdrawer-container ul.navbar-sublist').css('display', 'block').css('position', 'relative').css('border-left', '0').css('border-top', '0');
                 $('.navdrawer-container .navbar-sublist a').css('border', '0').css('margin','0').css('display', 'block').css('background', '#FFF').css('color', '#004b6e').css('padding', '9px 2.5em 8px');
 
@@ -96,7 +96,7 @@
                 };
 
                 if (subNav.addEventListener) {
-                    
+
 
                     if (subList != undefined) {
                       subList.addEventListener('click', function (e) {
