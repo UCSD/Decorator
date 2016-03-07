@@ -286,6 +286,10 @@ body {
     }
   }
 
+  .navbar-is-opened {
+    text-decoration: underline !important;
+  }
+
   .navbar-nav > li {
     &:last-child a {
       border-right: 1px solid #ECECEC;
@@ -506,4 +510,3 @@ div.styled {
 }
 
 /* end hack */
-
