@@ -547,7 +547,8 @@ button:active {
     .navdrawer-container.navbar-is-opened .navbar-list > li > a {
       border: 0;
       font-weight: bold;
-      background: #ECECEC; } }
+      background: #ECECEC;
+      border-bottom: 1px solid #ccc; } }
 
 /* Search bar integration */
 .navdrawer-container.navbar-is-opened button.search-toggle {
@@ -658,6 +659,9 @@ nav.navdrawer-container.navbar-is-opened {
 
 .navbar-is-opened {
   display: block; }
+
+.navbar-is-opened a:hover {
+  text-decoration: underline !important; }
 
 @media only screen and (max-width: 640px) {
   .navdrawer-container.navbar-is-opened {

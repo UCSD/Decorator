@@ -130,6 +130,7 @@ button:active {
     border: 0;
     font-weight: bold;
     background: #ECECEC;
+    border-bottom: 1px solid #ccc;
   }
 }
 
@@ -281,6 +282,10 @@ nav.navdrawer-container.navbar-is-opened {
 
 .navbar-is-opened {
   display: block;
+}
+
+.navbar-is-opened a:hover {
+  text-decoration: underline !important;
 }
 
 

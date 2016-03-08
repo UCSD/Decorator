@@ -96,13 +96,7 @@
                 };
 
                 if (subNav.addEventListener) {
-                    subNav.addEventListener('click', function (e) {
-                        if (isMobileView())
-                            e.preventDefault();
 
-                        e.stopPropagation();
-                        toggleSubNav();
-                    });
 
                     if (subList != undefined) {
                       subList.addEventListener('click', function (e) {
