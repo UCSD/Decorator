@@ -81,6 +81,10 @@ a:link, a:visited, .widget_content a:link, .widget_content a:visited {
     color: #1550E0;
 }
 
+.drawer h2 {
+  font-size: 21px !important;
+}
+
 @media only screen and (max-width: 768px) {
   .layout-title .title-logo {
     top: 10px;
