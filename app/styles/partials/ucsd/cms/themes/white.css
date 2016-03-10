@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400);
 
 h1 {
-  color: #5b5c5c;
+  color: #4D4E4E;
   font-family: 'Lato', sans-serif;
 }
 
@@ -77,6 +77,10 @@ a:link, a:visited, .widget_content a:link, .widget_content a:visited {
   background-color: #376791;
 }
 
+.main-section-content a {
+    color: #1550E0;
+}
+
 @media only screen and (max-width: 768px) {
   .layout-title .title-logo {
     top: 10px;
@@ -95,7 +99,7 @@ a:link, a:visited, .widget_content a:link, .widget_content a:visited {
  */
 @media screen and (-webkit-min-device-pixel-ratio:2) {
   .layout-title .title-logo {
-    background-image: url(../../../../img/sprite_base-white-2x.png);
+    background-image: url(../img/sprite_base-white-2x.png);
     background-size: 500px 120px;
   }
 }
