@@ -93,7 +93,7 @@ a:link, a:visited, .widget_content a:link, .widget_content a:visited {
 @media only screen and (max-width: 360px) {
   .layout-title .title-logo {
     background-position: -239px -14px;
-    height: 32px;
+    height: 32px; 
     width: 166px;
   }
 }
