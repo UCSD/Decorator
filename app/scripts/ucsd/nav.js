@@ -202,9 +202,9 @@
           $('.navdrawer-container ul.navbar-sublist').css('display', '').css('position', '').css('border-left', '').css('border-top', '');
         }
 
-        var t1 = $('.navbar-list>li').first().offset().top;
-        var t2 = $('.navbar-list>li').last().offset().top;
-
+        var t1 = $('.navbar-list :first-child').offset().top;
+        var t2 = $('.navbar-list :last-child').offset().top;
+        
         if (t1 != t2) {
           if (!isMenuWrapped) {
             isMenuWrapped = true;

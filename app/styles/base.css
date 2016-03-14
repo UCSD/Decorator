@@ -91,7 +91,7 @@ html, body {
     .layout-header {
       height: 78px; } }
 
-.layout-header.isLoggedIn {
+.layout-header, .isLoggedIn {
   height: 100%; }
 
 .layout-login {
