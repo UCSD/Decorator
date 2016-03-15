@@ -210,6 +210,18 @@ module.exports = function(grunt) {
           ]
         }]
       },
+      unminified: {
+          files: [{
+              expand: true,
+              dot: true,
+              cwd: '<%= config.app %>/../.tmp/concat/scripts',
+              src: ['*.js', '!respond.min.js', '!widgets.js', '!jquery.min.js'],
+              dest: '<%= config.dist %>/scripts/',
+              rename: function(dest, src) {
+                return dest + '/' + src.replace('.js','.src.js');
+              }
+          }]
+      },
       jsonp: {
         files: [{
           expand: true,
@@ -238,12 +250,6 @@ module.exports = function(grunt) {
         cwd: '<%= config.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
-      },
-      deploy: {
-        cwd: 'dist', // set working folder / root to copy
-        src: '**/*', // copy all files and subfolders
-        dest: '/Users/a6wu/Site', // destination folder
-        expand: true // required when using cwd
       }
     },
 
@@ -330,6 +336,7 @@ module.exports = function(grunt) {
     'sass:dist',
     'concurrent:dist',
     'concat',
+    'copy:unminified',
     'cssmin',
     'uglify',
     'copy:dist',
