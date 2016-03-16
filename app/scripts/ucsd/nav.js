@@ -1,4 +1,6 @@
 (function(document) {
+    var desktop = 960;
+
     var mainNav = function() {
         var navBtn              = $('.btn-nav')[0];
         var navList             = $('.navdrawer-container')[0];
@@ -223,12 +225,16 @@
     document.addEventListener('DOMContentLoaded', function (e) {
         if (isMobileView()) {
             $(".form-control").removeAttr("autofocus")
+        } else {
+            if ($(window).width() > desktop ) {
+              checkMenuHeight();
+            }
         }
     });
 
     $(window).resize(function() {
-        checkMenuHeight();
+      if ($(window).width() > desktop ) {
+          checkMenuHeight();
+      }
     });
-
-    checkMenuHeight();
 })(document);
