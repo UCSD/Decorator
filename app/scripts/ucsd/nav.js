@@ -20,7 +20,8 @@
                 addClass(layoutFooter, menuOpen);
                 navListIsOpened = true;
 
-                $('.navdrawer-container').css('z-index', '100').css('opacity', '1');
+                $('body').css('position', 'fixed');
+                $('.navdrawer-container').css('z-index', '100').css('opacity', '1').css('overflow-y', 'scroll');
                 $('.search-content').css('position', 'relative').css('width', '100%');
 
                 $('.layout-navbar .navbar-list>li:first-child').css('border-left', 'solid 1px #C8CFD3');
@@ -40,7 +41,8 @@
                 removeClass(layoutFooter, menuOpen);
                 navListIsOpened = false;
 
-                $('.navdrawer-container').css('z-index', '').css('opacity', '0').css('width','');
+                $('body').css('position', '');
+                $('.navdrawer-container').css('z-index', '').css('opacity', '0').css('overflow-y', '').css('width','');
                 $('.search-content').css('position', 'absolute').css('width', '');
             }
         };
