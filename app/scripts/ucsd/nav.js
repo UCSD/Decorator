@@ -243,7 +243,7 @@
       if ($(window).width() > desktop && navListIsOpened !== undefined) {
         // reset css to be compatible with media queries
         $('.layout-header button.btn-nav').css('display', 'none');
-        $('.navdrawer-container').css('width', '100%').css('z-index', '100').css('opacity', '1').css('overflow-y', '');
+        $('.navdrawer-container').css('width', '100%').css('z-index', '100').css('opacity', '1').css('overflow-y', '').css('position', '');
         $('.navdrawer-container ul.navbar-sublist').css('display', '').css('position', '').css('border-left', '').css('border-top', '');
         $('.layout-navbar .navbar-list>li>a').css('color', '#004b6e').css('background-color', '#FDFDFD').css('border-bottom', 'solid 3px rgba(255,255,255,.4)').css('border-right', 'solid 1px #C8CFD3').css('border-left', 'solid 1px rgba(255,255,255,.6)').css('text-decoration', 'none').css('padding', '9px 15px').css('line-height', '1.3').css('font-weight', '').css('border-bottom-color', '');
         $('.navdrawer-container .navbar-sublist a').css('display', 'block').css('background', '#FFF').css('border-bottom', 'solid 1px #C8CFD3').css('border-right', 'solid 1px #C8CFD3').css('border-left', 'solid 1px rgba(255,255,255,.6)').css('color', '#004b6e').css('padding', '9px 15px 8px').css('text-decoration', 'none');
