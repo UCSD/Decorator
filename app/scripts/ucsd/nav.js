@@ -21,7 +21,8 @@
         addClass(layoutFooter, menuOpen);
         navListIsOpened = true;
 
-        $('body').css('position', 'fixed');
+        // min-height is for Safari 9.0.3 where bottom nav item is cut off
+        $('body').css('position', 'fixed').css('width', '100%').css('min-height', '100%');
         $('.navdrawer-container').css('z-index', '100').css('opacity', '1').css('overflow-y', 'scroll');
         $('.search-content').css('position', 'relative').css('width', '100%');
 
@@ -44,7 +45,7 @@
         removeClass(layoutFooter, menuOpen);
         navListIsOpened = false;
 
-        $('body').css('position', '');
+        $('body').css('position', '').css('width', '').css('min-height', '');
         $('.navdrawer-container').css('z-index', '').css('opacity', '0').css('overflow-y', '').css('width', '');
         $('.search-content').css('position', 'absolute').css('width', '');
       }
