@@ -32,6 +32,8 @@
 
         if (!isMobileView()) {
           $('.navdrawer-container').css('width', '42%');
+        } else {
+          $('.navdrawer-container').css('width', '83%');
         }
 
       } else {
@@ -268,7 +270,7 @@
 
     } else if (navListIsOpened !== undefined) {
       $('.layout-header button.btn-nav').css('display', 'block');
-      $('.navdrawer-container').css('position', 'fixed').css('z-index', '-1').css('opacity', '0').css('overflow-y', 'scroll');
+      $('.navdrawer-container').css('position', 'fixed').css('z-index', '-1').css('overflow-y', 'scroll');
     }
 
     if ($(window).width() > desktop) {
