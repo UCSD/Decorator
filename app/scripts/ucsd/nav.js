@@ -1,5 +1,6 @@
 (function(document) {
     var desktop = 960;
+    var navListIsOpened     = undefined;
 
     var mainNav = function() {
         var navBtn              = $('.btn-nav')[0];
@@ -9,10 +10,10 @@
         var layoutFooter        = $('.layout-footer')[0];
         var navIsOpenedClass    = 'navbar-is-opened';
         var menuOpen            = 'open';
-        var navListIsOpened     = false;
+
 
         var toggleMainNav = function() {
-            if (!navListIsOpened) {
+            if (navListIsOpened == undefined || !navListIsOpened) {
                 addClass(navList, navIsOpenedClass);
 
                 addClass(layoutHeader, menuOpen);
@@ -198,7 +199,9 @@
     var menuWrappedWindowWidth = 0;
 
     var checkMenuHeight = function() {
+
         if (menuWrappedWindowWidth != 0 && $(window).width() > menuWrappedWindowWidth) {
+          // page width has expanded to a point where menu is no longer wrapping
           isMenuWrapped = false;
           menuWrappedWindowWidth = 0;
           $('.layout-header button.btn-nav').css('display', 'none');
@@ -206,11 +209,13 @@
           $('.navdrawer-container ul.navbar-sublist').css('display', '').css('position', '').css('border-left', '').css('border-top', '');
         }
 
+        // check to see if the first menu item and last menu item are on the same row
         var t1 = $('nav .navbar-list>li:first').offset().top;
         var t2 = $('nav .navbar-list>li:last').offset().top;
 
         if (t1 != t2) {
           if (!isMenuWrapped) {
+            // menu items are now wrapping
             isMenuWrapped = true;
             menuWrappedWindowWidth = $(window).width();
 
@@ -235,8 +240,35 @@
     });
 
     $(window).resize(function() {
+      if ($(window).width() > desktop && navListIsOpened !== undefined) {
+        // reset css to be compatible with media queries
+        $('.layout-header button.btn-nav').css('display', 'none');
+        $('.navdrawer-container').css('width', '100%').css('z-index', '100').css('opacity', '1').css('overflow-y', '');
+        $('.navdrawer-container ul.navbar-sublist').css('display', '').css('position', '').css('border-left', '').css('border-top', '');
+        $('.layout-navbar .navbar-list>li>a').css('color', '#004b6e').css('background-color', '#FDFDFD').css('border-bottom', 'solid 3px rgba(255,255,255,.4)').css('border-right', 'solid 1px #C8CFD3').css('border-left', 'solid 1px rgba(255,255,255,.6)').css('text-decoration', 'none').css('padding', '9px 15px').css('line-height', '1.3').css('font-weight', '').css('border-bottom-color', '');
+        $('.navdrawer-container .navbar-sublist a').css('display', 'block').css('background', '#FFF').css('border-bottom', 'solid 1px #C8CFD3').css('border-right', 'solid 1px #C8CFD3').css('border-left', 'solid 1px rgba(255,255,255,.6)').css('color', '#004b6e').css('padding', '9px 15px 8px').css('text-decoration', 'none');
+
+        $('.navbar-subnav').hover(function() {
+          $(this).addClass('subnav-hover');
+          $('.navdrawer-container .navbar-subnav:hover>a').css('border-bottom', 'solid 3px #9FB3BF');
+        }, function() {
+          $(this).removeClass('subnav-hover');
+          $('.navdrawer-container .navbar-subnav>a').css('border-bottom', '');
+        });
+
+        $('.navbar-subnav .navbar-sublist li').hover(function() {
+          $(this).css('background-color','#EAEAEA');
+        }, function() {
+          $('.navbar-subnav .navbar-sublist li>a').css('background-color','');
+        });
+
+      } else if (navListIsOpened !== undefined) {
+        $('.layout-header button.btn-nav').css('display', 'block');
+        $('.navdrawer-container').css('position', 'fixed').css('z-index', '-1').css('opacity', '0').css('overflow-y', 'scroll');
+      }
+
       if ($(window).width() > desktop ) {
-          checkMenuHeight();
+        checkMenuHeight();
       }
     });
 })(document);
