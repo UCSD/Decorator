@@ -1,5 +1,6 @@
 (function(document) {
   var desktop = 960;
+  var mobileBreakpoint = 640;
   var navListIsOpened = undefined;
 
   var mainNav = function() {
@@ -183,9 +184,7 @@
 
   var isMobileView = function() {
     var browserWidth = window.innerWidth;
-    var mobileDesktopBorder = 768;
-
-    return (browserWidth < (mobileDesktopBorder + 1));
+    return (browserWidth < (mobileBreakpoint + 1));
   };
 
   var addClass = function(element, className) {
