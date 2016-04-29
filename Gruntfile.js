@@ -41,55 +41,6 @@ module.exports = function(grunt) {
       }
     },
 
-    browserSync: {
-      bsFiles: {
-        src: [
-          'app/styles/**/*.scss',
-          '*.html'
-        ]
-      },
-      options: {
-        watchTask: true,
-        server: {
-          baseDir: "app/"
-        }
-      }
-    },
-
-    // Watches files for changes and runs tasks based on the changed files
-    watch: {
-      bower: {
-        files: ['bower.json'],
-        tasks: ['bowerInstall']
-      },
-      sass: {
-        files: 'app/styles/**/*.scss',
-        tasks: ['sass']
-      },
-      js: {
-        files: ['<%= config.app %>/scripts/{,*/}*.js'],
-        tasks: ['jshint'],
-        options: {
-          livereload: true
-        }
-      },
-      // jstest: {
-      //   files: ['test/spec/{,*/}*.js'],
-      //   tasks: ['test:watch']
-      // },
-      gruntfile: {
-        files: ['Gruntfile.js']
-      },
-      // compass: {
-      //   files: ['<%= config.app %>/styles/**/*.{scss,sass}'],
-      //   tasks: ['compass:server', 'autoprefixer']
-      // },
-      styles: {
-         files: ['<%= config.app %>/styles/{,*/}*.css'],
-         tasks: ['newer:copy:styles', 'autoprefixer']
-      }
-
-    },
     sass: {
 
       dist: {
@@ -132,33 +83,6 @@ module.exports = function(grunt) {
       ]
     },
 
-    // Compiles Sass to CSS and generates necessary files if requested
-    compass: {
-      options: {
-        sassDir: '<%= config.app %>/styles',
-        cssDir: '.tmp/styles',
-        generatedImagesDir: '.tmp/img/generated',
-        imagesDir: '<%= config.app %>/img',
-        javascriptsDir: '<%= config.app %>/scripts',
-        fontsDir: '<%= config.app %>/fonts',
-        importPath: '<%= config.app %>/vendor',
-        httpImagesPath: '/img',
-        httpGeneratedImagesPath: '/img/generated',
-        httpFontsPath: '/fonts',
-        relativeAssets: false,
-        assetCacheBuster: false
-      },
-      dist: {
-        options: {
-          generatedImagesDir: '<%= config.dist %>/img/generated'
-        }
-      },
-      server: {
-        options: {
-          debugInfo: true
-        }
-      }
-    },
 
     // Add vendor prefixed styles
         autoprefixer: {
@@ -197,7 +121,7 @@ module.exports = function(grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: ['<%= config.app %>/homepage-wide.html', '<%= config.app %>/homepage.html', '<%= config.app %>/widgets.html', '<%= config.app %>/decorator-js-client.html']
+      html: ['<%= config.app %>/profile-drawer.html', '<%= config.app %>/homepage-wide.html', '<%= config.app %>/homepage.html', '<%= config.app %>/widgets.html', '<%= config.app %>/decorator-js-client.html']
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
@@ -240,26 +164,6 @@ module.exports = function(grunt) {
       }
     },
 
-    htmlmin: {
-      dist: {
-        options: {
-          collapseBooleanAttributes: true,
-          collapseWhitespace: true,
-          removeAttributeQuotes: true,
-          removeCommentsFromCDATA: true,
-          removeEmptyAttributes: true,
-          removeOptionalTags: true,
-          removeRedundantAttributes: true,
-          useShortDoctype: true
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= config.dist %>',
-          src: '{,*/}*.html',
-          dest: '<%= config.dist %>'
-        }]
-      }
-    },
 
 
     // By default, your `index.html`'s <!-- Usemin block --> will take care of
@@ -306,6 +210,18 @@ module.exports = function(grunt) {
           ]
         }]
       },
+      unminified: {
+          files: [{
+              expand: true,
+              dot: true,
+              cwd: '<%= config.app %>/../.tmp/concat/scripts',
+              src: ['*.js', '!respond.min.js', '!widgets.js', '!jquery.min.js'],
+              dest: '<%= config.dist %>/scripts/',
+              rename: function(dest, src) {
+                return dest + '/' + src.replace('.js','.src.js');
+              }
+          }]
+      },
       jsonp: {
         files: [{
           expand: true,
@@ -334,12 +250,6 @@ module.exports = function(grunt) {
         cwd: '<%= config.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
-      },
-      deploy: {
-        cwd: 'dist', // set working folder / root to copy
-        src: '**/*', // copy all files and subfolders
-        dest: '/Users/a6wu/Site', // destination folder
-        expand: true // required when using cwd
       }
     },
 
@@ -364,13 +274,7 @@ module.exports = function(grunt) {
 
     // Run some tasks in parallel to speed up build process
     concurrent: {
-      server: [
-        //'compass:server',
-        'copy:styles'
-      ],
-      test: [
-        'copy:styles'
-      ],
+
       dist: [
         //'compass',
         'copy:styles',
@@ -422,36 +326,9 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask('serve', function(target) {
-    if (target === 'dist') {
-      return grunt.task.run(['build', 'connect:dist:keepalive']);
-    }
-
-    grunt.task.run([
-      'clean:server',
-      'concurrent:server',
-      'autoprefixer',
-      'connect:livereload',
-      'watch'
-    ]);
-  });
 
 
 
-  grunt.registerTask('test', function(target) {
-    if (target !== 'watch') {
-      grunt.task.run([
-        'clean:server',
-        'concurrent:test',
-        'autoprefixer'
-      ]);
-    }
-
-    grunt.task.run([
-      'connect:test',
-      'mocha'
-    ]);
-  });
 
   grunt.registerTask('default', [
     'clean:dist',
@@ -459,7 +336,7 @@ module.exports = function(grunt) {
     'sass:dist',
     'concurrent:dist',
     'concat',
-    //'autoprefixer',
+    'copy:unminified',
     'cssmin',
     'uglify',
     'copy:dist',
@@ -473,15 +350,9 @@ module.exports = function(grunt) {
   ]);
 
   grunt.loadNpmTasks('grunt-contrib-sass');
-  //grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-postcss');
 
-  // grunt.registerTask('default', [
-  //   'browserSync',
-  //   'watch',
-  //   'postcss'
-  // ]);
 
 
 };
