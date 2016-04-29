@@ -2,6 +2,22 @@
 All notable changes to this project will be documented in this file.
 Detailed messages about the changes can be reviewed in the Git comments.
 
+## [4.5.3] 2016-03-17
+### Fixed
+- Toggle mobile menu when nav menu item wraps to the next line
+- Added a comma to ".layout-header, .isLoggedIn"
+- Removed duplicate closing head tag in HTML template files
+
+### Updated
+- Display expanded menu items in mobile nav
+- Cleaned up Gruntfile
+
+### Added
+- Added profile.css to distribution file
+- Added unminified JavaScript source files
+- Added check for undefined nav element to prevent JavaScript error
+
+
 ## [4.5.2] 2015-11-12
 ### Fixed
 - Initialize tooltip example for correct tip placement
