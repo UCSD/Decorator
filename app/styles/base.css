@@ -83,13 +83,14 @@ html, body {
   /* to incorporate new navbar button*/
   display: block;
   width: 100%;
-  background-color: #2b92b9; }
+  background-color: #2b92b9;
+  /*
+   @media only screen and (min-width: $desktop-small + 1) {
+     height: 78px;
+   }*/ }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
     .layout-header {
       height: 105px; } }
-  @media only screen and (min-width: 769px) {
-    .layout-header {
-      height: 78px; } }
 
 .layout-header, .isLoggedIn {
   height: 100%; }
@@ -224,7 +225,7 @@ a {
 
 @media only screen and (max-width: 975px) {
   .main-section-content img {
-    width: 100% !important;
+    max-width: 100% !important;
     height: auto !important; } }
 
 .main-section-supplement {
