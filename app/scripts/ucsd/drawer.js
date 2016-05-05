@@ -16,6 +16,7 @@ $(document).ready(function() {
 
     /* build drawer */
     drawer.children("div").toggle();
+    drawer.children("article").toggle(); // support CMS use of .drawer > article
 
     drawer.children("h2").click(function() {
       $(this).toggleClass("expand");
@@ -62,6 +63,7 @@ $(document).ready(function() {
   function expandAll(drawerWrapper) {
     drawerWrapper.children(".drawer").children("h2").addClass("expand");
     drawerWrapper.children(".drawer").children("div").show();
+    drawerWrapper.children(".drawer").children("article").show(); // support CMS use of .drawer > article
 		return false;
   }
 
@@ -69,6 +71,7 @@ $(document).ready(function() {
   function collapseAll(drawerWrapper) {
     drawerWrapper.children(".drawer").children("h2").removeClass("expand");
     drawerWrapper.children(".drawer").children("div").hide();
+    drawerWrapper.children(".drawer").children("article").hide(); // support CMS use of .drawer > article
 		return false;
   }
 

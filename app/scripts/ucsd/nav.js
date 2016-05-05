@@ -23,7 +23,7 @@
         navListIsOpened = true;
 
         // min-height is for Safari 9.0.3 where bottom nav item is cut off
-        $('body').css('position', 'fixed').css('width', '100%').css('min-height', '100%');
+        $('body').css('width', '100%').css('min-height', '100%');
         $('.navdrawer-container').css('z-index', '100').css('opacity', '1').css('overflow-y', 'scroll');
         $('.search-content').css('position', 'relative').css('width', '100%');
 
@@ -36,6 +36,7 @@
           $('.navdrawer-container').css('width', '42%');
         } else {
           $('.navdrawer-container').css('width', '83%');
+          $('body').css('position', 'fixed');
         }
 
       } else {
@@ -226,7 +227,8 @@
         menuWrappedWindowWidth = $(window).width();
 
         $('.layout-header button.btn-nav').css('display', 'block');
-        $('.navdrawer-container').css('position', 'fixed').css('z-index', '-1').css('opacity', '0').css('overflow-y', 'scroll');
+        $('.navdrawer-container').css('position', 'absolute').css('z-index', '-1').css('opacity', '0').css('overflow-y', 'scroll');
+        //$('.navdrawer-container').css('z-index', '-1').css('opacity', '0').css('overflow-y', 'scroll');
       }
     }
   }
@@ -270,7 +272,8 @@
 
     } else if (navListIsOpened !== undefined) {
       $('.layout-header button.btn-nav').css('display', 'block');
-      $('.navdrawer-container').css('position', 'fixed').css('z-index', '-1').css('overflow-y', 'scroll');
+      //$('.navdrawer-container').css('position', 'fixed').css('z-index', '-1').css('overflow-y', 'scroll');
+      $('.navdrawer-container').css('z-index', '-1').css('overflow-y', 'scroll');
     }
 
     if ($(window).width() > desktop) {
