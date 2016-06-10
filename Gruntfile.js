@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       // Configurable paths
       app: 'app',
       dist: 'dist',
-      version: '4.5.3'
+      version: '4.5.4'
     },
 
     // postcss plugin for autoprefixer
@@ -121,7 +121,7 @@ module.exports = function(grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: ['<%= config.app %>/profile-drawer.html', '<%= config.app %>/homepage-wide.html', '<%= config.app %>/homepage.html', '<%= config.app %>/widgets.html', '<%= config.app %>/decorator-js-client.html']
+      html: ['<%= config.app %>/profile-drawer.html', '<%= config.app %>/homepage-wide.html', '<%= config.app %>/homepage.html', '<%= config.app %>/widgets.html']
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
