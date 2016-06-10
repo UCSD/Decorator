@@ -55,9 +55,10 @@ html, body
     }
 
     //
+   /*
     @media only screen and (min-width: $desktop-small + 1) {
       height: 78px;
-    }
+    }*/
   }
 
   .layout-header,.isLoggedIn {
@@ -245,7 +246,7 @@ main
   .main-section-content img {
 
     @media only screen and (max-width: 975px) {
-      width: 100% !important;
+      max-width: 100% !important;
       height: auto !important;
     }
   }
