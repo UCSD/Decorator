@@ -19,7 +19,7 @@ div.styled h2 {
 }
 
 a:link, a:visited, .widget_content a:link, .widget_content a:visited {
-  color: #4765ad;
+  color: #004b6e;
 }
 
 .flexslider a {
@@ -78,7 +78,7 @@ a:link, a:visited, .widget_content a:link, .widget_content a:visited {
 }
 
 .main-section-content a {
-    color: #1550E0;
+    color: #005AA9;
 }
 
 .drawer h2 {
@@ -93,7 +93,7 @@ a:link, a:visited, .widget_content a:link, .widget_content a:visited {
 @media only screen and (max-width: 360px) {
   .layout-title .title-logo {
     background-position: -239px -14px;
-    height: 32px; 
+    height: 32px;
     width: 166px;
   }
 }
