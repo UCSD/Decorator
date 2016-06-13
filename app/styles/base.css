@@ -464,8 +464,7 @@ a {
   margin-right: 10px; }
   @media only screen and (max-width: 360px) {
     .layout-header button.btn-nav {
-      font-size: 20px;
-      top: 5px; } }
+      font-size: 20px; } }
   @media only screen and (max-width: 960px) {
     .layout-header button.btn-nav {
       display: block; } }

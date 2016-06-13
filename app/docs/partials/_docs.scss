@@ -120,21 +120,9 @@ body {
  * Turn the `.navbar` at the top of the docs purple.
  */
 
-.bs-docs-nav {
-    margin-bottom: 0;
-    background-color: #fff;
-    border-bottom: 0;
-}
 
-.bs-home-nav .bs-nav-b {
-    display: none;
-}
 
-.bs-docs-nav {
-.navbar-brand {
-    color: #563d7c;
-    font-weight: 500;
-}
+
 .navbar-nav > {
 li > a {
     color: #563d7c;
