@@ -164,6 +164,11 @@
  * MAIN CONTENT SIDE NAV
  * ***************/
 
+ #site-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
 .main-content-nav {
   background: #F2F5F7;
   border: solid 1px #C8CFD3;
