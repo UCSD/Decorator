@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     // postcss plugin for autoprefixer
     postcss: {
       options: {
-        map: true,
+        map: false,
         processors: [
           require('autoprefixer')({
             browsers: ['last 10 versions']
