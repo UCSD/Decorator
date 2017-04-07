@@ -1,4 +1,4 @@
-// Generated on 2014-04-02 using generator-webapp 0.4.8
+  // Generated on 2014-04-02 using generator-webapp 0.4.8
 'use strict';
 
 // # Globbing
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         map: false,
         processors: [
           require('autoprefixer')({
-            browsers: ['last 10 versions']
+            browsers: ['last 15 versions']
           })
         ]
       },
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
     // Add vendor prefixed styles
         autoprefixer: {
             options: {
-                browsers: ['last 6 versions']
+                browsers: ['last 10 versions']
             },
             dist: {
                 files: [{
