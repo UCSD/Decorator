@@ -9,3 +9,5 @@ node_modules/
 
 *.map
 app/styles/*.css
+
+ucsd-decorator-4.5.4/*
