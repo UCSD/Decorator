@@ -112,4 +112,10 @@
         position: relative;
         top: 0; } }
 
+.flex-caption {
+  bottom: 30px; }
+  @media screen and (max-width: 1200px) {
+    .flex-caption {
+      bottom: 0; } }
+
 /*# sourceMappingURL=homepage-wide.css.map */
