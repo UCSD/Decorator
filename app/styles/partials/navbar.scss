@@ -380,3 +380,14 @@ nav.navdrawer-container.navbar-is-opened {
   position: relative;
   width: 100%;
 }
+
+/* blink & TL Styles */
+
+.blink-nav-button {
+  background: #FDFDFD url(http://cdn.ucsd.edu/developer/decorator/4.5.4/styles/img/blink_nav.png) 0 6px no-repeat !important;
+
+    a {
+      color: transparent !important;
+    }
+
+}
