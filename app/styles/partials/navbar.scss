@@ -381,13 +381,26 @@ nav.navdrawer-container.navbar-is-opened {
   width: 100%;
 }
 
-/* blink & TL Styles */
+/* Blink & TL Styles */
 
 .blink-nav-button {
   background: #FDFDFD url(http://cdn.ucsd.edu/developer/decorator/4.5.4/styles/img/blink_nav.png) 0 6px no-repeat !important;
+  min-width: 78px;
 
     a {
       color: transparent !important;
+      background-color: transparent !important;
+    }
+
+}
+
+.tlink-nav-button {
+  background: #FDFDFD url(http://cdn.ucsd.edu/developer/decorator/4.5.4/styles/img/current_students_nav.png) 0 6px no-repeat !important;
+  min-width: 103px;
+
+    a {
+      color: transparent !important;
+      background-color: transparent !important;
     }
 
 }
