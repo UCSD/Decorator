@@ -1,0 +1,399 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <title>Alerts</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="DESCRIPTION" content="A collection of CSS styles available for CMS users.">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="ORGANIZATION" content="University of California, San Diego">
+  <meta name="robots" content="index,follow,noarchive">
+  <meta name="SITE" content="Developer">
+  <meta name="PAGETITLE" content="CMS Kitchen Sink">
+
+  <!-- build:css(.tmp) ../styles/bootstrap.css -->
+  <link rel="stylesheet" href="../styles/bootstrap.css" />
+  <!-- endbuild -->
+
+  <!-- build:css(.tmp) ../styles/base.css -->
+  <link rel="stylesheet" href="../styles/base.css" />
+  <!-- endbuild -->
+
+  <!-- build:css(.tmp) ../styles/ie-support.css -->
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../styles/ie-support.css"/>
+    <![endif]-->
+  <!-- endbuild -->
+
+  <!-- Begin site-specific CSS files -->
+  <link rel="stylesheet" href="site-specific.css">
+  <!-- End site-specific CSS files -->
+
+  <!-- build:js({app,.tmp}) ../scripts/modernizr.js -->
+  <script src="../vendor/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+
+  <!--[if lt IE 9]>
+    <!-- build:js({app,.tmp}) ../scripts/respond.min.js -->
+  <script src="vendor/respond/dest/respond.min.js"></script>
+  <!-- endbuild -->
+  <link href="https://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+  <link href="../img/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+  <!-- build:js({app,.tmp}) ../scripts/respond-proxy.js -->
+  <script src="../scripts/ucsd/respond-proxy.js"></script>
+  <!-- endbuild -->
+  <![endif]-->
+
+
+</head>
+<body>
+<header class="layout-header">
+    <a class="sr-only" href="#main-content">Skip to main content</a>
+    <div id="uc-emergency"></div>
+    <section class="layout-login">
+        <div class="layout-container">
+</div>
+    </section>
+
+    <section class="layout-title">
+        <div class="layout-container">
+            <button class="btn-nav">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="index.html" class="title-header">Decorator %param-decorator-version%</a>
+            <a href="https://www.ucsd.edu" class="title-logo">UC San Diego</a>
+        </div>
+    </section>
+</header>
+
+<nav class="navdrawer-container layout-navbar" role="navigation">
+    <div class="layout-container">
+
+        <div class="search">
+            <button class="search-toggle btn-default">
+                <span class="glyphicon glyphicon-search"></span><span class="caret"></span>
+            </button>
+
+            <div class="search-content">
+                <form action="http://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
+                    <select class="search-scope" name="search-scope">
+                        <option selected="selected" value="cascade-cwp">This Site</option>
+                        <option value="default_collection">All UCSD Sites</option>
+                        <option value="faculty-staff">Faculty/Staff</option>
+                    </select>
+
+                    <div class="input-group">
+                        <input placeholder="Search..." type="search" class="form-control search-term" id="q" name="search-term">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+       <ul class="navbar-list">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="navbar-subnav">
+                <a href="../templates.html">Templates</a>
+                <ul class="navbar-sublist">
+                    <li><a href="../blank-slate.html">Blank Slate</a></li>
+                    <li><a href="../two-column.html">Two Columns</a></li>
+                    <li><a href="../two-column-b.html">Two Columns B</a></li>
+                    <li><a href="../three-column.html">Three Columns</a></li>
+                    <li><a href="../form-a.html">Basic Form</a></li>
+                    <li><a href="../homepage.html">Homepage</a></li>
+                    <li><a href="../homepage-wide.html">Homepage Wide</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="index.html">Kitchen Sink</a></li>
+            <li class="navbar-subnav">
+                <a href="../widgets.html">Widgets</a>
+                <ul class="navbar-sublist">
+                    <li><a href="../widgets/fullcalendar.html">FullCalendar</a></li>
+                    <li><a href="../widgets/datatable.html">DataTable</a></li>
+                    <li><a href="../widgets/wizard.html">Wizard</a></li>
+                    <li><a href="../widgets/maxchar.html">MaxChar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main class="layout-main" id="main-content" role="main">
+    <div class="layout-container row">
+        <ol class="breadcrumb breadcrumbs-list">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="index.html">Kitchen Sink</a></li>
+          <li class="active">Alerts</li>
+        </ol>
+
+        <section class="col-xs-9 main-section pull-right">
+            <article class="main-section-content">
+              <div class="bs-docs-section">
+                  <h1 id="alerts" class="page-header">Alerts</h1>
+
+                  <p class="lead">Provide contextual feedback messages for typical user actions with the handful of available
+                      and flexible alert messages.</p>
+
+                  <h2 id="alerts-examples">Examples</h2>
+
+                  <p>Wrap any text and an optional dismiss button in <code>.alert</code> and one of the four contextual
+                      classes (e.g., <code>.alert-success</code>) for basic alert messages.</p>
+
+                  <div class="alert alert-info">
+                      <h4>No default class</h4>
+
+                      <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make
+                          too much sense, so you're required to specify a type via contextual class. Choose from success,
+                          info, or warning.</p>
+                  </div>
+
+                  <div class="bs-example">
+                      <div class="alert alert-success">
+                          <strong>Well done!</strong> You successfully read this important alert message.
+                      </div>
+                      <div class="alert alert-info">
+                          <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                      </div>
+                      <div class="alert alert-warning">
+                          <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                      </div>
+                      <div class="alert alert-danger">
+                          <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                      </div>
+                  </div>
+                  <div class="highlight">
+<pre><code class="html">
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;alert alert-success&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;alert alert-info&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;alert alert-warning&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;alert alert-danger&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+                  </div>
+
+
+                  <h2 id="alerts-dismissable">Dismissable alerts</h2>
+
+                  <p>Build on any alert by adding an optional <code>.alert-dismissable</code> and close button.</p>
+
+                  <div class="bs-example">
+                      <div class="alert alert-warning alert-dismissable">
+                          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                          <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                      </div>
+                  </div>
+                  <div class="highlight">
+<pre><code class="html">
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;alert alert-warning alert-dismissable&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span> Better check yourself, you&#39;re not looking too good.
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+                  </div>
+
+                  <div class="alert alert-warning">
+                      <h4>Ensure proper behavior across all devices</h4>
+
+                      <p>Be sure to use the <code>&lt;button&gt;</code> element with the <code>data-dismiss="alert"</code>
+                          data attribute.</p>
+                  </div>
+
+                  <h2 id="alerts-links">Links in alerts</h2>
+
+                  <p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any
+                      alert.</p>
+
+                  <div class="bs-example">
+                      <div class="alert alert-success">
+                          <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important
+                          alert message</a>.
+                      </div>
+                      <div class="alert alert-info">
+                          <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but
+                          it's not super important.
+                      </div>
+                      <div class="alert alert-warning">
+                          <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking
+                          too good</a>.
+                      </div>
+                  </div>
+                  <div class="highlight">
+<pre><code class="html">
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;alert alert-success&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;alert-link&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;alert alert-info&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;alert-link&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;alert alert-warning&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;alert-link&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+                  </div>
+              </div>
+            </article>
+
+        </section>
+
+        <section class="col-xs-3 main-section">
+            <article class="main-content-nav">
+                <h2>Kitchen Sink</h2>
+
+                <ul class="navbar-list">
+                  <li class="active">
+                      Alerts
+                      <ul>
+                          <li><a href="#alerts-examples">Examples</a></li>
+                          <li><a href="#alerts-dismissable">Dismissable alerts</a></li>
+                          <li><a href="#alerts-links">Links in alerts</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="badges.html">Badges</a></li>
+                  <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+                  <li>
+                      <a href="buttons.html">Buttons</a>
+                  </li>
+                  <li>
+                      <a href="button_dropdowns.html">Button Dropdowns</a>
+                  </li>
+                  <li>
+                      <a href="code.html">Code</a>
+                  </li>
+                  <li>
+                      <a href="dropdowns.html">Dropdowns</a>
+                  </li>
+                  <li>
+                      <a href="equal_column_layout.html">Equal Column Layout</a>
+                  </li>
+                  <li>
+                      <a href="forms.html">Forms</a>
+                  </li>
+                  <li>
+                      <a href="helper_classes.html">Helper classes</a>
+                  </li>
+                  <li>
+                      <a href="icons.html">Icons</a>
+                  </li>
+                  <li>
+                      <a href="images.html">Images</a>
+                  </li>
+                  <li>
+                      <a href="input_groups.html">Input Groups</a>
+                  </li>
+                  <li>
+                      <a href="javascript_components.html">JavaScript Components</a>
+                  </li>
+                  <li>
+                      <a href="pagination.html">Pagination</a>
+                  </li>
+                  <li>
+                      <a href="panels.html">Panels</a>
+                  </li>
+                  <li>
+                      <a href="progress_bars.html">Progress Bars</a>
+                  </li>
+                  <li>
+                      <a href="tables.html">Tables</a>
+                  </li>
+                  <li>
+                      <a href="typography.html">Typography</a>
+                  </li>
+                </ul>
+            </article>
+        </section>
+
+    </div>
+</main>
+
+<footer class="layout-footer">
+    <section class="layout-container">
+        <article>
+            <span>
+                UC San Diego 9500 Gilman Dr. La Jolla, CA 92093 (858) 534-2230
+            </span>
+        </article>
+        <article>
+            <span>
+                Copyright © <span class="footer-copyright-year"></span> Regents of the University of California. All rights reserved.
+            </span>
+        </article>
+        <ul class="footer-links">
+            <li><a href="https://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
+            <li><a href="https://act.ucsd.edu/cwp/feedback/tool/cwo">Feedback</a></li>
+        </ul>
+    </section>
+</footer>
+
+<!-- build:js({app,.tmp}) ../scripts/jquery.min.js -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- endbuild -->
+<script src="https://www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
+<!-- build:js({app,.tmp}) ../scripts/base-min.js -->
+<script src="../scripts/ucsd/nav-search.js"></script>
+<script src="../scripts/ucsd/copyright.js"></script>
+<script src="../scripts/ucsd/footer.js"></script>
+<script src="../scripts/ucsd/logout.js"></script>
+<script src="../scripts/ucsd/flexslider-init.js"></script>
+<script src="../scripts/ucsd/drawer.js"></script>
+<!-- endbuild -->
+
+<script type="text/javascript">
+    (function ($) {
+        $(document).ready(function () {
+            initFooter("https://act.ucsd.edu/cwp/feedback/tool/cwo");
+            initCopyright();
+            initLogout('http://www.ucsd.edu');
+        });
+    })(jQuery);
+</script>
+
+<script type="text/javascript">
+    // <![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(["_setAccount", "UA-XXXXXXX-X"]);
+    _gaq.push(["_trackPageview"]);
+
+    (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    // ]]>
+  </script>
+
+  <!-- build:js ../scripts/vendor.js -->
+  <script src="../vendor/flexslider/jquery.flexslider.js"></script>
+  <script src="../vendor/fastclick/lib/fastclick.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js ../scripts/bootstrap.js -->
+  <script src="../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+  <!-- endbuild -->
+
+
+  <!-- Google Search -->
+  <script src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    // <![CDATA[
+    google.load('search', '1');
+    google.setOnLoadCallback(function() {
+      google.search.CustomSearchControl.attachAutoCompletion(
+        '004685874581245502426:palsaetk1kk',
+        document.getElementById('q'),
+        'cse-site-search');
+    });
+    // ]]>
+  </script>
+  <script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+  </body>
+
+</html>

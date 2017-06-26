@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+body {
+	background: #fff;
+	color: #333;
+	font: normal normal normal 14px/1.2 "Helvetica Neue", Helvetica, Arial,	sans-serif;
+}
+
+/* --------------------------------------------------------------------
+ * header
+ */
+h1,h2,h3,h4,h5,h6 {
+	color: #333;
+	font-weight: bold;
+	line-height: 1.1;
+	margin-top: 0;
+	margin-bottom: .25em;
+	font-weight: normal;
+}
+
+h1 {
+	color: #D56A03;
+	font-weight: normal;
+	letter-spacing: .5px;
+}
+
+h2.header {
+	background-color: #0B4A67;
+	color: #fff;
+	padding: .25em .5em;
+}
+
+h3.header {
+	border-bottom: 1px solid #333;
+}
+
+/* --------------------------------------------------------------------
+ * paragraph
+ */
+p {
+	margin-bottom: 1em;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+sub {
+	vertical-align: sub;
+}
+
+sup {
+	vertical-align: super;
+}
+
+.subhead {
+	font-size: 120%;
+}
+
+/* --------------------------------------------------------------------
+ * quote
+ */
+blockquote {
+	border-left: .25em solid #ccc;
+	margin: 0 2em 1em 2em;
+	padding: .5em 1em;
+}
+
+/* --------------------------------------------------------------------
+ * horizontal ruler and line break
+ */
+hr {
+	background-color: #ccc;
+	border: 0 none;
+	color: #ccc;
+	height: 1px;
+}
+
+/* --------------------------------------------------------------------
+ * links
+ */
+a:link,a:visited,
+.widget_content a:link,.widget_content a:visited {
+	color: #016691;
+	text-decoration: none;
+	transition: color 0.3s ease-in-out 0s;
+	-moz-transition: color 0.3s ease-in-out 0s;
+	-webkit-transition: color 0.3s ease-in-out 0s;
+	-o-transition: color 0.3s ease-in-out 0s;
+}
+
+a:hover,a:active,
+.widget_content a:hover,.widget_content a:active {
+	color: #0B4A67;
+	text-decoration: underline;
+}
+
+/* external links */
+a[target="_blank"] {
+	background: url(img/sprite_icon.png) no-repeat scroll right -50px transparent;
+	padding-right: 20px;
+}
+
+.nonewwin a[target="_blank"],a[target="_blank"].nonewwin {
+	background: transparent;
+	padding-right: 0;
+}
+
+/* skip links */
+.skip-link {
+	float: left;
+	height: 0;
+	text-indent: -999em;
+}
+
+/* --------------------------------------------------------------------
+ * list
+ */
+ul,dl {
+	margin-bottom: 1em;
+}
+
+ul ul {
+	margin-bottom: 0;
+}
+
+li,dd {
+
+}
+
+dt {
+	font-weight: bold;
+}
+
+ol,ol ol ol ol {
+	list-style: decimal;
+}
+
+ol ol {
+	list-style: lower-alpha;
+}
+
+ol ol ol {
+	list-style: lower-roman;
+}
+
+/* --------------------------------------------------------------------
+ * pre formatted text
+ */
+pre,code {
+	color: #060;
+    display: block;
+	font-family: Consolas, Monaco, monospace;
+	white-space: pre-line;
+}
+
+pre {
+	background-color: #eee;
+	border: 1px dashed #333;
+	margin-bottom: 1em;
+	padding: 1em;
+	word-wrap: break-word; /* ie */
+}
+
+/* --------------------------------------------------------------------
+ * Figures and figcaptions
+ */
+
+figcaption {
+	margin: .5em 0;
+}
+
+/* --------------------------------------------------------------------
+ * emergency
+ */
+#ucsd-emergency {
+	font-size: 175%;
+}
+
+/* --------------------------------------------------------------------
+ * breadcrumbs
+ */
+
+.breadcrumb {
+	background-color: white;
+	border-radius: 0px;
+}
+
+
+/* because legend doesn't inherit in IE */
+legend {
+	color: #000;
+}
+
+input,button,textarea,select,optgroup,option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
