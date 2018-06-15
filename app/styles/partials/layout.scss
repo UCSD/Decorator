@@ -1,0 +1,291 @@
+/* ***********************************************
+ * Layout
+ *
+ * Components:
+ *  - base layout
+ *  - header
+ *  - footer
+ *  - nav
+ *  - more(?)
+ *
+ * ***************/
+
+/* ***********************************************
+ * BASE
+ * ***************/
+
+html, body
+{
+  background: #fff;
+  overflow-x: hidden;
+  color: #333;
+  font: normal normal normal 16px/1.2 proxima-nova,Helvetica,Arial,sans-serif
+}
+  /* container will have media queries for sizing*/
+
+  .layout-container {
+    max-width: $full;
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+
+    @media only screen and (max-width: $desktop-small) {
+      width: 94%;
+    }
+
+    @media only screen and (max-width: $full) {
+      max-width: 960px;
+    }
+  }
+
+  .layout-navbar .layout-container {
+    overflow: visible;
+  }
+
+  .layout-header {
+    /* to incorporate new navbar button*/
+    display: block;
+    width: 100%;
+
+    background-color: #2b92b9;
+//
+    @media only screen and (min-width: $minimum) and (max-width: $desktop-small) {
+      height: 105px;
+
+    }
+
+    //
+   /*
+    @media only screen and (min-width: $desktop-small + 1) {
+      height: 78px;
+    }*/
+  }
+
+  .layout-header,.isLoggedIn {
+    height: 100%;
+  }
+    .layout-login {
+      width: 100%;
+
+      background: #0B4A67;
+      overflow: hidden;
+    }
+    .login-content {
+      color: #fff;
+      font-size: 85%;
+      padding: .4em 0;
+      float: right;
+
+      a {
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+
+    .layout-title {
+      font-family: "Trebuchet MS", sans-serif;
+      box-sizing: border-box;
+
+      height: 78px;
+      width: 100%;
+      background: #2b92b9;
+      padding: 1.5em 0;
+
+      @media only screen and (max-width: $mobile-small) {
+        padding: 0.5em 0;
+      }
+
+      @media only screen and (max-width: $desktop-small) {
+        padding: 1em 0;
+        height: 105px;
+      }
+    }
+
+  .layout-navbar {
+    min-height: 40px;
+    width: 100%;
+
+    background-color: #F2F5F7;
+    border: 0;
+    border-bottom: 1px solid #C8CFD3;
+    margin-bottom: 0;
+    z-index: 100;
+
+    .layout-container {
+      overflow: visible;
+    }
+  }
+
+  .layout-main {
+    padding: 1em 0 0;
+    width:100%;
+  }
+
+  .layout-footer {
+    width: 100%;
+
+    color: #999;
+    font-size: 90%;
+    border-top: 1px solid #ccc;
+    padding: 1em 0;
+    line-height: 1.5;
+
+    > .layout-container {
+      background-position: right -74px;
+
+      @media only screen and (max-width: $tablet) {
+        background: none;
+      }
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-weight: 400;
+
+    line-height: 1.1;
+    margin: 0 0 .25em;
+  }
+
+  h1 {
+    color: #d56a03;
+    letter-spacing: .5px;
+  }
+
+  .h2, h2 {
+    font-size: 28px;
+  }
+
+
+  hr {
+    background-color: #ccc;
+    color: #ccc;
+    height: 1px;
+  }
+
+  a {
+    color: #016691;
+  }
+
+
+/* ***********************************************
+ * HEADER
+ * **************/
+
+header
+{
+}
+
+/* ***********************************************
+* NAV
+* **************/
+
+nav
+{
+}
+
+.navbar-list {
+  list-style: none;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .caret {
+  margin-left: 7px;
+}
+
+.layout-navbar .navbar-list > li {
+  float: left;
+
+  > a {
+    display: block;
+    color: #004b6e;
+
+    background-color: #FDFDFD;
+    border-bottom: solid 3px rgba(255,255,255,.4);
+    border-right: solid 1px #C8CFD3;
+    border-left: solid 1px rgba(255,255,255,.6);
+
+    padding: 9px 15px;
+    text-decoration: none;
+    line-height: 1.3;
+  }
+
+  &.active > a {
+    border-bottom: #D56A03 solid 3px;
+  }
+}
+
+.layout-navbar .navbar-list > li:first-child {
+  border-left: solid 1px #C8CFD3;
+}
+/* ***********************************************
+* MAIN
+* **************/
+
+main
+{
+}
+  .main-section {
+    line-height: 1.5;
+    padding: 0 1em 1em 0;
+
+    /* space for smaller viewports */
+    margin-bottom: 1em;
+    @media only screen and (max-width: $tablet) {
+      width:100%;
+      padding: 0 0 1em;
+    }
+  }
+
+  .main-section-content {
+    position: relative;
+  }
+  .main-section-content img {
+
+    @media only screen and (max-width: 975px) {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+  }
+
+  .main-section-supplement {
+    background-color: #F2F5F7;
+    border: solid 1px #C8CFD3;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+    .main-section-supplement h3 {
+      font-size: 115%;
+      color: #738AA3;
+      text-shadow: 0 1px 1px #FFF;
+    }
+
+
+/* ***********************************************
+ * FOOTER
+ * **************/
+
+footer
+{
+}
+  .footer-links {
+    list-style: none;
+
+    margin: .5em 0 0;
+    padding: 0;
+
+    > li {
+      display: inline;
+
+      margin-left: 0;
+      margin-right: .5em;
+      padding-right: .75em;
+    }
+
+    > li:first-child {
+      border-right: 1px solid #ccc;
+    }
+  }

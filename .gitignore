@@ -1,0 +1,13 @@
+.dropbox*
+.idea/
+.sass-cache/
+.tmp/
+
+dist/
+node_modules/
+*.zip
+
+*.map
+app/styles/*.css
+
+ucsd-decorator-4.5.4/*

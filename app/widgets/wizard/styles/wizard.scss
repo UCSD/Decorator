@@ -1,0 +1,85 @@
+.wizard {
+  height: 4em;
+  margin: 2em 0;
+}
+
+.wizard li {
+  float: left;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style-type: none;
+  background: transparent url(img/sprite_wizard.png) center -185px no-repeat;
+}
+
+.wizard li.current {
+  background-position: center -135px;
+}
+
+.wizard li.visited {
+  background-position: center -110px;
+}
+
+.wizard li.hover {
+  background-position: center -160px;
+}
+
+.wizard li.not_visited {
+  background-position: center -185px;
+}
+
+.wizard li.current_first {
+  background-position: center -35px;
+}
+
+.wizard li.visited_first {
+  background-position: center -10px;
+}
+
+.wizard li.hover_first {
+  background-position: center -60px;
+}
+
+.wizard li.current_last {
+  background-position: center -235px;
+}
+
+.wizard li.not_visited_last {
+  background-position: center -285px;
+}
+
+.wizard li div {
+  margin-top: 20px;
+  text-align: center;
+  background: #fff;
+  color: #999;
+}
+
+.wizard li.current div {
+  color: #2b5590;
+}
+
+.wizard li div a {
+  text-decoration: none;
+  color: #999;
+}
+
+.wizard li:hover div a {
+  color: #2b5590;
+}
+
+.wizard li {
+  width: 100px;
+}
+
+.wizard.narrow li {
+  width: 60px;
+}
+
+.wizard.wide li {
+  width: 200px;
+}
+
+.wizard.x-wide li {
+  width: 300px;
+}

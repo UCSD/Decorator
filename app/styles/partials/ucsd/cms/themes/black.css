@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400);
+
+h1 {
+  color: #b87111;
+  font-family: 'Lato', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #707071;
+  font-family: 'Lato', sans-serif;
+}
+
+div.styled {
+  background: #eeeeee;
+}
+
+div.styled h2 {
+  color: #4765ad;
+}
+
+a:link, a:visited, .widget_content a:link, .widget_content a:visited {
+  color: #4765ad;
+}
+
+.flexslider a {
+  color: #FFF;
+}
+
+.layout-title {
+  background: #000;
+}
+
+.layout-title a.title-header {
+  font-family: 'Lato', sans-serif;
+  color: #FFF;
+
+  transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+}
+
+.layout-header button.btn-nav {
+    background-color: #cecece;
+}
+    button.btn-nav span.icon-bar {
+        background-color: #000;
+    }
+
+.layout-title .title-logo {
+  background: transparent url(../img/sprite_base-black.png) no-repeat;
+}
+
+.layout-navbar {
+  background: #979797;
+}
+
+.layout-navbar ul.navbar-list > li > a {
+  padding: 9px 15px;
+}
+/* depth of selectors to override layout.css */
+.navdrawer-container ul.navbar-list ul.navbar-sublist {
+  border-left: 1px solid #efefef;
+  border-bottom: 1px solid #979797;
+}
+
+.main-content-nav {
+  background: #eeeeee;
+  font-family: 'Lato', sans-serif;
+}
+
+.main-content-nav > h2 {
+  color: #4765ad;
+}
+
+/* search modifications */
+.search-toggle,
+.search-toggle:hover,
+.search-toggle:focus {
+  background: 0 0;
+  color: #000;
+  border: 1px solid transparent
+}
+.btn-default, .btn-default:focus, .btn-default:hover {
+  color:#000;
+}
+.search-toggle.search-is-open {
+  background-color: #DFE2E4;
+  color: #939393;
+}
+
+@media only screen and (max-width: 768px) {
+  .layout-title .title-logo {
+    top: 10px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .layout-title .title-logo {
+    background-position: -239px -14px;
+    height: 32px;
+    width: 166px;
+  }
+}
+
+/*---------------------------------------------------------------------
+ * retina display
+ */
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+  .layout-title .title-logo {
+    background-image: url(../../img/sprite_base-black-2x.png);
+    background-size: 500px 120px;
+  }
+}

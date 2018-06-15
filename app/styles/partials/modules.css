@@ -1,0 +1,69 @@
+/*
+Error: Undefined variable: "$desktop".
+        on line 79 of app/styles/partials/modules.scss
+
+74:   background-color: #dfe2e4;
+75:   border: solid #ccc;
+76:   border-width: 0 1px 2px;
+77:   display: none;
+78: 
+79:   @media only screen and (max-width: $desktop) {
+80:     position: relative;
+81:     width: 100%;
+82:   }
+83: }
+84:   .search-content.search-is-open {
+
+Backtrace:
+app/styles/partials/modules.scss:79
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:540:in `block in run_interp_no_strip'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:538:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:538:in `run_interp_no_strip'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:545:in `run_interp'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:510:in `visit_media'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:412:in `run'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$desktop\".\A         on line 79 of app/styles/partials/modules.scss\A \A 74:   background-color: #dfe2e4;\A 75:   border: solid #ccc;\A 76:   border-width: 0 1px 2px;\A 77:   display: none;\A 78: \A 79:   @media only screen and (max-width: $desktop) {\A 80:     position: relative;\A 81:     width: 100%;\A 82:   }\A 83: }\A 84:   .search-content.search-is-open {"; }
