@@ -1,0 +1,350 @@
+/* ***********************************************
+ * Modules
+ *
+ * Components:
+ *  - Global styles
+ *  - Buttons & Links
+ *  - Hero Landing Page
+ *  - Text and CTA w/Full Height Image Left
+ *  - News with Images
+ *  - Callout Image Small Inset
+ *  - Callout Content One
+ *  - Callout Content Two
+ *
+ * ***************/
+
+ /* Global styles , specific for new templates */
+
+.jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 {
+	line-height: 1.1;
+	margin: 0 0 .25em;
+}
+
+.jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6, .jumbotron .h1, .jumbotron .h2, .jumbotron .h3, .jumbotron .h4, .jumbotron .h5, .jumbotron .h6  {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.jumbotron h1, .jumbotron .h1, .jumbotron h2, .jumbotron .h2, .jumbotron h3, .jumbotron .h3 {
+	margin-top: 23px;
+	margin-bottom: 11.5px;
+}
+
+.jumbotron .drawer-wrapper ul, .jumbotron  .drawer-wrapper ol {padding-left: 1em;}
+
+.jumbotron .drawer-wrapper ul li, .jumbotron  .drawer-wrapper ol li {
+	padding-bottom: 10px;
+}
+
+.jumbotron a, .jumbotron a:hover {
+	text-decoration: none;
+}
+
+.detail-logo img {
+	margin-top: 35px;
+	margin-bottom: 15px;
+	width: 80%;
+}
+#site-logo {
+	margin-top: 0;
+	@media (min-width: $desktop-small) {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: $desktop-small) {
+	.jumbotron h2 {
+		font-size: 2em;
+	}
+	.jumbotron h4 {
+	    font-size: 1.22em;
+	}
+}
+
+/* Buttons & links */
+
+.jumbotron  .btn-default {
+  background-color: $yellow;
+  color: #484949;
+  font-family: inherit;
+  transition: all 0.3s;
+  border: 0;
+  border-radius: 0;
+  &:hover {
+   	background-color: #fff;
+  }
+}
+
+.jumbotron .btn-primary {
+  background-color: $blue;
+  color: #fff;
+  font-family: inherit;
+  transition: all 0.3s;
+  border: 0;
+  border-radius: 0;
+  &:hover {
+   	background-color: darken($blue, 10%);
+  }
+}
+
+.jumbotron .btn {
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 0.8em 1.5em;
+	min-width: 200px;
+	margin-bottom: 1em;
+	letter-spacing: 0.08em;
+	font-weight: normal;
+}
+
+.jumbotron .text-link {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px #006A96 solid;
+    letter-spacing: 0.08em;
+}
+
+/* Hero Landing Page */
+
+.jumbotron {
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: inherit;
+	// removed padding, to have consistent spacing to work with these templates
+	padding: 0 !important;
+}
+.hm {
+	padding: 0 0 !important;
+	color: #fff !important;
+	margin: 0 !important;
+}
+.jumbotron-hero-lg {
+	background-image: url("../../img/gps-hero.jpg");
+}
+.jumbotron .text-indent-h1 h1 {
+	text-transform: uppercase;
+	@media (max-width: $desktop-small) {
+		font-size: 2.5em;
+	}
+	@media (max-width: $mobile) {
+		font-size: 2em;
+	}
+}
+.jumbotron .text-indent-h1 p {
+	margin-left: 6.75em;
+}
+.jumbotron .text-indent-h1 a.btn {
+	margin-left: 7.2em;
+}
+.jumbotron .text-indent-h2 p {
+	margin-left: 3.6em;
+}
+.jumbotron .text-indent-h2 a.btn {
+	margin-left: 4.4em;
+}
+.jumbotron .text-indent-h1 p, .jumbotron  .text-indent-h2 p {
+	width: 19em;
+}
+.jumbotron .text-indent h1 span {
+	margin-left: 1.65em;
+}
+.jumbotron-hero .text-indent h1, .jumbotron-hero .text-indent h2, .jumbotron-hero .text-indent h3, .jumbotron-image-bg .text-indent h1, .jumbotron-image-bg .text-indent h2, .jumbotron-image-bg .text-indent h3 {
+	text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.75);
+}
+.jumbotron-hero .text-indent p , .jumbotron-image-bg .text-indent p {
+  text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75);
+}
+
+.jumbotron {
+	margin: 60px 0;
+}
+
+/* Text and CTA w/Full Height Image Left */
+
+.side-image-white {
+	background-color: #fff;
+}
+.jumbotron p {
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+
+/* News with Images */
+
+.jumbotron-news {
+	background: none !important;
+
+	.panel-heading {
+	    padding: 10px 30px;
+	}
+
+}
+
+.jumbotron-news h2 {
+    margin-bottom: 1em;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.no-gutter {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.jumbotron .panel {border-radius: 0 !important;}
+
+
+.jumbotron-news .panel.panel-default {
+    border: 1px solid #f2f2f2;
+    background-color: #f5f5f5;
+
+		img {
+    	width: 100%;
+		}
+
+}
+.jumbotron-news .panel.panel-default .panel-heading {
+    background-color: #f5f5f5;
+    border: none;
+}
+.panel-default>.panel-heading {
+    color: #333;
+}
+.jumbotron-news .panel .panel-news-date {
+    text-transform: uppercase;
+    color: #747678;
+    font-size: 0.85em;
+    margin-bottom: 0.25em;
+    margin-top: 1em;
+}
+.jumbotron-news .panel .panel-news-title {
+    text-transform: none;
+    margin-top: 0;
+}
+.jumbotron-news .panel.panel-default .panel-body {
+    padding-top: 0;
+    padding-right: 2em;
+}
+
+
+@media (min-width: $desktop-small) {
+	.jumbotron-news .panel.panel-default .panel-heading {
+	    min-height: 135px;
+	}
+}
+
+
+/* Callout Image Small Inset */
+
+.jumbotron-callout-image-small-inset {
+	background-image: url("../img/callout-content-two-bg.jpg");
+	background-position: center center;
+	background-size: cover;
+	padding: 48px 0 !important;
+	border-radius: 0 !important;
+	h2, h3, p, a {
+		color: #484949;
+	}
+	.panel {
+		margin: 0 15px;
+	}
+	.panel.panel-default .panel-body {
+		padding: 1em 2em;
+	}
+	.btn-default:hover {
+		background-color: darken(#ffcd00, 5%);
+	}
+}
+
+/* Callout Content One */
+
+.jumbotron-callout-content-one {
+	background-color: $blue;
+	background-image: url("../img/bg-dark-blue-trident-full.png");
+  background-position: center;
+	padding: 30px 0 !important;
+	border-radius: 0 !important;
+	h2, h3, p, li, a:hover {color: #fff;}
+
+	a {color: #FFF; text-decoration: underline;}
+
+	a:hover {color: #FFF; text-decoration: underline;}
+
+	.panel {
+		background-color: transparent !important;
+		margin: 0 15px 20px 15px;
+		box-shadow: none;
+		border: 0;
+	}
+	.panel.panel-primary .panel-body {
+		padding: 0em 1em ;
+	}
+	.panel.panel-primary .panel-body p {
+		font-size: 18px;
+		color: #fff;
+	}
+	@media (min-width: 992px) {
+		h2 {
+			margin-left: 50px;
+		}
+	}
+}
+
+/* Callout Content Two */
+
+.jumbotron-callout-content-two {
+	background-image: url("../img/callout-content-two-bg.jpg");
+	background-position: center center;
+	background-size: cover;
+	padding: 48px 0 !important;
+	border-radius: 0 !important;
+
+		.panel {
+			border: none;
+		}
+		.panel.panel-primary {
+			background-color: rgba(0,106,150,0.85);
+		}
+		.panel.panel-primary .panel-body {
+			padding: 1em 2em;
+		}
+		.panel.panel-primary .panel-body .btn {
+			margin-bottom: 0;
+		}
+		.panel.panel-primary .text-link {
+			color: #fff;
+		}
+		.panel.panel-primary .text-right {
+			margin-bottom: 0.25em;
+		}
+		.panel-primary .text-link {
+				border-bottom: 1px #fff solid;
+		}
+
+
+}
+.jumbotron-callout-content-two h2, .jumbotron-callout-content-two h3, .jumbotron-callout-content-two p {
+	color: #fff;
+}
+
+
+/* Jumbotron full-width */
+
+.jumbotron-full-width {
+    background-image: url("../img/bg-light-yellow-trident.png");
+    background-position: top right;
+    background-color: #f5f5f5;
+		border-radius: 0 !important;
+    padding: 2em !important;
+}
+
+.jumbotron-full-width-ni {
+    background-color: #f5f5f5;
+		border-radius: 0 !important;
+    padding: 2em !important;
+
+		h2{
+			margin: 0 0 30px 0;
+		}
+}

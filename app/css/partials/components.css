@@ -1,0 +1,44 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px; }
+
+.carousel .container {
+  padding: 7% 0;
+  position: absolute;
+  top: 0;
+  left: 10%; }
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10; }
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  background-color: #777; }
+
+.carousel-inner > .item > img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; }
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4; }
+  .featurette-heading {
+    font-size: 50px; } }
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px; } }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFydGlhbHMvY29tcG9uZW50cy5jc3MiLCJzb3VyY2VzIjpbImNvbXBvbmVudHMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO3FEQUNxRDtBQUNyRCx5QkFBeUI7QUFDekIsQUFBQSxTQUFTLENBQUM7RUFDUixhQUFhLEVBQUUsSUFBSSxHQUFJOztBQUN2QixBQUFVLFNBQUQsQ0FBQyxVQUFVLENBQUM7RUFDbkIsT0FBTyxFQUFFLElBQUk7RUFDYixRQUFRLEVBQUUsUUFBUTtFQUNsQixHQUFHLEVBQUUsQ0FBQztFQUNOLElBQUksRUFBRSxHQUFHLEdBQUk7O0FBRWpCLGtFQUFrRTtBQUNsRSxBQUFBLGlCQUFpQixDQUFDO0VBQ2hCLE9BQU8sRUFBRSxFQUFFLEdBQUk7O0FBRWpCLDJEQUEyRDtBQUMzRCxBQUFVLFNBQUQsQ0FBQyxLQUFLLENBQUM7RUFDZCxnQkFBZ0IsRUFBRSxJQUFJLEdBQUk7O0FBRTVCLEFBQTBCLGVBQVgsR0FBRyxLQUFLLEdBQUcsR0FBRyxDQUFDO0VBQzVCLEdBQUcsRUFBRSxDQUFDO0VBQ04sSUFBSSxFQUFFLENBQUM7RUFDUCxLQUFLLEVBQUUsSUFBSTtFQUNYLE1BQU0sRUFBRSxJQUFJLEdBQUk7O0FBRWxCO3FEQUNxRDtBQUNyRCxNQUFNLEVBQUUsU0FBUyxFQUFFLEtBQUs7RUFDdEIsc0NBQXNDO0VBQ3RDLEFBQWtCLGlCQUFELENBQUMsQ0FBQyxDQUFDO0lBQ2xCLGFBQWEsRUFBRSxJQUFJO0lBQ25CLFNBQVMsRUFBRSxJQUFJO0lBQ2YsV0FBVyxFQUFFLEdBQUcsR0FBSTtFQUN0QixBQUFBLG1CQUFtQixDQUFDO0lBQ2xCLFNBQVMsRUFBRSxJQUFJLEdBQUk7O0FBRXZCLE1BQU0sRUFBRSxTQUFTLEVBQUUsS0FBSztFQUN0QixBQUFBLG1CQUFtQixDQUFDO0lBQ2xCLFVBQVUsRUFBRSxLQUFLLEdBQUkifQ== */
+
+/*# sourceMappingURL=components.css.map */

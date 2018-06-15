@@ -1,0 +1,25 @@
+/********************* VARIABLES & MIXINS */
+@import "partials/variables.scss";
+@import "partials/custom-variables.scss"; //vitro variables
+
+/********************* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/********************* BASE */
+@import "partials/reference.scss";
+@import "partials/layout.scss";
+@import "partials/modules.scss";
+@import "partials/navbar.scss";
+@import "partials/ucsd/base/styling.scss";
+@import "partials/components.scss";
+
+/********************* VITRO MODULES */
+@import "partials/vitro-modules.scss";
+
+/********************* OVERWRITES */
+@import "partials/ucsd/cms/overwrite.scss";
+
+/********************* CMS */
+@import "partials/ucsd/cms/drawer.scss";
+
+@import "partials/print.scss";

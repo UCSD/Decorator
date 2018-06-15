@@ -1,0 +1,714 @@
+/**********************************************************************
+ * Basic CSS styling
+ */
+
+.clearfix{
+	overflow: auto;
+}
+
+/* --------------------------------------------------------------------
+ * table
+ */
+table.styled {
+	margin-bottom: 1em;
+}
+
+table.styled th,table.styled td {
+	padding: .25em 1em;
+}
+
+table.styled th {
+	background-color: #eee;
+	font-weight: bold;
+}
+
+table.styled th,table.styled td {
+	border: 1px solid #ccc;
+}
+
+table.styled tbody tr.even {
+	background-color: #eff;
+}
+
+/* --------------------------------------------------------------------
+ * _images
+ */
+img.left {
+	float: left;
+	padding: 0 1em 1em 0;
+	width: auto;
+}
+
+img.right {
+	float: right;
+	padding: 0 0 1em 1em;
+	width: auto;
+}
+
+/* --------------------------------------------------------------------
+ * * - 360px
+ */
+@media only screen and (max-width: 360px) {
+	img.left,
+	img.right {
+		float: none;
+		padding: 1em 0;
+	}
+}/**********************************************************************
+ * Messages
+ */
+
+.msg {
+	-moz-border-radius: .5em;
+	-webkit-border-radius: .5em;
+	border-radius: .5em;
+	padding: .5em 1em;
+	margin-bottom: 1em;
+}
+
+.msg h4 {
+	padding-left: 20px;
+	text-shadow: none;
+}
+
+.msg.info {
+	border: 1px solid #aaa;
+	background-color: #eee;
+}
+
+.msg.info h4 {
+	background-position: 0 -150px;
+}
+
+.msg.alert {
+	border: 1px solid #fa0;
+	background-color: #ffe;
+}
+
+.msg.alert h4 {
+	background-position: 0 -249px;
+	color: #D56A03;
+}
+
+.msg.confirm {
+	border: 1px solid #393;
+	background-color: #efe;
+}
+
+.msg.confirm h4 {
+	color: #393;
+	background-position: 0 -200px;
+}
+
+.msg.error {
+	border: 1px solid #c00;
+	background-color: #fee;
+}
+
+.msg.error h4 {
+	color: #c00;
+	background-position: 0 -299px;
+}/**********************************************************************
+ * Button
+ */
+.button {
+	border: none;
+	color: #333;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: rgba(255, 255, 255, .5) 0 1px 1px;
+	margin-right: .5em;
+	padding: .25em 1em;
+	-moz-border-radius: .25em;
+	-webkit-border-radius: .25em;
+	border-radius: .25em;
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+.button:hover {
+	text-decoration: none;
+}
+
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.button:disabled {
+	color: #999;
+	cursor: default;
+}
+
+/*---------------------------------------------------------------------
+ * primary button
+ */
+.primary {
+	background: #fc0;
+	background: -moz-linear-gradient(top, #fc0, #fa0);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fc0), to(#fa0) );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc00',endColorstr='#ffaa00');
+}
+
+.primary:hover {
+	background: #f90;
+}
+
+.primary:disabled {
+	background: #fd0;
+	background: -moz-linear-gradient(top, #fd0, #fc0);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fd0), to(#fc0) );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdd00',endColorstr='#ffcc00');
+}
+
+/*---------------------------------------------------------------------
+ * secondary button
+ */
+.secondary {
+	background: #eee;
+	background: -moz-linear-gradient(top, #eee, #ddd);
+	background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd) );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee',endColorstr='#dddddd');
+}
+
+.secondary:hover {
+	background: #ccc;
+}
+
+.secondary:disabled {
+	background: #fff;
+	background: -moz-linear-gradient(top, #fff, #eee);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee) );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#eeeeee');
+}
+
+/*---------------------------------------------------------------------
+ * link button
+ */
+a.button {
+	color: #333;
+}
+
+/* --------------------------------------------------------------------
+ * * - 480px
+ */
+@media only screen and (max-width: 480px) {
+	.button {
+		padding: .5em 1em;
+	}
+}/**********************************************************************
+ * Icon
+ */
+.icon {
+	padding-left: 1.5em;
+}
+
+/* ie 7 only hack */
+*:first-child+html .icon {
+	display: inline-block;
+}
+
+.icon.newwin {
+	background-position: 0 -50px;
+}
+
+.icon.info {
+	background-position: 0 -150px;
+}
+
+.icon.confirm {
+	background-position: 0 -200px;
+}
+
+.icon.alert {
+	background-position: 0 -250px;
+}
+
+.icon.error {
+	background-position: 0 -300px;
+}
+
+.icon.invalid {
+	background-position: 0 -300px;
+}
+
+.icon.cal {
+	background-position: 0 -350px;
+}
+
+.icon.check {
+	background-position: 0 -400px;
+}
+
+.icon.check_disabled {
+	background-position: 0 -450px;
+}
+
+.icon.close {
+	background-position: 0 -500px;
+}
+
+.icon.close_disabled {
+	background-position: 0 -550px;
+}
+
+.icon.disable {
+	background-position: 0 -600px;
+}
+
+.icon.disable_disabled {
+	background-position: 0 -650px;
+}
+
+.icon.doc {
+	background-position: 0 -700px;
+}
+
+.icon.doc_disabled {
+	background-position: 0 -750px;
+}
+
+.icon.gear {
+	background-position: 0 -900px;
+}
+
+.icon.mail {
+	background-position: 0 -950px;
+}
+
+.icon.minus {
+	background-position: 0 -1000px;
+}
+
+.icon.minus_disabled {
+	background-position: 0 -1050px;
+}
+
+.icon.pencil {
+	background-position: 0 -1100px;
+}
+
+.icon.pencil_disabled {
+	background-position: 0 -1150px;
+}
+
+.icon.plus {
+	background-position: 0 -1200px;
+}
+
+.icon.plus_disabled {
+	background-position: 0 -1250px;
+}
+
+.icon.print {
+	background-position: 0 -1300px;
+}
+
+.icon.search {
+	background-position: 0 -1400px;
+}
+
+.icon.search_disabled {
+	background-position: 0 -1450px;
+}
+
+.icon.submit {
+	background-position: 0 -1500px;
+}
+
+.icon.submit_disabled {
+	background-position: 0 -1550px;
+}
+
+.icon.trash {
+	background-position: 0 -1600px;
+}
+
+.icon.trash_disabled {
+	background-position: 0 -1650px;
+}
+
+.icon.undo {
+	background-position: 0 -1700px;
+}
+
+.icon.arrow_right {
+	background-position: 0 -1750px;
+}
+
+.icon.arrow_down {
+	background-position: 0 -1800px;
+}
+
+.icon.play {
+	background-position: 0 -1850px;
+}
+
+.icon.stop {
+	background-position: 0 -1900px;
+}
+
+/* Social Media Icons */
+
+
+.social-list {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.social-list li {
+	height: 33px;
+	margin: 0 0 10px 0;
+	padding: 0 40px;
+  	cursor: pointer;
+}
+
+.social-list li.facebook {
+	background-position: 0 0;
+}
+
+.social-list li.twitter {
+	background-position: 0 -39px;
+}
+
+.social-list li.youtube {
+	background-position: 0 -80px;
+}
+
+.social-list li.linkedin {
+	background-position: 0 -121px;
+}
+
+.social-list li.googleplus {
+	background-position: 0 -160px;
+}
+
+.social-list li.instagram {
+	background-position: 0 -200px;
+}
+
+.social-list li.tumblr {
+	background-position: 0 -240px;
+}
+
+.social-list li.flickr {
+	background-position: 0 -280px;
+}
+
+.social-list li.vine {
+	background-position: 0 -320px;
+}
+
+.social-list li.pinterest {
+	background-position: 0 -360px;
+}
+
+.social-list li.blogger {
+	background-position: 0 -400px;
+}
+
+.social-list li.rss {
+	background-position: 0 -440px;
+}
+
+.social-list li.vimeo {
+  background-position: 0 -480px;
+}
+
+.social-list li.wordpress {
+  background-position: 0 -520px;
+}
+
+/**********************************************************************
+ * Form Elements
+ */
+input[type="text"],select,textarea {
+	border: 1px solid #aaa;
+}
+
+.form-control {
+	border-radius: 0;
+  padding: .5em;  /* to keep in line with other input paddings */
+}
+
+input[type="text"],textarea {
+	padding: .5em;
+}
+
+select.form-control {
+  padding: .5em .2em;
+}
+
+fieldset {
+	border: 1px solid #aaa;
+	padding: .5em;
+	border: 0;
+}
+
+legend {
+	color: #333;
+	margin-left: 0;
+	padding: 0;
+}
+
+input[type=radio],input[type=checkbox] {
+	margin-right: .25em;
+}
+
+
+/*---------------------------------------------------------------------
+ * input group addon
+ */
+
+/* white background to make it look less like an 'actionable' button */
+.input-group-addon {
+  background: #fff;
+}
+
+
+/* --------------------------------------------------------------------
+ * form fields and font style
+ */
+div.field,div.field_top,div.field_left,div.label {
+	clear: both;
+	padding-bottom: 1em;
+}
+div.label {
+  color:#000;
+}
+.field_top div.label {
+	padding-bottom: .25em;
+}
+
+.label,.input,.output {
+	display: block;
+}
+
+.label label {
+	font-weight: bold;
+}
+
+/* --------------------------------------------------------------------
+ * form
+ */
+form {
+	margin-bottom: 1em;
+}
+
+/* output */
+form .output {
+	font-weight: normal;
+}
+
+/* help text */
+form .help {
+	color: #999;
+	display: block;
+	font-style: italic;
+	font-size: 85%;
+}
+
+/* required field */
+form .help.icon.asterisk {
+	padding-bottom: 1em;
+}
+
+/* multi field */
+.multi {
+	margin-right: .5em;
+}
+
+.input.multi {
+	margin-right: 0;
+	padding-bottom: .5em;
+}
+
+/* --------------------------------------------------------------------
+ * form invalid field
+ */
+form input.invalid,form textarea.invalid {
+	border: 1px solid #c00;
+}
+
+form .invalid,form .inline_invalid {
+	color: #c00;
+}
+
+form .inline_invalid {
+	display: block;
+}
+
+/* hide from ie */
+html>body form .icon.invalid {
+	margin-left: .5em;
+}
+
+/* --------------------------------------------------------------------
+ * form layout - default is left aligned
+ */
+.field .label {
+	width: 10em;
+	float: left;
+	text-align: right;
+	padding-right: 1em;
+}
+
+.field .input,.field .output,.field select.input,.field textarea.input {
+	margin-left: 11em;
+}
+
+.field .required {
+	background-position: right 0;
+}
+
+.field_top .required,
+.field_left .required {
+    background-position: left 0;
+    padding-left: 1em;
+}
+
+/* top-aligned */
+.field_top .label {
+	padding-left: 1em;
+}
+
+.field_top .input,.field_top .output,.field_top select.input,.field_top textarea.input
+{
+	margin-left: 1em;
+}
+
+/* left-aligned */
+.field_left .label {
+	width: 10em;
+	float: left;
+	text-align: left;
+	padding-left: 1em;
+}
+
+.field_left .input,.field_left .output,.field_left select.input,.field_left textarea.input
+{
+	margin-left: 11.5em;
+}
+
+/* --------------------------------------------------------------------
+ * * - 640px
+ */
+@media only screen and (max-width: 640px) {
+	.field .label,
+	.field_left .label {
+		float: none;
+		text-align: left;
+		padding-left: 1em;
+		padding-bottom: .25em;
+	}
+	.field .input,.field .output,.field select.input,.field textarea.input,
+	.field_left .input,.field_left .output,.field_left select.input,.field_left textarea.input {
+		margin-left: 1em;
+	}
+	.field .required,
+	.field_left .required {
+		background-position: left 0;
+		padding-left: 1em;
+	}
+}
+
+/* --------------------------------------------------------------------
+ * * - 480px
+ */
+@media only screen and (max-width: 480px) {
+	input[type="text"],textarea {
+		padding: .5em .25em;
+	}
+}/**********************************************************************
+ * loading styling
+ */
+
+div.loading {
+	clear: both;
+	height: 32px;
+	text-indent: -9999px;
+	background-position: center;
+}
+
+span.loading {
+	background-position: right;
+	padding-right: 20px;
+}
+
+/**********************************************************************
+ * CSS Styling for the page nav aside
+ */
+div.styled {
+  background: #F2F5F7;
+  border: 1px solid #C8CFD3;
+  margin-bottom: 1em;
+  padding: 1em;
+
+  h2, h3, h4, h5, h6 {
+	color: #738AA3;
+	text-shadow: 0 1px 1px #FFFFFF;
+  }
+
+  h2 {
+	font-size: 140%;
+  }
+
+  h3 {
+	font-size: 115%;
+  }
+}
+
+#page_nav {
+  margin: 0 -1em -1em;
+  padding: 0;
+
+  li {
+	border-top: 1px solid #DBD7D7;
+	color: #06c;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	&.active, a {
+	  color: #016691;
+	  display: block;
+	  padding: 1em 0 1em 1em;
+	}
+
+	&.active {
+	  background-color: #fff;
+	  color: #D56A03;
+	}
+
+	&.collapsed ul {
+	  display: none;
+	}
+
+	a:hover {
+	  background-color: #fff;
+	  text-decoration: none;
+	}
+
+	li {
+	  font-size: 85%;
+
+	  a:hover {
+		text-decoration: underline;
+	  }
+	}
+  }
+
+  ul {
+	margin: .4em 0 -.4em 1em;
+	padding: 0;
+  }
+}
+
+#page_nav_title {
+  margin-bottom: 0.7em;
+}
