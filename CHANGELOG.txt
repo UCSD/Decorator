@@ -1,0 +1,58 @@
+# Change Log
+All notable changes to this project will be documented in this file.
+Detailed messages about the changes can be reviewed in the Git comments.
+
+## [4.5.4] 2016-06-10
+### Fixed
+- Menu navigation position fix
+- Removed fixed height attribute in .layout-header
+
+
+## [4.5.3] 2016-03-17
+### Fixed
+- Toggle mobile menu when nav menu item wraps to the next line
+- Added a comma to ".layout-header, .isLoggedIn"
+- Removed duplicate closing head tag in HTML template files
+
+### Updated
+- Display expanded menu items in mobile nav
+- Cleaned up Gruntfile
+
+### Added
+- Added profile.css to distribution file
+- Added unminified JavaScript source files
+- Added check for undefined nav element to prevent JavaScript error
+
+
+## [4.5.2] 2015-11-12
+### Fixed
+- Initialize tooltip example for correct tip placement
+
+### Updated
+- Use of HTML5 tags, e.g. <main>, <header>, <nav>, <section>
+- Rely more on bootstrap's grid system
+- Renamed "astrisk" to "asterisk"
+- Menu in mobile view allows tap to expand for each section
+- Support a short title value in mobile view
+- Separate out Bootstrap JavaScript components into their own file
+
+### Removed
+- Removed use of #tdr_wrapper and #tdr_slide_wrapper, and other tdr_ elements
+- Removed all.html page
+
+
+## [4.0.6] 2015-11-06
+### Fixed
+- /img and /styles/img folders added to the zipped distribution file
+- Updated URL http://qa.ucsd.edu/common/cwp/4.0.0/styles/img/search_ie_icon.png to https://ucsd.edu/common/cwp/4.0.0/styles/img/search_ie_icon.png
+
+### Updated
+- Updated bootstrap to version 3.3.5
+- Modernizer updated to version 2.6.3
+- Updated <code> tag formatting
+- Use multitask syntax for modernizr in Grunt
+- Jshint indent size set to 2
+- Updated sass task in Grunt to compile all scss files
+
+### Added
+- Use Grunt text-replace plugin to insert decorator version label in HTML files

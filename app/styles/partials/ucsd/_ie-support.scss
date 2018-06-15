@@ -1,0 +1,43 @@
+/* IE7 and IE8 specifics */
+
+
+
+
+/********************
+FLEXSLIDER
+************************/
+
+.flex-caption {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+  zoom: 1;
+}
+
+
+
+/* side nav ie 7 issues */
+#tdr_side_nav {
+  *display: none !important;
+  *visibility:hidden !important;
+  *width: 0px !important;
+}
+
+.nav-offcanvas {
+  *display: none !important;
+  *visibility:hidden !important;
+  *width: 0px !important;
+}
+
+#tdr_nav .caret {
+  display: none !important;
+  visibility:hidden !important;
+  width: 0px !important;
+}
+
+/* search bar icon fallback */
+
+#tdr_search_toggle {
+  *background: url("http://qa.ucsd.edu/common/cwp/4.0.0/styles/img/search_ie_icon.png")  no-repeat 0px 6px !important;
+  *width: 22px !important;
+}
+/* Just because we're nice */

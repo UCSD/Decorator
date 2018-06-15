@@ -1,0 +1,39 @@
+/*
+ * Consolidating image references
+ * to a singular location
+ *
+ * minimizes number of calls sent to reference images
+ */
+.title-logo,
+.layout-footer > .layout-container {
+  background: url(img/sprite_base.png) no-repeat transparent; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .title-logo,
+    .layout-footer > .layout-container {
+      background-image: url(img/sprite_base2x.png);
+      background-size: 500px 120px; } }
+
+.social-list li {
+  background: url(img/sprite_social.png) no-repeat transparent; }
+
+.msg h4,
+.icon {
+  background: url(img/sprite_icon.png) no-repeat transparent; }
+
+.drawer-toggle a, .drawer h2 a,
+.flex-pauseplay a {
+  background: url(img/sprite_icon_widget.png) no-repeat transparent; }
+
+div.loading {
+  background: url(img/icon_loading.gif) no-repeat transparent; }
+
+span.loading {
+  background: url(img/icon_loading_inline.gif) no-repeat transparent; }
+
+.icon.asterisk,
+.field .required,
+.field_top .required,
+.field_left .required {
+  background: url(img/asterisk.png) no-repeat transparent; }
+
+/*# sourceMappingURL=reference.css.map */

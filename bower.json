@@ -1,0 +1,11 @@
+{
+  "name": "decorator",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.11.3",
+    "bootstrap-sass-official": "~3.3.5",
+    "modernizr": "~2.6.2",
+    "flexslider": "*"
+  },
+  "devDependencies": {}
+}
