@@ -3,6 +3,18 @@ $(document).ready(function() {
   FastClick.attach(document.body);
 });
 
+$('.dropdown-menu > li:last-child').on('focusout', function(){
+  $('.dropdown').removeClass('open');
+  $('.dropdown-toggle').attr('aria-expanded', 'false');
+
+});
+
+$('.dropdown').on('focusin', function(){
+  $(this).addClass('open');
+  $('.dropdown-toggle').attr('aria-expanded', 'true');
+
+});
+
 
 (function(document) {
   var desktop = 960;
