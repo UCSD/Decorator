@@ -129,6 +129,9 @@ button#toggleCarousel {
     display: block;
     text-align: center;
     width: max-content;
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; 
   }
 
   /* Background color */
