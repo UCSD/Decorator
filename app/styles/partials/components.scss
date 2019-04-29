@@ -111,6 +111,16 @@ button#toggleCarousel {
     font-size: 14px;
 }
 
+a.hero-no-button {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+a.hero-no-button > img {
+    width: 100%;
+}
+
 /* ROTATOR BUILDER
 -------------------------------------------------- */
 
@@ -131,7 +141,7 @@ button#toggleCarousel {
     width: max-content;
     width: intrinsic;           /* Safari/WebKit uses a non-standard name */
     width: -moz-max-content;    /* Firefox/Gecko */
-    width: -webkit-max-content; 
+    width: -webkit-max-content;
   }
 
   /* Background color */
