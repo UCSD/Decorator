@@ -1,4 +1,4 @@
-s<!doctype html>
+<!doctype html>
 <html class="no-js" lang="en-US">
 <head>
     <title>Homepage Template</title>
@@ -191,12 +191,12 @@ s<!doctype html>
 <div class="carousel slide jumbotron jumbotron-hero hm" data-ride="carousel">
   <div class="row">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target=".carousel" data-slide-to="0" class="active"></li>
-      <li data-target=".carousel" data-slide-to="1" class=""></li>
-      <li data-target=".carousel" data-slide-to="2" class=""></li>
-      <li data-target=".carousel" data-slide-to="3" class=""></li>
-      <button id="toggleCarousel"><span class="glyphicon glyphicon-pause" aria-hidden="true"></span></button>
+    <ol class="carousel-indicators" aria-label="Carousel Items">
+      <li data-target=".carousel" data-slide-to="0" class="active" aria-hidden="true"></li>
+      <li data-target=".carousel" data-slide-to="1" class="" aria-hidden="true"></li>
+      <li data-target=".carousel" data-slide-to="2" class="" aria-hidden="true"></li>
+      <li data-target=".carousel" data-slide-to="3" class="" aria-hidden="true"></li>
+      <button id="toggleCarousel" aria-label="Carousel Pause" tabindex="0"><span class="glyphicon glyphicon-pause" aria-hidden="true" ></span></button>
     </ol>
     <div class="carousel-inner" role="listbox">
 
@@ -281,11 +281,11 @@ s<!doctype html>
 
     <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+      <span class="sr-only">Previous Carousel Item</span>
     </a>
     <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+      <span class="sr-only">Next Carousel Item</span>
     </a>
   </div>
 </div>

@@ -12,5 +12,6 @@ $(function() {
     paused = (paused) ? 0 : 1;
     $('.carousel').carousel(state);
     $(this).find('span').toggleClass('glyphicon-play glyphicon-pause');
+    $(this).attr('aria-label',$(this).attr('aria-label')==='Carousel Pause'?'Carousel Play':'Carousel Pause' );
   });
 });
