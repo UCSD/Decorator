@@ -159,6 +159,10 @@ html, body
     font-size: 28px;
   }
 
+  .styled-h2 {
+    color: #333;
+  }
+
 
   hr {
     background-color: #ccc;
@@ -432,7 +436,7 @@ main
   .main-section-content {
     position: relative;
   }
-  .main-section-content img {
+  .main-section img {
 
     @media only screen and (max-width: 975px) {
       max-width: 100% !important;

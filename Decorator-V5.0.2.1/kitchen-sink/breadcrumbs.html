@@ -1,0 +1,337 @@
+<!doctype html><!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+    <title>NEW TWO COLUMN TEMPLATE</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="robots" content="index,follow,noarchive">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="School of Global Policy & Strategy">
+    <meta name="PAGETITLE" content="School of Global Policy & Strategy">
+    <meta name="DESCRIPTION" content="A community dedicated to the advancement of knowledge through teaching, research and engagement.">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.min.css">
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="styles/ie-support.css"/>
+    <![endif]-->
+
+    <!-- Begin site-specific CSS files -->
+
+    <!-- End site-specific CSS files -->
+
+    <script src="../scripts/modernizr.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="vendor/respond/dest/respond.min.js"></script>
+    <link href="https://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="img/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+    <script src="scripts/ucsd/respond-proxy.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<header class="layout-header">
+	<a class="sr-only" href="#main-content">Skip to main content</a>
+	<div id="uc-emergency"></div>
+	<section class="layout-login">
+		<div class="layout-container"></div>
+	</section>
+
+    <section class="layout-title">
+        <div class="layout-container container">
+            <a href="index.html" class="title-header title-header-large">Decorator V5</a>
+            <a href="index.html" class="title-header title-header-short">V5</a>
+            <a href="https://www.ucsd.edu" class="title-logo">UC San Diego</a>
+        </div>
+    </section>
+</header>
+
+<!-- mobile offcanvas nav -->
+<div class="navmenu navmenu-default navmenu-fixed-left offcanvas" style="">
+
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <div class="search">
+              <button class="search-toggle btn-default">
+                  <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
+              </button>
+
+              <div class="search-content" id="search">
+                  <form action="https://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
+                      <select class="search-scope" name="search-scope">
+                          <option value="default_collection">All UCSD Sites</option>
+                          <option value="faculty-staff">Faculty/Staff</option>
+                      </select>
+
+                      <div class="input-group">
+                          <input placeholder="Search..." type="search" class="form-control search-term"
+                          id="q" name="search-term">
+                      </div>
+                  </form>
+              </div>
+          </div>
+        </li>
+    </ul>
+
+
+	<ul class="nav navmenu-nav">
+		<li class="active"><a href="../index.html">Home</a></li>
+		<li class="dropdown open">
+		  	<a href="../templates/index.html" class="dropdown-toggle">Templates <b class="caret"></b></a>
+		  	<ul class="dropdown-menu navmenu-nav">
+          <li><a href="../templates/homepage.html">Homepage</a></li>
+          <li><a href="../templates/blank-slate.html">Blank Slate</a></li>
+          <li><a href="../templates/two-column.html">Two Column</a></li>
+          <li><a href="../templates/three-column.html">Three Column</a></li>
+		  	</ul>
+		</li>
+		<li><a href="index.html">Kitchen Sink</a></li>
+		<li class="dropdown open">
+			<a href="../widgets/index.html" class="dropdown-toggle">Widgets <b class="caret"></b></a>
+			<ul class="dropdown-menu navmenu-nav">
+        <li><a href="../widgets/fullcalendar.html">FullCalendar</a></li>
+        <li><a href="../widgets/datatables.html">DataTables</a></li>
+        <li><a href="../widgets/wizard.html">Wizard</a></li>
+        <li><a href="../widgets/maxchar.html">MaxChar</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<!-- end mobile offcanvas nav -->
+
+<!-- navbar -->
+<nav class="navbar navbar-default navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body" aria-expanded="false" aria-controls="navbar">
+      			    <span class="sr-only">Toggle navigation</span>
+
+      					<div class="col-sm-1 mobile-nav-bars">
+      				    <span class="icon-bar"></span>
+      				    <span class="icon-bar"></span>
+      				    <span class="icon-bar"></span>
+         				</div>
+          			<div class="col-sm-1 mobile-nav-icon">
+                      MENU
+      			    </div>
+      </button>
+      <div class="col-sm-4 pull-right visible-xs-block">
+        <img src="http://cdn.ucsd.edu/developer/decorator/5.0.2/img/ucsd-footer-logo-white.png" alt="" class="img-responsive header-logo" />
+      </div>
+		</div>
+
+		<div id="navbar" class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+		    <li><a href="../index.html">Home</a></li>
+		    <li class="dropdown">
+		    	<a href="../templates/index.html" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Templates <span class="caret"></span></a>
+		    	<ul class="dropdown-menu">
+            <li><a href="../templates/homepage.html">Homepage</a></li>
+            <li><a href="../templates/../templates/blank-slate.html">Blank Slate</a></li>
+			    	<li><a href="../templates/two-column.html">Two Column</a></li>
+            <li><a href="../templates/three-column.html">Three Column</a></li>
+		    	</ul>
+		    </li>
+		    <li class="active"><a href="index.html">Kitchen Sink</a></li>
+		    <li class="dropdown">
+          <a href="../widgets/index.html" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Widgets <span class="caret"></span></a>
+		    	<ul class="dropdown-menu">
+	                <li><a href="../widgets/fullcalendar.html">FullCalendar</a></li>
+	                <li><a href="../widgets/datatables.html">DataTables</a></li>
+	                <li><a href="../widgets/wizard.html">Wizard</a></li>
+	                <li><a href="../widgets/maxchar.html">MaxChar</a></li>
+	            </ul>
+		    </li>
+		  </ul>
+
+		  <div class="btn-nav"></div>
+
+		  <ul class="nav navbar-nav navbar-right">
+		    <li>
+			    <div class="search">
+		            <button class="search-toggle btn-default">
+		                <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
+		            </button>
+
+		            <div class="search-content" id="search">
+		                <form action="http://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
+		                    <select class="search-scope" name="search-scope">
+		                        <option value="default_collection">All UCSD Sites</option>
+		                        <option value="faculty-staff">Faculty/Staff</option>
+		                    </select>
+
+		                    <div class="input-group">
+		                        <input placeholder="Search..." type="search" class="form-control search-term"
+		                        id="q" name="search-term">
+		                    </div>
+		                </form>
+		            </div>
+		        </div>
+	        </li>
+		  </ul>
+		</div>
+	</div>
+</nav>
+
+<!-- end navbar -->
+
+<main class="layout-main" id="main-content" role="main">
+
+  <div class="container">
+    <div class="row">
+      <ol class="breadcrumb breadcrumbs-list">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="index.html">Kitchen Sink</a></li>
+          <li class="active">Breadcrumbs</li>
+      </ol>
+    </div>
+  </div>
+
+	<div class="container ">
+		<div class="row">
+      <section class="col-xs-12 col-md-9 main-section pull-right">
+
+        <div class="bs-docs-section">
+              <h1 id="breadcrumbs" class="page-header">Breadcrumbs</h1>
+
+              <p class="lead">Indicate the current page's location within a navigational hierarchy.</p>
+              <p>Separators are automatically added in CSS through <code>:before</code> and <code>content</code>.</p>
+              <div class="bs-example">
+                  <ol class="breadcrumb">
+                      <li class="active">Home</li>
+                  </ol>
+                  <ol class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li class="active">Library</li>
+                  </ol>
+                  <ol class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Library</a></li>
+                      <li class="active">Data</li>
+                  </ol>
+              </div>
+              <div class="highlight">
+<pre><code class="html">
+<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">&quot;breadcrumb&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;active&quot;</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre>
+              </div>
+            </div>
+
+
+        </section>
+
+        <section class="col-xs-12 col-md-3 sidebar-section">
+
+	        <figure id="site-logo">
+          <!--Site Logo optional, remove comment to display
+			    <img src="../img/gps-logo.jpg" alt="School of Global Policy & Strategy logo" class="center-block" />
+          -->
+			    </figure>
+
+            <article class="main-content-nav">
+	            <h2>Decorator V5</h2>
+              <ul class="navbar-list">
+                <li>
+                    <a href="alerts.html">Alerts</a>
+                </li>
+                <li><a href="badges.html">Badges</a></li>
+                <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+                <li>
+                    <a href="buttons.html">Buttons</a>
+                </li>
+                <li>
+                    <a href="button_dropdowns.html">Button Dropdowns</a>
+                </li>
+                <li>
+                    <a href="code.html">Code</a>
+                </li>
+                <li>
+                    <a href="dropdowns.html">Dropdowns</a>
+                </li>
+                <li>
+                    <a href="equal_column_layout.html">Equal Column Layout</a>
+                </li>
+                <li>
+                    <a href="forms.html">Forms</a>
+                </li>
+                <li>
+                    <a href="helper_classes.html">Helper classes</a>
+                </li>
+                <li>
+                    <a href="icons.html">Icons</a>
+                </li>
+                <li>
+                    <a href="images.html">Images</a>
+                </li>
+                <li>
+                    <a href="input_groups.html">Input Groups</a>
+                </li>
+                <li>
+                    <a href="javascript_components.html">JavaScript Components</a>
+                </li>
+                <li>
+                    <a href="pagination.html">Pagination</a>
+                </li>
+                <li>
+                    <a href="panels.html">Panels</a>
+                </li>
+                <li>
+                    <a href="progress_bars.html">Progress Bars</a>
+                </li>
+                <li>
+                    <a href="tables.html">Tables</a>
+                </li>
+                <li>
+                    <a href="typography.html">Typography</a>
+                </li>
+              </ul>
+            </article>
+        </section>
+    </div>
+    </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+              <p>
+                <span>UC San Diego 9500 Gilman Dr. La Jolla, CA 92093 (858) 534-2230</span>
+          <br />
+                <span>
+                    Copyright © <span class="footer-copyright-year"></span> Regents of the University of California.
+                    All rights reserved.
+                </span>
+            </p>
+              <ul class="footer-links">
+                <li><a href="https://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
+                <li><a href="mailto:youremail@xyz.ucsd.edu">Feedback</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <img src="https://cdn.ucsd.edu/developer/decorator/5.0.2/img/ucsd-footer-logo-white.png" alt="" class="img-responsive footer-logo" />
+        </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../scripts/jquery.min.js"></script>
+
+<script src="../scripts/bootstrap.min.js"></script>
+
+<script src="https://www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
+
+
+<script src="../scripts/vendor.min.js"></script>
+<script src="../scripts/base.min.js"></script>
+
+</body>
+</html>

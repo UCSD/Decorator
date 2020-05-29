@@ -1,0 +1,517 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+    <title>Homepage Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="robots" content="index,follow,noarchive">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="School of Global Policy & Strategy">
+    <meta name="PAGETITLE" content="School of Global Policy & Strategy">
+    <meta name="DESCRIPTION" content="A community dedicated to the advancement of knowledge through teaching, research and engagement.">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.min.css">
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="styles/ie-support.css"/>
+    <![endif]-->
+
+    <!-- Begin site-specific CSS files -->
+
+    <!-- End site-specific CSS files -->
+
+    <script src="../scripts/modernizr.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="vendor/respond/dest/respond.min.js"></script>
+    <link href="https://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="img/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+    <script src="scripts/ucsd/respond-proxy.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<header class="layout-header">
+	<a class="sr-only" href="#main-content">Skip to main content</a>
+	<div id="uc-emergency"></div>
+	<section class="layout-login">
+		<div class="layout-container"></div>
+	</section>
+
+    <section class="layout-title">
+        <div class="layout-container container">
+            <a href="index.html" class="title-header title-header-large">Decorator V5</a>
+            <a href="index.html" class="title-header title-header-short">V5</a>
+            <a href="https://www.ucsd.edu" class="title-logo">UC San Diego</a>
+        </div>
+    </section>
+</header>
+
+<!-- mobile offcanvas nav -->
+<div class="navmenu navmenu-default navmenu-fixed-left offcanvas" style="">
+
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <div class="search">
+              <button class="search-toggle btn-default">
+                  <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
+              </button>
+
+              <div class="search-content" id="search">
+                  <form action="https://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
+                      <select class="search-scope" name="search-scope">
+                          <option value="default_collection">All UCSD Sites</option>
+                          <option value="faculty-staff">Faculty/Staff</option>
+                      </select>
+
+                      <div class="input-group">
+                          <input placeholder="Search..." type="search" class="form-control search-term"
+                          id="q" name="search-term">
+                      </div>
+                  </form>
+              </div>
+          </div>
+        </li>
+    </ul>
+
+
+	<ul class="nav navmenu-nav">
+		<li class="active"><a href="../index.html">Home</a></li>
+		<li class="dropdown open">
+		  	<a href="index.html" class="dropdown-toggle">Templates <b class="caret"></b></a>
+		  	<ul class="dropdown-menu navmenu-nav">
+          <li><a href="homepage.html">Homepage</a></li>
+          <li><a href="blank-slate.html">Blank Slate</a></li>
+          <li><a href="two-column.html">Two Column</a></li>
+          <li><a href="three-column.html">Three Column</a></li>
+		  	</ul>
+		</li>
+		<li><a href="../kitchen-sink/index.html">Kitchen Sink</a></li>
+		<li class="dropdown open">
+			<a href="../templates/index.html" class="dropdown-toggle">Widgets <b class="caret"></b></a>
+			<ul class="dropdown-menu navmenu-nav">
+        <li><a href="../templates/fullcalendar.html">FullCalendar</a></li>
+        <li><a href="../templates/datatables.html">DataTable</a></li>
+        <li><a href="../templates/wizard.html">Wizard</a></li>
+        <li><a href="../templates/maxchar.html">MaxChar</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<!-- end mobile offcanvas nav -->
+
+<!-- navbar -->
+<nav class="navbar navbar-default navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body" aria-expanded="false" aria-controls="navbar">
+      			    <span class="sr-only">Toggle navigation</span>
+
+      					<div class="col-sm-1 mobile-nav-bars">
+      				    <span class="icon-bar"></span>
+      				    <span class="icon-bar"></span>
+      				    <span class="icon-bar"></span>
+         				</div>
+          			<div class="col-sm-1 mobile-nav-icon">
+                      MENU
+      			    </div>
+      </button>
+      <div class="col-sm-4 pull-right visible-xs-block">
+        <img src="http://cdn.ucsd.edu/developer/decorator/5.0.2/img/ucsd-footer-logo-white.png" alt="" class="img-responsive header-logo" />
+      </div>
+		</div>
+
+		<div id="navbar" class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+		    <li><a href="..../index.html">Home</a></li>
+		    <li class="dropdown active">
+		    	<a href="index.html" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Templates <span class="caret"></span></a>
+		    	<ul class="dropdown-menu">
+            <li><a href="homepage.html">Homepage</a></li>
+            <li><a href="blank-slate.html">Blank Slate</a></li>
+			    	<li><a href="two-column.html">Two Column</a></li>
+            <li><a href="three-column.html">Three Column</a></li>
+		    	</ul>
+		    </li>
+		    <li><a href="../kitchen-sink/index.html">Kitchen Sink</a></li>
+		    <li class="dropdown">
+          <a href="../widgets/index.html" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Widgets <span class="caret"></span></a>
+		    	<ul class="dropdown-menu">
+	                <li><a href="../widgets/fullcalendar.html">FullCalendar</a></li>
+	                <li><a href="../widgets/datatables.html">DataTable</a></li>
+	                <li><a href="../widgets/wizard.html">Wizard</a></li>
+	                <li><a href="../widgets/maxchar.html">MaxChar</a></li>
+	            </ul>
+		    </li>
+		  </ul>
+
+		  <div class="btn-nav"></div>
+
+		  <ul class="nav navbar-nav navbar-right">
+		    <li>
+			    <div class="search">
+		            <button class="search-toggle btn-default">
+		                <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
+		            </button>
+
+		            <div class="search-content" id="search">
+		                <form action="http://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
+		                    <select class="search-scope" name="search-scope">
+		                        <option value="default_collection">All UCSD Sites</option>
+		                        <option value="faculty-staff">Faculty/Staff</option>
+		                    </select>
+
+		                    <div class="input-group">
+		                        <input placeholder="Search..." type="search" class="form-control search-term"
+		                        id="q" name="search-term">
+		                    </div>
+		                </form>
+		            </div>
+		        </div>
+	        </li>
+		  </ul>
+		</div>
+	</div>
+</nav>
+
+<!-- end navbar -->
+
+<!-- begin rotator -->
+
+<div class="carousel slide jumbotron jumbotron-hero hm" data-ride="carousel">
+  <div class="row">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" aria-label="Carousel Items">
+      <li data-target=".carousel" data-slide-to="0" class="active" aria-hidden="true"></li>
+      <li data-target=".carousel" data-slide-to="1" class="" aria-hidden="true"></li>
+      <li data-target=".carousel" data-slide-to="2" class="" aria-hidden="true"></li>
+      <li data-target=".carousel" data-slide-to="3" class="" aria-hidden="true"></li>
+      <button id="toggleCarousel" aria-label="Carousel Pause" tabindex="0"><span class="glyphicon glyphicon-pause" aria-hidden="true" ></span></button>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+
+
+      <div class="item active">
+        <img src="../img/rt1.jpg">
+        <div class="container">
+          <div class="cr-item-container">
+    			<div class="row">
+    				<div class="col-sm-12">
+    					<div class="text-indent text-indent-h1 animated fadeInUp">
+    						<h1>Solution Driven <br><span>Pacific Focused</span></h1>
+    						<p>A community dedicated to the advancement of knowledge through teaching, research and engagement.</p>
+    						<a class="btn btn-lg btn-default" href="#" role="button" data-h1="" data-module="hero-homepage">Learn More</a>
+    					</div>
+    				</div>
+    			</div>
+          </div>
+    		</div>
+      </div>
+
+
+      <div class="item">
+        <img src="../img/rt2.jpg">
+        <div class="container">
+          <div class="cr-item-container">
+    			<div class="row">
+    				<div class="col-sm-12">
+    					<div class="text-indent text-indent-h1 animated fadeInUp">
+    						<h1>Solution Driven <br><span>Pacific Focused</span></h1>
+    						<p>A community dedicated to the advancement of knowledge through teaching, research and engagement.</p>
+    						<a class="btn btn-lg btn-default" href="#" role="button" data-h1="" data-module="hero-homepage">Learn More</a>
+    					</div>
+    				</div>
+    			</div>
+          </div>
+    		</div>
+      </div>
+
+
+
+      <div class="item rt-dark-blue">
+        <img  src="../img/trident-trns.png">
+
+        <div class="container">
+          <div class="cr-item-container">
+    			<div class="row">
+    				<div class="col-sm-12">
+    					<div class="text-indent text-indent-h1 animated fadeInUp">
+    						<h1>Solution Driven <br><span>Pacific Focused</span></h1>
+    						<p>A community dedicated to the advancement of knowledge through teaching, research and engagement.</p>
+    						<a class="btn btn-lg btn-default rt-btn-gold" href="http://google.com/" role="button" data-h1="" data-module="hero-homepage">Learn More</a>
+    					</div>
+    				</div>
+    			</div>
+        </div>
+    		</div>
+
+      </div>
+
+      <div class="item rt-dark-blue">
+
+        <img class="first-slide" src="../img/lib-trns.png">
+
+        <div class="container">
+          <div class="cr-item-container">
+    			<div class="row">
+    				<div class="col-sm-12">
+    					<div class="text-indent text-indent-h1 animated fadeInUp">
+    						<h1>Solution Driven <br><span>Pacific Focused</span></h1>
+    						<p>A community dedicated to the advancement of knowledge through teaching, research and engagement.</p>
+    						<a class="btn btn-lg btn-default" href="http://google.com/" role="button" data-h1="" data-module="hero-homepage">Learn More</a>
+    					</div>
+    				</div>
+    			</div>
+        </div>
+    		</div>
+
+      </div>
+
+    </div>
+
+    <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous Carousel Item</span>
+    </a>
+    <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next Carousel Item</span>
+    </a>
+  </div>
+</div>
+
+
+<!--end rotator-->
+
+	<div class="layout-container row">
+
+	<!-- Begin Text and CTA w/Full Height Image Left module -->
+	<section class="jumbotron side-image-white small-inset-cta">
+		<div class="container">
+		    <div class="row">
+
+			    <div class="col-md-6">
+				    <figure>
+				    	<!--<img src="../app/img/gps-logo.jpg" class="center-block" />-->
+				    	<img src="../img/gps-building.jpg" class="img-responsive" />
+				    </figure>
+			    </div>
+
+
+			    <div class="col-md-6">
+				    <h2>Global Results</h2>
+				    <p>
+					    The UC San Diego School of Global Policy and Strategy (GPS) addresses the crucial societal
+					    challenges of the 21st century. The School's pioneering research builds on internationally
+					    recognized expertise of the Americas and Asia, integrates analysis of public policy and
+					    markets, and explores global issues of conflict and cooperation.
+				    </p>
+				    <a alt="Learn More" class="btn btn-lg btn-primary" href="#" role="button" data-h2="Global Results">Learn More</a>
+			    </div>
+		    </div>
+		</div>
+	</section>
+	<!-- End Text and CTA w/Full Height Image Left module -->
+
+
+  <!-- Begin Text and CTA w/Full Height Image Left module -->
+  <section class="jumbotron jumbrotron-gray small-inset-cta">
+    <div class="container">
+        <div class="row">
+
+          <div class="col-md-6">
+            <figure>
+              <!--<img src="../app/img/gps-logo.jpg" class="center-block" />-->
+              <img src="../img/gps-building.jpg" class="img-responsive" />
+            </figure>
+          </div>
+
+
+          <div class="col-md-6">
+            <h2>Global Results</h2>
+            <p>
+              The UC San Diego School of Global Policy and Strategy (GPS) addresses the crucial societal
+              challenges of the 21st century. The School's pioneering research builds on internationally
+              recognized expertise of the Americas and Asia, integrates analysis of public policy and
+              markets, and explores global issues of conflict and cooperation.
+            </p>
+            <a alt="Learn More" class="btn btn-lg btn-primary" href="#" role="button" data-h2="Global Results">Learn More</a>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- End Text and CTA w/Full Height Image Left module -->
+
+	<!-- Begin Callout Content Two module -->
+	<section class="jumbotron side-image-white jumbotron-callout-content-two" data-module="callout-content-two">
+		<div class="container">
+        	<div class="text-indent">
+				<h2>Apply Now</h2>
+        	</div>
+	        <div class="row">
+	         	<div class="col-md-6">
+	            	<div class="panel panel-primary">
+						<div class="panel-body">
+							<h3>Bachelor's Program</h3>
+							<p class="panel-text">
+								Merge academic theory and real-world practice. The Academic Internship Program
+								helps students explore careers and enrich their education through hands-on experience.
+							</p>
+							<p class="text-right">
+								<a class="text-link" href="http://www.ucsdtritons.com/" data-h2="apply now" data-h3="athleticsrecreation" data-module="callout-content-two">Get Info</a>
+	                		</p>
+	              		</div>
+	            	</div>
+	          	</div>
+
+			  	<div class="col-md-6">
+			  		<div class="panel panel-primary">
+			  			<div class="panel-body">
+			                <h3>Master's Program</h3>
+			                <p class="panel-text">
+				                There's still time to apply for one of our masters's degree programs! Our MIA, MPP,
+				                MCEPA and MAS-IA degrees are accepting students on a rolling basis so get your
+				                application in today to join us this fall.
+				            </p>
+			                <p class="text-right">
+								<a class="text-link" href="http://recreation.ucsd.edu/" data-h2="apply now" data-h3="athleticsrecreation" data-module="callout-content-two">Get Info</a>
+                			</p>
+              			</div>
+            		</div>
+          		</div>
+        	</div>
+		</div>
+    </section>
+	<!-- End Callout Content Two module -->
+
+	<!-- Begin Text and CTA w/Full Height Image Right module -->
+	<section class="jumbotron side-image-white" data-module="text-and-cta-with-full-height-image-left">
+		<div class="container">
+		    <div class="row">
+			    <div class="col-md-6">
+				    <h2>GPS At a Glance</h2>
+				    <p>
+					    Leveraging our West Coast location and UC San Diego’s
+						renowned programs in science and technology, GPS
+						develops new analytic tools with real-world applications,
+						while rigorously training the next generation of global
+						leaders. Through collaborations across campus and
+						counterparts around the globe, GPS shapes cutting-edge
+						solutions for a transforming world.
+				    </p>
+				    <a alt="Learn More" class="btn btn-lg btn-primary" href="#"
+					role="button" data-h2="Global Results">Learn More</a>
+			    </div>
+			    <div class="col-md-6">
+				    <figure>
+				    	<iframe src="https://player.vimeo.com/video/128287338?byline=0" width="100%"
+				    	height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				    </figure>
+			    </div>
+		    </div>
+		</div>
+	</section>
+	<!-- End Text and CTA w/Full Height Image Right module -->
+
+	<!-- Begin News with Images module -->
+	<section class="jumbotron jumbotron-gray jumbotron-news" data-module="news-with-image">
+
+			<div class="row">
+				<div class="col-xs-8">
+					<h2>GPS in the news</h2>
+		  		</div>
+		  		<div class="col-xs-4 view-all-link text-right">
+		  			<a class="text-link" href="http://ucsdnews.ucsd.edu/"
+			  		data-h2="uc san diego in the news" data-module="news-with-image">View All News</a>
+		  		</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4 no-gutter">
+			    	<div class="panel panel-default">
+						<img alt="Chancellor’s Associates Scholars Program Welcomes Record-Breaking Class"
+						class="img-responsive" src="http://ucsd.edu/_images/about/associates-scholar-program_news.jpg">
+						<div class="panel-heading">
+							<p class="panel-news-date small">September 29, 2016 </p>
+							<h4 class="panel-news-title">Chancellor’s Associates Scholars Program Welcomes
+							Record-Breaking Class</h4>
+			      		</div>
+				  		<div class="panel-body text-right" style="height: 43px;">
+				  			<a class="text-link" href="http://ucsdnews.ucsd.edu/feature/chancellors_associates_scholars_program_welcomes_record_breaking_class" data-h2="uc san diego in the news" data-module="news-with-image">Read More</a>
+			      		</div>
+			    	</div>
+			  	</div>
+
+			  	<div class="col-sm-4 no-gutter">
+			    	<div class="panel panel-default">
+						<img alt="Convocation Keynote: Mistakes are Stepping Stones on Path to Greatness" class="img-responsive" src="http://ucsd.edu/_images/about/convocation2016_news.jpg">
+						<div class="panel-heading">
+							<p class="panel-news-date small">September 29 2016 </p>
+							<h4 class="panel-news-title">Convocation Keynote: Mistakes are Stepping Stones
+							on Path to Greatness</h4>
+			      		</div>
+				  		<div class="panel-body text-right" style="height: 43px;">
+				  			<a class="text-link" href="http://ucsdnews.ucsd.edu/feature/convocation_keynote_to_students_mistakes_are_stepping_stones_on_path_to_gre" data-h2="uc san diego in the news" data-module="news-with-image">Read More</a>
+			      		</div>
+			    	</div>
+			  	</div>
+
+			  	<div class="col-sm-4 no-gutter">
+			    	<div class="panel panel-default">
+						<img alt="UC San Diego Ranked World’s 7th Best Public University" class="img-responsive" src="http://ucsd.edu/_images/about/about_news_16-09-27_Times.jpg">
+						<div class="panel-heading">
+							<p class="panel-news-date small">September 23, 2016 </p>
+							<h4 class="panel-news-title">UC San Diego Ranked World’s 7th Best Public University</h4>
+			      		</div>
+				  		<div class="panel-body text-right" style="height: 43px;">
+				  			<a class="text-link" href="http://ucsdnews.ucsd.edu/pressrelease/uc_san_diego_is_worlds_7th_best_public_university_according_to_times_higher" data-h2="uc san diego in the news" data-module="news-with-image">Read More</a>
+			      		</div>
+			    	</div>
+			  	</div>
+			</div>
+
+	</section>
+	<!-- End News with Images module -->
+
+	</div> <!-- end of .layout-container .row -->
+</main>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+	            <p>
+		            <span>UC San Diego 9500 Gilman Dr. La Jolla, CA 92093 (858) 534-2230</span>
+					<br />
+		            <span>
+		                Copyright © <span class="footer-copyright-year"></span> Regents of the University of California.
+		                All rights reserved.
+		            </span>
+		        </p>
+	            <ul class="footer-links">
+		            <li><a href="https://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
+		            <li><a href="mailto:youremail@xyz.ucsd.edu">Feedback</a></li>
+		        </ul>
+	        </div>
+	        <div class="col-sm-4">
+		        <img src="http://cdn.ucsd.edu/developer/decorator/5.0.2/img/ucsd-footer-logo-white.png" alt="" class="img-responsive footer-logo" />
+		    </div>
+		</div>
+	</div>
+</footer>
+
+<script src="../scripts/jquery.min.js"></script>
+
+<script src="../scripts/bootstrap.min.js"></script>
+
+<script src="https://www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
+
+
+<script src="../scripts/vendor.min.js"></script>
+<script src="../scripts/base.min.js"></script>
+
+</body>
+</html>
