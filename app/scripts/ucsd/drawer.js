@@ -46,7 +46,11 @@ $(document).ready(function() {
     });
 
     /* open the drawer if the url points to this drawer */
+<<<<<<< HEAD
     $(window).load(function() {
+=======
+    $(window).on('load',function() {
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
       drawer.children("h2").each(function() {
         if (window.location.hash == '#' + $(this).find('a').text().replace(/\s/g, '-').substring(0, 31)) {
           var newPosition = $(this).offset();

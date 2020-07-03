@@ -59,7 +59,11 @@
       padding: 0;
       list-style: none; }
       .profile-section-contact ul li {
+<<<<<<< HEAD
         background: url(img/social-sprite-20.png) no-repeat;
+=======
+        background: url(../img/social-sprite-20.png) no-repeat;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
         margin: 0 0 1em;
         padding-left: 35px; }
         .profile-section-contact ul li.email {
@@ -171,7 +175,11 @@
     height: 16px;
     float: left;
     padding-right: 15px;
+<<<<<<< HEAD
     background: url(//www.ucsd.edu/common/cwp/active-cherry/img/sprite_icon_widget.png) 0 4px no-repeat; }
+=======
+    background: url(//www.ucsd.edu/common/cwp/active-cherry/../img/sprite_icon_widget.png) 0 4px no-repeat; }
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 
   h2.resp-tab-active span.resp-arrow {
     border: 0;

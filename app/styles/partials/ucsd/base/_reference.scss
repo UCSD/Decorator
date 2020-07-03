@@ -8,10 +8,17 @@
 // sprite_base & sprite_base2x
 #tdr_title_ucsd_title, #tdr_title_menu_link,
 #tdr_footer_content {
+<<<<<<< HEAD
     background: url(img/sprite_base.png) no-repeat transparent;
 
     @media screen and (-webkit-min-device-pixel-ratio:2) {
         background-image: url(img/sprite_base2x.png);
+=======
+    background: url(../img/sprite_base.png) no-repeat transparent;
+
+    @media screen and (-webkit-min-device-pixel-ratio:2) {
+        background-image: url(../img/sprite_base2x.png);
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
         background-size: 500px 120px;
     }
 }
@@ -19,7 +26,11 @@
 // sprite_icon
 a[target="_blank"],
 .msg h4, .icon {
+<<<<<<< HEAD
     background: url(img/sprite_icon.png) no-repeat transparent;
+=======
+    background: url(../img/sprite_icon.png) no-repeat transparent;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }
 
 // sprite_icon_widget
@@ -27,24 +38,43 @@ a[target="_blank"],
 .sf_all_collapsed, .sf_one_collapsed,
 .sf_all_expanded, .sf_one_expanded,
 .flex-pauseplay a{
+<<<<<<< HEAD
     background: url(img/sprite_icon_widget.png) no-repeat transparent;
+=======
+    background: url(../img/sprite_icon_widget.png) no-repeat transparent;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }
 
 // sprite_social
 .social-list li {
+<<<<<<< HEAD
     background: url(img/sprite_social.png) no-repeat transparent;
+=======
+    background: url(../img/sprite_social.png) no-repeat transparent;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }
 
 // asterisk
 .field .required, .field_top .required,
 .icon.asterisk {
+<<<<<<< HEAD
     background: url(img/asterisk.png) no-repeat transparent;
+=======
+    background: url(../img/asterisk.png) no-repeat transparent;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }
 
 // icon_loading & icon_loading_inline
 div.loading {
+<<<<<<< HEAD
   background: url(img/icon_loading.gif) no-repeat transparent;
 }
 span.loading {
   background: url(img/icon_loading_inline.gif) no-repeat transparent;
+=======
+  background: url(../img/icon_loading.gif) no-repeat transparent;
+}
+span.loading {
+  background: url(../img/icon_loading_inline.gif) no-repeat transparent;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }

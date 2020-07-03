@@ -1,8 +1,33 @@
+<<<<<<< HEAD
+=======
+$(document).ready(function() {
+  $('.js-activated').dropdownHover().dropdown();
+  FastClick.attach(document.body);
+});
+
+$('.dropdown-menu > li:last-child').on('focusout', function(){
+  $('.dropdown').removeClass('open');
+  $('.dropdown-toggle').attr('aria-expanded', 'false');
+
+});
+
+$('.dropdown').on('focusin', function(){
+  $(this).addClass('open');
+  $('.dropdown-toggle').attr('aria-expanded', 'true');
+
+});
+
+
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 (function(document) {
   var desktop = 960;
   var mobileBreakpoint = 640;
   var navListIsOpened = undefined;
+<<<<<<< HEAD
 
+=======
+/*
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
   var mainNav = function() {
     var navBtn = $('.btn-nav')[0];
     var navList = $('.navdrawer-container')[0];
@@ -64,8 +89,13 @@
         toggleMainNav();
       })
     }
+<<<<<<< HEAD
   };
 
+=======
+  };*/
+/*
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
   var mainSubNav = function() {
     var subNavArray = $('.navbar-subnav'),
       subListArray = $('.navbar-sublist'),
@@ -74,13 +104,21 @@
       subNavIsOpened = false;
     var preIndex;
 
+<<<<<<< HEAD
     /* if there are subNav elements run */
+=======
+    // if there are subNav elements run
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
     if (subNavArray) {
       subNavArray.each(function(index) {
         var subNav = subNavArray[index],
           subList = subListArray[index];
 
+<<<<<<< HEAD
         /* relocated toggleSubNav function due to variable scoping issues */
+=======
+        // relocated toggleSubNav function due to variable scoping issues
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
         var toggleSubNav = function() {
           // check if subList opened, reset if antoher is already opened
           checkToggleSubNav();
@@ -151,11 +189,21 @@
         }
       });
     }
+<<<<<<< HEAD
   };
 
   var mainSearch = function() {
     var searchBtn = $('.search-toggle')[0];
     var searchContent = $('.search-content')[0];
+=======
+  };*/
+
+  var mainSearch = function() {
+
+
+    var searchBtn = $('.navbar-static-top .search-toggle')[0];
+    var searchContent = $('.navbar-static-top .search-content')[0];
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
     var searchOpen = 'search-is-open';
     var isSearchOpen = false;
 
@@ -217,10 +265,17 @@
     }
 
     // check to see if the first menu item and last menu item are on the same row
+<<<<<<< HEAD
     var t1 = $('nav .navbar-list>li:first').offset().top;
     var t2 = $('nav .navbar-list>li:last').offset().top;
 
     if (t1 != t2) {
+=======
+    //var t1 = $('nav .navbar-list>li:first').offset().top;
+    //var t2 = $('nav .navbar-list>li:last').offset().top;
+
+    /*if (t1 != t2) {
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
       if (!isMenuWrapped) {
         // menu items are now wrapping
         isMenuWrapped = true;
@@ -230,11 +285,20 @@
         $('.navdrawer-container').css('position', 'absolute').css('z-index', '-1').css('opacity', '0').css('overflow-y', 'scroll');
         //$('.navdrawer-container').css('z-index', '-1').css('opacity', '0').css('overflow-y', 'scroll');
       }
+<<<<<<< HEAD
     }
   }
 
   mainNav();
   mainSubNav();
+=======
+    }*/
+  }
+
+  //mainNav();
+  //mainSubNav();
+
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
   mainSearch();
 
   document.addEventListener('DOMContentLoaded', function(e) {
@@ -246,7 +310,11 @@
       }
     }
   });
+<<<<<<< HEAD
 
+=======
+/*
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
   $(window).resize(function() {
     if ($(window).width() > desktop && navListIsOpened !== undefined) {
       // reset css to be compatible with media queries
@@ -279,5 +347,9 @@
     if ($(window).width() > desktop) {
       checkMenuHeight();
     }
+<<<<<<< HEAD
   });
+=======
+  });*/
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 })(document);

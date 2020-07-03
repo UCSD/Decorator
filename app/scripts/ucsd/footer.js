@@ -9,4 +9,13 @@ function initFooter(feedbackUrl) {
 	feedback_url += "', 'DYGWYW', 'menubar=0,resizable=1,scrollbars=1,width=450,height=650');\" target=\"DYGWYW\">Feedback</a>";
 	$(footerFeedback).empty();
 	$(footerFeedback).append(feedback_url);
+<<<<<<< HEAD
 };
+=======
+};
+
+/* Footer Year and Logout URL */
+
+initCopyright();
+//initLogout('http://www.ucsd.edu');
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9

@@ -20,9 +20,15 @@
   font-size: 24px;
 
   background-image: none;
+<<<<<<< HEAD
   background-color: #287897;
   border-radius: 1px;
   border: 1px solid #266E8A;
+=======
+  background-color: #006A96;
+  border-radius: 1px;
+  border: 1px solid #006A96;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 
   padding: 9px 10px;
   margin-right: 10px;
@@ -125,10 +131,22 @@ button:active {
   border: none;
   border-bottom: 1px solid #ccc;
   padding: 10px 10px 10px 20px;
+<<<<<<< HEAD
   @media only screen and (max-width: $desktop) {
     border: 0;
     font-weight: bold;
     background: #ECECEC;
+=======
+  background-color: #006a96 !important;
+  border: none !important;
+  &:hover {
+	  background-color: darken(#006a96, 10%) !important;
+  }
+  @media only screen and (max-width: $desktop) {
+    border: 0;
+    font-weight: bold;
+    background: #006A96;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
     border-bottom: 1px solid #ccc;
   }
 }
@@ -151,8 +169,13 @@ button:active {
   height: 43px;
 
   padding: 7px;
+<<<<<<< HEAD
   background-color: #fff;
   border-bottom: 2px solid #BDBDBD;
+=======
+  background-color: #006A96;
+  //border-bottom: 2px solid #BDBDBD;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 
     .search-scope {
       max-width: 30%;
@@ -181,12 +204,20 @@ button:active {
     border-bottom: solid 3px #9FB3BF;
   }
     .navbar-subnav .navbar-sublist li:hover > a {
+<<<<<<< HEAD
       background-color: #EAEAEA;
+=======
+      background-color: #006A96;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
     }
 
   .navdrawer-container ul.navbar-sublist {
     display: none;
     position: absolute;
+<<<<<<< HEAD
+=======
+    font-size: 14px;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 
     @media only screen and (max-width: $desktop) {
       display: block;
@@ -199,8 +230,13 @@ button:active {
 
     padding: 0;
 
+<<<<<<< HEAD
     border-left: solid 1px #C8CFD3;
     border-top: solid 1px #C8CFD3;
+=======
+    //border-left: solid 1px #C8CFD3;
+    //border-top: solid 1px #C8CFD3;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
     margin-left: 0;
 
     -webkit-box-shadow: 0 3px 5px 0 rgba(50,50,50,.2);
@@ -239,12 +275,21 @@ button:active {
       //width: 100%;
       //height: 100%;
 
+<<<<<<< HEAD
       background: #FFF;
       border-bottom: solid 1px #C8CFD3;
       border-right: solid 1px #C8CFD3;
       border-left: solid 1px rgba(255,255,255,.6);
 
       color: #004b6e;
+=======
+      background: darken(#006A96, 5%);
+      // border-bottom: solid 1px #C8CFD3;
+      //border-right: solid 1px #ffcd00;
+      //border-left: solid 1px rgba(255,255,255,.6);
+
+      color: #fff;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
       padding: 9px 15px 8px;
       text-decoration: none;
     }
@@ -381,10 +426,25 @@ nav.navdrawer-container.navbar-is-opened {
   width: 100%;
 }
 
+<<<<<<< HEAD
 /* Blink & TL Styles */
 
 .blink-nav-button {
   background: #FDFDFD url(http://cdn.ucsd.edu/developer/decorator/4.5.4/styles/img/blink_nav.png) 0 6px no-repeat !important;
+=======
+ul.nav.navbar-nav.navbar-right {
+    margin-right: 0 !important;
+}
+
+a.navbar-brand {
+  color: #FFF !important;
+}
+
+/* Blink & TL Styles */
+
+.blink-nav-button {
+  background: #FDFDFD url(http://cdn.ucsd.edu/developer/decorator/4.5.4/styles/../img/blink_nav.png) 0 6px no-repeat !important;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
   min-width: 78px;
 
     a {
@@ -395,7 +455,11 @@ nav.navdrawer-container.navbar-is-opened {
 }
 
 .tlink-nav-button {
+<<<<<<< HEAD
   background: #FDFDFD url(http://cdn.ucsd.edu/developer/decorator/4.5.4/styles/img/current_students_nav.png) 0 6px no-repeat !important;
+=======
+  background: #FDFDFD url(http://cdn.ucsd.edu/developer/decorator/4.5.4/styles/../img/current_students_nav.png) 0 6px no-repeat !important;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
   min-width: 103px;
 
     a {

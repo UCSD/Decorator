@@ -24,10 +24,17 @@ footer a:hover, footer a:focus, #tdr_footer a:hover,#tdr_footer a:focus {
 	background: 0;
 
 	@media only screen and (min-width: $tablet) {
+<<<<<<< HEAD
 		background: transparent url(img/sprite_base.png) right -74px no-repeat;
 
 		@media screen and (-webkit-min-device-pixel-ratio:2) {
 			background-image: url(img/sprite_base2x.png);
+=======
+		background: transparent url(../img/sprite_base.png) right -74px no-repeat;
+
+		@media screen and (-webkit-min-device-pixel-ratio:2) {
+			background-image: url(../img/sprite_base2x.png);
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 			background-size: 500px 120px;
 		}
 	}

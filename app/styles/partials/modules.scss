@@ -15,11 +15,19 @@
  * BREADCRUMBS
  * ***************/
 
+<<<<<<< HEAD
 .breadcrumbs-list {
   background-color: #fff;
 
   margin-bottom: 0;
   padding: 0 0 1em;
+=======
+.breadcrumb, .breadcrumbs-list {
+  background-color: #fff;
+
+  margin-bottom: 0;
+  //padding: 2em 0 1em;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 
   > li {
     color: #666;
@@ -31,9 +39,21 @@
 /* ***********************************************
  * NAVBAR
  * ***************/
+<<<<<<< HEAD
 
 
 
+=======
+/*
+ul.nav.navbar-nav.navbar-right {
+  @media only screen and (max-width: $desktop-small-after) {
+  background: gray;
+  margin: 0;
+  padding: 0;
+  }
+}
+*/
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 /* ***********************************************
  * SEARCH
  * ***************/
@@ -41,27 +61,54 @@
 .search {
   float: right;
   position:relative;
+<<<<<<< HEAD
+=======
+  margin-top: 0;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 //  max-width:380px;
 }
 
 .search-toggle {
+<<<<<<< HEAD
   max-height: 38px;
 
   background: 0 0;
   border-radius: 0;
   -webkit-border-radius: 0;
   border: 1px solid transparent;
+=======
+  color: #fff !important;
+  /*max-height: 38px;*/
+
+  background-color: transparent !important;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  border: none;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
   border-width: 0 1px;
 
   outline: 0;
   padding: 11px;
 
+<<<<<<< HEAD
   &:hover,
   &.search-is-open {
     background-color: #e6e6e6;
     border-color: #adadad;
     text-decoration: none;
   }
+=======
+  /*&:hover,*/
+  &.search-is-open {
+	color: darken(#fff, 15%);
+    background-color: #014663 !important;
+    border-color: none;
+    text-decoration: none;
+  }
+  span.caret {
+	margin-left: 6px;
+  }
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }
 
 .search-content {
@@ -71,8 +118,13 @@
   width: 385px;
   padding: 10px;
 
+<<<<<<< HEAD
   background-color: #dfe2e4;
   border: solid #ccc;
+=======
+  background-color: #014663;
+  border: none;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
   border-width: 0 1px 2px;
   display: none;
 
@@ -83,9 +135,17 @@
 }
   .search-content.search-is-open {
     display: block;
+<<<<<<< HEAD
   }
 
   .search-content .search-scope {
+=======
+    z-index: 999;
+  }
+
+  .search-content .search-scope {
+    border-radius: 0;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
     max-width: 30%;
     font-size: 11px;
     padding: 4px 2px 4px 0;
@@ -110,6 +170,7 @@
 .title-header {
   float: left;
 
+<<<<<<< HEAD
   color: #fff;
   font-size: 24px;
 
@@ -121,10 +182,25 @@
 
   &.title-header-short {
     display: none;
+=======
+  color: #000;
+  font-size: 1.35rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &.title-header-short {
+    display: none;
+    @media only screen and (max-width: $mobile) {
+	    display: block;
+	    margin-top: 0;
+    }
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
   }
 
   &:hover,
   &:focus {
+<<<<<<< HEAD
     color: #fff;
   }
 
@@ -133,6 +209,26 @@
   }
   @media only screen and (max-width: $mobile-small) {
     font-size: 20px;
+=======
+    color: lighten(#000, 40%);
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: $mobile) {
+	display: none;
+    margin-top: 2.25em;
+  }
+  @media only screen and (max-width: $mobile-small) {
+    font-size: 20px;
+    margin-top: 2em;
+  }
+}
+
+.title-header-large {
+	margin-top: 5px;
+	@media only screen and (min-width: $mobile) and (max-width: $desktop-small) {
+    display: block;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
     margin-top: 2.5em;
   }
 }
@@ -141,12 +237,17 @@
   float: right;
 
   width: 229px;
+<<<<<<< HEAD
   height: 45px;
+=======
+  height: 65px;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 
   overflow: hidden;
   text-indent: -999em;
   background-position: 0 -3px;
 
+<<<<<<< HEAD
   @media only screen and (max-width: $mobile-small) {
     background-position: -239px -14px;
     height: 32px;
@@ -159,12 +260,40 @@
     left: 3%; /* width is 94% but for one side is only half of 6% -> 3% */
     top: 8px;
   }
+=======
+  @media only screen and (max-width: $mobile) {
+    background-position: -239px -2px;
+    height: 45px;
+    width: 166px;
+    display: none !important;
+  }
+
+  @media only screen and (max-width: $desktop-small) {
+    display: block;
+    position: absolute;
+
+  }
+}
+
+
+.header-logo {
+
+  height: 30px;
+  margin: 15px 20px 0 0;
+  width: auto;
+
+  @media only screen and (min-width: $mobile) {
+    display: none;
+  }
+
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }
 
 /* ***********************************************
  * MAIN CONTENT SIDE NAV
  * ***************/
 
+<<<<<<< HEAD
  #site-logo img {
     max-width: 100%;
     height: auto;
@@ -185,6 +314,43 @@
     font-size: 140%;
     text-shadow: 0 1px 1px #FFF;
     margin: 0 0 .7em;
+=======
+.sidebar-section {
+	padding: 0 4em 1em 0;
+	@media (max-width: $desktop) {
+	    padding: 0 0 3em 0;
+	    width: 100%;
+    }
+}
+
+#site-logo img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 15px;
+    @media (max-width: $desktop-small) {
+	    display: none;
+    }
+}
+
+.main-content-nav {
+  background: #eee;
+  border: solid 1px #D8D7D7;
+  padding: 1em;
+  margin-bottom: 1em;
+
+  @media only screen and (max-width: $desktop-small) {
+    margin-top: 0em;
+  }
+
+  > h2 {
+    color: #333;
+    font-size: 140%;
+    //text-shadow: 0 1px 1px #FFF;
+    margin: 0 0 .4em;
+    text-transform: capitalize;
+    font-weight: normal;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
   }
   > ul {
     /* for borders to line up properly */
@@ -193,7 +359,11 @@
     font-size: 1em;
 
     > li.active {
+<<<<<<< HEAD
       color: #d56a03;
+=======
+      color: darken(#006a96, 10%);
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
     }
   }
 
@@ -203,10 +373,18 @@
 
     a {
       display: block;
+<<<<<<< HEAD
       padding: 1em 0 1em 1em;
 
       &:hover {
         background-color: #fff;
+=======
+      padding: 1em;
+	  color: #333;
+      &:hover {
+        background-color: #006a96;
+        color: #fff;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
       }
       &:hover, &:link, &:active {
         text-decoration: none;
@@ -215,6 +393,7 @@
 
     &.active {
       background-color: #fff;
+<<<<<<< HEAD
 
       padding: 1em 0 1em 1em;
 
@@ -225,6 +404,24 @@
 
       a:hover {
         text-decoration: underline;
+=======
+      padding: 1em 0 1em 1em;
+      font-weight: bold;
+
+	  > ul li a {
+		  color: #006a96;
+		  padding-left: 0 !important;
+	  }
+
+      > a {
+        color: #006a96;
+      }
+
+	  a:hover {
+        text-decoration: underline;
+        color: #484949;
+        background-color: transparent;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
       }
     }
 

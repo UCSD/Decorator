@@ -6,25 +6,52 @@
 }
 
 .drawer {
+<<<<<<< HEAD
 	border-bottom: 1px solid #ccc;
+=======
+	//border-bottom: 1px solid #ccc;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }
 
 /* header */
 .drawer h2 {
+<<<<<<< HEAD
 	border-top: 1px solid #ccc;
 	font-weight: normal;
 	margin-bottom: 0;
 	padding: .2em 0;
 	zoom: 1;
 	font-size: 24px;
+=======
+	//border-top: 1px solid #ccc;
+	text-transform: none;
+	font-weight: normal;
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: .1em 0;
+	zoom: 1;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }
 
 /* default state */
 .drawer h2 a {
+<<<<<<< HEAD
 	background-position: 0 4px;
 	display: block;
 	padding-left: 20px;
 	text-decoration: none;
+=======
+	background-position: 5px  12px;
+	display: block;
+	padding: 10px 0 10px 30px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #006a96;
+	&:hover {
+		background-color: darken(#006a96, 10%);
+	}
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }
 
 /* ie7 hack */
@@ -34,22 +61,43 @@
 
 /* expanded state */
 .drawer h2.expand {
+<<<<<<< HEAD
 	background-color: #0B4A67;
 }
 
 .drawer h2.expand a {
 	background-position: 0 -96px;
 	color: #fff;
+=======
+	//background-color: #006a96;
+}
+
+.drawer h2.expand a {
+	background-position: 5px -86px;
+	padding: 10px 0 10px 30px;
+	color: #fff;
+	background-color: darken(#006a96, 10%);
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }
 
 /* hover state */
 .drawer h2:hover,.drawer h2:active {
+<<<<<<< HEAD
 	background-color: #F0FAFF;
 	cursor: pointer;
 }
 
 .drawer h2.expand:hover,.drawer h2.expand:active {
 	background: #0B4A67;
+=======
+	background-color: transparent;
+	cursor: pointer;
+	color: #fff;
+}
+
+.drawer h2.expand:hover,.drawer h2.expand:active {
+	//background: #006a96;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }
 
 /* content background */
@@ -77,10 +125,18 @@
 }
 
 .drawer-toggle a {
+<<<<<<< HEAD
 	background-position: 0 -217px;
+=======
+	background-position: 0 -215px;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 	padding-left: 16px;
 }
 
 .drawer-toggle a.expand {
+<<<<<<< HEAD
 	background-position: 0 -201px;
+=======
+	background-position: 0 -200px;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }

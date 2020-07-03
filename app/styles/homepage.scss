@@ -1,5 +1,9 @@
 h2, h3 {
+<<<<<<< HEAD
   color: #0b638b;
+=======
+  color: #484949;
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }
 
 .main-section-module {
@@ -16,14 +20,23 @@ h2, h3 {
 
   @media screen and (max-width: 500px) {
     width: 100%;
+<<<<<<< HEAD
     padding: 0;
+=======
+    padding: 0; 
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
   }
 }
 
 /*Give Button*/
 #give-button {
+<<<<<<< HEAD
   margin: 10px 0;
   width: 115px;
+=======
+  margin: 10px 0; 
+  width: 115px; 
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
 }
 
 a.give-button {
@@ -94,4 +107,8 @@ a.give-button span {
     width: 100%;
     margin-bottom: 1em;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1b6adace46eb4584ee87521897258f772c8ba1d9
