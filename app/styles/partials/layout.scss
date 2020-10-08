@@ -183,6 +183,16 @@ header
 {
 }
 
+.skip-to-main:focus, .skip-to-main:active {
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  clip: auto;
+  background-color: green;
+  color: white;
+}
+
 /* ***********************************************
 * NAV
 * **************/
