@@ -11,5 +11,5 @@ The following are some of the key points for this version:
 * Ongoing support for HTML5
 * Improve speed and optimization
 * Develop a robust decorator documentation and usage guide
-* Explore ways to extend the toolkit capabilities beyond desktop, such as native mobile applications and VR apps.
-* A defined update release cycle and overall better code distribution/access# cms-templates..
+* Explore ways to extend the toolkit capabilities beyond desktop, such as native mobile applications and VR apps
+* A defined update release cycle and overall better code distribution/access# cms-templates
