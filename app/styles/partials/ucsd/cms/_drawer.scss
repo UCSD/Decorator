@@ -94,3 +94,64 @@
 .drawer-toggle a.expand {
 	background-position: 0 -200px;
 }
+
+/* light theme */
+.drawer-wrapper .drawer.light-theme {
+	> div {
+		margin-bottom: 16px;
+		border-left: 1px solid #e3e3e3;
+		border-right: 1px solid #e3e3e3;
+		border-bottom: 1px solid #e3e3e3;
+		background-color: #fcfcfc;
+		padding: 0.5em 70px 0em 1em;
+	}
+
+	h2 {
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 16px;
+		padding-bottom: 0;
+		background-color: #e8e8e8;
+		position: relative;
+	}
+
+	h2:after {
+		content: " ";
+		position: absolute;
+		right: 1.3em;
+		top: 1.3em;
+		display: block;
+		width: 30px;
+		height: 25px;
+		background: url(../img/expand.svg) no-repeat;
+	}
+
+	h2.expand {
+		margin-bottom: 0;
+	}
+
+	h2.expand:after {
+		content: " ";
+		position: absolute;
+		right: 1.3em;
+		top: 1.3em;
+		display: block;
+		width: 30px;
+		height: 25px;
+		background: url(../img/collapse.svg) no-repeat;
+	}
+
+	h2 a {
+		font-weight: bold;
+		background-color: #e8e8e8;
+		color: #333;
+		line-height: 1.8em;
+		background: none;
+		padding: 1em 70px 1em 1em;
+	}
+
+	h2 a:hover {
+		background-color: #e8e8e8;
+	}
+}
