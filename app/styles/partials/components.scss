@@ -188,18 +188,16 @@ a.hero-no-button > img {
     color: #484949;
   }
   
-  .carousel-indicators.rt-text-dark {
-    li {
-      border: 1px solid #484949;
-    }
+  li.rt-text-dark {
+    border: 1px solid #484949;
+  }
 
-    .active {
-      background-color: #484949;
-    }
+  .active.rt-text-dark {
+    background-color: #484949;
+  }
 
-    button#toggleCarousel {
-      color: #484949;
-    }
+  button#toggleCarousel.rt-text-dark {
+    color: #484949;
   }
 
 @media (min-width: 768px) {
