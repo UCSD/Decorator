@@ -187,24 +187,13 @@ a.hero-no-button > img {
   .item .rt-text-dark {
     color: #484949;
   }
+
   .jumbotron-hero .text-indent h1.rt-text-dark {
     text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
   }
 
   .jumbotron-hero .text-indent p.rt-text-dark {
     text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
-  }
-
-  li.rt-text-dark {
-    border: 1px solid #484949;
-  }
-
-  .active.rt-text-dark {
-    background-color: #484949;
-  }
-
-  button#toggleCarousel.rt-text-dark {
-    color: #484949;
   }
 
 @media (min-width: 768px) {
