@@ -71,9 +71,15 @@
   border: 0;
   border-radius: 0;
   &:hover {
-   	background-color: #fff;
+   	background-color: #182B49;
+	color: #fff;
   }
 }
+
+.jumbotron-hero .btn-default:hover {
+	background-color: #fff;
+	color: #484949;
+  }  
 
 
 .styled-yellow {
@@ -282,7 +288,8 @@
 		padding: 1em 2em;
 	}
 	.btn-default:hover {
-		background-color: darken(#ffcd00, 5%);
+		background-color: #182B49;
+		color: #fff;
 	}
 }
 
