@@ -20,9 +20,9 @@
   font-size: 24px;
 
   background-image: none;
-  background-color: #006A96;
+  background-color: $blue;
   border-radius: 1px;
-  border: 1px solid #006A96;
+  border: 1px solid $blue;
 
   padding: 9px 10px;
   margin-right: 10px;
@@ -125,15 +125,15 @@ button:active {
   border: none;
   border-bottom: 1px solid #ccc;
   padding: 10px 10px 10px 20px;
-  background-color: #006a96 !important;
+  background-color: $blue !important;
   border: none !important;
   &:hover {
-	  background-color: darken(#006a96, 10%) !important;
+	  background-color: darken($blue, 10%) !important;
   }
   @media only screen and (max-width: $desktop) {
     border: 0;
     font-weight: bold;
-    background: #006A96;
+    background: $blue;
     border-bottom: 1px solid #ccc;
   }
 }
@@ -156,7 +156,7 @@ button:active {
   height: 43px;
 
   padding: 7px;
-  background-color: #006A96;
+  background-color: $blue;
   //border-bottom: 2px solid #BDBDBD;
 
     .search-scope {
@@ -186,7 +186,7 @@ button:active {
     border-bottom: solid 3px #9FB3BF;
   }
     .navbar-subnav .navbar-sublist li:hover > a {
-      background-color: #006A96;
+      background-color: $blue;
     }
 
   .navdrawer-container ul.navbar-sublist {
@@ -245,7 +245,7 @@ button:active {
       //width: 100%;
       //height: 100%;
 
-      background: darken(#006A96, 5%);
+      background: darken($blue, 5%);
       // border-bottom: solid 1px #C8CFD3;
       //border-right: solid 1px #ffcd00;
       //border-left: solid 1px rgba(255,255,255,.6);

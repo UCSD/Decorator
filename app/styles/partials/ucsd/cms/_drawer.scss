@@ -28,9 +28,9 @@
 	padding: 10px 0 10px 30px;
 	text-decoration: none;
 	color: #fff;
-	background-color: #006a96;
+	background-color: $blue;
 	&:hover {
-		background-color: darken(#006a96, 10%);
+		background-color: darken($blue, 10%);
 	}
 }
 
@@ -41,14 +41,14 @@
 
 /* expanded state */
 .drawer h2.expand {
-	//background-color: #006a96;
+	//background-color: $blue;
 }
 
 .drawer h2.expand a {
 	background-position: 5px -86px;
 	padding: 10px 0 10px 30px;
 	color: #fff;
-	background-color: darken(#006a96, 10%);
+	background-color: darken($blue, 10%);
 }
 
 /* hover state */
@@ -59,7 +59,7 @@
 }
 
 .drawer h2.expand:hover,.drawer h2.expand:active {
-	//background: #006a96;
+	//background: $blue;
 }
 
 /* content background */

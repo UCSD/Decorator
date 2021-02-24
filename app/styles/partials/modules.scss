@@ -246,7 +246,7 @@ ul.nav.navbar-nav.navbar-right {
     font-size: 1em;
 
     > li.active {
-      color: darken(#006a96, 10%);
+      color: darken($blue, 10%);
     }
   }
 
@@ -259,7 +259,7 @@ ul.nav.navbar-nav.navbar-right {
       padding: 1em;
 	  color: #333;
       &:hover {
-        background-color: #006a96;
+        background-color: $blue;
         color: #fff;
       }
       &:hover, &:link, &:active {
@@ -273,12 +273,12 @@ ul.nav.navbar-nav.navbar-right {
       font-weight: bold;
 
 	  > ul li a {
-		  color: #006a96;
+		  color: $blue;
 		  padding-left: 0 !important;
 	  }
 
       > a {
-        color: #006a96;
+        color: $blue;
       }
 
 	  a:hover {
