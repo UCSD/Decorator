@@ -136,6 +136,11 @@ a.hero-no-button > img {
     display: block;
     text-align: center;
     padding: 0;
+
+    @media screen and (max-width: 1277px) {
+      margin-bottom: 2.2% !important;
+    }
+
   }
 
   .cntr-btn {
