@@ -307,6 +307,10 @@
 
 	a:hover {color: #FFF; text-decoration: underline;}
 
+	a.btn {text-decoration: none;}
+
+	a.btn:hover {text-decoration:none;}
+
 	.panel {
 		background-color: transparent !important;
 		margin: 0 15px 20px 15px;
