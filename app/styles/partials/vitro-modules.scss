@@ -63,6 +63,10 @@
 
 /* Buttons & links */
 
+.btn .btn-default {
+    white-space: normal;
+}
+
 .jumbotron  .btn-default {
   background-color: $yellow;
   color: #484949;
@@ -205,8 +209,9 @@
 }
 
 .embed-video {
+	margin: 23px 0;
     position: relative;
-    padding-bottom: 56.25%; /* - 16:9 aspect ratio (most common) */
+    padding-bottom: 51.10%; /* - 16:9 aspect ratio (most common) */
     padding-top: 30px;
     height: 0;
     overflow: hidden;
