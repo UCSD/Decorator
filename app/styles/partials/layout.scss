@@ -21,6 +21,15 @@ html, body
   color: #333;
   font: normal normal normal 16px/1.7 'Roboto', sans-serif;
 }
+
+/*Accessibility Focus On Keyboard Navigation*/
+
+:focus {
+  outline: thin dotted #333333 !important;
+  outline: 5px auto -webkit-focus-ring-color !important;
+  outline-offset: -2px;
+}
+
   /* container will have media queries for sizing*/
 
   .layout-container {

@@ -7,11 +7,11 @@ $(function() {
   });
 
   /* Play trigger */
-  $('#toggleCarousel').click(function() {
+  $('#toggleCarousel,#toggleCarouselAria').click(function() {
     var state = (paused) ? 'cycle' : 'pause';
     paused = (paused) ? 0 : 1;
     $('.carousel').carousel(state);
     $(this).find('span').toggleClass('glyphicon-play glyphicon-pause');
-    $(this).attr('aria-label',$(this).attr('aria-label')==='Carousel Pause'?'Carousel Play':'Carousel Pause' );
+    $('#toggleCarousel,#toggleCarouselAria').attr('aria-label',$(this).attr('aria-label')==='carousel is playing, click to pause'?'carousel is paused, click to play':'carousel is playing, click to pause' );
   });
 });

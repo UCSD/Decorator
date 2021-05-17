@@ -189,15 +189,17 @@
 <!-- begin rotator -->
 
 <div class="carousel slide jumbotron jumbotron-hero hm" data-ride="carousel">
+<button id="toggleCarouselAria" aria-label="carousel is playing, click to pause" class="sr-only sr-only-focusable" tabindex="0"><span class="glyphicon glyphicon-pause" aria-hidden="true" ></span></button>
   <div class="row">
     <!-- Indicators -->
-    <ol class="carousel-indicators" aria-label="Carousel Items">
+    <ol class="carousel-indicators" aria-hidden="true">
       <li data-target=".carousel" data-slide-to="0" class="active" aria-hidden="true"></li>
       <li data-target=".carousel" data-slide-to="1" class="" aria-hidden="true"></li>
       <li data-target=".carousel" data-slide-to="2" class="" aria-hidden="true"></li>
       <li data-target=".carousel" data-slide-to="3" class="" aria-hidden="true"></li>
-      <button id="toggleCarousel" aria-label="Carousel Pause" tabindex="0"><span class="glyphicon glyphicon-pause" aria-hidden="true" ></span></button>
+      <button id="toggleCarousel" aria-label="carousel is playing, click to pause" tabindex="0"><span class="glyphicon glyphicon-pause" aria-hidden="true" ></span></button>
     </ol>
+	
     <div class="carousel-inner" role="listbox">
 
 

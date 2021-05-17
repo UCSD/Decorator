@@ -111,6 +111,15 @@ button#toggleCarousel {
     font-size: 14px;
 }
 
+button#toggleCarouselAria {
+  background-color: green;
+  bottom: 20px;
+  margin-left: 50%;
+  padding: 10px 15px;
+  position: absolute;
+  z-index: 20;
+}
+
 a.hero-no-button {
     display: block;
     overflow: hidden;
