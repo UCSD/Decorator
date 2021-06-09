@@ -1,9 +1,13 @@
 /**
  * drawer
  */
-$(document).ready(function() {
+ $(document).ready(function() {
   $('.drawer').each(function() {
     var drawer = $(this);
+
+    /*set aria-expand attribute to h2 links*/
+
+    $('.drawer > h2 > a').attr('aria-expanded','false')
 
     /* create wrapper class */
     drawer.wrap('<div class="drawer-wrapper main-section-content"/>');
@@ -20,6 +24,8 @@ $(document).ready(function() {
 
     drawer.children("h2").click(function() {
       $(this).toggleClass("expand");
+      $(this).find('a').attr('aria-expanded', $(this).find('a').attr('aria-expanded') == 'true' ? 'false' : 'true');
+      //$(this).find('a').attr('aria-label', $(this).find('a').attr('aria-label') == 'Drawer Is Expanded' ? 'Drawer Is Collapsed' : 'Drawer Is Expanded');
       $(this).next().toggle();
       if ($(this).hasClass("expand")) {
         window.location.hash = $(this).find('a').text().replace(/\s/g, '-').substring(0, 31);
@@ -62,6 +68,7 @@ $(document).ready(function() {
   /* expand all drawers */
   function expandAll(drawerWrapper) {
     drawerWrapper.children(".drawer").children("h2").addClass("expand");
+    drawerWrapper.children(".drawer").children("h2").attr("aria-expanded","true");
     drawerWrapper.children(".drawer").children("div").show();
     drawerWrapper.children(".drawer").children("article").show(); // support CMS use of .drawer > article
 		return false;
@@ -70,6 +77,7 @@ $(document).ready(function() {
   /* close all drawers */
   function collapseAll(drawerWrapper) {
     drawerWrapper.children(".drawer").children("h2").removeClass("expand");
+    drawerWrapper.children(".drawer").children("h2").attr("aria-expanded","false");
     drawerWrapper.children(".drawer").children("div").hide();
     drawerWrapper.children(".drawer").children("article").hide(); // support CMS use of .drawer > article
 		return false;
