@@ -450,6 +450,11 @@ main
     a {
       text-decoration: underline;
     }
+
+    .btn {
+      text-decoration: none;
+    }
+
   }
 
   .main-section-content {
@@ -474,6 +479,18 @@ main
       color: #738AA3;
       text-shadow: 0 1px 1px #FFF;
     }
+
+
+    .blank-slate a, .layout-container.row a {
+      text-decoration: underline;
+
+    }
+
+    .layout-container.row .jumbotron a {
+      text-decoration: none;
+    }
+
+
 
 
 /* ***********************************************

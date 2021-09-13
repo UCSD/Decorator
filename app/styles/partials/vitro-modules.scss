@@ -327,9 +327,9 @@
 	border-radius: 0 !important;
 	h2, h3, h4, h5, h6, p, li, a:hover {color: #fff;}
 
-	a {color: #FFF; text-decoration: underline;}
+	a {color: #FFF; text-decoration: underline !important;}
 
-	a:hover {color: #FFF; text-decoration: underline;}
+	a:hover {color: #FFF; text-decoration: underline !important;}
 
 	a.btn {text-decoration: none;}
 

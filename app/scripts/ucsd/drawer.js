@@ -68,7 +68,7 @@
   /* expand all drawers */
   function expandAll(drawerWrapper) {
     drawerWrapper.children(".drawer").children("h2").addClass("expand");
-    drawerWrapper.children(".drawer").children("h2").attr("aria-expanded","true");
+    drawerWrapper.children(".drawer").children("h2").children("a").attr("aria-expanded","true");
     drawerWrapper.children(".drawer").children("div").show();
     drawerWrapper.children(".drawer").children("article").show(); // support CMS use of .drawer > article
 		return false;
@@ -77,7 +77,7 @@
   /* close all drawers */
   function collapseAll(drawerWrapper) {
     drawerWrapper.children(".drawer").children("h2").removeClass("expand");
-    drawerWrapper.children(".drawer").children("h2").attr("aria-expanded","false");
+    drawerWrapper.children(".drawer").children("h2").children("a").attr("aria-expanded","false");
     drawerWrapper.children(".drawer").children("div").hide();
     drawerWrapper.children(".drawer").children("article").hide(); // support CMS use of .drawer > article
 		return false;

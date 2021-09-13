@@ -242,6 +242,15 @@ a.hero-no-button > img {
 
 .qb-carousel {
 
+    #indicators-container {
+      margin-left: 89%;
+
+      #toggleCarousel {
+        float: left;
+      }
+      
+    }
+
     .carousel-caption {
 
       bottom: 20px;
