@@ -15,3 +15,9 @@ $(function() {
     $('#toggleCarousel,#toggleCarouselAria').attr('aria-label',$(this).attr('aria-label')==='carousel is playing, click to pause'?'carousel is paused, click to play':'carousel is playing, click to pause' );
   });
 });
+
+$('.carousel').on('slid.bs.carousel', function () {
+  var carouselData = $(this).data('bs.carousel');
+            var currentIndex = carouselData.$element.find('.carousel-indicators li').removeAttr("aria-current");
+           var currentIndex = carouselData.$element.find('.carousel-indicators li.active').attr("aria-current","true");
+});

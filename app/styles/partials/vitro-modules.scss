@@ -39,6 +39,10 @@
 	text-decoration: none;
 }
 
+.jumbotron, .container .jumbotron {
+	border-radius: 0 !important;
+}
+
 .detail-logo img {
 	margin-top: 35px;
 	margin-bottom: 15px;
@@ -88,11 +92,12 @@
 
 .styled-yellow {
   background-color: $yellow;
-  color: #484949;
+  color: #484949 !important;
   font-family: inherit;
   transition: all 0.3s;
   border: 0;
   border-radius: 0;
+  text-decoration: none !important;
   &:hover {
    	background-color: darken($yellow, 5%);
   }
@@ -113,11 +118,12 @@
 
 .styled-blue {
   background-color: $blue;
-  color: #fff;
+  color: #fff !important;
   font-family: inherit;
   transition: all 0.3s;
   border: 0;
   border-radius: 0;
+  text-decoration: none !important;
   &:hover {
    	background-color: darken($blue, 10%);
 		color: #fff;
@@ -322,7 +328,8 @@
 .jumbotron-callout-content-one {
 	background-color: $blue;
 	background-image: url("../img/bg-dark-blue-trident-full.png");
-  background-position: center;
+  	background-position: center;
+	color: #fff;
 	padding: 30px 0 !important;
 	border-radius: 0 !important;
 	h2, h3, h4, h5, h6, p, li, a:hover {color: #fff;}
@@ -331,7 +338,7 @@
 
 	a:hover {color: #FFF; text-decoration: underline !important;}
 
-	a.btn {text-decoration: none;}
+	a.btn {text-decoration: none !important;}
 
 	a.btn:hover {text-decoration:none;}
 
