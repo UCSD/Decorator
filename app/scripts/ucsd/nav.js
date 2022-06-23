@@ -302,3 +302,22 @@ $('.dropdown').on('focusin', function(){
     }
   });*/
 })(document);
+
+
+/*$('.navbar-toggle').click(function() {
+  //$('.mobile-search-input').focus();
+
+  if($('div.offcanvas').hasClass('canvas-slid')) {
+    
+  };
+
+});*/
+
+$('.offcanvas').on('shown.bs.offcanvas	', function (e) {
+  $('.search-scope').focus();
+  $(".navbar-toggle").attr("aria-expanded","true");
+})
+
+$('.offcanvas').on('hidden.bs.offcanvas', function (e) {
+  $(".navbar-toggle").attr("aria-expanded","false");
+})

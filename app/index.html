@@ -64,6 +64,7 @@
               </button>
 
               <div class="search-content" id="search">
+				  <h2 class="mobile-search-label">Search:</h2>
                   <form action="https://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
                       <select class="search-scope" name="search-scope">
                           <option value="default_collection">All UCSD Sites</option>
@@ -71,7 +72,7 @@
                       </select>
 
                       <div class="input-group">
-                          <input placeholder="Search..." type="search" class="form-control search-term"
+                          <input placeholder="Search..." type="search" class="form-control search-term mobile-search-input"
                           id="q" name="search-term">
                       </div>
                   </form>
@@ -79,6 +80,8 @@
           </div>
         </li>
     </ul>
+
+	<button type="button" class="navbar-toggle sr-only" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body" aria-expanded="false" aria-controls="navbar">CLOSE</button>
 
 
 	<ul class="nav navmenu-nav">
