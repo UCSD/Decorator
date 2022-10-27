@@ -354,10 +354,65 @@ select {
       max-height: 380px;
     }
 
+    .cr-item-container {
+      position: absolute; 
+      top: 25%;
+      transition: all .2s linear; 
+      width: inherit;
+
+      @media only screen and (max-width: $full) {
+        top: 20%;
+      }
+
+    }
+
+    @media only screen and (max-width: $full) {
+      .intro-banner-heading {
+        font-size: 53px !important;
+      }
+   }
+
+    @media only screen and (max-width: $desktop) {
+      .intro-banner-heading {
+        font-size: 43px !important;
+      }
+   }
+
+   @media only screen and (max-width: $desktop-small) {
+    .intro-banner-heading {
+      font-size: 43px !important;
+    }
+  }
+
+    @media only screen and (max-width: $tablet) {
+      .intro-banner-heading {
+        font-size: 37px !important;
+      }
+    }
+
+    @media only screen and (max-width: $mobile) {
+      .intro-banner-heading {
+        font-size: 27px !important;
+      }
+    }
+  
+ 
+
+@media only screen and (max-width: $desktop-small) {
+  min-height: 300px;
 }
+
+@media only screen and (max-width: $desktop-small) {
+  min-height: 250px;
+}
+
+}
+
 
 .display-flex-center {
   display: flex;
   align-items: center;
   min-height: 380px;
+  
 }
+
