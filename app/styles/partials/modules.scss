@@ -341,6 +341,7 @@ select {
  .intro-banner {
   margin: 0 !important;
   position: relative;
+  max-height: 380px;
 
     h1 {
       text-align: center;
@@ -352,18 +353,16 @@ select {
       width: 100%;
       height: auto;
       max-height: 380px;
+      position: absolute;
     }
 
     .cr-item-container {
-      position: absolute; 
-      top: 25%;
-      transition: all .2s linear; 
-      width: inherit;
-
+      margin: 9% 0;
+      /*
       @media only screen and (max-width: $full) {
         top: 20%;
       }
-
+      */
     }
 
     @media only screen and (max-width: $full) {
@@ -397,7 +396,7 @@ select {
     }
   
  
-
+/*
 @media only screen and (max-width: $desktop-small) {
   min-height: 300px;
 }
@@ -405,6 +404,7 @@ select {
 @media only screen and (max-width: $desktop-small) {
   min-height: 250px;
 }
+*/
 
 }
 
