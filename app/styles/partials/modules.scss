@@ -6,7 +6,7 @@
  *  - search
  *  - title
  *  - buttons
- *  - input
+ *  - inputgit
  *  - two-column intro banner
  *  - more(?)
  *
@@ -341,7 +341,6 @@ select {
  .intro-banner {
   margin: 0 !important;
   position: relative;
-  max-height: 380px;
 
     h1 {
       text-align: center;
@@ -353,7 +352,6 @@ select {
       width: 100%;
       height: auto;
       max-height: 380px;
-      position: absolute;
     }
 
     .cr-item-container {
