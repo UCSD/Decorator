@@ -133,7 +133,7 @@ ul.nav.navbar-nav.navbar-right {
 
   &.title-header-short {
     display: none;
-    @media only screen and (max-width: $mobile) {
+    @media only screen and (max-width: 479px) {
 	    display: block;
 	    margin-top: 0;
     }
@@ -173,7 +173,7 @@ ul.nav.navbar-nav.navbar-right {
   text-indent: -999em;
   background-position: 0 -3px;
 
-  @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: 479px) {
     background-position: -239px -2px;
     height: 45px;
     width: 166px;
