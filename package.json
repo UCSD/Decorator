@@ -27,7 +27,7 @@
     "gulp": "^4.0.2"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.12",
     "gul": "^1.0.0",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-changed": "^4.0.2",

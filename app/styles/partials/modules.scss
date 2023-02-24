@@ -304,30 +304,30 @@ ul.nav.navbar-nav.navbar-right {
 /* ***********************************************
  * BUTTONS
  * ***************/
-
+/*
 button {
 
 }
-
+*/
 
 /* ***********************************************
  * INPUT
  * ***************/
-
+/*
 input {
 
 }
-
+*/
 .form-control {
   -webkit-border-radius: 0;
   border-radius: 0;
   padding: 0.5em;
 }
-
+/*
 select {
 
 }
-
+*/
 .subhead {
   font-size: 120%
 }
@@ -339,8 +339,9 @@ select {
  * ***************/
 
  .intro-banner {
-  margin: 0 !important;
+  margin: 0!important;
   position: relative;
+  max-height: 380px;
 
     h1 {
       text-align: center;
@@ -352,10 +353,12 @@ select {
       width: 100%;
       height: auto;
       max-height: 380px;
+      position: absolute;
     }
 
     .cr-item-container {
       margin: 9% 0;
+      position: unset !important; 
       /*
       @media only screen and (max-width: $full) {
         top: 20%;
@@ -391,7 +394,7 @@ select {
       .intro-banner-heading {
         font-size: 27px !important;
       }
-    }
+    }   
   
  
 /*
