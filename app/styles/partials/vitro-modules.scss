@@ -310,6 +310,7 @@
     border: none;
     background-color: transparent;
 	 box-shadow: none;
+	 margin-bottom: 0;
 
 		img {
     	width: 100%;
@@ -337,14 +338,18 @@
 	 font-size: 1.25em;
 	 line-height: 1.1em;
 	 letter-spacing: .5px;
-	 color: $dark-blue;
+	 color: $dark-blue; 
+	 
+	 a {
+		 color: $dark-blue; 
+	 }
 }
 .jumbotron-news .panel.panel-default .panel-body {
     padding-top: 0;
     padding-right: 2em;
 }
 .jumbotron-news .view-all-link {
-	 margin-top: 2em;
+	 margin-top: 4em;
 }
 
 @media (min-width: $desktop-small) {
@@ -352,7 +357,7 @@
 	    min-height: 135px;
 	}
 	.jumbotron-news .view-all-link {
-		 margin-top: 2.5em;
+		 margin-top: 2em;
 	}
 }
 @media screen and (min-width: 992px) {
@@ -366,6 +371,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
 	grid-auto-rows: 1fr;
+	margin: 0 15px;
 }
 .card {
 	display: flex;
@@ -374,8 +380,9 @@
 @media(min-width:768px) {
 	.card-container {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+		grid-template-columns: 1fr 1fr 1fr;
 		grid-auto-rows: 1fr;
+		grid-gap: 0 30px;
 
 		.img-container {
 			height: 155px !important;
@@ -395,8 +402,9 @@
 @media(min-width:992px) {
 	.card-container {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+		grid-template-columns: 1fr 1fr 1fr;
 		grid-auto-rows: 1fr;
+		grid-gap: 0 30px;
 
 		.img-container {
 			height: 201px !important;
