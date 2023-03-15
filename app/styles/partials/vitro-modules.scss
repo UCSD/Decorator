@@ -29,6 +29,21 @@
 	margin-bottom: 11.5px;
 }
 
+.jumbotron h1, .jumbotron h2 {
+	font-family: 'Teko', sans-serif;
+	text-transform: none;
+}
+
+.jumbotron h1 {
+	font-size: 3.5em;
+	line-height: .9em;
+}
+
+.jumbotron h2 {
+	font-size: 3.1em;
+	line-height: .9em;
+}
+
 .jumbotron .drawer-wrapper ul, .jumbotron  .drawer-wrapper ol {padding-left: 1em;}
 
 .jumbotron .drawer-wrapper ul li, .jumbotron  .drawer-wrapper ol li {
@@ -77,7 +92,7 @@
   font-family: inherit;
   transition: all 0.3s;
   border: 0;
-  border-radius: 0;
+  border-radius: 8px;
   &:hover {
    	background-color: $dark-blue;
 	color: #fff;
@@ -96,7 +111,7 @@
   font-family: inherit;
   transition: all 0.3s;
   border: 0;
-  border-radius: 0;
+  border-radius: 8px;
   text-decoration: none !important;
   &:hover {
    	background-color: darken($yellow, 5%);
@@ -109,7 +124,7 @@
   font-family: inherit;
   transition: all 0.3s;
   border: 0;
-  border-radius: 0;
+  border-radius: 8px;
   &:hover {
    	background-color: $dark-blue;
   }
@@ -155,6 +170,7 @@
 	background-size: cover !important;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: $sand;
 	color: inherit;
 	// removed padding, to have consistent spacing to work with these templates
 	padding: 0 !important;
@@ -555,7 +571,7 @@
 .jumbotron-full-width {
     background-image: url("../img/bg-light-yellow-trident.png");
     background-position: top right;
-    background-color: #f5f5f5;
+    background-color: $sand;
 		border-radius: 0 !important;
     padding: 2em !important;
 }
