@@ -366,6 +366,10 @@ select {
       */
     }
 
+    .no-banner-headline {
+      margin: 155px 0 !important;
+    }
+
     @media only screen and (max-width: $full) {
       .intro-banner-heading {
         font-size: 53px !important;

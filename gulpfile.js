@@ -113,6 +113,22 @@ exports.zip = () => (
       .pipe(gulp.dest('.'))
 );
 
+
+
+/// Concat Vendor Scripts
+
+function concatVendorScripts() {
+  return gulp.src([
+    './app/vendor/fastclick/lib/fastclick.js',
+    './app/vendor/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js',
+    './app/vendor/jasny-bootstrap/js/jasny-bootstrap.min.js',
+    './app/vendor/jquery-match-height/jquery.matchHeight.js'
+  ])
+    .pipe(concat('vendor.min.js'))
+    .pipe(gulp.dest('./dist/scripts'));
+}
+
+
 // Build Sequences --------------------------------------------
 // -----------------------------------------------------------
 
@@ -158,5 +174,6 @@ exports.userefS = userefS;
 exports.fonts = fonts;
 exports.buildImg = buildImg;
 exports.dev = series(watch, css);
+exports.concat = series(concatVendorScripts);
 
 exports.build = series(css, userefS, fonts, buildImg);
