@@ -2816,26 +2816,12 @@ blockquote > footer {
   margin: 0 15px;
 }
 
-.card {
-  display: flex;
-}
-
 @media (min-width: 768px) {
   .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
     grid-gap: 0 30px;
-  }
-  .card-container .img-container {
-    height: 155px !important;
-  }
-  .card-container .img-responsive {
-    height: 155px !important;
-  }
-  .main-section .card-container .img-container,
-.main-section .card-container .img-responsive {
-    height: 150px !important;
   }
 }
 @media (min-width: 992px) {
@@ -2844,26 +2830,6 @@ blockquote > footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
     grid-gap: 0 30px;
-  }
-  .card-container .img-container {
-    height: 201px !important;
-  }
-  .card-container .img-responsive {
-    height: 201px !important;
-  }
-  .main-section .card-container .img-container, .main-section .card-container .img-responsive {
-    height: 150px !important;
-  }
-}
-@media (min-width: 1200px) {
-  .card-container .img-container {
-    height: 242px !important;
-  }
-  .card-container .img-responsive {
-    height: 242px !important;
-  }
-  .main-section .card-container .img-container, .main-section .card-container .img-responsive {
-    height: 182px !important;
   }
 }
 /* Callout Image Small Inset */
