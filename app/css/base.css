@@ -2690,6 +2690,11 @@ blockquote > footer {
   margin: 25px 0;
 }
 
+.jumbotron-gray img {
+  border-radius: 14px;
+  margin: 25px 0;
+}
+
 .jumbotron-sand img {
   border-radius: 14px;
   margin: 25px 0;
