@@ -40,7 +40,7 @@
 }
 
 .jumbotron h2 {
-	font-size: 3.1em;
+	font-size: 2.8em;
 	line-height: .9em;
 }
 
@@ -72,7 +72,7 @@
 
 @media (min-width: $desktop-small) {
 	.jumbotron h2, .styled-h2 {
-		font-size: 2em;
+		font-size: 3.1em;
 	}
 
 	.jumbotron h4 {
@@ -456,14 +456,6 @@
 
 	.cc-yellow-trident {
 		background-image: url("../img/bg-dark-blue-trident-full.png");
-	}
-
-	
-
-	@media (min-width: 992px) {
-		h2 {
-			margin-left: 50px;
-		}
 	}
 }
 
