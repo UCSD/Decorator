@@ -640,136 +640,116 @@
 				</div>
 				
 				<div class="row">
-					<div class="card-container">
-						
-				  		<div class="panel panel-default" style="">
-					 		<div class="img-container">
-								<div class="vertical-center">
-						  		<a alt="link to news item" class="url0-174 text-link" href="https://today.ucsd.edu/story/using-ancient-texts-to-foster-compassion-and-empathy-today">
-							 		<img alt="Full stage, with guests viewing and online participants projected" class="img-responsive" id="img0-174" src="https://today.ucsd.edu/news_uploads/_ucsd-feed/202303_SuppliantsProject_lead.jpg">
-						  		</a>
-							 		</div>
-					 		</div>
+					<div class="col-sm-4">					
+				  		<a class="panel panel-default" href="https://today.ucsd.edu/story/using-ancient-texts-to-foster-compassion-and-empathy-today" style="" alt="link to news item">
+					 		<img alt="Full stage, with guests viewing and online participants projected" class="img-responsive" id="img0-174" src="https://today.ucsd.edu/news_uploads/_ucsd-feed/202303_SuppliantsProject_lead.jpg">
 					 		<div class="panel-heading">
 								<p class="panel-news-date small" id="date0-174">March 13, 2023</p>
-								<h3 class="panel-news-title" id="head0-174" style="">
-							 		<a class="url0-174" href="https://today.ucsd.edu/story/using-ancient-texts-to-foster-compassion-and-empathy-today">Using Ancient Texts to Foster Compassion and Empathy Today</a>
+								<h3 class="panel-news-title" id="head0-174" style="">Using Ancient Texts to Foster Compassion and Empathy Today
 								</h3>
 					 		</div>
-				  		</div>
-						
-						
-						
-				  			<div class="panel panel-default" style="">
-					 		 <div class="img-container">
-								<div class="vertical-center">
-							 		<a alt="link to news item" class="url1-174 text-link" href="https://today.ucsd.edu/story/9-fast-facts-about-our-triton-applicants">
-								  		<img alt="A group of four UC San Diego students walking on campus next to the Sun God statue with the sun shining behind them." class="img-responsive" id="img1-174" src="https://today.ucsd.edu/news_uploads/_ucsd-feed/2023-applications-teaser.jpg">
-							 		</a>
-								</div>
-					 		  </div>
-					 		  <div class="panel-heading">
-									<p class="panel-news-date small" id="date1-174">February 24, 2023</p>
-									<h3 class="panel-news-title" id="head1-174" style="">
-							 			<a class="url1-174" href="https://today.ucsd.edu/story/9-fast-facts-about-our-triton-applicants">9 Fast Facts About Our Triton Applicants</a>
-									</h3>
-					 		  </div>
-				  			 </div>
-						
-				  		<div class="panel panel-default" style="">
-					 		<div class="img-container">
-								<div class="vertical-center">
-							 		<a alt="link to news item" class="url2-174 text-link" href="https://today.ucsd.edu/story/christine-alvarado-will-help-lead-cras-ur2phd-national-mentoring-program"><img alt="" class="img-responsive" id="img2-174" src="https://today.ucsd.edu/news_uploads/_ucsd-feed/ChristineAlvarado_1.jpg"></a>
-								</div>
+				  		</a>
+					</div>	  
+					
+					<div class="col-sm-4">	
+				  		<a class="panel panel-default" style="" href="https://today.ucsd.edu/story/9-fast-facts-about-our-triton-applicants" alt="link to news item">
+					 		<img alt="A group of four UC San Diego students walking on campus next to the Sun God statue with the sun shining behind them." class="img-responsive" id="img1-174" src="https://today.ucsd.edu/news_uploads/_ucsd-feed/2023-applications-teaser.jpg">
+					 		<div class="panel-heading">
+							 	<p class="panel-news-date small" id="date1-174">February 24, 2023</p>
+								<h3 class="panel-news-title" id="head1-174" style="">9 Fast Facts About Our Triton Applicants</h3>
 					 		</div>
+				  		</a>
+					</div>	  
+						
+					<div class="col-sm-4">	
+				  		<a class="panel panel-default" style="" alt="link to news item" href="https://today.ucsd.edu/story/christine-alvarado-will-help-lead-cras-ur2phd-national-mentoring-program">
+					 		<img alt="" class="img-responsive" id="img2-174" src="https://today.ucsd.edu/news_uploads/_ucsd-feed/ChristineAlvarado_1.jpg">
 					 		<div class="panel-heading">
 								<p class="panel-news-date small" id="date2-174">February 23, 2023</p>
 								<h3 class="panel-news-title" id="head2-174" style="">
-							 		<a class="url2-174" href="https://today.ucsd.edu/story/christine-alvarado-will-help-lead-cras-ur2phd-national-mentoring-program">UC San Diego’s Christine Alvarado Will Help Lead CRA’s UR2PhD National Mentoring Program</a>
+							 		UC San Diego’s Christine Alvarado Will Help Lead CRA’s UR2PhD National Mentoring Program
 								</h3>
-					 	
-				  	</div>
+					 		</div>
+				  		</a>
+					</div>
 				</div>
+		
+			 
+			 	<script>
+			 	var url = "https://today.ucsd.edu/news-and-features-api?category=174&limit=3";
+			 	
+			 	getData(url);
+			 	
+			 	function getData(theurl) {
+				  	var xmlhttp = new XMLHttpRequest();
+				  	xmlhttp.open("GET", theurl, true);
+				  	xmlhttp.onload = function() {
+							if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+						  	if (xmlhttp.status == 200) {
+							  	var newsData = JSON.parse(xmlhttp.responseText);
+							  	
+							  	for (var index = 0; index < 3; index++) {
+								  	var headId = "head" + index + "-174";
+								  	var imgId = "img" + index + "-174";
+								  	var dateId = "date" + index + "-174";
+								  	var urlId = "url" + index + "-174";
+								  	
+								  	if (newsData[index].entry_date >= 1660546800000) {
+									  	image = newsData[index].teaser_photo;
+									  	var lastSegIndex = image.lastIndexOf('/');
+									  	var firstSeg = image.slice(0, lastSegIndex);
+									  	var lastSeg = image.slice(lastSegIndex)
+									  	var feedImage = firstSeg + '/_ucsd-feed' + lastSeg;
+									  	image = feedImage;
+								  	} else {
+									  	if (newsData[index].feature_image) {
+										  	image = newsData[index].feature_image;
+									  	} else if (newsData[index].primary_photo) {
+										  	image = newsData[index].primary_photo;
+									  	} else {
+										  	image = "https://cdn.ucsd.edu/cms/decorator-5/img/news-placeholder.jpeg";
+									  	}
+								  	}
+								  	document.getElementById(imgId).src = image;
+								 	 document.getElementById(headId).innerText = newsData[index].title;
+								 	document.getElementById(dateId).innerText = timeConverter(newsData[index].entry_date);
+								 	var urls = document.getElementsByClassName(urlId);
+								 	var newsUrl = "https://today.ucsd.edu" + "/story/" + newsData[index].url_title;
+								  	for (var j = 0; j < urls.length; j++) {
+									  	urls[j].setAttribute("href", newsUrl);
+								 	}
+								 	if (newsData[index].pp_alt) {
+										document.getElementById(imgId).alt = newsData[index].pp_alt;
+									}
+							 	}
+						  	}
+						  	else if (xmlhttp.status == 400) {
+									console.log('Status: Error 400 returned');
+						  	}
+						  	else {
+								 	console.log('Status:' + xmlhttp.status);
+						  	}
+							}
+				  	};
+			 	
+				  	xmlhttp.send();
+			 	}
+			
+			 	function timeConverter(UNIX_timestamp){
+					var a = new Date(UNIX_timestamp);
+					var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+					var year = a.getFullYear();
+					var month = months[a.getMonth()];
+					var date = a.getDate();
+					var hour = a.getHours();
+					var min = a.getMinutes();
+					var sec = a.getSeconds();
+					var time = month + ' ' + date + ', ' + year;
+					return time;
+			 	}
+			 	</script>
+			 
 			</div>
-		
-			 
-			 <script>
-			 var url = "https://today.ucsd.edu/news-and-features-api?category=174&limit=3";
-			 
-			 getData(url);
-			 
-			 function getData(theurl) {
-				  var xmlhttp = new XMLHttpRequest();
-				  xmlhttp.open("GET", theurl, true);
-				  xmlhttp.onload = function() {
-						if (xmlhttp.readyState == XMLHttpRequest.DONE) {
-						  if (xmlhttp.status == 200) {
-							  var newsData = JSON.parse(xmlhttp.responseText);
-							  
-							  for (var index = 0; index < 3; index++) {
-								  var headId = "head" + index + "-174";
-								  var imgId = "img" + index + "-174";
-								  var dateId = "date" + index + "-174";
-								  var urlId = "url" + index + "-174";
-								  
-								  if (newsData[index].entry_date >= 1660546800000) {
-									  image = newsData[index].teaser_photo;
-									  var lastSegIndex = image.lastIndexOf('/');
-									  var firstSeg = image.slice(0, lastSegIndex);
-									  var lastSeg = image.slice(lastSegIndex)
-									  var feedImage = firstSeg + '/_ucsd-feed' + lastSeg;
-									  image = feedImage;
-								  } else {
-									  if (newsData[index].feature_image) {
-										  image = newsData[index].feature_image;
-									  } else if (newsData[index].primary_photo) {
-										  image = newsData[index].primary_photo;
-									  } else {
-										  image = "https://cdn.ucsd.edu/cms/decorator-5/img/news-placeholder.jpeg";
-									  }
-								  }
-								  document.getElementById(imgId).src = image;
-								  var headChild = document.getElementById(headId).children[0];
-								  headChild.innerText = newsData[index].title;
-								  document.getElementById(dateId).innerText = timeConverter(newsData[index].entry_date);
-								  var urls = document.getElementsByClassName(urlId);
-								  var newsUrl = "https://today.ucsd.edu" + "/story/" + newsData[index].url_title;;
-								  for (var j = 0; j < urls.length; j++) {
-									  urls[j].setAttribute("href", newsUrl);
-								 }
-								 if (newsData[index].pp_alt) {
-									document.getElementById(imgId).alt = newsData[index].pp_alt;
-								}
-							 }
-						  }
-						  else if (xmlhttp.status == 400) {
-								console.log('Status: Error 400 returned');
-						  }
-						  else {
-								 console.log('Status:' + xmlhttp.status);
-						  }
-						}
-				  };
-			 
-				  xmlhttp.send();
-			 }
-		
-			 function timeConverter(UNIX_timestamp){
-				var a = new Date(UNIX_timestamp);
-				var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-				var year = a.getFullYear();
-				var month = months[a.getMonth()];
-				var date = a.getDate();
-				var hour = a.getHours();
-				var min = a.getMinutes();
-				var sec = a.getSeconds();
-				var time = month + ' ' + date + ', ' + year;
-				return time;
-			 }
-			 </script>
-			 
-								  </div>
-			 </div>
 		</section>
 		<!-- End News auto populated -->
 
