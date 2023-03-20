@@ -242,9 +242,15 @@
 
 .side-image-white {
 	background-color: #fff;
+	h2 {
+		color: $dark-blue;
+	}	
 	img {
 		border-radius: 14px;
 		margin: 25px 0;
+	}
+	p {
+		color: $dark-blue;
 	}
 }
 .jumbotron-gray {
@@ -254,6 +260,9 @@
 	}
 }
 .jumbotron-sand {
+	h2, p {
+		color: $dark-blue;
+	}
 	img {
 		border-radius: 14px;
 		margin: 25px 0;

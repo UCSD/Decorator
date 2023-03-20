@@ -2685,9 +2685,15 @@ blockquote > footer {
 .side-image-white {
   background-color: #fff;
 }
+.side-image-white h2 {
+  color: #182B49;
+}
 .side-image-white img {
   border-radius: 14px;
   margin: 25px 0;
+}
+.side-image-white p {
+  color: #182B49;
 }
 
 .jumbotron-gray img {
@@ -2695,6 +2701,9 @@ blockquote > footer {
   margin: 25px 0;
 }
 
+.jumbotron-sand h2, .jumbotron-sand p {
+  color: #182B49;
+}
 .jumbotron-sand img {
   border-radius: 14px;
   margin: 25px 0;
