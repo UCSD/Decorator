@@ -21,7 +21,7 @@
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .title-logo,
-.layout-footer > .layout-container {
+  .layout-footer > .layout-container {
     background-image: url(../img/sprite_base2x.png);
     background-size: 500px 120px;
   }
@@ -936,8 +936,8 @@ select {
 }
 @media only screen and (max-width: 640px) {
   .layout-header.open,
-.layout-main.open,
-.layout-footer.open {
+  .layout-main.open,
+  .layout-footer.open {
     -webkit-transform: translate(83%, 0);
     transform: translate(83%, 0);
   }
@@ -1360,7 +1360,7 @@ img.right {
  */
 @media only screen and (max-width: 360px) {
   img.left,
-img.right {
+  img.right {
     float: none;
     padding: 1em 0;
   }
@@ -1904,18 +1904,18 @@ html > body form .icon.invalid {
  */
 @media only screen and (max-width: 640px) {
   .field .label,
-.field_left .label {
+  .field_left .label {
     float: none;
     text-align: left;
     padding-left: 1em;
     padding-bottom: 0.25em;
   }
   .field .input, .field .output, .field select.input, .field textarea.input,
-.field_left .input, .field_left .output, .field_left select.input, .field_left textarea.input {
+  .field_left .input, .field_left .output, .field_left select.input, .field_left textarea.input {
     margin-left: 1em;
   }
   .field .required,
-.field_left .required {
+  .field_left .required {
     background-position: left 0;
     padding-left: 1em;
   }
@@ -2872,7 +2872,7 @@ blockquote > footer {
 /* Callout Content One */
 .jumbotron-callout-content-one {
   background-color: #00629B;
-  background-image: url("../img/bg-dark-blue-trident-full.png");
+  background-image: url("../img/bg-orbs-1.jpg");
   background-position: center;
   color: #fff;
   padding: 30px 0 !important;
@@ -3376,14 +3376,14 @@ Kitchen Sink
 @media print {
   /* removes ucsd logo and other background images (glyphicons) */
   html, main, footer *,
-.layout-title * {
+  .layout-title * {
     background-color: transparent !important;
     background-image: none !important;
     overflow: visible !important;
   }
   /* title and header font color should be black (readable) */
   .title-header,
-h1, h2, h3, h4, h5, h6, p {
+  h1, h2, h3, h4, h5, h6, p {
     color: #000;
   }
   /* hide login/ emergency/ nav/ search/ footer links/ btn-nav styles */
