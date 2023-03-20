@@ -501,12 +501,18 @@
 	background-size: cover;
 	padding: 48px 0 !important;
 	border-radius: 0 !important;
-
+		h2 {
+			margin-top: 0;
+		}
 		.panel {
 			border: none;
 		}
 		.panel.panel-primary {
-			background-color: rgba(0,106,150,0.85);
+			background-color: $blue;
+			border-radius: 14px !important;
+			.panel-text {
+				margin-bottom: 2.5rem;
+			}
 		}
 		.panel.panel-primary .panel-body {
 			padding: 1em 2em;
@@ -523,10 +529,10 @@
 		.panel-primary .text-link {
 				border-bottom: 1px #fff solid;
 		}
-
-
 }
-.jumbotron-callout-content-two h2, .jumbotron-callout-content-two h3, .jumbotron-callout-content-two p {
+.jumbotron-callout-content-two h2, 
+.jumbotron-callout-content-two h3, 
+.jumbotron-callout-content-two p {
 	color: #fff;
 }
 
@@ -535,16 +541,11 @@
 }
 
 .ct4-light-bg {
-	h2 {
-
-		color: #484949 !important;
-
-	 } 
-	 
-	 p {
-		color: #333;
-	 }
-	
+	background-image: none !important;
+	h2,
+	p {
+		color: $dark-blue;
+	} 
 }
 
 .panel-darker {
@@ -555,6 +556,31 @@
     margin-left: 2em;
 }
 
+.jumbotron-callout-content-two.jumbotron-orbs-1 {
+	background-image: url(../img/bg-orbs-1-mobile.jpg);
+	background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+	.jumbotron-callout-content-two {
+		.text-indent {
+			margin-bottom: 1.5em;
+		}
+	}
+	.jumbotron-callout-content-two.jumbotron-orbs-1 {
+		background-image: url("../img/bg-orbs-1.jpg");
+		background-position: right bottom;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.text-lg-right {
+		text-align: right;
+	}
+	.jumbotron-callout-content-two.jumbotron-orbs-1 {
+		background-position: center;
+	}
+}
 
 /* Jumbotron full-width */
 
