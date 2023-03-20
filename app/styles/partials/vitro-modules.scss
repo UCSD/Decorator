@@ -421,6 +421,7 @@
 	}
 	.panel {
 		margin: 0 15px;
+		border-radius: 14px !important;
 	}
 	.panel.panel-default .panel-body {
 		padding: 1em 2em;
@@ -435,7 +436,7 @@
 
 .jumbotron-callout-content-one {
 	background-color: $blue;
-	background-image: url("../img/bg-orbs-1.jpg");
+	background-image: url("../img/bg-orbs-1-mobile.jpg");
   	background-position: center;
 	color: #fff;
 	padding: 30px 0 !important;
@@ -466,6 +467,10 @@
 
 	.cc-yellow-trident {
 		background-image: url("../img/bg-dark-blue-trident-full.png");
+	}
+
+	@media (min-width: 768px) {
+		background-image: url("../img/bg-orbs-1.jpg");
 	}
 }
 
