@@ -97,6 +97,23 @@
 	}
 }
 
+.overlay-glow-2 figure {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url("../img/overlay-glow-2.png");
+		background-size: cover;
+		background-position: 0% 50%;
+		mix-blend-mode: lighten;
+		background-repeat: no-repeat;
+	}
+}
+
 /* Buttons & links */
 
 .btn, .btn-default {
@@ -571,7 +588,7 @@
 }
 
 .jumbotron-callout-content-two.jumbotron-orbs-1 {
-	background-image: url(../img/bg-orbs-1-mobile.jpg);
+	background-image: url(../img/bg-orbs-1-mobile.jpg) !important;
 	background-position: center;
 }
 
@@ -582,7 +599,7 @@
 		}
 	}
 	.jumbotron-callout-content-two.jumbotron-orbs-1 {
-		background-image: url("../img/bg-orbs-1.jpg");
+		background-image: url("../img/bg-orbs-1.jpg") !important;
 		background-position: right bottom;
 	}
 }
