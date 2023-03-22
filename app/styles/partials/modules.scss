@@ -223,7 +223,7 @@ ul.nav.navbar-nav.navbar-right {
 }
 
 .main-content-nav {
-  background: #eee;
+  background: $sand;
   border: solid 1px #D8D7D7;
   padding: 1em;
   margin-bottom: 1em;
@@ -247,7 +247,7 @@ ul.nav.navbar-nav.navbar-right {
     font-size: 1em;
 
     > li.active {
-      color: darken($blue, 10%);
+      color: $blue;
     }
   }
 

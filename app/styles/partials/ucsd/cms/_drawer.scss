@@ -100,10 +100,10 @@
 .drawer-wrapper .drawer.light-theme {
 	> div {
 		margin-bottom: 16px;
-		border-left: 1px solid #e3e3e3;
-		border-right: 1px solid #e3e3e3;
-		border-bottom: 1px solid #e3e3e3;
-		background-color: #fcfcfc;
+		border-left: 1px solid $sand;
+		border-right: 1px solid $sand;
+		border-bottom: 1px solid $sand;
+		background-color: #fdfcfa;
 		padding: 0.5em 70px 0em 1em;
 	}
 
@@ -113,7 +113,7 @@
 		line-height: 22px;
 		margin-bottom: 16px;
 		padding-bottom: 0;
-		background-color: #e8e8e8;
+		background-color: $sand;
 		position: relative;
 	}
 
@@ -153,6 +153,6 @@
 	}
 
 	h2 a:hover {
-		background-color: #e8e8e8;
+		background-color: $sand;
 	}
 }
