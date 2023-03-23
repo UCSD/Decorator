@@ -2896,6 +2896,9 @@ blockquote > footer {
   padding: 30px 0 !important;
   border-radius: 0 !important;
 }
+.jumbotron-callout-content-one h2 {
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+}
 .jumbotron-callout-content-one h2, .jumbotron-callout-content-one h3, .jumbotron-callout-content-one h4, .jumbotron-callout-content-one h5, .jumbotron-callout-content-one h6, .jumbotron-callout-content-one p, .jumbotron-callout-content-one li, .jumbotron-callout-content-one a:hover {
   color: #fff;
 }
@@ -2983,7 +2986,7 @@ blockquote > footer {
 }
 .jumbotron-callout-content-two h2 {
   margin-top: 0;
-  text-shadow: 1px 2px 7px #000;
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
 }
 .jumbotron-callout-content-two .panel {
   border: none;
