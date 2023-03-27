@@ -216,6 +216,7 @@ h1 {
 .h2, h2 {
   font-family: "Teko", sans-serif;
   font-size: 2.8em;
+  letter-spacing: 0.5px;
   color: #182B49;
 }
 @media (min-width: 768px) {
@@ -2470,6 +2471,7 @@ blockquote > footer {
 .jumbotron h1, .jumbotron h2 {
   font-family: "Teko", sans-serif;
   text-transform: none;
+  letter-spacing: 0.5px;
 }
 
 .jumbotron h1 {
@@ -2624,7 +2626,7 @@ blockquote > footer {
   min-width: 200px;
   margin-bottom: 1em;
   letter-spacing: 0.08em;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .jumbotron .text-link {
@@ -2843,6 +2845,9 @@ blockquote > footer {
   }
 }
 @media screen and (min-width: 992px) {
+  .jumbotron-news .panel.panel-default img {
+    transition: transform 0.2s ease-in-out;
+  }
   .jumbotron-news .panel.panel-default:hover img {
     transform: scale(1.1);
   }

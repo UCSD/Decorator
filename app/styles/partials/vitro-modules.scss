@@ -32,6 +32,7 @@
 .jumbotron h1, .jumbotron h2 {
 	font-family: 'Teko', sans-serif;
 	text-transform: none;
+	letter-spacing: .5px;
 }
 
 .jumbotron h1 {
@@ -187,7 +188,7 @@
 	min-width: 200px;
 	margin-bottom: 1em;
 	letter-spacing: 0.08em;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 .jumbotron .text-link {
@@ -394,6 +395,10 @@
 	}
 }
 @media screen and (min-width: 992px) {
+	.jumbotron-news .panel.panel-default img {
+		transition: transform .2s ease-in-out;
+	}
+
 	.jumbotron-news .panel.panel-default:hover img {
 		 transform: scale(1.1);
 	}
