@@ -166,7 +166,13 @@ html, body
   }
 
   .h2, h2 {
-    font-size: 28px;
+    font-family: 'Teko', sans-serif;
+    font-size: 2.8em;
+    color: $dark-blue;
+
+    @media (min-width: 768px) {
+      font-size: 3.1em;
+    }
   }
 
   .styled-h2 {

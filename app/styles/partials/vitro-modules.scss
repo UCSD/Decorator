@@ -433,7 +433,10 @@
 	background-size: cover;
 	padding: 48px 0 !important;
 	border-radius: 0 !important;
-	h2, h3, p, a {
+	h2 {
+		color: $dark-blue;
+	}
+	h3, p, a {
 		color: #484949;
 	}
 	.panel {
