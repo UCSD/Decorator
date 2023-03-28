@@ -21,7 +21,7 @@
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .title-logo,
-  .layout-footer > .layout-container {
+.layout-footer > .layout-container {
     background-image: url(../img/sprite_base2x.png);
     background-size: 500px 120px;
   }
@@ -944,8 +944,8 @@ select {
 }
 @media only screen and (max-width: 640px) {
   .layout-header.open,
-  .layout-main.open,
-  .layout-footer.open {
+.layout-main.open,
+.layout-footer.open {
     -webkit-transform: translate(83%, 0);
     transform: translate(83%, 0);
   }
@@ -1368,7 +1368,7 @@ img.right {
  */
 @media only screen and (max-width: 360px) {
   img.left,
-  img.right {
+img.right {
     float: none;
     padding: 1em 0;
   }
@@ -1912,18 +1912,18 @@ html > body form .icon.invalid {
  */
 @media only screen and (max-width: 640px) {
   .field .label,
-  .field_left .label {
+.field_left .label {
     float: none;
     text-align: left;
     padding-left: 1em;
     padding-bottom: 0.25em;
   }
   .field .input, .field .output, .field select.input, .field textarea.input,
-  .field_left .input, .field_left .output, .field_left select.input, .field_left textarea.input {
+.field_left .input, .field_left .output, .field_left select.input, .field_left textarea.input {
     margin-left: 1em;
   }
   .field .required,
-  .field_left .required {
+.field_left .required {
     background-position: left 0;
     padding-left: 1em;
   }
@@ -2450,6 +2450,7 @@ blockquote > footer {
  *  - Callout Image Small Inset
  *  - Callout Content One
  *  - Callout Content Two
+ *  - Multiple Listings
  *
  * ***************/
 /* Global styles , specific for new templates */
@@ -3111,6 +3112,129 @@ blockquote > footer {
   margin: 0 0 30px 0;
 }
 
+/* Multiple Listings Module */
+.event-listing {
+  padding: 2em 0 1em 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.event-listing figure {
+  margin-bottom: 15px;
+}
+.event-listing figure img {
+  border-radius: 14px;
+  width: 100%;
+  margin: 0;
+}
+
+.event-listing h2 {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.event-listing h2 a {
+  color: #182B49;
+  text-decoration: none;
+}
+
+.event-listing h2 a:hover {
+  text-decoration: underline !important;
+}
+
+.event-listing .date-time {
+  margin-bottom: 10px;
+}
+
+.event-listing:last-of-type {
+  border-bottom: none;
+}
+
+/* Event Details Template */
+.event-dtl dt {
+  margin-top: 10px;
+}
+
+.event-info {
+  background-color: #eee;
+  padding: 2em 1em;
+  margin-bottom: 3em;
+}
+
+.event-info a.btn {
+  width: 100%;
+}
+
+.event-info p {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 0;
+  padding: 5px 0 10px 0;
+}
+
+.event-info h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.event-info h4 {
+  margin-top: 5px;
+}
+
+.event-content h1:first-of-type, .event-content h2:first-of-type, .event-content h3:first-of-type, .event-content h4:first-of-type {
+  margin-top: 0;
+}
+
+.event-content p {
+  font-size: 1em;
+}
+
+.event-content .panel {
+  border: none;
+  box-shadow: none;
+}
+
+.event-content .panel-body {
+  padding: 0;
+  font-weight: 400;
+}
+
+.event-content .panel-body h2 {
+  margin-top: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .event-info h2 {
+    margin: 6px 0 0 0;
+  }
+  .event-info a.btn {
+    margin: 0;
+  }
+  .event-info a.btn {
+    width: auto;
+  }
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+  .center {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .event-content .panel {
+    box-shadow: none;
+    border-left: 1px solid #ccc;
+  }
+  .event-content .panel-body {
+    padding-left: 30px;
+  }
+  .event-content .panel-body h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+}
 /********************* OVERWRITES */
 /*******************************************************************
 FLEXSLIDER
@@ -3424,14 +3548,14 @@ Kitchen Sink
 @media print {
   /* removes ucsd logo and other background images (glyphicons) */
   html, main, footer *,
-  .layout-title * {
+.layout-title * {
     background-color: transparent !important;
     background-image: none !important;
     overflow: visible !important;
   }
   /* title and header font color should be black (readable) */
   .title-header,
-  h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p {
     color: #000;
   }
   /* hide login/ emergency/ nav/ search/ footer links/ btn-nav styles */
