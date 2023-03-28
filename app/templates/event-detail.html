@@ -1,15 +1,15 @@
 <!doctype html>
 <html class="no-js" lang="en-US">
 <head>
-  <title>Templates</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="robots" content="index,follow,noarchive">
-  <meta name="ORGANIZATION" content="University of California, San Diego">
-  <meta name="SITE" content="Decorator V5">
-  <meta name="PAGETITLE" content="Decorator V5 Demo">
-  <meta name="DESCRIPTION" content="Campus Wide Templates">
+    <title>Event Detail Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="robots" content="index,follow,noarchive">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="School of Global Policy & Strategy">
+    <meta name="PAGETITLE" content="School of Global Policy & Strategy">
+    <meta name="DESCRIPTION" content="A community dedicated to the advancement of knowledge through teaching, research and engagement.">
 
     <!--build:css ../css/bootstrap.min.css-->
     <link rel="stylesheet" href="../css/bootstrap.css"/>
@@ -84,9 +84,6 @@
         </li>
     </ul>
 
-    
-
-  <button type="button" class="navbar-toggle sr-only" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body" aria-controls="navbar">Close Nav</button>
 
 	<ul class="nav navmenu-nav">
 		<li class="active"><a href="../index.html">Home</a></li>
@@ -96,7 +93,6 @@
           <li><a href="homepage.html">Homepage</a></li>
           <li><a href="blank-slate.html">Blank Slate</a></li>
           <li><a href="two-column.html">Two Column</a></li>
-          <li><a href="templates/event-detail.html">Event Detail</a></li>
           <li><a href="three-column.html">Three Column</a></li>
 		  	</ul>
 		</li>
@@ -144,7 +140,6 @@
             <li><a href="homepage.html">Homepage</a></li>
             <li><a href="blank-slate.html">Blank Slate</a></li>
 			    	<li><a href="two-column.html">Two Column</a></li>
-            <li><a href="templates/event-detail.html">Event Detail</a></li>
             <li><a href="three-column.html">Three Column</a></li>
 		    	</ul>
 		    </li>
@@ -203,26 +198,105 @@
     </div>
   </div>
 
-  <section class="container">
-    <div class="row">
+	<div class="container">
+		<div class="row">
+      <section class="col-xs-12 col-md-9 main-section pull-right">
 
-      <div class="col-md-12">
-        <h1>Templates</h1>
+			<div class="event-dtl">
+				<figure>
+					<img alt="Asian Pacific Islander Alumni Mixer and Scholarship Fundraiser" class="img-responsive" src="https://picsum.photos/id/1043/880/450">
+				</figure>
+				<div class="event-info">
+					<div class="row flex-container">
+						<div class="col-sm-8">
+							<h1>Asian Pacific Islander Alumni Mixer and Scholarship Fundraiser</h1>
+							<p>
+								Saturday, October 22, 2022 at
+								2-4 p.m. PDT
+							</p>
+						</div>
+						<div class="col-sm-4 text-right">
+							<a class="btn btn-lg btn-primary" href="https://cvent.me/NQXMA8">Register Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="row event-content">
+					<div class="col-md-8">
+						<h2 class="hidden">Event Description</h2>
+						<p>Join the Asian Pacific Islander Alumni Council back on campus, as we celebrate Homecoming week. Don’t miss this opportunity to mix and mingle with past, present and future Tritons!</p>
+						<p><strong>Deadline to Register: Monday, October 17</strong></p>
+						<h2>Event Contact</h2>
+						<p><a href="mailto:tlbradford@ucsd.edu">Taylor Bradford</a>, Director, Alumni Engagement and Volunteer Management</p>
+					</div>
+					<div class="col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<h2>Details</h2>
+								<dl>
+									<dt>Date:</dt>
+									<dd>Saturday, October 22, 2022</dd>
+			
+									<dt>Time:</dt>
+									<dd>2-4 p.m. PDT</dd>
+			
+									<dt>Cost:</dt>
+									<dd>Free</dd>
+			
+									<dt>Location:</dt>
+									<dd><a href="https://goo.gl/maps/sgXCLwcDTafn9Fis9">UC San Diego Career Services Center</a></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+      </section>
 
-        <ul>
-          <li><a href="homepage.html">Homepage</a></li>
-          <li><a href="blank-slate.html">Blank Slate</a></li>
-          <li><a href="two-column.html">Two Columns</a></li>
-          <li><a href="event-detail.html">Event Detail</a></li>
-          <li><a href="three-column.html">Three Columns</a></li>
-        </ul>
+        <section class="col-xs-12 col-md-3 sidebar-section">
 
+	        <figure id="site-logo">
+          <!--Site Logo optional, remove comment to display
+			    <img src="../img/gps-logo.jpg" alt="School of Global Policy & Strategy logo" class="center-block" />
+          -->
+			    </figure>
 
-      </div>
-
+            <article class="main-content-nav">
+	            <h2>Decorator V5</h2>
+                <ul class="navbar-list">
+                    <li class="active">
+                        About
+                        <ul>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Diversity</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Directions</a></li>
+                            <li><a href="#">Department Administration</a></li>
+                            <li><a href="#">Contact GPS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Faculty &amp; Research</a>
+                    </li>
+                    <li>
+                        <a href="#">Academics</a>
+                    </li>
+                    <li>
+                        <a href="#">Student &amp; Careers</a>
+                    </li>
+                    <li>
+                        <a href="#">Alumni</a>
+                    </li>
+                    <li>
+                        <a href="#">News &amp; Events</a>
+                    </li>
+                    <li>
+                        <a href="#">Giving</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
     </div>
-  </section>
-
+    </div>
 </main>
 
 <footer class="footer">
@@ -239,7 +313,7 @@
 		        </p>
 	            <ul class="footer-links">
 		            <li><a href="https://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
-		            <li><a href="mailto:youremail@xucsd.edu">Feedback</a></li>
+		            <li><a href="mailto:youremail@xyz.ucsd.edu">Feedback</a></li>
 		        </ul>
 	        </div>
 	        <div class="col-sm-4">

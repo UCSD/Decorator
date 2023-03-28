@@ -2451,6 +2451,7 @@ blockquote > footer {
  *  - Callout Content One
  *  - Callout Content Two
  *  - Multiple Listings
+ *  - Listing Details
  *
  * ***************/
 /* Global styles , specific for new templates */
@@ -3117,120 +3118,116 @@ blockquote > footer {
   padding: 2em 0 1em 0;
   border-bottom: 1px solid #ddd;
 }
-
 .event-listing figure {
   margin-bottom: 15px;
 }
-.event-listing figure img {
+.event-listing img {
   border-radius: 14px;
   width: 100%;
   margin: 0;
 }
-
 .event-listing h2 {
   font-family: Roboto, sans-serif;
   margin: 0;
   font-size: 21px;
   font-weight: bold;
 }
-
 .event-listing h2 a {
   color: #182B49;
   text-decoration: none;
 }
-
 .event-listing h2 a:hover {
   text-decoration: underline !important;
 }
-
 .event-listing .date-time {
   margin-bottom: 10px;
 }
-
 .event-listing:last-of-type {
   border-bottom: none;
 }
 
-/* Event Details Template */
+/* Listing Details Template */
 .event-dtl dt {
   margin-top: 10px;
+  color: #182B49;
 }
-
-.event-info {
-  background-color: #eee;
-  padding: 2em 1em;
+.event-dtl img {
+  border-radius: 14px 14px 0 0;
+}
+.event-dtl .event-info {
+  background-color: #F5F0E6;
+  padding: 2em 2.5em;
   margin-bottom: 3em;
+  border-radius: 0 0 14px 14px;
 }
-
-.event-info a.btn {
+.event-dtl .event-info a.btn {
   width: 100%;
 }
-
-.event-info p {
-  font-size: 1.5em;
+.event-dtl .event-info p {
+  font-size: 1.25em;
+  line-height: 1.5;
   font-weight: 500;
   margin: 0;
-  padding: 5px 0 10px 0;
+  padding: 5px 0 20px 0;
+  color: #182B49;
 }
-
-.event-info h1 {
+.event-dtl .event-info h1 {
   margin: 0;
   font-size: 30px;
+  line-height: 1em;
+  color: #182B49;
 }
-
-.event-info h4 {
+.event-dtl .event-info h4 {
   margin-top: 5px;
-}
-
-.event-content h1:first-of-type, .event-content h2:first-of-type, .event-content h3:first-of-type, .event-content h4:first-of-type {
-  margin-top: 0;
 }
 
 .event-content p {
   font-size: 1em;
 }
-
+.event-content a {
+  color: #00629B;
+}
+.event-content h2 {
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+}
 .event-content .panel {
   border: none;
   box-shadow: none;
 }
-
 .event-content .panel-body {
   padding: 0;
   font-weight: 400;
 }
 
-.event-content .panel-body h2 {
-  margin-top: 35px;
-}
-
 @media screen and (min-width: 768px) {
-  .event-info h2 {
+  .event-dtl .event-info h2 {
     margin: 6px 0 0 0;
   }
-  .event-info a.btn {
+  .event-dtl .event-info a.btn {
     margin: 0;
-  }
-  .event-info a.btn {
     width: auto;
   }
-  .flex-container {
+  .event-dtl .event-info p {
+    padding: 5px 0 0 0;
+  }
+  .event-dtl .event-info .flex-container {
     display: flex;
     align-items: center;
   }
-  .center {
-    text-align: center;
-  }
 }
 @media screen and (min-width: 992px) {
-  .event-content .panel {
+  .event-dtl {
+    margin-top: 60px;
+  }
+  .event-dtl .event-content .panel {
     box-shadow: none;
     border-left: 1px solid #ccc;
   }
-  .event-content .panel-body {
+  .event-dtl .event-content .panel-body {
     padding-left: 30px;
   }
-  .event-content .panel-body h2 {
+  .event-dtl .event-content .panel-body h2 {
     margin-top: 0;
     font-size: 1.5em;
   }
