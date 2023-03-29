@@ -264,10 +264,14 @@
 	background-color: #fff;
 	h2 {
 		color: $dark-blue;
+		@media screen and (min-width: 992px) {
+			margin-top: 50px;
+		}
 	}	
 	img {
 		border-radius: 14px;
 		margin: 25px 0;
+		width: 100%;
 	}
 	p {
 		color: $dark-blue;
@@ -277,15 +281,22 @@
 	img {
 		border-radius: 14px;
 		margin: 25px 0;
+		width: 100%;
 	}
 }
 .jumbotron-sand {
+	h2 {
+		@media screen and (min-width: 992px) {
+			margin-top: 50px;
+		}
+	}
 	h2, p {
 		color: $dark-blue;
 	}
 	img {
 		border-radius: 14px;
 		margin: 25px 0;
+		width: 100%;
 	}
 }
 .jumbotron p {
@@ -637,16 +648,14 @@
     background-color: $sand;
 	 border-radius: 0 !important;
     padding: 2em !important;
-}
-.jumbotron-full-width.trident {
-	background-image: url("../img/bg-light-yellow-trident.png");
-	background-position: top right;
+	 background-image: none;
 }
 .jumbotron-full-width.bubbles {
 	 background-image: none;
 }
  @media screen and (min-width: 768px) {
-	 .jumbotron-full-width.bubbles {
+	 .jumbotron-full-width.bubbles,
+	 .jumbotron-full-width {
 		 background-image: url("../img/full-width-bubbles.png");
 	}
 }
@@ -696,12 +705,25 @@
 
 /* Listing Details Template */
  .event-dtl {
+	 margin-top: 20px;
     dt {
 	 	 margin-top: 10px;
 		  color: $dark-blue;
  	 }
 	 img {
 		 border-radius: 14px 14px 0 0;
+		 width: 100%;
+	 }
+	 .btn-primary {
+		background-color: $blue;
+		color: #fff;
+		font-family: inherit;
+		transition: all 0.3s;
+		border: 0;
+		border-radius: 8px;
+		&:hover {
+			background-color: $dark-blue
+		}
 	 }
 	 .event-info {
 		 background-color: $sand;

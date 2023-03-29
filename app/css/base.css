@@ -2716,9 +2716,15 @@ blockquote > footer {
 .side-image-white h2 {
   color: #182B49;
 }
+@media screen and (min-width: 992px) {
+  .side-image-white h2 {
+    margin-top: 50px;
+  }
+}
 .side-image-white img {
   border-radius: 14px;
   margin: 25px 0;
+  width: 100%;
 }
 .side-image-white p {
   color: #182B49;
@@ -2727,14 +2733,21 @@ blockquote > footer {
 .jumbotron-gray img {
   border-radius: 14px;
   margin: 25px 0;
+  width: 100%;
 }
 
+@media screen and (min-width: 992px) {
+  .jumbotron-sand h2 {
+    margin-top: 50px;
+  }
+}
 .jumbotron-sand h2, .jumbotron-sand p {
   color: #182B49;
 }
 .jumbotron-sand img {
   border-radius: 14px;
   margin: 25px 0;
+  width: 100%;
 }
 
 .jumbotron p {
@@ -3088,11 +3101,7 @@ blockquote > footer {
   background-color: #F5F0E6;
   border-radius: 0 !important;
   padding: 2em !important;
-}
-
-.jumbotron-full-width.trident {
-  background-image: url("../img/bg-light-yellow-trident.png");
-  background-position: top right;
+  background-image: none;
 }
 
 .jumbotron-full-width.bubbles {
@@ -3100,7 +3109,8 @@ blockquote > footer {
 }
 
 @media screen and (min-width: 768px) {
-  .jumbotron-full-width.bubbles {
+  .jumbotron-full-width.bubbles,
+.jumbotron-full-width {
     background-image: url("../img/full-width-bubbles.png");
   }
 }
@@ -3147,12 +3157,27 @@ blockquote > footer {
 }
 
 /* Listing Details Template */
+.event-dtl {
+  margin-top: 20px;
+}
 .event-dtl dt {
   margin-top: 10px;
   color: #182B49;
 }
 .event-dtl img {
   border-radius: 14px 14px 0 0;
+  width: 100%;
+}
+.event-dtl .btn-primary {
+  background-color: #00629B;
+  color: #fff;
+  font-family: inherit;
+  transition: all 0.3s;
+  border: 0;
+  border-radius: 8px;
+}
+.event-dtl .btn-primary:hover {
+  background-color: #182B49;
 }
 .event-dtl .event-info {
   background-color: #F5F0E6;
