@@ -126,20 +126,20 @@
 
 .jumbotron  .btn-default {
   background-color: $yellow;
-  color: #484949;
+  color: $dark-blue;
   font-family: inherit;
   transition: all 0.3s;
   border: 0;
   border-radius: 8px;
   &:hover {
    	background-color: $dark-blue;
-	color: #fff;
+		color: #fff;
   }
 }
 
 .jumbotron-hero .btn-default:hover {
 	background-color: #fff;
-	color: $dark-gray;
+	color: $dark-blue;
   }  
 
 

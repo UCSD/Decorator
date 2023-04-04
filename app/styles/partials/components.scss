@@ -181,7 +181,7 @@ a.hero-no-button > img {
 
   .rt-btn-gold {
     background-color: #C69214 !important;
-    color: #FFF !important;
+    color: #000 !important;
   }
 
   .rt-btn-cyan {
@@ -194,12 +194,12 @@ a.hero-no-button > img {
 
   .rt-btn-orange {
     background-color: #FC8900 !important;
-    color: #FFF !important;
+    color: $dark-blue !important;
   }
 
   /* main text font color */
   .item .rt-text-dark {
-    color: #484949;
+    color: $dark-blue;
   }
 
   .jumbotron-hero .text-indent h1.rt-text-dark {

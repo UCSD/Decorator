@@ -21,7 +21,7 @@
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .title-logo,
-  .layout-footer > .layout-container {
+.layout-footer > .layout-container {
     background-image: url(../img/sprite_base2x.png);
     background-size: 500px 120px;
   }
@@ -945,8 +945,8 @@ select {
 }
 @media only screen and (max-width: 640px) {
   .layout-header.open,
-  .layout-main.open,
-  .layout-footer.open {
+.layout-main.open,
+.layout-footer.open {
     -webkit-transform: translate(83%, 0);
     transform: translate(83%, 0);
   }
@@ -1369,7 +1369,7 @@ img.right {
  */
 @media only screen and (max-width: 360px) {
   img.left,
-  img.right {
+img.right {
     float: none;
     padding: 1em 0;
   }
@@ -1913,18 +1913,18 @@ html > body form .icon.invalid {
  */
 @media only screen and (max-width: 640px) {
   .field .label,
-  .field_left .label {
+.field_left .label {
     float: none;
     text-align: left;
     padding-left: 1em;
     padding-bottom: 0.25em;
   }
   .field .input, .field .output, .field select.input, .field textarea.input,
-  .field_left .input, .field_left .output, .field_left select.input, .field_left textarea.input {
+.field_left .input, .field_left .output, .field_left select.input, .field_left textarea.input {
     margin-left: 1em;
   }
   .field .required,
-  .field_left .required {
+.field_left .required {
     background-position: left 0;
     padding-left: 1em;
   }
@@ -2191,7 +2191,7 @@ a.hero-no-button > img {
 /* Accent color */
 .rt-btn-gold {
   background-color: #C69214 !important;
-  color: #FFF !important;
+  color: #000 !important;
 }
 
 .rt-btn-cyan {
@@ -2204,12 +2204,12 @@ a.hero-no-button > img {
 
 .rt-btn-orange {
   background-color: #FC8900 !important;
-  color: #FFF !important;
+  color: #182B49 !important;
 }
 
 /* main text font color */
 .item .rt-text-dark {
-  color: #484949;
+  color: #182B49;
 }
 
 .jumbotron-hero .text-indent h1.rt-text-dark {
@@ -2568,7 +2568,7 @@ blockquote > footer {
 
 .jumbotron .btn-default {
   background-color: #FFCD00;
-  color: #484949;
+  color: #182B49;
   font-family: inherit;
   transition: all 0.3s;
   border: 0;
@@ -2581,7 +2581,7 @@ blockquote > footer {
 
 .jumbotron-hero .btn-default:hover {
   background-color: #fff;
-  color: #484949;
+  color: #182B49;
 }
 
 .styled-yellow {
@@ -3112,7 +3112,7 @@ blockquote > footer {
 
 @media screen and (min-width: 768px) {
   .jumbotron-full-width.bubbles,
-  .jumbotron-full-width {
+.jumbotron-full-width {
     background-image: url("../img/full-width-bubbles.png");
   }
 }
@@ -3672,14 +3672,14 @@ Kitchen Sink
 @media print {
   /* removes ucsd logo and other background images (glyphicons) */
   html, main, footer *,
-  .layout-title * {
+.layout-title * {
     background-color: transparent !important;
     background-image: none !important;
     overflow: visible !important;
   }
   /* title and header font color should be black (readable) */
   .title-header,
-  h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p {
     color: #000;
   }
   /* hide login/ emergency/ nav/ search/ footer links/ btn-nav styles */
