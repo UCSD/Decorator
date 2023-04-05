@@ -3111,9 +3111,12 @@ blockquote > footer {
 }
 
 @media screen and (min-width: 768px) {
-  .jumbotron-full-width.bubbles,
-.jumbotron-full-width {
+  .jumbotron-full-width.bubbles {
     background-image: url("../img/full-width-bubbles.png");
+  }
+  .jumbotron-full-width,
+.jumbotron-full-width.trident {
+    background-image: url("../img/full-width-grit-yellow.png");
   }
 }
 .jumbotron-full-width-ni {
