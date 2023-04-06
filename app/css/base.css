@@ -2699,16 +2699,29 @@ blockquote > footer {
   margin-left: 1.65em;
 }
 
-.jumbotron-hero .text-indent h1, .jumbotron-hero .text-indent h2, .jumbotron-hero .text-indent h3, .jumbotron-image-bg .text-indent h1, .jumbotron-image-bg .text-indent h2, .jumbotron-image-bg .text-indent h3 {
+.jumbotron-hero .text-indent h1,
+.jumbotron-hero .text-indent h2,
+.jumbotron-hero .text-indent h3,
+.jumbotron-image-bg .text-indent h1,
+.jumbotron-image-bg .text-indent h2,
+.jumbotron-image-bg .text-indent h3 {
   text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.75);
 }
 
-.jumbotron-hero .text-indent p, .jumbotron-image-bg .text-indent p {
+.jumbotron-hero .text-indent p,
+.jumbotron-image-bg .text-indent p {
   text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75);
 }
 
 .jumbotron {
   margin: 60px 0;
+}
+
+.jumbotron-hero p.rt-text-light,
+.jumbotron-hero p.rt-text-dark,
+.jumbotron-image-bg p.rt-text-light,
+.jumbotron-image-bg p.rt-text-dark {
+  width: 19em;
 }
 
 /* Text and CTA w/Full Height Image Left */
@@ -3108,6 +3121,10 @@ blockquote > footer {
 
 .jumbotron-full-width.bubbles {
   background-image: none;
+}
+
+.jumbotron-full-width.side-image-white h2 {
+  margin-top: 23px;
 }
 
 @media screen and (min-width: 768px) {
