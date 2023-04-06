@@ -2723,6 +2723,16 @@ blockquote > footer {
 .jumbotron-image-bg p.rt-text-dark {
   width: 19em;
 }
+.jumbotron-hero .dark-blue-gradient::before,
+.jumbotron-image-bg .dark-blue-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgb(24, 43, 73) 0%, rgba(0, 98, 155, 0) 100%);
+}
 
 /* Text and CTA w/Full Height Image Left */
 .side-image-white {
