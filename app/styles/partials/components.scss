@@ -52,7 +52,6 @@
        a.btn {
 
          @media screen and (max-width: $desktop-small) {
-           margin-left: 35px !important;
            padding: 8px;
            min-width: 150px;
            font-size: 13px;
@@ -97,7 +96,7 @@
 }
 
 .carousel-indicators {
-
+    
      @media screen and (max-width: $tablet) {
        display: none;
      }
@@ -440,12 +439,12 @@ blockquote > footer {
 
   position: absolute;
   bottom: 20px;
-  width: auto;
   display: block;
-  /* margin: 0; */
-  padding: 0;
-  margin-left: 50%;
-  min-width: 74px;
+  left: 52%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 12px;
+  padding: 0 0 0 10px;
   z-index: 999999;
   
   .carousel-indicators {
@@ -462,7 +461,7 @@ blockquote > footer {
 
   #toggleCarousel {
     min-width: 20px;
-    margin: 0 10px;
+    margin: 0 5px;
     /* padding: 0; */
     position: relative;
     /* left: unset; */

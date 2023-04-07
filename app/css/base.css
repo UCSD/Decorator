@@ -2080,7 +2080,6 @@ div.styled h3 {
 }
 @media screen and (max-width: 768px) {
   .carousel .cr-item-container a.btn {
-    margin-left: 35px !important;
     padding: 8px;
     min-width: 150px;
     font-size: 13px;
@@ -2406,12 +2405,12 @@ blockquote > footer {
 #indicators-container {
   position: absolute;
   bottom: 20px;
-  width: auto;
   display: block;
-  /* margin: 0; */
-  padding: 0;
-  margin-left: 50%;
-  min-width: 74px;
+  left: 52%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 0 0 0 10px;
   z-index: 999999;
 }
 #indicators-container .carousel-indicators {
@@ -2427,7 +2426,7 @@ blockquote > footer {
 }
 #indicators-container #toggleCarousel {
   min-width: 20px;
-  margin: 0 10px;
+  margin: 0 5px;
   /* padding: 0; */
   position: relative;
   /* left: unset; */
@@ -2805,10 +2804,6 @@ blockquote > footer {
 .jumbotron-news {
   background: #F5F0E6 !important;
 }
-.jumbotron-news .panel-heading {
-  padding: 10px 15px;
-}
-
 .jumbotron-news h2 {
   margin-bottom: 1em;
   margin-top: 1em;
@@ -2816,16 +2811,6 @@ blockquote > footer {
   font-weight: bold;
   color: #182B49;
 }
-
-.no-gutter {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.jumbotron .panel {
-  border-radius: 0 !important;
-}
-
 .jumbotron-news .panel.panel-default {
   border: none;
   background-color: transparent;
@@ -2837,25 +2822,19 @@ blockquote > footer {
   border-radius: 14px;
   margin: 0;
 }
-
 .jumbotron-news .panel.panel-default .panel-heading {
+  padding: 10px 15px 25px 15px;
   background-color: transparent;
   border: none;
 }
-
-.panel-default > .panel-heading {
-  color: #182B49;
-}
-
-.jumbotron-news .panel .panel-news-date {
+.jumbotron-news .panel.panel-default .panel-news-date {
   text-transform: uppercase;
   color: #182B49;
   font-size: 0.85em;
   margin-bottom: 0.25em;
   margin-top: 1em;
 }
-
-.jumbotron-news .panel .panel-news-title {
+.jumbotron-news .panel.panel-default .panel-news-title {
   text-transform: none;
   margin-top: 0;
   font-size: 1.25em;
@@ -2863,17 +2842,33 @@ blockquote > footer {
   letter-spacing: 0.5px;
   color: #182B49;
 }
-.jumbotron-news .panel .panel-news-title a {
+.jumbotron-news .panel.panel-default .panel-news-title a {
   color: #182B49;
 }
-
 .jumbotron-news .panel.panel-default .panel-body {
-  padding-top: 0;
-  padding-right: 2em;
+  padding: 0 15px 15px 15px;
+  color: #182B49;
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 1.1em;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
 }
-
 .jumbotron-news .view-all-link {
   margin-top: 4em;
+}
+
+.no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.jumbotron .panel {
+  border-radius: 0 !important;
+}
+
+.panel-default > .panel-heading {
+  color: #182B49;
 }
 
 @media (min-width: 768px) {
@@ -3042,6 +3037,9 @@ blockquote > footer {
 .jumbotron-callout-content-two h2 {
   margin-top: 0;
   text-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+}
+.jumbotron-callout-content-two h3 {
+  margin-top: 14px;
 }
 .jumbotron-callout-content-two .panel {
   border: none;
@@ -3247,6 +3245,7 @@ blockquote > footer {
 .event-content h2 {
   font-size: 1.5em;
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 .event-content .panel {
   border: none;
