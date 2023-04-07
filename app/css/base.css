@@ -2406,7 +2406,7 @@ blockquote > footer {
   position: absolute;
   bottom: 20px;
   display: block;
-  left: 52%;
+  left: 51%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 12px;
@@ -2846,7 +2846,7 @@ blockquote > footer {
   color: #182B49;
 }
 .jumbotron-news .panel.panel-default .panel-body {
-  padding: 0 15px 15px 15px;
+  padding: 0 15px 40px 15px;
   color: #182B49;
   font-size: 1.25em;
   font-weight: bold;
