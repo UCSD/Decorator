@@ -2848,11 +2848,12 @@ blockquote > footer {
 .jumbotron-news .panel.panel-default .panel-body {
   padding: 0 15px 40px 15px;
   color: #182B49;
-  font-size: 1.25em;
+  font-size: 1.125em;
   font-weight: bold;
-  line-height: 1.1em;
+  line-height: 1.25em;
   letter-spacing: 0.5px;
   text-decoration: underline;
+  text-transform: uppercase;
 }
 .jumbotron-news .view-all-link {
   margin-top: 4em;
