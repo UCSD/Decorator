@@ -414,6 +414,9 @@
 			 text-transform: uppercase;
 		}
 	
+		&:hover h3{
+			text-decoration: underline;
+		}
 	}
 	
 	.view-all-link {
