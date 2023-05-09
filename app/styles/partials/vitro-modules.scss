@@ -543,13 +543,42 @@
 		color: #fff;
 	}
 
-	.cc-yellow-trident {
-		background-image: url("../img/bg-dark-blue-trident-full.png");
-	}
 
 	@media (min-width: 768px) {
 		background-image: url("../img/bg-orbs-1.jpg");
 	}
+}
+
+.navy-yellow {
+	background-image: url("../img/txt-navy-yellow-grit-mobile.jpg");
+}
+
+.navy-turquoise {
+	background-image: url("../img/txt-navy-turquoise-grit-mobile.jpg");
+}
+
+.blue-navy {
+	background-image: url("../img/txt-lightblue-dark-grit-mobile.jpg");
+}
+
+@media (min-width: 768px) {
+
+	.navy-yellow {
+		background-image: url("../img/txt-navy-yellow-grit.jpg");
+	}
+
+	.navy-turquoise {
+		background-image: url("../img/txt-navy-turquoise-grit.jpg");
+	}
+
+	.blue-navy {
+		background-image: url("../img/txt-lightblue-dark-grit.jpg");
+	}
+}
+
+
+.cc-yellow-trident {
+	background-image: url("../img/bg-dark-blue-trident-full-mobile.png");
 }
 
 .cc-yellow-trident {
