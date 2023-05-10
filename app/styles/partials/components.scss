@@ -234,6 +234,12 @@ a.hero-no-button > img {
 
 .qb-carousel {
 
+    a {
+      &:hover .carousel-caption {
+        text-decoration: underline;
+      }
+    }
+
     .carousel-caption {
 
       bottom: 55px;
@@ -272,7 +278,6 @@ a.hero-no-button > img {
             line-height: 1.4;
           }
         }
-
     }
 
     .carousel-indicators {
