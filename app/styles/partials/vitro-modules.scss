@@ -169,13 +169,13 @@
 }
 
 
-.styled-blue {
+.styled-blue, .btn-primary {
   background-color: $blue;
   color: #fff !important;
   font-family: inherit;
   transition: all 0.3s;
   border: 0;
-  border-radius: 0;
+  border-radius: 8px;
   text-decoration: none !important;
   &:hover {
    	background-color: darken($blue, 10%);
@@ -184,7 +184,7 @@
 }
 
 
-.jumbotron .btn, .styled-yellow, .styled-blue {
+.jumbotron .btn, .styled-yellow, .styled-blue, .btn-primary {
 	font-size: 0.9375em;
 	text-transform: uppercase;
 	padding: 0.8em 1.5em;
