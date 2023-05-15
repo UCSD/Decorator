@@ -510,8 +510,8 @@
 /* Callout Content One */
 
 .jumbotron-callout-content-one {
-	background-color: $blue;
-	background-image: url("../img/bg-orbs-1-mobile.jpg");
+	background-color: #182B49;
+	background-image: url("../img/txt-navy-yellow-grit-mobile.jpg");
   	background-position: center;
 	color: #fff;
 	padding: 30px 0 !important;
@@ -545,7 +545,7 @@
 
 
 	@media (min-width: 768px) {
-		background-image: url("../img/bg-orbs-1.jpg");
+		background-image: url("../img/txt-navy-yellow-grit.jpg");
 	}
 }
 
@@ -553,12 +553,16 @@
 	background-image: url("../img/txt-navy-yellow-grit-mobile.jpg");
 }
 
-.navy-turquoise {
-	background-image: url("../img/txt-navy-turquoise-grit-mobile.jpg");
+.solid-navy {
+	background-image: none !important;
 }
 
 .blue-navy {
 	background-image: url("../img/txt-lightblue-dark-grit-mobile.jpg");
+}
+
+.navy-orbs {
+	background-image: url("../img/bg-orbs-1-mobile.jpg");
 }
 
 @media (min-width: 768px) {
@@ -567,12 +571,16 @@
 		background-image: url("../img/txt-navy-yellow-grit.jpg");
 	}
 
-	.navy-turquoise {
-		background-image: url("../img/txt-navy-turquoise-grit.jpg");
+	.solid-navy {
+		background-image: none !important;
 	}
 
 	.blue-navy {
 		background-image: url("../img/txt-lightblue-dark-grit.jpg");
+	}
+
+	.navy-orbs {
+		background-image: url("../img/bg-orbs-1.jpg");
 	}
 }
 
