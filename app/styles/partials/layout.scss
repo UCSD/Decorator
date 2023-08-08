@@ -150,18 +150,21 @@ html, body
     }
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    color: #333;
-    font-weight: 400;
-    line-height: 1.5;
-    /*margin: 0 0 .25em;*/
-  }
+  
 
   h1, h2 {
     font-family: 'Teko-SemiBold', sans-serif;
     color: $blue;
     letter-spacing: .5px;
     font-size: 3.5em;
+    line-height: 1.1;
+  }
+
+  h3, h4, h5, h6 {
+    color: #333;
+    font-weight: 400;
+    line-height: 1.5;
+    /*margin: 0 0 .25em;*/
   }
 
   .h2, h2 {

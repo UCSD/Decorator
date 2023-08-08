@@ -411,64 +411,100 @@ a.hero-no-button > img {
 	margin: 0 0 10px 0;
 	padding: 0 40px;
   	cursor: pointer;
-	background: url(../img/sprite_social.png) no-repeat transparent;
+	background: no-repeat transparent;
+}
+
+.md-icons {
+   li {
+  height: 40px;
+  margin: 0 0 15px 0;
+  padding: 10px 50px;
+  background-size: 40px;
+   }
+
+  &.horz-icons > li {
+    padding: 0 6% !important;
+    }
+
+}
+
+.lg-icons {
+  
+  li {
+  height: 55px;
+  margin: 0 0 20px 0;
+  padding: 15px 65px;
+  background-size: 55px;
+  }
+
+  &.horz-icons > li {
+    padding: 0 8% !important;
+    }
+}
+
+.horz-icons {
+    li {
+    margin: 20px auto;
+    display: inline-block;
+    float: left;
+    display: flex; /* Use flexbox to align the link */
+    justify-content: center; /* Horizontally center the link */
+    align-items: center; 
+    }
 }
 
 .social-list li.facebook {
-	background-position: 0 0;
-}
+  background-image: url("../img/facebook.svg");
+  }
+  
+  .social-list li.twitter {
+  background-image: url("../img/twitter.svg"); 
+  }
+  
+  .social-list li.youtube {
+  background-image: url("../img/youtube.svg"); 
+  }
+  
+  .social-list li.linkedin {
+    background-image: url("../img/linkedin.svg");
+  }
+  
+  .social-list li.instagram {
+    background-image: url("../img/instagram.svg");
+  }
+  
+  .social-list li.tumblr {
+    background-image: url("../img/tumblr.svg");
+  }
+  
+  .social-list li.flickr {
+    background-image: url("../img/flickr.svg");
+  }
+  
+  .social-list li.pinterest {
+    background-image: url("../img/pinterest.svg");
+  }
+  
+  .social-list li.blogger {
+    background-image: url("../img/blogger.svg");
+  }
+  
+  .social-list li.rss {
+    background-image: url("../img/rss.svg");
+  }
+  
+  .social-list li.vimeo {
+    background-image: url("../img/vimeo.svg");
+  }
+  
+  .social-list li.wordpress {
+    background-image: url("../img/wordpress.svg");
+  }
 
-.social-list li.twitter {
-	background-position: 0 -39px;
-}
+  .social-list li.eventbrite {
+    background-image: url("../img/eventbrite.svg");
+  }
 
-.social-list li.youtube {
-	background-position: 0 -80px;
-}
-
-.social-list li.linkedin {
-	background-position: 0 -121px;
-}
-
-.social-list li.googleplus {
-	background-position: 0 -160px;
-}
-
-.social-list li.instagram {
-	background-position: 0 -200px;
-}
-
-.social-list li.tumblr {
-	background-position: 0 -240px;
-}
-
-.social-list li.flickr {
-	background-position: 0 -280px;
-}
-
-.social-list li.vine {
-	background-position: 0 -320px;
-}
-
-.social-list li.pinterest {
-	background-position: 0 -360px;
-}
-
-.social-list li.blogger {
-	background-position: 0 -400px;
-}
-
-.social-list li.rss {
-	background-position: 0 -440px;
-}
-
-.social-list li.vimeo {
-  background-position: 0 -480px;
-}
-
-.social-list li.wordpress {
-  background-position: 0 -520px;
-}
 
 .social-list li.mobile {
   background-position: 0 -560px;

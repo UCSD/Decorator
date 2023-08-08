@@ -223,10 +223,12 @@ ul.nav.navbar-nav.navbar-right {
 }
 
 .main-content-nav {
-  background: #eee;
+  background: #fff;
   border: solid 1px #D8D7D7;
   padding: 1em;
   margin-bottom: 1em;
+
+  a { color: #333; }
 
   @media only screen and (max-width: $desktop-small) {
     margin-top: 0em;
@@ -238,7 +240,7 @@ ul.nav.navbar-nav.navbar-right {
     //text-shadow: 0 1px 1px #FFF;
     margin: 0 0 .4em;
     text-transform: capitalize;
-    font-weight: normal;
+    font-weight: bold;
     font-family: Roboto, sans-serif;
   }
   > ul {
@@ -248,7 +250,7 @@ ul.nav.navbar-nav.navbar-right {
     font-size: 1em;
 
     > li.active {
-      color: $blue;
+      color: #333;
     }
   }
 
@@ -261,7 +263,7 @@ ul.nav.navbar-nav.navbar-right {
       padding: 1em;
 	  color: #333;
       &:hover {
-        background-color: $blue;
+        background-color: #333;
         color: #fff;
       }
       &:hover, &:link, &:active {
@@ -270,17 +272,17 @@ ul.nav.navbar-nav.navbar-right {
     }
 
     &.active {
-      background-color: #fff;
+      background-color: #faf7f2;
       padding: 1em 0 1em 1em;
       font-weight: bold;
 
 	  > ul li a {
-		  color: $blue;
+		  color: #333;
 		  padding-left: 0 !important;
 	  }
 
       > a {
-        color: $blue;
+        color: #333;
       }
 
 	  a:hover {
@@ -347,7 +349,6 @@ select {
     h1 {
       text-align: center;
       color: white;
-      text-shadow: 0px 0px 20px #1e1e1e;
     }
 
     img {

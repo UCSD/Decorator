@@ -296,6 +296,7 @@
 
 .side-image-white {
 	background-color: #fff;
+	margin-top: 30px;
 	h2 {
 		color: $dark-blue;
 		@media screen and (min-width: 992px) {
@@ -322,12 +323,13 @@
 }
 .jumbotron-sand {
 	h2 {
+		color: $dark-blue;
 		@media screen and (min-width: 992px) {
 			margin-top: 50px;
 		}
 	}
-	h2, p {
-		color: $dark-blue;
+	p {
+		color: $darker-gray;
 	}
 	img {
 		border-radius: 14px;
@@ -566,6 +568,15 @@
 	@media (min-width: 768px) {
 		background-image: url("../img/txt-navy-grit.jpg");
 	}
+
+	@media (max-width: 768px) {
+
+		img { 
+			max-width: 100%;
+			height: auto;
+		}
+
+	}
 }
 
 
@@ -654,6 +665,7 @@
 		h2 {
 			margin-top: 0;
 			text-shadow: 0 0 25px rgba(0,0,0,0.75);
+			margin-bottom: 20px;
 		}
 		h3 {
 			margin-top: 14px;
