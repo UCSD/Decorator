@@ -215,158 +215,89 @@
 
   <div class="container">
     <div class="row">
-      
+        
 
 
 
-
-<section aria-label="Profile Container" class="col-xs-12 col-sm-9 main-content-container main-section pull-right">
-
-<header aria-label="Profile Name" class="profile-section profile-section-header pull-left">
-  <h1>Profile Page Example</h1>
-  <p class="subhead">Title</p>
-</header>
-
-
-<article aria-label="Profile Details" class="profile-section-contact pull-right">
-          <img alt="Profile Page Example" src="https://department.ucsd.edu/_images/profile-placeholder.jpg" title="Profile Page Example">
-          <div class="clearfix">
-      <ul>
-                              <li class="email">
-                  <a href="mailto:demo@ucsd.edu">demo@ucsd.edu</a>
-              </li>
-                                              <li class="phone">
-                  <a class="tel" href="tel:                               (858) 534-5555     ">
-      
-  
-  (858) 534-5555
-</a>
-              </li>
-                                          <li class="location">
-                                      9500 Gilman Dr. <br>
-                                                                              Mail Code: 0000<br>
-              
-                                      La Jolla
-
-                                              , CA
-                  
-                  92093
-                              </li>
-      </ul>
-  </div>
-
-          <div class="clearfix">
-      <ul class="profile-contact-list">
-                              
-                                      <li class="instagram"><a href="https://instagram.com" title="Instagram">Instagram</a></li>
-                                                                    <li class="personal-website">
-                  <a href="http://blink.ucsd.edu" title="http://blink.ucsd.edu">Personal Website</a>
-              </li>
-                       </ul>
-  </div>
+<section class="col-xs-9 main-section pull-right">
+<article class="main-section-content">
+<h1>Profile Listing Drawer Example</h1>
+<p>This template works just like the <a href="listing.html">Profile Listing template</a> with two exceptions:</p>
+<ol>
+<li>Each Profile section is a drawer. This means each drawer can contain multiple Person Profiles and you can have multiple drawers on the page. It also means you can reorder the drawers, you can reorder within a drawer, but you can't reorder between drawers.</li>
+<li>The grid layout is not supported.</li>
+</ol>
+<p><strong>Note:</strong> Since this is a separate template from the Profile Listing, make sure you are choosing the layout that will work best for your content. If you later need to have the other layout you will need to redo the page.</p>
+<p>&nbsp;</p>
 </article>
-  <!-- display tabs -->
+<div class="drawer-wrapper main-section-content"><div class="drawer-toggle"><a href="#" class="expand">Expand All</a></div><div class="drawer main-section-content">
 
-<!-- start tabs -->
-<article aria-label="Profile Tabs" class="profile-section profile-section-tabs pull-left" id="profileTab" style="display: block; width: 72%; margin: 0px;">
-  <!-- display tab navigation -->
-  
-  <ul class="resp-tabs-list">
-      
-          <li aria-controls="tab_item-0" class="resp-tab-item resp-tab-active" id="tab_item-0" role="tab">
-              Template Information
-          </li>
+<h2>
+    <a href="#" aria-expanded="false">Drawer 1</a>
+</h2>
 
-                      
-          <li aria-controls="tab_item-1" class="resp-tab-item" id="tab_item-1" role="tab">
-              Biography
-          </li>
+                <article class="clearfix profile-listing" style="display: none;">
+            <ul>
 
-                      
-          <li aria-controls="tab_item-2" class="resp-tab-item" id="tab_item-2" role="tab">
-              Education
-          </li>
+                <li class="profile-listing-card">
+                                                            <span>
+                    <img alt="Profile 1" src="../styles/img/profile-placeholder-sand-on-blue.jpg">
+                </span>
+                                                    <span class="profile-listing-data">
+            <h3>
+                Profile 1
+            </h3>
 
-                              </ul>
+            <p>We recommend having a very short text (one paragraph) in the profile summary section. May include: name, title and work history, as desired.</p>
+<p>Image size:&nbsp;We recommend having an image size of&nbsp;<strong><span>198px wide x 231px high</span></strong> for the profile images.</p>
+        </span>
+    </li>
+                                                </ul>
+    </article>
+                    
+<h2>
+    <a href="#" aria-expanded="false">Drawer 2</a>
+</h2>
 
-  <!-- display tab container -->
-  
-  <div class="resp-tabs-container">
-      
-          <h2 aria-controls="tab_item-0" class="resp-accordion resp-tab-active" role="tab">
-              <span class="resp-arrow"> </span>
-              Template Information
-          </h2>
-          <div aria-labelledby="tab_item-0" class="resp-tab-content resp-tab-content-active" style="display:block">
-              <h2>Basic Fields</h2>
-<ul>
-<li>Title</li>
-<li>Full Name (required)</li>
-</ul>
-<p>The following feilds will populate on the right of the page if used:</p>
-<ul>
-<li>Address (multiple sub-feilds)</li>
-<li>Personal Website (URL)</li>
-<li>Email</li>
-<li>Phone</li>
-<li>Fax</li>
-<li>Image: Profile Image should be <strong>198 x 231 pixels</strong></li>
-</ul>
-<h2>Social Media</h2>
-<p>One or more social media links can be added. If the profile has no social media, choose 'None.' Use the green + to add more entries as need. Supportted social media options:</p>
-<ul>
-<li>FaceBook</li>
-<li>Instagam</li>
-<li>Linkedin</li>
-<li>Twitter</li>
-<li>None</li>
-</ul>
-<h2>Profile Tabs</h2>
-<p>Each profile page should have at least one tab. Use the green + to add more. The tabs on this page are: Template Information, Biography, Education.</p>
-<ul>
-<li>Tab Title (required)</li>
-<li>Information (required) WYSIWYG</li>
-</ul>
-          </div>
-                      
-          <h2 aria-controls="tab_item-1" class="resp-accordion" role="tab">
-              <span class="resp-arrow"> </span>
-              Biography
-          </h2>
-          <div aria-labelledby="tab_item-1" class="resp-tab-content">
-              <h2>Biography</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tortor justo, tristique vitae cursus in, pulvinar non est. Morbi accumsan urna nunc, eget hendrerit ligula imperdiet et. Nam sodales ante in lectus suscipit, nec luctus nunc sagittis. Proin dapibus felis nec nunc iaculis fringilla. Integer lacinia metus dui, tincidunt aliquet tellus imperdiet vel. Praesent in tristique lectus. Curabitur eu nulla vitae magna mattis auctor. Proin porttitor nulla vel quam tempus, ut rhoncus elit volutpat. Nam quis erat tempor, aliquet ipsum nec, consectetur libero. Donec eu aliquet dolor. Nunc rutrum nibh ac arcu rutrum, eu facilisis odio dignissim.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tortor justo, tristique vitae cursus in, pulvinar non est. Morbi accumsan urna nunc, eget hendrerit ligula imperdiet et. Nam sodales ante in lectus suscipit, nec luctus nunc sagittis. Proin dapibus felis nec nunc iaculis fringilla. Integer lacinia metus dui, tincidunt aliquet tellus imperdiet vel. Praesent in tristique lectus. Curabitur eu nulla vitae magna mattis auctor. Proin porttitor nulla vel quam tempus, ut rhoncus elit volutpat. Nam quis erat tempor, aliquet ipsum nec, consectetur libero. Donec eu aliquet dolor. Nunc rutrum nibh ac arcu rutrum, eu facilisis odio dignissim.</p>
-          </div>
-                      
-          <h2 aria-controls="tab_item-2" class="resp-accordion" role="tab">
-              <span class="resp-arrow"> </span>
-              Education
-          </h2>
-          <div aria-labelledby="tab_item-2" class="resp-tab-content">
-              <h2>Education</h2>
-<p>Ph.D., UC San Diego, YEAR<br> M.A., UC San Diego, YEAR<br> B.A., UC San Diego, YEAR</p>
-          </div>
-                              </div>
-</article>
+                <article class="clearfix profile-listing" style="display: none;">
+            <ul>
+
+                                                    <li class="profile-listing-card">
+                                                            <span>
+                    <a href="index.html" title="Profile with a Link">
+                        <img alt="Profile with a Link" src="../styles/img/profile-placeholder-sand-on-blue.jpg">
+                    </a>
+                </span>
+                                                    <span class="profile-listing-data">
+            <h3>
+             <a href="index.html" title="Profile with a Link">Profile with a Link</a>
+            </h3>
+            <span>Add name, title and work history, as desired.</span>
+        </span>
+    </li>
+        
+                            <li class="profile-listing-card">
+                                                            <span>
+                    <img alt="Profile without a Link" src="../styles/img/profile-placeholder-sand-on-blue.jpg">
+                </span>
+                                                    <span class="profile-listing-data">
+            <h3>
+                Profile without a Link
+            </h3>
+            <span>Add name, title and work history, as desired.</span>
+        </span>
+    </li>
+                                    </ul>
+    </article>
+                        </div><div class="drawer-toggle"><a href="#" class="expand">Expand All</a></div></div>
+<article class="clearfix main-section-content">
+<below-profile>
+</below-profile></article>
 </section>
 
-<script language="javascript">
-/* Load Tabs */
-$(document).ready(function () {
-  loadProfile();
-  });
-</script>
 
 
-
-
-
-
-
-
-
-      
+        
 
 
 
@@ -390,62 +321,62 @@ $(document).ready(function () {
 
 
 <section aria-label="Sidebar" class="col-xs-12 col-md-3 sidebar-section" role="complementary">
-          <figure aria-label="Logo" id="site-logo" role="complementary">
-      <logo>
-  </logo></figure>
+    <figure aria-label="Logo" id="site-logo" role="complementary">
+<logo>
+</logo></figure>
 
-                      <article aria-label="Sidebar Nav" class="main-content-nav" role="navigation">
-                                                                                                                                      
-  
-      <h2>
-                              <a href="index.html">Profile Pages</a>
-              </h2>
+                <article aria-label="Sidebar Nav" class="main-content-nav" role="navigation">
+                                                                                                                                
 
-                  <ul class="navbar-list">
-              
-                                  
-                                                                                                  
-                                          
-                                                                                                                                  
-                                  
-                                                                                                                      
-                                          
-                                                                                                      <li class="active">
-              Profile Page
-      </li>
-                                                                          
-                                  
-                                                                                                  
-                                          
-                                                                                                      <li class="">
-              <a href="listing.html">
-          Profile Listing
-      </a>
-      </li>
-                                                                          
-                                  
-                                                                                                  
-                                          
-                                                                                                      <li class="">
-              <a href="listing-grid.html">
-          Profile Listing: Grid Option
-      </a>
-      </li>
-                                                                          
-                                  
-                                                                                                  
-                                          
-                                                                                                      <li class="">
-              <a href="drawer.html">
-          Profile Listing Drawer
-      </a>
-      </li>
-                                                                                      </ul>
+<h2>
+                        <a href="index.html">Profile Pages</a>
+        </h2>
 
-      </article>
-      
-      
-                      <div class="styled">
+            <ul class="navbar-list">
+        
+                            
+                                                                                            
+                                    
+                                                                                                                            
+                            
+                                                                                            
+                                    
+                                                                                                <li class="">
+        <a href="page.html">
+    Profile Page
+</a>
+</li>
+                                                                    
+                            
+                                                                                            
+                                    
+                                                                                                <li class="">
+        <a href="listing.html">
+    Profile Listing
+</a>
+</li>
+                                                                    
+                            
+                                                                                            
+                                    
+                                                                                                <li class="">
+        <a href="listing-grid.html">
+    Profile Listing: Grid Option
+</a>
+</li>
+                                                                    
+                            
+                                                                                                                
+                                    
+                                                                                                <li class="active">
+        Profile Listing Drawer
+</li>
+                                                                                </ul>
+
+</article>
+
+
+                <div class="styled">
 <h3>Related Knowledge Base articles</h3>
 <ul>
 <li><a href="https://ucsdservicedesk.service-now.com/its?id=kb_article_view&amp;sysparm_article=KB0030357">Profile page template</a></li>
@@ -453,7 +384,7 @@ $(document).ready(function () {
 <li><a href="https://ucsdservicedesk.service-now.com/its?id=kb_article_view&amp;sysparm_article=KB0030361">Profile listing drawer template</a></li>
 </ul>
 </div>
-          </section>
+    </section>
     </div>
 </div>
 
