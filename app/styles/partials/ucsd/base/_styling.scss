@@ -80,8 +80,8 @@ img.right {
 }
 
 .msg.info {
-	border: 1px solid #e3e3e3;
-	background-color: #eee;
+	border: 1px solid #dedad1;
+	background-color: #F5F0E6;
 }
 
 .msg.info {
@@ -682,12 +682,13 @@ span.loading {
  * CSS Styling for the page nav aside
  */
 div.styled {
-	background: #eeeeee;
+	background: #F5F0E6;
     margin-bottom: 1em;
     padding: 1em;
     border-radius: 8px;
 
   h2, h3, h4, h5, h6 {
+	margin-top: 0;
 	color: #02619c;
   }
 

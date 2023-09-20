@@ -398,7 +398,10 @@ select {
       }
     }   
   
- 
+ .hr-spacer {
+  height: 70px;
+ }
+
 /*
 @media only screen and (max-width: $desktop-small) {
   min-height: 300px;
