@@ -223,7 +223,7 @@ ul.nav.navbar-nav.navbar-right {
 }
 
 .main-content-nav {
-  background: #fff;
+  background: #eee;
   border: solid 1px #D8D7D7;
   padding: 1em;
   margin-bottom: 1em;
@@ -250,7 +250,7 @@ ul.nav.navbar-nav.navbar-right {
     font-size: 1em;
 
     > li.active {
-      color: #333;
+      color: $blue;
     }
   }
 
@@ -261,9 +261,9 @@ ul.nav.navbar-nav.navbar-right {
     a {
       display: block;
       padding: 1em;
-	  color: #333;
+	    color: $blue;
       &:hover {
-        background-color: #333;
+        background-color: $blue;
         color: #fff;
       }
       &:hover, &:link, &:active {
@@ -272,17 +272,17 @@ ul.nav.navbar-nav.navbar-right {
     }
 
     &.active {
-      background-color: #faf7f2;
+      background-color: #fff;
       padding: 1em 0 1em 1em;
       font-weight: bold;
 
 	  > ul li a {
-		  color: #333;
+		  color: $blue;
 		  padding-left: 0 !important;
 	  }
 
       > a {
-        color: #333;
+        color: $blue;
       }
 
 	  a:hover {
