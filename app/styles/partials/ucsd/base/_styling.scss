@@ -59,7 +59,7 @@ img.right {
  */
 
 .msg {
-	padding: 15px;
+	padding: 2em 3em;
     margin-bottom: 20px;
     border-radius: 4px;
 }
@@ -80,7 +80,7 @@ img.right {
 }
 
 .msg.info {
-	border: 1px solid #dedad1;
+	/*border: 1px solid #dedad1;*/
 	background-color: #F5F0E6;
 }
 
@@ -107,7 +107,6 @@ img.right {
 
 
 .msg.alert {
-	border: 1px solid #c7b79c38;
 	background-color: #ffcd00d6;
 }
 
