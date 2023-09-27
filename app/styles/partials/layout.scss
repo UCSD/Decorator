@@ -519,7 +519,7 @@ footer
 
     > li {
       display: inline;
-
+      border-right: 1px solid #fff;
       margin-left: 0;
       margin-right: .5em;
       padding-right: .75em;
@@ -529,7 +529,7 @@ footer
       }
     }
 
-    > li:first-child {
+    > li:last-child {
       border-right: 1px solid #fff;
     }
   }
