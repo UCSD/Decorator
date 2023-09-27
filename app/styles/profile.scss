@@ -332,3 +332,111 @@
     margin-top: 0;
   }
 }
+
+
+/***** CSS for Full-width Profile Listings */
+.jumbotron.profile-listing, 
+.jumbotron.profile-grid {
+  background: #fff;
+}
+
+.jumbotron.profile-listing a:hover, 
+.jumbotron.profile-grid a:hover {
+  text-decoration: underline;
+}
+
+.jumbotron.profile-listing .profile-listing-data .job-title, 
+.jumbotron.profile-grid .profile .job-title {
+ font-weight: bold;
+}
+
+.jumbotron.profile-listing  {
+ ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 45px 30px;
+   justify-content: space-between;
+ }
+
+ li.profile-listing-card {
+   flex: 100%;
+   background: #F5F0E6;
+   display: flex;
+   gap: 30px;
+   margin-bottom: 0;
+
+   img {
+     width: 198px;
+     border-radius: 14px;
+     margin: 23px 0 23px 23px;
+   }
+  }
+
+  .profile-listing-data {
+   padding: 0 23px 23px 0;
+   width: 100%;
+
+   h3 {
+     font-size: 160%;
+     color: #4b4b4b;
+   }
+  }
+}
+
+
+.jumbotron.profile-grid {
+ .row {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 40px 0;
+ }
+
+ h3 {
+   font-size: 1.25em;
+   line-height: 1.2;
+ }
+
+ .profile {
+   .profile-container {
+     width: 198px;
+   }
+ 
+ img {
+   width:198px;
+   border-radius: 14px;
+ }
+
+ }
+}
+
+@media only screen and (max-width: 649px) {
+  .jumbotron.profile-listing li.profile-listing-card {
+    flex-direction: column;
+    gap: 0;
+ }
+  .jumbotron.profile-listing .profile-listing-data {
+    padding: 0 23px 23px 23px;
+ }
+  .jumbotron.profile-listing .profile-listing-data h3 {
+    margin-top: 0;
+ }
+}
+@media only screen and (max-width: 768px) {
+  .jumbotron.profile-grid .row>.profile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ }
+  .jumbotron.profile-grid .row>.profile>* {
+    margin: auto;
+ }
+  .jumbotron.profile-grid .row>.profile>p {
+    width: 200px;
+ }
+  .jumbotron.profile-grid .row>.profile>img {
+    margin-bottom: 10px;
+ }
+}
