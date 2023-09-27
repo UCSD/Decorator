@@ -30,6 +30,14 @@ table.styled tbody tr.even {
 	background-color: #eff;
 }
 
+table > caption {
+	font-weight: bold;
+}
+
+table {
+	max-width: 100%;
+}
+
 /* --------------------------------------------------------------------
  * _images
  */
