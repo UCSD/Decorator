@@ -323,10 +323,10 @@ $('.offcanvas').on('hidden.bs.offcanvas', function (e) {
 })
 
 function toggleIdsBasedOnScreenWidth() {
-  const var = window.innerWidth;
+  const screenWidth = window.innerWidth;
 
   // Check if screen width is below 768 pixels
-  if (var < 768) {
+  if (screenWidth < 768) {
     const mSearchElements = document.querySelectorAll('.msearch #search-m, .msearch #search-scope-m, .msearch #q-m');
     mSearchElements.forEach(element => {
       if (element.id === 'search-m') {
