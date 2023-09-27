@@ -321,3 +321,38 @@ $('.offcanvas').on('shown.bs.offcanvas	', function (e) {
 $('.offcanvas').on('hidden.bs.offcanvas', function (e) {
   $(".navbar-toggle").attr("aria-expanded","false");
 })
+
+function toggleIdsBasedOnScreenWidth() {
+  const screenWidth = window.innerWidth;
+
+  // Check if screen width is below 768 pixels
+  if (screenWidth < 768) {
+    const mSearchElements = document.querySelectorAll('.msearch #search-m, .msearch #search-scope-m, .msearch #q-m');
+    mSearchElements.forEach(element => {
+      if (element.id === 'search-m') {
+        element.id = 'search';
+      } else if (element.id === 'search-scope-m') {
+        element.id = 'search-scope';
+      } else if (element.id === 'q-m') {
+        element.id = 'q';
+      }
+    });
+  } else {
+    const mSearchElements = document.querySelectorAll('.msearch #search, .msearch #search-scope, .msearch #q');
+    mSearchElements.forEach(element => {
+      if (element.id === 'search') {
+        element.id = 'search-m';
+      } else if (element.id === 'search-scope') {
+        element.id = 'search-scope-m';
+      } else if (element.id === 'q') {
+        element.id = 'q-m';
+      }
+    });
+  }
+}
+
+// Listen for window resize event
+window.addEventListener('resize', toggleIdsBasedOnScreenWidth);
+
+// Call the function initially to set the initial state based on screen width
+toggleIdsBasedOnScreenWidth();
