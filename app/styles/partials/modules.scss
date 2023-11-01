@@ -223,10 +223,11 @@ ul.nav.navbar-nav.navbar-right {
 }
 
 .main-content-nav {
-  background: #eee;
+  background: #fff;
   border: solid 1px #D8D7D7;
   padding: 1em;
   margin-bottom: 1em;
+  margin-top: 20px;
 
   a { color: #333; }
 
@@ -235,12 +236,13 @@ ul.nav.navbar-nav.navbar-right {
   }
 
   > h2 {
-    color: $blue;
+    color: $darker-gray;
     font-size: 140%;
     //text-shadow: 0 1px 1px #FFF;
     margin: 0 0 .4em;
     text-transform: capitalize;
     font-family: Roboto, sans-serif;
+    font-weight: bold;
   }
   > ul {
     /* for borders to line up properly */
@@ -249,7 +251,7 @@ ul.nav.navbar-nav.navbar-right {
     font-size: 1em;
 
     > li.active {
-      color: $blue;
+      color: $darker-gray;
     }
   }
 
@@ -260,10 +262,11 @@ ul.nav.navbar-nav.navbar-right {
     a {
       display: block;
       padding: 1em;
-	    color: $blue;
+	    color: $darker-gray;
       &:hover {
-        background-color: $blue;
-        color: #fff;
+        background-color: #faf7f2;
+        color: $darker-gray;
+
       }
       &:hover, &:link, &:active {
         text-decoration: none;
@@ -271,20 +274,25 @@ ul.nav.navbar-nav.navbar-right {
     }
 
     &.active {
-      background-color: #fff;
-      padding: 1em 0 1em 1em;
+      background-color: $sand;
+      line-height: 20px;
+      padding: 1em;
       font-weight: bold;
 
-	  > ul li a {
-		  color: $blue;
-		  padding-left: 0 !important;
-	  }
-
-      > a {
-        color: $blue;
+      > ul li {
+        font-weight: normal;
       }
 
-	  a:hover {
+      > ul li a {
+        color: $darker-gray;
+        padding-left: 0 !important;
+      }
+
+      > a {
+        color: $darker-gray;
+      }
+
+	    a:hover {
         text-decoration: underline;
         color: #484949;
         background-color: transparent;
@@ -292,8 +300,9 @@ ul.nav.navbar-nav.navbar-right {
     }
 
     ul {
-      margin: .4em 0 -.4em 1em;
-      padding:0;
+      margin:0;
+      padding: 0 10px;
+      margin-top: 0.4em;
     }
 
     li {

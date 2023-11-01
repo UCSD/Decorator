@@ -932,46 +932,61 @@
 }
 
 /* Callout Content Blocks Module */
-.jumbotron-cta-blocks {
+.jumbotron-tile-links {
 	background-color: #fff;
 }
-.jumbotron-cta-blocks .flex {
+.jumbotron-tile-links .flex {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
-	gap: 28px;
 }
-.jumbotron-cta-blocks .wrapper {
+.jumbotron-tile-links .wrapper {
 	width: 100%;
 	position: relative;
+	margin: 1.15%;
 }
-.jumbotron-cta-blocks .background-image {
+.main-section .jumbotron-tile-links .tiles-row {
+	padding: 0 5px;
+}
+.jumbotron-tile-links .background-image {
 	width: 100%;
 	height: 200px;
 	object-fit: cover;
 	border-radius: 14px;
 }
-
-
-.jumbotron-cta-blocks .wrapper:before {
+.jumbotron-tile-links .wrapper:before {
 	content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 	bottom: 0;
 	right: 0;
-   width: 100%;
-   height: 100%;
+	width: 100%;
+	height: 100%;
 	background: rgba(24,43,73,.5);
 	border-radius: 14px;
 	display: block;
 }
-
-.jumbotron-cta-blocks h2 {
-	font-family: Roboto, sans-serif;
+.jumbotron-tile-links .text-indent {
+	margin-bottom: 1.5em;
+}
+.jumbotron-tile-links .text-indent h2 span {
+	margin-left: 0;
+}
+.jumbotron-tile-links h2 {
+	font-family: Teko-SemiBold,sans-serif;
+	font-size: 2.5em;
+	text-align: left;
+	display: block;
+	position: relative;
+	line-height: .9em;
+}
+.jumbotron-tile-links .tiles h2, 
+.jumbotron-tile-links .tiles h3 {
+	font-family: Roboto,sans-serif;
 	font-size: 1.5em;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 1.35em;
 	text-transform: none;
 	text-align: center;
@@ -983,46 +998,81 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	margin: 23px 0;
+	margin: 0;
 }
-.jumbotron-cta-blocks h2 a { 
+.jumbotron-tile-links h2 a,
+.jumbotron-tile-links h3 a { 
 	color: #fff;
 	padding: 1em;
+	display: flex;
+	 height: 100%;
+	 width: 100%;
+	 text-align: center;
+	 align-items: center;
+	 justify-content: center;
 }
-.jumbotron-cta-blocks .flex h2 a:hover,
-.jumbotron-cta-blocks .flex h2 a:focus,
-.jumbotron-cta-blocks .flex h2 a:active {
+.jumbotron-tile-links .flex h2 a:hover,
+.jumbotron-tile-links .flex h2 a:focus,
+.jumbotron-tile-links .flex h2 a:active,
+.jumbotron-tile-links .flex h3 a:active, 
+.jumbotron-tile-links .flex h3 a:focus, 
+.jumbotron-tile-links .flex h3 a:hover {
 	text-decoration: underline;
 }
+
 @media (max-width:768px){ 
-	.jumbotron-cta-blocks .flex {
+	.jumbotron-tile-links .flex {
 		flex-direction: column;
 	}
 }
 @media (min-width:769px){ 
-	.jumbotron-cta-blocks .wrapper {
+	.jumbotron-tile-links .wrapper {
 		width: 48%;
 	}
 }
 @media (min-width:992px){ 
-	.jumbotron-cta-blocks .flex {
-		justify-content: flex-start;
-		gap: 24px;
-	}
-	.jumbotron-cta-blocks .wrapper {
+	.jumbotron-tile-links .wrapper {
 		width: 31%;
-		margin-bottom: 0;
-	}
-	.jumbotron-cta-blocks .wrapper {
 		transition: transform .2s linear;
 	}
-	.jumbotron-cta-blocks .wrapper:hover {
+	.jumbotron-tile-links .wrapper:hover {
 		transform: scale(1.1);
 	}
-}
-@media (min-width:1201px){ 
-	.jumbotron-cta-blocks .flex {
-		justify-content: flex-start;
-		gap: 29.5px;
+	.jumbotron-tile-links .text-lg-right {
+		margin-top: 25px;
 	}
+}
+.jumbotron-tile-links .wrapper.tile-blue-bg::before {
+	background: #00629B;
+}
+.jumbotron-tile-links .wrapper.tile-navy-bg::before {
+	background: #182B49;
+}
+.jumbotron-tile-links .wrapper.tile-turquoise-bg::before {
+	background: #00C6D7;
+}
+.jumbotron-tile-links .wrapper.tile-yellow-bg::before {
+	background: #FFCD00;
+}
+.jumbotron-tile-links .tile-turquoise-bg h2 a, 
+.jumbotron-tile-links .tile-yellow-bg h2 a, 
+.jumbotron-tile-links .tile-turquoise-bg h3 a, 
+.jumbotron-tile-links .tile-yellow-bg h3 a {
+	color: #000;
+}
+.jumbotron-tile-links.tile-module-white {
+	background: #fff;
+}
+.jumbotron-tile-links.tile-module-sand {
+	background: #F5F0E6;
+}
+.jumbotron-tile-links.tile-module-navy {
+	background: #182B49;
+}
+.jumbotron-tile-links>.container {
+	padding: 15px 15px 25px;
+}
+.jumbotron-tile-links.tile-module-navy .text-indent, 
+.jumbotron-tile-links.tile-module-navy .text-indent h2 {
+	color: #fff;
 }
