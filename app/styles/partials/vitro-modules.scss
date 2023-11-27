@@ -702,13 +702,25 @@
 	color: #fff;
 }
 
-.cta-two-three p {
+.cta-two-three {
+
+ a {
+	color: #FFF;
+	text-decoration: underline !important;
+}
+
+ p {
 	color: #fff !important;
 	&:last-of-type {
 		margin-bottom: 15px !important;
 	}
 }
 
+.text-link {
+	text-decoration: none !important;
+}
+
+}
 .ct4-light-bg {
 	background-image: none !important;
 	h2,
