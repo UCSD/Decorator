@@ -348,7 +348,9 @@ select {
 /* ***********************************************
  * Two Column Intro Banner
  * ***************/
-
+ .jumbotron.intro-banner .text-indent h1 span {
+    margin-left: 0;
+  }
  .intro-banner {
   margin: 0!important;
   position: relative;
@@ -374,6 +376,18 @@ select {
         top: 20%;
       }
       */
+    }
+
+    &.dark-blue-gradient {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(90deg,#182b49,rgba(0,98,155,0));
+      }
     }
 
     @media only screen and (max-width: $full) {
