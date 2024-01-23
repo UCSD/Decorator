@@ -2974,7 +2974,7 @@ blockquote > footer {
 
 /* Text and CTA w/Full Height Image Left */
 .side-image-white {
-  background-color: #fff;
+  background-color: #fff !important;
   margin-top: 30px;
 }
 
