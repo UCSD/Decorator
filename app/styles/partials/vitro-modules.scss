@@ -295,7 +295,7 @@
 /* Text and CTA w/Full Height Image Left */
 
 .side-image-white {
-	background-color: #fff !important;
+	background-color: #fff;
 	margin-top: 30px;
 	h2 {
 		color: $dark-blue;
@@ -723,6 +723,7 @@
 }
 .ct4-light-bg {
 	background-image: none !important;
+	background-color: #fff !important;
 	h2,
 	p {
 		color: $dark-blue;
