@@ -679,6 +679,15 @@
 			.panel-text {
 				margin-bottom: 2.5rem;
 			}
+			&.bg-blue-translucent {
+				background-color: rgba(0,98,155,.8);
+			}
+			&.bg-navy-translucent {
+				background-color: rgba(24,43,73,.8);
+			}
+			&.bg-navy-opaque {
+				background-color: $dark-blue;
+			}
 		}
 		.panel.panel-primary .panel-body {
 			padding: 1em 2em;
