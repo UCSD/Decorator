@@ -3463,7 +3463,7 @@ blockquote > footer {
 }
 
 .panel-darker {
-  background-color: #00629B !important;
+  background-color: #00629B;
 }
 
 .text-indent h2 span, .text-indent .h2 span {
