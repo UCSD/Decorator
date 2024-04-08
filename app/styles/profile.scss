@@ -40,6 +40,11 @@
 	  width: 100%;
   }
 
+  .no-photo .profile-listing-data {
+    padding: 0 23px 23px 30px;
+    width: 100%;
+  }
+
   .profile-listing-data h3 {
     font-size: 160%;
     color: #4b4b4b;
@@ -371,6 +376,11 @@
     }
   }
 
+  .drawer-wrapper .no-photo .profile-listing-data {
+    padding: 0 23px 23px 30px;
+    width: 100%;
+  }
+
 
 .profile-listing.main-section-content, 
 .drawer-wrapper .profile-listing.main-section-content, 
@@ -393,6 +403,12 @@
   .drawer-wrapper .profile-listing .profile-listing-data h3 {
     margin-top: 0;
   }
+
+  .no-photo.profile-listing .profile-listing-data, 
+	.no-photo .drawer-wrapper .profile-listing .profile-listing-data {
+		 padding: 23px;
+		 width: 100%;
+	}
 }
 
 
