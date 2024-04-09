@@ -740,6 +740,24 @@
 	} 
 }
 
+.ct4-sand-bg {
+	background-image: none !important;
+	background-color: $sand !important;
+	h2,
+	p {
+		color: $dark-blue;
+		text-shadow: none;
+	} 
+}
+
+.ct4-dark-text {
+	h2,
+	p {
+		color: $dark-blue;
+		text-shadow: none;
+	} 
+}
+
 .panel-darker {
 	background-color: #00629B;
 }
