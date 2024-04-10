@@ -200,6 +200,71 @@ ul.nav.navbar-nav.navbar-right {
 
 }
 
+/*** SOM TITLE AND LOGO ***/
+.layout-title:has(.container):has(.som-title-logo) {
+  height: 110px;
+}
+
+.layout-title:has(.container):has(.som-title-logo) .title-header-large {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+ .layout-title:has(.container):has(.som-title-logo) .title-header.title-header-short {
+    display: block;
+    margin-top: 0;
+ }
+}
+
+.layout-title:has(.container):has(.som-title-logo) .title-header:hover, .title-header:focus {
+  color: #666666;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+ .layout-title:has(.container):has(.som-title-logo) .title-header {
+    display: none;
+    margin-top: 2.25em;
+ }
+}
+
+.som-title-logo {
+  background-image: url("https://cdn.ucsd.edu/cms/decorator-5/img/som-logo-header-2x.png");
+  background-repeat: no-repeat;
+  background-size: 205px 60px;
+  float: right;
+  width: 205px;
+  height: 60px;
+  overflow: hidden;
+  text-indent: -999em;
+}
+
+@media only screen and (max-width: 767px) {
+  .som-title-logo {
+    background-position: -239px -2px;
+    height: 45px;
+    width: 166px;
+    display: none !important;
+ }
+
+ .layout-title:has(.container):has(.som-title-logo) {
+    height: auto;
+ }
+}
+
+img[src*="som"].header-logo {
+  height: 30px;
+  margin: 15px 20px 0 0;
+  width: auto;
+  display: block 
+}
+
+@media only screen and (min-width: 768px) {
+ img[src*="som"].header-logo {
+    display: none;
+ }
+}
+
 /* ***********************************************
  * MAIN CONTENT SIDE NAV
  * ***************/

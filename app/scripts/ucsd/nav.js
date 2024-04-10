@@ -356,3 +356,16 @@ window.addEventListener('resize', toggleIdsBasedOnScreenWidth);
 
 // Call the function initially to set the initial state based on screen width
 toggleIdsBasedOnScreenWidth();
+
+function switchToSomLogo () {
+  var somLogo = document.getElementsByClassName("som-title-logo");
+  if(somLogo.length > 0) {
+    var imgNeeded = document.getElementsByClassName("header-logo")[0];
+    imgNeeded.src = "https://cdn.ucsd.edu/cms/decorator-5/img/som-logo-footer-2x.png";
+    imgNeeded.alt = "UC San Diego School of Medicine logo"
+  }
+}
+
+window.onload = function() {
+  switchToSomLogo();
+};
