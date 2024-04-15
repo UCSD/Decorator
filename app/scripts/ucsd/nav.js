@@ -367,6 +367,5 @@ function switchToSomLogo () {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  toggleIdsBasedOnScreenWidth();
   switchToSomLogo();
 });
