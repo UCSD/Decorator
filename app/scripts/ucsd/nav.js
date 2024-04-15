@@ -366,6 +366,7 @@ function switchToSomLogo () {
   }
 }
 
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function() {
+  toggleIdsBasedOnScreenWidth();
   switchToSomLogo();
-};
+});
