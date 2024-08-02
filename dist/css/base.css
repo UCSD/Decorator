@@ -3838,8 +3838,8 @@ blockquote > footer {
   margin: 0;
 }
 
-.jumbotron-tile-links h2 a,
-.jumbotron-tile-links h3 a {
+.jumbotron-tile-links .wrapper h2 a,
+.jumbotron-tile-links .wrapper h3 a {
   color: #fff;
   padding: 1em;
   display: flex;
