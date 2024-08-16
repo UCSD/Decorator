@@ -23,5 +23,9 @@
 /********************* CMS */
 @import "partials/ucsd/cms/drawer.scss";
 
+/* Print and Accessibility */
+
+@import "partials/accessibility.scss";
+
 @import "partials/print.scss";
 

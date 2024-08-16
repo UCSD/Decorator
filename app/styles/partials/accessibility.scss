@@ -1,0 +1,26 @@
+/* Dark mode Accessibility Fixes */
+@media (prefers-color-scheme: dark) {
+    .jumbotron.as-hero h1 {
+        color: #fff;
+        text-shadow: 0px 0px 10px black;
+   }
+    .jumbotron.jumbotron-orbs-white .text-indent h2, .jumbotron.jumbotron-orbs-white .text-indent p, .jumbotron.jumbotron-orbs-white a, .jumbotron.jumbotron-orbs-4 h2, .jumbotron.jumbotron-orbs-4 p, .jumbotron.jumbotron-orbs-4 a, .jumbotron.jumbotron-orbs-3 h2, .jumbotron.jumbotron-orbs-3 p, .jumbotron.jumbotron-orbs-3 a {
+        filter: brightness(0.1);
+   }
+    .jumbotron.jumbotron-excellence .academics-wrap a, .jumbotron.jumbotron-orbs-white a.btn-default {
+        filter: unset;
+   }
+    .btn-default, .jumbotron a.btn-default, .section-padding-container a.btn-default {
+        background-color:#182b49 !important;
+        color: #fff !important;
+        border: 1px solid #fff;
+   }
+    .jumbotron a.btn-default:hover, .jumbotron a.btn-default:active, .jumbotron a.btn-default:focus, .side-image-white > div > div > div > p > .btn-default:hover {
+        background-color: #182b49;
+        color: #fff;
+   }
+    .search .btn-default {
+        border: none;
+        background-color: #00629b !important;
+   }
+}

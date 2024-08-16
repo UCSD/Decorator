@@ -4,7 +4,8 @@ $(function() {
   });
 
   $('.cta-two-three').matchHeight({
-    property: 'min-height'
+    property: 'min-height',
+    byRow: true
   });
 
   $('.jumbotron-news .panel.panel-default').matchHeight({
