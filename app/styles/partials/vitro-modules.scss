@@ -1116,3 +1116,189 @@
 .jumbotron-tile-links.tile-module-navy .text-indent h2 {
 	color: #fff;
 }
+
+/**** Testimonial Module ******/
+.jumbotron-testimonial {
+	background: url("https://cdn.ucsd.edu/cms/decorator-5/img/testimonial-bg-mobile.png");
+	background-position: top;
+	color: #fff;
+
+	.container {
+		padding: 20px 32px 40px 20px 
+	}
+
+	.testimonial-image-wrapper {
+		margin-left: 20px;
+	}
+
+	img {
+		max-width: 75% !important;
+		border-radius: 14px;
+	}
+
+	.testimonial-carousel.slick-slider.slick-dotted {
+		margin-bottom: 0;
+	}
+
+	.text-link {
+		color: #fff;
+		border-bottom: 1px solid #fff;
+	}
+
+	p {
+		&.quote-feature-text {
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 1.25;
+		}
+
+		&.quote-feature-name {
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		&.testimonial-text {
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 1.1;
+			margin-bottom: 24px;
+		}
+
+		&.testimonial-name {
+			font-size: 18px;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+	
+		&.testimonial-title {
+			margin-bottom: 24px;
+		}
+	}
+}
+
+ .testimonial-content-wrapper p {
+	 margin-left: 20px;
+}
+ .testimonial-content-wrapper {
+	 padding-top: 20px;
+}
+ .testimonial-image-wrapper, 
+ .testimonial-content-wrapper {
+	 margin-top: 20px;
+}
+
+ @media screen and (min-width: 768px) {
+	 .jumbotron-testimonial {
+		 background: url("https://cdn.ucsd.edu/cms/decorator-5/img/testimonial-bg-desktop.png");
+		 background-position: right;
+		 color: #fff;
+	}
+	 .jumbotron-testimonial .col-sm-8 {
+		 padding-left: 0;
+	}
+	 .jumbotron-testimonial .testimonial-image-wrapper {
+		 padding-right: 25px;
+	}
+	 .jumbotron-testimonial .container {
+		 padding: 20px 32px 40px;
+	}
+	 .testimonial-content-wrapper {
+		 padding-top: 0;
+	}
+	 .jumbotron-testimonial .testimonial-image-wrapper {
+		 margin-left: 0;
+	}
+	 .jumbotron-testimonial img {
+		 max-width: 100% !important;
+	}
+}
+
+ .slick-nav-wrap{
+	 text-align: center;
+}
+ .slick-nav{
+	 position: relative;
+	 display: inline-block;
+}
+ .slick-nav .slick-dots{
+	 position: static;
+}
+
+.testimonial-slick {
+	margin-top: -50px;
+
+	.slick-dots {
+		li button {
+			margin-top: 5px;
+
+			.slick-dot-icon:before {
+				font-size: 18px;
+				position: relative;
+			}
+		}
+
+		li.slick-active button .slick-dot-icon:before {
+			margin-top: 0;
+			margin-left: 0;
+		}
+
+		li button .slick-dot-icon {
+			color: #B6B1A9;
+			opacity: 1;
+		}
+
+		li.slick-active button .slick-dot-icon {
+			color: #00629B;
+	   }
+	}
+
+	.slick-next .slick-next-icon, 
+	.slick-next .slick-prev-icon, 
+	.slick-prev .slick-next-icon, 
+	.slick-prev .slick-prev-icon {
+		color: #00629B;
+		opacity: 1;
+	}
+
+	.slick-next:focus .slick-next-icon, 
+	.slick-prev:focus .slick-prev-icon, 
+	.slick-dots li button:focus .slick-dot-icon:before {
+		color: #00C6D7;
+	}
+
+	.slick-next:hover .slick-next-icon, 
+	.slick-prev:hover .slick-prev-icon {
+		color: #182B49;
+	}
+
+	.slick-dots li button:hover .slick-dot-icon {
+		color: #182B49;
+	}
+}
+
+ .layout-full .testimonial-slick {
+	 margin-top: 0;
+}
+
+ .slick-slider {
+	 -webkit-user-select: text;
+	 -khtml-user-select: text;
+	 -moz-user-select: text;
+	 -ms-user-select: text;
+	 user-select: text;
+}
+ .slick-list.draggable {
+	 -webkit-user-select: text;
+	 -khtml-user-select: text;
+	 -moz-user-select: text;
+	 -ms-user-select: text;
+	 user-select: text;
+}
+ .quote-icon {
+	 background-image: url("https://cdn.ucsd.edu/cms/decorator-5/img/quote.svg");
+	 height: 51px;
+	 width: 52px;
+	 display: block;
+	 position: absolute;
+	 z-index: -1;
+}
