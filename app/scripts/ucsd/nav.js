@@ -322,12 +322,13 @@ $('.offcanvas').on('hidden.bs.offcanvas', function (e) {
   $(".navbar-toggle").attr("aria-expanded","false");
 })
 
-function toggleIdsBasedOnScreenWidth() {
+function toggleIdsAndClassesBasedOnScreenWidth() {
   const screenWidth = window.innerWidth;
 
   // Check if screen width is below 768 pixels
   if (screenWidth < 768) {
-    const mSearchElements = document.querySelectorAll('.msearch #search-m, .msearch #search-scope-m, .msearch #q-m');
+    // Update ids
+    const mSearchElements = document.querySelectorAll('ul.msearch #search-m, ul.msearch #search-scope-m, ul.msearch #q-m');
     mSearchElements.forEach(element => {
       if (element.id === 'search-m') {
         element.id = 'search';
@@ -337,8 +338,18 @@ function toggleIdsBasedOnScreenWidth() {
         element.id = 'q';
       }
     });
+
+    // Update class and name attribute for elements under ul.msearch
+    const searchTermElement = document.querySelector('ul.msearch input.search-term-m');
+    if (searchTermElement) {
+      searchTermElement.classList.remove('search-term-m');
+      searchTermElement.classList.add('search-term');
+      searchTermElement.name = 'search-term'; // Name is 'search-term' for smaller screens
+    }
+
   } else {
-    const mSearchElements = document.querySelectorAll('.msearch #search, .msearch #search-scope, .msearch #q');
+    // Revert ids
+    const mSearchElements = document.querySelectorAll('ul.msearch #search, ul.msearch #search-scope, ul.msearch #q');
     mSearchElements.forEach(element => {
       if (element.id === 'search') {
         element.id = 'search-m';
@@ -348,14 +359,22 @@ function toggleIdsBasedOnScreenWidth() {
         element.id = 'q-m';
       }
     });
+
+    // Revert class and name attribute for elements under ul.msearch
+    const searchTermElement = document.querySelector('ul.msearch input.search-term');
+    if (searchTermElement) {
+      searchTermElement.classList.remove('search-term');
+      searchTermElement.classList.add('search-term-m');
+      searchTermElement.name = 'search-term-m'; // Name is 'search-term-m' for larger screens
+    }
   }
 }
 
-// Listen for window resize event
-window.addEventListener('resize', toggleIdsBasedOnScreenWidth);
+// Add an event listener to handle screen resizing
+window.addEventListener('resize', toggleIdsAndClassesBasedOnScreenWidth);
 
-// Call the function initially to set the initial state based on screen width
-toggleIdsBasedOnScreenWidth();
+// Call function on page load to ensure the correct state is applied
+toggleIdsAndClassesBasedOnScreenWidth();
 
 function switchToSomLogo () {
   var somLogo = document.getElementsByClassName("som-title-logo");
