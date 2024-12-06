@@ -265,6 +265,136 @@ img[src*="som"].header-logo {
  }
 }
 
+/*** SCHOOL TITLE AND LOGO ***/
+.cms-school-logo {
+  display: flex;
+  float: right;
+  width: auto;
+  height: 60px;
+  overflow: hidden;
+  text-indent: -999em;
+
+  &.two-logo-lines {
+      height: 65px;
+  }
+
+  &.three-logo-lines {
+      height: 80px;
+  }
+}
+
+.layout-title:has(.container):has(.cms-school-logo) {
+  .title-header {
+      &:hover,
+      &:focus {
+          color: #666;
+          text-decoration: none;
+      }
+  } 
+}
+
+.layout-title:has(.container):has(.cms-school-logo.scids-logo) a.title-header.title-header-large {
+  width: 428px;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+/* sizing and placement of logo and title on desktop sizes */
+.layout-title:has(.container):has(.cms-school-logo) .title-header-large {
+  margin-top: 20px;
+}
+.layout-title:has(.container):has(.cms-school-logo.two-logo-lines) .title-header-large {
+  margin-top: 10px;
+}
+
+.layout-title:has(.container):has(.cms-school-logo) {
+  height: 110px;
+}
+
+.layout-title:has(.container):has(.cms-school-logo.three-logo-lines) {
+  height: 130px;
+}
+
+
+/* sizing and placement of logo and title on tablet sizes */
+@media only screen and (max-width: 1200px) {
+  a.title-header.title-header-large {
+      max-width: 525px;
+  }
+  
+  .layout-title:has(.container):has(.cms-school-logo.skaggs-logo) a.title-header.title-header-large {
+      max-width: 475px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .layout-title:has(.container):has(.cms-school-logo.sio-logo) a.title-header.title-header-large,
+  .layout-title:has(.container):has(.cms-school-logo.gps-logo) a.title-header.title-header-large {
+      max-width: 350px;
+      margin-top: 0;
+  }
+
+  .layout-title:has(.container):has(.cms-school-logo.scids-logo) a.title-header.title-header-large {
+      max-width: 415px;
+  }
+}
+
+/* mobile nav logos */
+
+img[src*=ucsdlogo].header-logo {
+  height: 30px;
+  margin: 15px 20px 0 0;
+  width: auto;
+  display: block;
+}
+
+img[src*=ucsdlogo-wertheim].header-logo {
+  height: 40px;
+  margin: 10px 20px 0 0;
+}
+
+img[src*=ucsdlogo-skaggs].header-logo {
+  height: 35px;
+  margin: 10px 20px 0 0;
+}
+
+img[src*=ucsdlogo-computing].header-logo {
+  height: 35px;
+  margin: 10px 20px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  img[src*=ucsdlogo].header-logo {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .layout-title:has(.container):has(.cms-school-logo) .title-header.title-header-short {
+      display: block;
+      margin-top: 0;
+  }
+
+  .layout-title:has(.container):has(.cms-school-logo) .title-header {
+      display: none;
+      margin-top: 0;
+  }
+
+  .cms-school-logo {
+      display: none !important;
+  }
+
+  .layout-title:has(.container):has(.cms-school-logo),
+  .layout-title:has(.container):has(.cms-school-logo.three-logo-lines) {
+      height: auto;
+  }
+
+  .layout-title:has(.container):has(.cms-school-logo.scids-logo) a.title-header {
+      font-size: 1rem;
+      line-height: 1.2;
+  }
+}
+
 /* ***********************************************
  * MAIN CONTENT SIDE NAV
  * ***************/
