@@ -95,3 +95,70 @@
     });
   }
 });
+
+/* Expand Anchors Update */ 
+
+document.addEventListener("DOMContentLoaded", initDrawer);
+
+function initDrawer() {
+    // Ensure all drawers start collapsed
+    
+    // Listen for clicks on anchor links within the page
+    document.addEventListener("click", function (event) {
+        const anchor = event.target.closest("a[href]");
+        if (anchor && !isInsideH2(anchor)) {
+            // Extract target ID from href (e.g., #emdash -> emdash)
+            const targetId = anchor.getAttribute("href").replace("#", "");
+            if (targetId) {
+                // Find the element with the matching ID
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    // Expand only the specific drawer related to the target
+                    expandSingleDrawer(targetElement);
+                }
+            }
+        }
+    });
+}
+
+function resetDrawerStyles() {
+    // Ensure all <h2> elements start without the "expand" class
+    document.querySelectorAll(".drawer h2.expand").forEach(h2 => {
+        h2.classList.remove("expand");
+    });
+
+    // Ensure all <div> elements containing matched IDs start with display: none;
+    document.querySelectorAll(".drawer h2 + div").forEach(div => {
+        div.style.display = "none";
+    });
+}
+
+function expandSingleDrawer(targetElement) {
+    // Step 3: Find the parent <div> that contains the target ID
+    const parentDiv = targetElement.closest("div");
+    
+    if (parentDiv) {
+        // Step 4: Find the <h2> immediately before this <div> within the same .drawer
+        let h2 = null;
+        let sibling = parentDiv.previousElementSibling;
+
+        while (sibling) {
+            if (sibling.tagName.toLowerCase() === "h2") {
+                h2 = sibling;
+                break;
+            }
+            sibling = sibling.previousElementSibling;
+        }
+
+        if (h2) {
+            // Step 5: Apply the changes
+            h2.classList.add("expand"); // Add the "expand" class
+            parentDiv.style.display = "block"; // Show the <div>
+        }
+    }
+}
+
+function isInsideH2(element) {
+    // Check if the element is inside an <h2> (to prevent accidental expansion)
+    return element.closest("h2") !== null;
+}
