@@ -364,6 +364,30 @@
     height: 100%;
 }
 
+.jumbotron.jumbotron-sand a,
+.jumbotron.side-image-white a {
+    text-decoration: underline;
+}
+
+.jumbotron.jumbotron-sand a.btn,
+.jumbotron.side-image-white a.btn {
+    text-decoration: none;
+}
+
+.layout-container.row {
+    .jumbotron.jumbotron-sand a,
+	.jumbotron.side-image-white a {
+        text-decoration: underline;
+    }
+}
+
+.layout-container.row {
+    .jumbotron.jumbotron-sand a.btn,
+    .jumbotron.side-image-white a.btn {
+        text-decoration: none;
+    }
+}
+
 /* News with Images */
 
 .jumbotron-news {
