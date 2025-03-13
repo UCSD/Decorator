@@ -51,6 +51,24 @@
     font-weight: bold; 
   }
 
+  .profile-listing li.profile-listing-card .profile-listing-data {
+    a {
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #182B49;
+    }
+
+    p.h3 a {
+      text-decoration: none;
+    }
+
+    p.h3 a:hover {
+      text-decoration: underline;
+    }
+  }
+
   .profile-section {
     width: 72%; }
     @media only screen and (max-width: 640px) {
