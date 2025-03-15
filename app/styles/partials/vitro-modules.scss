@@ -761,10 +761,13 @@
 
 &.panel-body h2 {
 	text-shadow: none;
-	margin-top: 14px;
+	margin-top: 14px !important;
 	margin-bottom: 11.5px;
 	font-family: Roboto,sans-serif;
 	font-size: 24px;
+	color: #fff;
+	letter-spacing: normal;
+	line-height: 1.1;
 	}
 }
 .ct4-light-bg {
