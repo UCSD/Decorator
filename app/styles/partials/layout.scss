@@ -190,7 +190,11 @@ html, body
   }
 
   a {
-    color: #016691;
+    color: $blue;
+  }
+
+  a:focus, a:hover {
+    color: $dark-blue;
   }
 
 
