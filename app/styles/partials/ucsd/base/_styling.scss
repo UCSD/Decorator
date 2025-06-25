@@ -27,7 +27,26 @@ table.styled th,table.styled td {
 }
 
 table.styled tbody tr.even {
-	background-color: #eff;
+	background-color: #edf8ff;
+}
+
+table.styled-dark {
+	margin-bottom: 1em;
+
+	th, td {
+		padding: .25em 1em;
+		border: 1px solid #ccc;
+	}
+
+	th {
+		background-color: #00629B;
+		font-weight: bold;
+		color: #fff;
+	}
+
+	tbody tr.even {
+		background-color: #edf8ff;
+	}
 }
 
 table > caption {
