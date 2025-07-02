@@ -253,7 +253,7 @@ a.hero-no-button > img {
     }
 
     &light-translucent {
-      background: rgba(0, 98, 155, 0.8);
+      background: rgba(0, 98, 155, 0.83);
     }
   }
 
@@ -276,6 +276,61 @@ a.hero-no-button > img {
   background-image: none;
 }
 
+/* HERO VIDEO
+-------------------------------------------------- */
+.hero-video-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#heroVideoControl {
+  min-width: 25px;
+  padding: 5px 15px;
+  position: relative;
+  display: block;
+  z-index: 9000;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.hero-video-btn-wrapper {
+  position: absolute;
+  bottom: 20px;
+  display: none;
+  left: 51%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 12px;
+  z-index: 999999;
+}
+
+#herovid {
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-video-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+#herovid iframe {
+  display:none;
+}
+
+@media only screen and (min-width: 768px) {
+  #herovid iframe {
+     display: block;
+ }
+  .hero-video-btn-wrapper {
+     display:block;
+ }
+}
 
 /* QuickBlock Carousel
 -------------------------------------------------- */
