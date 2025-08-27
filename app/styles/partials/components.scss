@@ -278,6 +278,10 @@ a.hero-no-button > img {
 
 /* HERO VIDEO
 -------------------------------------------------- */
+.jumbotron-hero-video {
+  overflow: hidden;
+}
+
 .hero-video-wrapper {
   background-repeat: no-repeat;
   background-size: cover;
