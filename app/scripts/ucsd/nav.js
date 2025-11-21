@@ -340,12 +340,13 @@ function toggleIdsAndClassesBasedOnScreenWidth() {
     });
 
     // Update class and name attribute for elements under ul.msearch
-    const searchTermElement = document.querySelector('ul.msearch input.search-term-m');
+    const searchTermElement = document.querySelector('input[name="search-term-m"]');
     if (searchTermElement) {
       searchTermElement.classList.remove('search-term-m');
       searchTermElement.classList.add('search-term');
       searchTermElement.name = 'search-term'; // Name is 'search-term' for smaller screens
     }
+ 
 
   } else {
     // Revert ids
