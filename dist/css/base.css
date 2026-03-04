@@ -2687,7 +2687,7 @@ a.hero-no-button > img {
 
 .qb-carousel .carousel-caption h3 {
   color: #FFF;
-  font-size: 17px;
+  font-size: 1.0625em;
   line-height: 1.3;
   margin-top: 0;
   margin-bottom: 5px;
@@ -2695,14 +2695,14 @@ a.hero-no-button > img {
 
 @media (min-width: 768px) {
   .qb-carousel .carousel-caption h3 {
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: bold;
     line-height: 1.5;
   }
 }
 .qb-carousel .carousel-caption p {
   display: none;
-  font-size: 15px;
+  font-size: 0.9375em;
 }
 
 @media (min-width: 768px) {
@@ -2714,7 +2714,7 @@ a.hero-no-button > img {
 }
 .qb-carousel .carousel-caption p.h3 {
   color: #FFF;
-  font-size: 17px;
+  font-size: 1.0625em;
   line-height: 1.3;
   margin-top: 0;
   margin-bottom: 5px;
@@ -2723,7 +2723,7 @@ a.hero-no-button > img {
 
 @media (min-width: 768px) {
   .qb-carousel .carousel-caption p.h3 {
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: bold;
     line-height: 1.5;
   }
