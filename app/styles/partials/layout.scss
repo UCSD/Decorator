@@ -552,3 +552,17 @@ footer
 		margin-top: 15px;
 	}
 }
+
+/** Bootstrap pagination overrides **/
+.pagination {
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      color: $pagination-disabled-color;
+    }
+  }
+}
