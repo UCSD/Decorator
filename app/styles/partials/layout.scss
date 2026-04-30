@@ -566,3 +566,95 @@ footer
     }
   }
 }
+
+
+/* ***********************************************
+ * PREFOOTER
+ * **************/
+
+ .prefooter {
+  background-color: #F1F1F2;
+  color: #182B49;
+  padding: 3rem 0;
+
+  .row {
+    padding: 1.5rem 0;
+  }
+
+  .prefooter-header {
+    font-weight: 700;
+    color: #182B49;
+    font-size: 1.25em;
+    margin-bottom: 0.75em;
+  }
+
+  ul.prefooter-links-list, 
+  ul.prefooter-contact, 
+  ul.prefooter-social-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .prefooter-links-list li:not(:last-child) {
+    padding-bottom: 1.25em;
+  }
+
+  .prefooter-links-list li, 
+  .prefooter-contact li {
+    color: #182B49;
+  }
+
+  .prefooter-links-list li > a, 
+  .prefooter-contact li > a {
+    color: #00629B;
+  }
+  .prefooter-links-list li > a, 
+  .prefooter-contact li > a {
+    text-decoration: underline;
+  }
+
+  .prefooter-links-list li > a:hover, 
+  .prefooter-contact li > a:hover {
+    color: #182B49;
+  }
+
+  .prefooter-social-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .prefooter-social-list li {
+    height: 40px;
+    width: 40px;
+    background: no-repeat transparent;
+    margin: 0 10px 10px 0;
+  }
+  .prefooter-social-logo-right 
+  .prefooter-logo-wrapper {
+    margin-bottom: 2em;
+  }
+  .prefooter-school-logo img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+  .prefooter-email, 
+  .prefooter-phone, 
+  .prefooter-contactlink {
+    margin-top: 1.25em;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .prefooter {
+      padding: 2.5rem 1rem;
+ }
+  .prefooter .row {
+      padding: 0;
+ }
+  .prefooter .row > div {
+      margin-top: 20px;
+ }
+  .prefooter-social-logo-right .prefooter-logo-wrapper {
+      margin-top: 2em;
+ }
+}
