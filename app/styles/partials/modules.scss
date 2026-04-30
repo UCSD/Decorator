@@ -297,7 +297,8 @@ img[src*="som"].header-logo {
   } 
 }
 
-.layout-title:has(.container):has(.cms-school-logo.scids-logo) a.title-header.title-header-large {
+.layout-title:has(.container):has(.cms-school-logo.scids-logo) a.title-header.title-header-large,
+.layout-title:has(.container):has(.cms-school-logo.hsdsc-logo) a.title-header.title-header-large {
   width: 428px;
   font-size: 1.2rem;
   line-height: 1.3;
@@ -338,7 +339,8 @@ img[src*="som"].header-logo {
       margin-top: 0;
   }
 
-  .layout-title:has(.container):has(.cms-school-logo.scids-logo) a.title-header.title-header-large {
+  .layout-title:has(.container):has(.cms-school-logo.scids-logo) a.title-header.title-header-large,
+  .layout-title:has(.container):has(.cms-school-logo.hsdsc-logo) a.title-header.title-header-large {
       max-width: 415px;
   }
 }
@@ -362,7 +364,8 @@ img[src*=ucsdlogo-skaggs].header-logo {
   margin: 10px 20px 0 0;
 }
 
-img[src*=ucsdlogo-computing].header-logo {
+img[src*=ucsdlogo-computing].header-logo,
+img[src*=ucsdlogo-hsdsc].header-logo {
   height: 35px;
   margin: 10px 20px 0 0;
 }
@@ -393,7 +396,8 @@ img[src*=ucsdlogo-computing].header-logo {
       height: auto;
   }
 
-  .layout-title:has(.container):has(.cms-school-logo.scids-logo) a.title-header {
+  .layout-title:has(.container):has(.cms-school-logo.scids-logo) a.title-header,
+  .layout-title:has(.container):has(.cms-school-logo.hsdsc-logo) a.title-header {
       font-size: 1rem;
       line-height: 1.2;
   }
