@@ -1,520 +1,559 @@
 <!doctype html>
 <html class="no-js" lang="en-US">
+
 <head>
-  <title>Blank Slate Template</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="robots" content="index,follow,noarchive">
-  <meta name="ORGANIZATION" content="University of California, San Diego">
-  <meta name="SITE" content="Decorator V5">
-  <meta name="PAGETITLE" content="Decorator V5 Demo">
-  <meta name="DESCRIPTION" content="Campus Wide Templates">
+    <title>Blank Slate Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="robots" content="index,follow,noarchive">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Decorator V5">
+    <meta name="PAGETITLE" content="Decorator V5 Demo">
+    <meta name="DESCRIPTION" content="Campus Wide Templates">
 
     <!--build:css ../css/bootstrap.min.css-->
-    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <!--endbuild-->
     <!--build:css ../css/base.min.css-->
-    <link rel="stylesheet" href="../css/base.css"/>
-    <link rel="stylesheet" href="../vendor/jasny-bootstrap/css/jasny-bootstrap.css"/>
-    <link rel="stylesheet" href="../css/profile.css"/>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../vendor/jasny-bootstrap/css/jasny-bootstrap.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
     <!--endbuild-->
 
-    <!--[if lt IE 9]>
-    <link rel="stylesheet" href="styles/ie-support.css"/>
-    <![endif]-->
+
 
     <!-- Begin site-specific CSS files -->
 
     <!-- End site-specific CSS files -->
 
-    <!--build:js ../scripts/modernizr.min.js-->
-    <script src="../vendor/modernizr/modernizr.js"></script>
-    <!--endbuild-->
 
-    <!--[if lt IE 9]>
-    <script src="vendor/respond/dest/respond.min.js"></script>
-    <link href="https://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
-    <link href="img/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
-    <script src="scripts/ucsd/respond-proxy.js"></script>
-    <![endif]-->
+
+
 
 </head>
+
 <body>
 
-<header class="layout-header">
-	<a class="sr-only" href="#main-content">Skip to main content</a>
-	<div id="uc-emergency"></div>
-	<section class="layout-login">
-		<div class="layout-container"></div>
-	</section>
+    <header class="layout-header">
+        <a class="sr-only" href="#main-content">Skip to main content</a>
+        <div id="uc-emergency"></div>
+        <section class="layout-login">
+            <div class="layout-container"></div>
+        </section>
 
-    <section class="layout-title">
-        <div class="layout-container container">
-            <a href="index.html" class="title-header title-header-large">Decorator V5</a>
-            <a href="index.html" class="title-header title-header-short">V5</a>
-            <a href="https://www.ucsd.edu" class="title-logo">UC San Diego</a>
+        <section class="layout-title">
+            <div class="layout-container container">
+                <a href="index.html" class="title-header title-header-large">Decorator V5</a>
+                <a href="index.html" class="title-header title-header-short">V5</a>
+                <a href="https://www.ucsd.edu" class="title-logo">UC San Diego</a>
+            </div>
+        </section>
+    </header>
+
+    <!-- mobile offcanvas nav -->
+    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas" style="">
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <div class="search">
+                    <button class="search-toggle btn-default">
+                        <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
+                    </button>
+
+                    <div class="search-content" id="search">
+                        <form action="https://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
+                            <select class="search-scope" name="search-scope">
+                                <option value="default_collection">All UCSD Sites</option>
+                                <option value="faculty-staff">Faculty/Staff</option>
+                            </select>
+
+                            <div class="input-group">
+                                <input placeholder="Search..." type="search" class="form-control search-term" id="q"
+                                    name="search-term">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+
+        <ul class="nav navmenu-nav">
+            <li class="active"><a href="/index.html">Home</a></li>
+            <li class="dropdown open">
+                <a href="index.html" class="dropdown-toggle">Templates <b class="caret"></b></a>
+                <ul class="dropdown-menu navmenu-nav">
+                    <li><a href="homepage.html">Homepage</a></li>
+                    <li><a href="blank-slate.html">Blank Slate</a></li>
+                    <li><a href="two-column.html">Two Column</a></li>
+                    <li><a href="event-detail.html">Event Detail</a></li>
+                    <li><a href="three-column.html">Three Column</a></li>
+                </ul>
+            </li>
+            <li><a href="../kitchen-sink/index.html">Kitchen Sink</a></li>
+            <li class="dropdown open">
+                <a href="../templates/index.html" class="dropdown-toggle">Widgets <b class="caret"></b></a>
+                <ul class="dropdown-menu navmenu-nav">
+                    <li><a href="../templates/fullcalendar.html">FullCalendar</a></li>
+                    <li><a href="../templates/datatables.html">DataTable</a></li>
+                    <li><a href="../templates/wizard.html">Wizard</a></li>
+                    <li><a href="../templates/maxchar.html">MaxChar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- end mobile offcanvas nav -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu"
+                    data-canvas="body" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+
+                    <div class="col-sm-1 mobile-nav-bars">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                    <div class="col-sm-1 mobile-nav-icon">
+                        MENU
+                    </div>
+                </button>
+                <div class="col-sm-4 pull-right visible-xs-block">
+                    <img src="http://cdn.ucsd.edu/developer/decorator/5.0.2/img/ucsd-footer-logo-white.png" alt=""
+                        class="img-responsive header-logo" />
+                </div>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="dropdown active">
+                        <a href="index.html" class="dropdown-toggle" data-hover="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">Templates <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="homepage.html">Homepage</a></li>
+                            <li><a href="blank-slate.html">Blank Slate</a></li>
+                            <li><a href="two-column.html">Two Column</a></li>
+                            <li><a href="event-detail.html">Event Detail</a></li>
+                            <li><a href="three-column.html">Three Column</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../kitchen-sink/index.html">Kitchen Sink</a></li>
+                    <li class="dropdown">
+                        <a href="../widgets/index.html" class="dropdown-toggle" data-hover="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">Widgets <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../widgets/fullcalendar.html">FullCalendar</a></li>
+                            <li><a href="../widgets/datatables.html">DataTable</a></li>
+                            <li><a href="../widgets/wizard.html">Wizard</a></li>
+                            <li><a href="../widgets/maxchar.html">MaxChar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="btn-nav"></div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <div class="search">
+                            <button class="search-toggle btn-default">
+                                <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
+                            </button>
+
+                            <div class="search-content" id="search">
+                                <form action="http://act.ucsd.edu/cwp/tools/search-redir" method="get"
+                                    id="cse-site-search">
+                                    <select class="search-scope" name="search-scope">
+                                        <option value="default_collection">All UCSD Sites</option>
+                                        <option value="faculty-staff">Faculty/Staff</option>
+                                    </select>
+
+                                    <div class="input-group">
+                                        <input placeholder="Search..." type="search" class="form-control search-term"
+                                            id="q" name="search-term">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </section>
-</header>
-
-<!-- mobile offcanvas nav -->
-<div class="navmenu navmenu-default navmenu-fixed-left offcanvas" style="">
-
-    <ul class="nav navbar-nav navbar-right">
-      <li>
-        <div class="search">
-              <button class="search-toggle btn-default">
-                  <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
-              </button>
-
-              <div class="search-content" id="search">
-                  <form action="https://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
-                      <select class="search-scope" name="search-scope">
-                          <option value="default_collection">All UCSD Sites</option>
-                          <option value="faculty-staff">Faculty/Staff</option>
-                      </select>
-
-                      <div class="input-group">
-                          <input placeholder="Search..." type="search" class="form-control search-term"
-                          id="q" name="search-term">
-                      </div>
-                  </form>
-              </div>
-          </div>
-        </li>
-    </ul>
-
-
-	<ul class="nav navmenu-nav">
-		<li class="active"><a href="/index.html">Home</a></li>
-		<li class="dropdown open">
-		  	<a href="index.html" class="dropdown-toggle">Templates <b class="caret"></b></a>
-		  	<ul class="dropdown-menu navmenu-nav">
-          <li><a href="homepage.html">Homepage</a></li>
-          <li><a href="blank-slate.html">Blank Slate</a></li>
-          <li><a href="two-column.html">Two Column</a></li>
-          <li><a href="event-detail.html">Event Detail</a></li>
-          <li><a href="three-column.html">Three Column</a></li>
-		  	</ul>
-		</li>
-		<li><a href="../kitchen-sink/index.html">Kitchen Sink</a></li>
-		<li class="dropdown open">
-			<a href="../templates/index.html" class="dropdown-toggle">Widgets <b class="caret"></b></a>
-			<ul class="dropdown-menu navmenu-nav">
-        <li><a href="../templates/fullcalendar.html">FullCalendar</a></li>
-        <li><a href="../templates/datatables.html">DataTable</a></li>
-        <li><a href="../templates/wizard.html">Wizard</a></li>
-        <li><a href="../templates/maxchar.html">MaxChar</a></li>
-			</ul>
-		</li>
-	</ul>
-</div>
-<!-- end mobile offcanvas nav -->
-
-<!-- navbar -->
-<nav class="navbar navbar-default navbar-static-top">
-	<div class="container">
-		<div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body" aria-expanded="false" aria-controls="navbar">
-      			    <span class="sr-only">Toggle navigation</span>
-
-      					<div class="col-sm-1 mobile-nav-bars">
-      				    <span class="icon-bar"></span>
-      				    <span class="icon-bar"></span>
-      				    <span class="icon-bar"></span>
-         				</div>
-          			<div class="col-sm-1 mobile-nav-icon">
-                      MENU
-      			    </div>
-      </button>
-      <div class="col-sm-4 pull-right visible-xs-block">
-        <img src="http://cdn.ucsd.edu/developer/decorator/5.0.2/img/ucsd-footer-logo-white.png" alt="" class="img-responsive header-logo" />
-      </div>
-		</div>
-
-		<div id="navbar" class="navbar-collapse collapse">
-		  <ul class="nav navbar-nav">
-		    <li><a href="/index.html">Home</a></li>
-		    <li class="dropdown active">
-		    	<a href="index.html" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Templates <span class="caret"></span></a>
-		    	<ul class="dropdown-menu">
-            <li><a href="homepage.html">Homepage</a></li>
-            <li><a href="blank-slate.html">Blank Slate</a></li>
-			    	<li><a href="two-column.html">Two Column</a></li>
-            <li><a href="event-detail.html">Event Detail</a></li>
-            <li><a href="three-column.html">Three Column</a></li>
-		    	</ul>
-		    </li>
-		    <li><a href="../kitchen-sink/index.html">Kitchen Sink</a></li>
-		    <li class="dropdown">
-          <a href="../widgets/index.html" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Widgets <span class="caret"></span></a>
-		    	<ul class="dropdown-menu">
-	                <li><a href="../widgets/fullcalendar.html">FullCalendar</a></li>
-	                <li><a href="../widgets/datatables.html">DataTable</a></li>
-	                <li><a href="../widgets/wizard.html">Wizard</a></li>
-	                <li><a href="../widgets/maxchar.html">MaxChar</a></li>
-	            </ul>
-		    </li>
-		  </ul>
-
-		  <div class="btn-nav"></div>
-
-		  <ul class="nav navbar-nav navbar-right">
-		    <li>
-			    <div class="search">
-		            <button class="search-toggle btn-default">
-		                <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
-		            </button>
-
-		            <div class="search-content" id="search">
-		                <form action="http://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
-		                    <select class="search-scope" name="search-scope">
-		                        <option value="default_collection">All UCSD Sites</option>
-		                        <option value="faculty-staff">Faculty/Staff</option>
-		                    </select>
-
-		                    <div class="input-group">
-		                        <input placeholder="Search..." type="search" class="form-control search-term"
-		                        id="q" name="search-term">
-		                    </div>
-		                </form>
-		            </div>
-		        </div>
-	        </li>
-		  </ul>
-		</div>
-	</div>
-</nav>
-
-<!-- end navbar -->
-
-<main class="layout-main" id="main-content" role="main">
-
-  <div class="container">
-    <div class="row">
-      <ol class="breadcrumb breadcrumbs-list">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="templates.html">Templates</a></li>
-          <li class="active">Two Columns</li>
-      </ol>
-    </div>
-  </div>
-
-  <section class="container">
-    <div class="row">
-
-      <div class="col-md-12">
-        <h1>Blank Slate Template</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <div class="container">
-    <div class="row">
-        
-
-
-
-<section class="col-md-9 col-sm-12 main-section pull-right">
-
-<article class="main-section-content">
-<h1>Profile Listing Example</h1>
-<p>The Profile Listing template is made up of one or more <strong>Profile</strong> sections made up of:</p>
-<ul>
-<li>a single <strong>Middle Top Content</strong> section with a WYSIWYG. Use this to add an H1 to your page along with any introductory text. You need to expand this section on the Edit screen in order to edit it.</li>
-<li>one or more <strong>Person Profile</strong> sections. Use the arrows to reorder, green + to add a new Person Profile and the red x to delete a Person Profile</li>
-</ul>
-<ul>
-<li>a single <strong>Middle Bottom Content</strong> section with a WYSIWYG.</li>
-</ul>
-<h2>Options</h2>
-<p>Profile Listing pages can now be displayed as a Grid. See our <a href="listing-grid.html">example layout</a>.</p>
-<p>It is important to keep your Information sections (the WYSIWYG) very short if you are using the Grid layout.</p>
-<p>The Grid layout requires the use of images. Otherwise you can select no for Use Images to have a Profile Listing page that doesn't include images. This decision is made for</p>
-<div style="clear: both;"></div>
-</article>
-
-        <article class="clearfix profile-listing main-section-content">
-        <ul>
-
-
-
-
-    <li class="profile-listing-card">
-                                                            <span>
-                    <a href="page.html" title="Full Name"><img alt="Full Name" src="../styles/img/profile-placeholder-sand-on-blue.jpg"></a>
-                </span>
-                                                    <span class="profile-listing-data">
-            <h3>
-                <a href="page.html" title="Full Name">Full Name</a>
-            </h3>
-
-            <p>Add brief information about the person profiled.</p>
-<p>The recommended image size for each portrait is <strong><span>198px wide x 231px high</span></strong>. The page looks best when all of the profile images are cropped to the same size.</p>
-        </span>
-    </li>
-        
-
-
-
-    <li class="profile-listing-card">
-                                                            <span>
-                    <a href="page.html" title="Full Name II"><img alt="Full Name II" src="../styles/img/profile-placeholder-sand-on-blue.jpg"></a>
-                </span>
-                                                    <span class="profile-listing-data">
-            <h3>
-                <a href="page.html" title="Full Name II">Full Name II</a>
-            </h3>
-
-            <p>Each <strong>Person Profile</strong> has fields to add:</p>
-<div style="padding-left: 30px;"><strong>Full Name</strong></div>
-<div style="padding-left: 30px;"><strong>Image</strong>: recommended dimensions are 198 x 231 pixels</div>
-<div style="padding-left: 30px;"><strong>Use Link</strong>: Internal or External</div>
-<div style="padding-left: 30px;"><strong>Information</strong> (WYSIWYG): Avoid making this too long</div>
-<div style="padding-left: 30px;"></div>
-<div>Notice how the image interacts with the surronding space if you have too much text here.</div>
-        </span>
-    </li>
-        
-
-
-
-    <li class="profile-listing-card">
-                                                            <span>
-                    <a href="page.html" title="Full Name III"><img alt="Full Name III" src="../styles/img/profile-placeholder-sand-on-blue.jpg"></a>
-                </span>
-                                                    <span class="profile-listing-data">
-            <h3>
-                <a href="page.html" title="Full Name III">Full Name III</a>
-            </h3>
+    </nav>
+
+    <!-- end navbar -->
+
+    <main class="layout-main" id="main-content" role="main">
+
+        <div class="container">
+            <div class="row">
+                <ol class="breadcrumb breadcrumbs-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="templates.html">Templates</a></li>
+                    <li class="active">Two Columns</li>
+                </ol>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <h1>Blank Slate Template</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="container">
+            <div class="row">
+
+
+
+
+                <section class="col-md-9 col-sm-12 main-section pull-right">
+
+                    <article class="main-section-content">
+                        <h1>Profile Listing Example</h1>
+                        <p>The Profile Listing template is made up of one or more <strong>Profile</strong> sections made
+                            up of:</p>
+                        <ul>
+                            <li>a single <strong>Middle Top Content</strong> section with a WYSIWYG. Use this to add an
+                                H1 to your page along with any introductory text. You need to expand this section on the
+                                Edit screen in order to edit it.</li>
+                            <li>one or more <strong>Person Profile</strong> sections. Use the arrows to reorder, green +
+                                to add a new Person Profile and the red x to delete a Person Profile</li>
+                        </ul>
+                        <ul>
+                            <li>a single <strong>Middle Bottom Content</strong> section with a WYSIWYG.</li>
+                        </ul>
+                        <h2>Options</h2>
+                        <p>Profile Listing pages can now be displayed as a Grid. See our <a
+                                href="listing-grid.html">example layout</a>.</p>
+                        <p>It is important to keep your Information sections (the WYSIWYG) very short if you are using
+                            the Grid layout.</p>
+                        <p>The Grid layout requires the use of images. Otherwise you can select no for Use Images to
+                            have a Profile Listing page that doesn't include images. This decision is made for</p>
+                        <div style="clear: both;"></div>
+                    </article>
+
+                    <article class="clearfix profile-listing main-section-content">
+                        <ul>
+
+
+
+
+                            <li class="profile-listing-card">
+                                <span>
+                                    <a href="page.html" title="Full Name"><img alt="Full Name"
+                                            src="../styles/img/profile-placeholder-sand-on-blue.jpg"></a>
+                                </span>
+                                <span class="profile-listing-data">
+                                    <h3>
+                                        <a href="page.html" title="Full Name">Full Name</a>
+                                    </h3>
+
+                                    <p>Add brief information about the person profiled.</p>
+                                    <p>The recommended image size for each portrait is <strong><span>198px wide x 231px
+                                                high</span></strong>. The page looks best when all of the profile images
+                                        are cropped to the same size.</p>
+                                </span>
+                            </li>
+
+
+
+
+                            <li class="profile-listing-card">
+                                <span>
+                                    <a href="page.html" title="Full Name II"><img alt="Full Name II"
+                                            src="../styles/img/profile-placeholder-sand-on-blue.jpg"></a>
+                                </span>
+                                <span class="profile-listing-data">
+                                    <h3>
+                                        <a href="page.html" title="Full Name II">Full Name II</a>
+                                    </h3>
+
+                                    <p>Each <strong>Person Profile</strong> has fields to add:</p>
+                                    <div style="padding-left: 30px;"><strong>Full Name</strong></div>
+                                    <div style="padding-left: 30px;"><strong>Image</strong>: recommended dimensions are
+                                        198 x 231 pixels</div>
+                                    <div style="padding-left: 30px;"><strong>Use Link</strong>: Internal or External
+                                    </div>
+                                    <div style="padding-left: 30px;"><strong>Information</strong> (WYSIWYG): Avoid
+                                        making this too long</div>
+                                    <div style="padding-left: 30px;"></div>
+                                    <div>Notice how the image interacts with the surronding space if you have too much
+                                        text here.</div>
+                                </span>
+                            </li>
+
+
+
+
+                            <li class="profile-listing-card">
+                                <span>
+                                    <a href="page.html" title="Full Name III"><img alt="Full Name III"
+                                            src="../styles/img/profile-placeholder-sand-on-blue.jpg"></a>
+                                </span>
+                                <span class="profile-listing-data">
+                                    <h3>
+                                        <a href="page.html" title="Full Name III">Full Name III</a>
+                                    </h3>
 
-            If you include a link (internal or external), both the Full Name and Image will link to the chosen destination.
-        </span>
-    </li>
-        
+                                    If you include a link (internal or external), both the Full Name and Image will link
+                                    to the chosen destination.
+                                </span>
+                            </li>
 
 
 
-    <li class="profile-listing-card">
-                                                            <span>
-                    <a href="page.html" title="Full Name IV"><img alt="Full Name IV" src="../styles/img/profile-placeholder-sand-on-blue.jpg"></a>
-                </span>
-                                                    <span class="profile-listing-data">
-            <h3>
-                <a href="page.html" title="Full Name IV">Full Name IV</a>
-            </h3>
 
-            Add information about the person profiled.
-        </span>
-    </li>
-            </ul>
-</article>
-    
-<article class="clearfix main-section-content">
-<below-profile>
-</below-profile></article>
+                            <li class="profile-listing-card">
+                                <span>
+                                    <a href="page.html" title="Full Name IV"><img alt="Full Name IV"
+                                            src="../styles/img/profile-placeholder-sand-on-blue.jpg"></a>
+                                </span>
+                                <span class="profile-listing-data">
+                                    <h3>
+                                        <a href="page.html" title="Full Name IV">Full Name IV</a>
+                                    </h3>
 
-<article class="main-section-content">
-<h2>Second group of profiles</h2>
-<p>To add content between profiles, add an additional <strong>Profile</strong> section to the page using the green plus on the profile bar.</p>
-<p>You will then have an additional <strong>Middle Top Content, </strong>a new set of one or more <strong>Person Profiles</strong> and an additional <strong>Middle Bottom Content</strong>.</p>
-<h3>Important:</h3>
-<p>You <strong>can</strong>:</p>
-<ul>
-<li>reorder entire <strong>Profile</strong> sections, and</li>
-<li>reorder <strong>Person Profiles</strong> within a section</li>
-</ul>
-<p>But you <strong>can't</strong> reorder <strong>Person Profiles</strong> between two <strong>Profile</strong> sections.</p>
-<p>If you need a person's entry to be in a different Profile section you will need to recreate it there and remove the previous one.</p>
-</article>
+                                    Add information about the person profiled.
+                                </span>
+                            </li>
+                        </ul>
+                    </article>
 
-        <article class="clearfix profile-listing main-section-content">
-        <ul>
+                    <article class="clearfix main-section-content">
+                        <below-profile>
+                        </below-profile>
+                    </article>
 
-                <li class="profile-listing-card">
-                                                            <span>
-                    <img alt="First Person in the Second Group" src="../styles/img/profile-placeholder-sand-on-blue.jpg">
-                </span>
-                                                    <span class="profile-listing-data">
-            <h3>First Person in the Second Group</h3>
-            <profile-tab-info>
-        </profile-tab-info></span>
-    </li>
-
-
-        
-                <li class="profile-listing-card">
-                                                            <span>
-                    <img alt="Second Person in the Second Group" src="../styles/img/profile-placeholder-sand-on-blue.jpg">
-                </span>
-                                                    <span class="profile-listing-data">
-            <h3>Second Person in the Second Group</h3>
-            <profile-tab-info>
-        </profile-tab-info></span>
-    </li>
-
-
-            </ul>
-</article>
-    
-<article class="clearfix main-section-content">
-<h2>Middle Bottom Content</h2>
-<p>This WYSIWYG section is available at the end of each <strong>Profile</strong> section.</p>
-</article>
-</section>
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section aria-label="Sidebar" class="col-xs-12 col-md-3 sidebar-section" role="complementary">
-    <figure aria-label="Logo" id="site-logo" role="complementary">
-<logo>
-</logo></figure>
-
-                <article aria-label="Sidebar Nav" class="main-content-nav" role="navigation">
-                                                                                                                                
-
-<h2>
-                        <a href="index.html">Profile Pages</a>
-        </h2>
-
-            <ul class="navbar-list">
-        
-                            
-                                                                                            
-                                    
-                                                                                                                            
-                            
-                                                                                            
-                                    
-                                                                                                <li class="">
-        <a href="page.html">
-    Profile Page
-</a>
-</li>
-                                                                    
-                            
-                                                                                                                
-                                    
-                                                                                                <li class="active">
-        Profile Listing
-</li>
-                                                                    
-                            
-                                                                                            
-                                    
-                                                                                                <li class="">
-        <a href="listing-grid.html">
-    Profile Listing: Grid Option
-</a>
-</li>
-                                                                    
-                            
-                                                                                            
-                                    
-                                                                                                <li class="">
-        <a href="drawer.html">
-    Profile Listing Drawer
-</a>
-</li>
-                                                                                </ul>
-
-</article>
-
-
-                <div class="styled">
-<h3>Related Knowledge Base articles</h3>
-<ul>
-<li><a href="https://ucsdservicedesk.service-now.com/its?id=kb_article_view&amp;sysparm_article=KB0030357">Profile page template</a></li>
-<li><a href="https://ucsdservicedesk.service-now.com/its?id=kb_article_view&amp;sysparm_article=KB0030373">Profile listing template</a></li>
-<li><a href="https://ucsdservicedesk.service-now.com/its?id=kb_article_view&amp;sysparm_article=KB0030361">Profile listing drawer template</a></li>
-</ul>
-</div>
-    </section>
-    </div>
-</div>
-
-</main>
-
-<footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-8">
-	            <p>
-		            <span>UC San Diego 9500 Gilman Dr. La Jolla, CA 92093 (858) 534-2230</span>
-					<br />
-		            <span>
-		                Copyright © <span class="footer-copyright-year"></span> Regents of the University of California.
-		                All rights reserved.
-		            </span>
-		        </p>
-	            <ul class="footer-links">
-		            <li><a href="https://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
-		            <li><a href="mailto:youremail@xucsd.edu">Feedback</a></li>
-		        </ul>
-	        </div>
-	        <div class="col-sm-4">
-            <img src="http://cdn.ucsd.edu/developer/decorator/5.0.2/img/ucsd-footer-logo-white.png" alt="" class="img-responsive footer-logo" />
-		    </div>
-		</div>
-	</div>
-</footer>
-
-<!--build:js ../scripts/jquery.min.js -->
-<script src="../vendor/jquery/jquery.min.js"></script>
-<!-- endbuild -->
-
-<!--build:js ../scripts/bootstrap.min.js -->
-<script src="../vendor/bootstrap/assets/javascripts/bootstrap.min.js"></script>
-<!-- endbuild -->
-
-<script src="https://www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
-
-
-<!--build:js ../scripts/vendor.min.js -->
-<script src="../vendor/fastclick/lib/fastclick.js"></script>
-<script src="../vendor/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
-<script src="../vendor/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
-<script src="../vendor/jquery-match-height/jquery.matchHeight.js"></script>
-<!-- endbuild -->
-<!--build:js ../scripts/base.min.js -->
-<script src="../scripts/ucsd/rotator.js"></script>
-<script src="../scripts/ucsd/nav.js"></script>
-<script src="../scripts/ucsd/match-height.js"></script>
-<script src="../scripts/ucsd/drawer.js"></script>
-<script src="../scripts/ucsd/copyright.js"></script>
-<script src="../scripts/ucsd/footer.js"></script>
-<script src="../scripts/ucsd/logout.js"></script>
-<script src="../scripts/ucsd/social.js"></script>
-<script src="../scripts/ucsd/profile-template.js"></script>
-<!-- endbuild -->
+                    <article class="main-section-content">
+                        <h2>Second group of profiles</h2>
+                        <p>To add content between profiles, add an additional <strong>Profile</strong> section to the
+                            page using the green plus on the profile bar.</p>
+                        <p>You will then have an additional <strong>Middle Top Content, </strong>a new set of one or
+                            more <strong>Person Profiles</strong> and an additional <strong>Middle Bottom
+                                Content</strong>.</p>
+                        <h3>Important:</h3>
+                        <p>You <strong>can</strong>:</p>
+                        <ul>
+                            <li>reorder entire <strong>Profile</strong> sections, and</li>
+                            <li>reorder <strong>Person Profiles</strong> within a section</li>
+                        </ul>
+                        <p>But you <strong>can't</strong> reorder <strong>Person Profiles</strong> between two
+                            <strong>Profile</strong> sections.
+                        </p>
+                        <p>If you need a person's entry to be in a different Profile section you will need to recreate
+                            it there and remove the previous one.</p>
+                    </article>
+
+                    <article class="clearfix profile-listing main-section-content">
+                        <ul>
+
+                            <li class="profile-listing-card">
+                                <span>
+                                    <img alt="First Person in the Second Group"
+                                        src="../styles/img/profile-placeholder-sand-on-blue.jpg">
+                                </span>
+                                <span class="profile-listing-data">
+                                    <h3>First Person in the Second Group</h3>
+                                    <profile-tab-info>
+                                    </profile-tab-info>
+                                </span>
+                            </li>
+
+
+
+                            <li class="profile-listing-card">
+                                <span>
+                                    <img alt="Second Person in the Second Group"
+                                        src="../styles/img/profile-placeholder-sand-on-blue.jpg">
+                                </span>
+                                <span class="profile-listing-data">
+                                    <h3>Second Person in the Second Group</h3>
+                                    <profile-tab-info>
+                                    </profile-tab-info>
+                                </span>
+                            </li>
+
+
+                        </ul>
+                    </article>
+
+                    <article class="clearfix main-section-content">
+                        <h2>Middle Bottom Content</h2>
+                        <p>This WYSIWYG section is available at the end of each <strong>Profile</strong> section.</p>
+                    </article>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <section aria-label="Sidebar" class="col-xs-12 col-md-3 sidebar-section" role="complementary">
+                    <figure aria-label="Logo" id="site-logo" role="complementary">
+                        <logo>
+                        </logo>
+                    </figure>
+
+                    <article aria-label="Sidebar Nav" class="main-content-nav" role="navigation">
+
+
+                        <h2>
+                            <a href="index.html">Profile Pages</a>
+                        </h2>
+
+                        <ul class="navbar-list">
+
+
+
+
+
+
+
+
+                            <li class="">
+                                <a href="page.html">
+                                    Profile Page
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="active">
+                                Profile Listing
+                            </li>
+
+
+
+
+                            <li class="">
+                                <a href="listing-grid.html">
+                                    Profile Listing: Grid Option
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="">
+                                <a href="drawer.html">
+                                    Profile Listing Drawer
+                                </a>
+                            </li>
+                        </ul>
+
+                    </article>
+
+
+                    <div class="styled">
+                        <h3>Related Knowledge Base articles</h3>
+                        <ul>
+                            <li><a
+                                    href="https://ucsdservicedesk.service-now.com/its?id=kb_article_view&amp;sysparm_article=KB0030357">Profile
+                                    page template</a></li>
+                            <li><a
+                                    href="https://ucsdservicedesk.service-now.com/its?id=kb_article_view&amp;sysparm_article=KB0030373">Profile
+                                    listing template</a></li>
+                            <li><a
+                                    href="https://ucsdservicedesk.service-now.com/its?id=kb_article_view&amp;sysparm_article=KB0030361">Profile
+                                    listing drawer template</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <p>
+                        <span>UC San Diego 9500 Gilman Dr. La Jolla, CA 92093 (858) 534-2230</span>
+                        <br />
+                        <span>
+                            Copyright © <span class="footer-copyright-year"></span> Regents of the University of
+                            California.
+                            All rights reserved.
+                        </span>
+                    </p>
+                    <ul class="footer-links">
+                        <li><a href="https://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
+                        <li><a href="mailto:youremail@xucsd.edu">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <img src="http://cdn.ucsd.edu/developer/decorator/5.0.2/img/ucsd-footer-logo-white.png" alt=""
+                        class="img-responsive footer-logo" />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--build:js ../scripts/jquery.min.js -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- endbuild -->
+
+    <!--build:js ../scripts/bootstrap.min.js -->
+    <script src="../vendor/bootstrap/assets/javascripts/bootstrap.min.js"></script>
+    <!-- endbuild -->
+
+    <script src="https://www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
+
+
+    <!--build:js ../scripts/vendor.min.js -->
+    <script src="../vendor/fastclick/lib/fastclick.js"></script>
+    <script src="../vendor/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+    <script src="../vendor/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+    <script src="../vendor/jquery-match-height/jquery.matchHeight.js"></script>
+    <!-- endbuild -->
+    <!--build:js ../scripts/base.min.js -->
+    <script src="../scripts/ucsd/rotator.js"></script>
+    <script src="../scripts/ucsd/nav.js"></script>
+    <script src="../scripts/ucsd/match-height.js"></script>
+    <script src="../scripts/ucsd/drawer.js"></script>
+    <script src="../scripts/ucsd/copyright.js"></script>
+    <script src="../scripts/ucsd/footer.js"></script>
+    <script src="../scripts/ucsd/logout.js"></script>
+    <script src="../scripts/ucsd/social.js"></script>
+    <script src="../scripts/ucsd/profile-template.js"></script>
+    <!-- endbuild -->
 
 </body>
+
 </html>
