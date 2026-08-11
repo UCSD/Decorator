@@ -2,32 +2,43 @@
   "name": "ucsd-decorator-v5",
   "version": "5.0.2",
   "description": "Front end files for the UCSD Cascade CMS templates.",
-  "scripts": {
-    "test": "gulp test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/UCSD/cms-templates.git"
-  },
+  "author": "Cristian Horta, WTS, UC San Diego",
+  "license": "ISC",
   "keywords": [
     "CMS",
     "templates",
     "Decorator",
     "5"
   ],
-  "author": "Cristian Horta, WTS, UC San Diego",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/UCSD/cms-templates/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UCSD/Decorator.git"
   },
-  "homepage": "https://github.com/UCSD/cms-templates#readme",
+  "bugs": {
+    "url": "https://github.com/UCSD/Decorator/issues"
+  },
+  "homepage": "https://github.com/UCSD/Decorator#readme",
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "exports": {
+    "./templates/*": "./dist/templates/*",
+    "./kitchen-sink/*": "./dist/kitchen-sink/*",
+    "./widgets/*": "./dist/widgets/*",
+    "./css/*": "./dist/css/*",
+    "./scripts/*": "./dist/scripts/*",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "prepack": "gulp build"
+  },
   "dependencies": {
     "del": "^3.0.0",
     "gulp": "^4.0.2"
   },
   "devDependencies": {
     "browser-sync": "^2.29.3",
-    "gul": "^1.0.0",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-changed": "^4.0.3",
     "gulp-clean-css": "^4.3.0",
