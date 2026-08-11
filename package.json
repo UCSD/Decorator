@@ -2,7 +2,6 @@
   "name": "ucsd-decorator-v5",
   "version": "5.0.2",
   "description": "Front end files for the UCSD Cascade CMS templates.",
-  "main": "index.js",
   "scripts": {
     "test": "gulp test"
   },
