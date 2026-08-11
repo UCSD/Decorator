@@ -17,6 +17,7 @@ var gulp = require('gulp'),
     runSequence = require('gulp4-run-sequence'),
     uglify = require('gulp-uglify');
     zip = require('gulp-zip');
+    del = require('del');
 
 
 
@@ -100,17 +101,16 @@ function buildImg() {
 
 // Cleaning
 
-// function clean:dist() {
-//   gulp.task('clean:dist', function() {
-//     return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
-// }
+function cleanDist() {
+  return del(['dist/**/*']);
+}
 
 // Archives distribution package
 
 exports.zip = () => (
   gulp.src('dist/**/*')
-      .pipe(zip('Decorator-V' + decoVersion + '.1.zip'))
-      .pipe(gulp.dest('.'))
+      .pipe(zip('Decorator-V' + decoVersion + '.zip'))
+      .pipe(gulp.dest('releases'))
 );
 
 
@@ -176,4 +176,5 @@ exports.buildImg = buildImg;
 exports.dev = series(watch, css);
 exports.concat = series(concatVendorScripts);
 
-exports.build = series(css, userefS, fonts, buildImg);
+exports.cleanDist = cleanDist;
+exports.build = series(cleanDist, css, userefS, fonts, buildImg, exports.zip);
