@@ -100,6 +100,12 @@ img.right {
 	font-weight: bold;
 	}
 
+	h3{
+	padding-left: 23px;
+	text-shadow: none;
+	font-weight: bold;
+	}
+
 	h2{
 	padding-left: 35px;
 	text-shadow: none;
@@ -119,6 +125,14 @@ img.right {
 		background-position: 0 -150px;
 		background-size: 15px 15px;
 		background-position: 0px 5px !important;
+		margin: 0;
+	}
+
+	h3 {
+		background: url(../img/info.svg) no-repeat transparent;
+		background-size: 17px 17px;
+		background-position: 0px 7px!important;
+		margin: 0;
 	}
 
 	h2 {
@@ -147,6 +161,17 @@ img.right {
 		font-weight: bold;
 		background-size: 15px 15px;
 		background-position: 0px 5px !important;
+		margin: 0;
+	}
+
+	h3 {
+		background: url(../img/warning.svg) no-repeat transparent;
+		background-position: 0 -249px;
+		color: #333;
+		font-weight: bold;
+		background-size: 17px 17px;
+		background-position: 0px 7px!important;
+		margin: 0;
 	}
 
 	h2 {
